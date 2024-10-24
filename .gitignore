@@ -1,0 +1,5 @@
+.vscode/
+*.pdf
+*.ipe
+!pre.ipe
+!post.ipe

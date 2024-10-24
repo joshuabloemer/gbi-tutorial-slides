@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="kit-decobox">
+<symbol name="deco/KITbox">
+<group>
+<path stroke="gray1" fill="gray3">
+88 96 m
+8 0 0 8 80 96 80 104 a
+24 104 l
+24 64 l
+8 0 0 8 32 64 32 56 a
+88 56 l
+h
+</path>
+<path stroke="black">
+32 96 m
+32 64 l
+80 64 l
+80 96 l
+h
+</path>
+</group>
+</symbol>
+</ipestyle>

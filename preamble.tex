@@ -1,0 +1,170 @@
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage{calc}
+% \usepackage{hyperref}
+\usepackage{advdate}
+\usepackage{csquotes}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{ulem}
+\usepackage{datetime2}
+\usepackage[ruled]{algorithm2e}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{pifont}
+\usepackage{mathrsfs}
+\usepackage{latexsym}
+\usepackage{bm}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{graphics}
+\usepackage{multirow}
+\usepackage{geometry}
+
+\DTMnewdatestyle{currdate}{%
+  \renewcommand*\DTMdisplaydate[4]{##3.##2.##1}%
+  \renewcommand*\DTMDisplaydate{\DTMdisplaydate}%
+}
+\DTMsetdatestyle{currdate}
+
+\makeatletter
+\appto\FixDate{%
+  \edef\@dtm@currentyear{\the\year}%
+  \edef\@dtm@currentmonth{\the\month}%
+  \edef\@dtm@currentday{\the\day}%
+}
+\makeatother
+
+\renewcommand{\vec}[1]{\mathaccent"017E {#1}}
+
+\newcounter{tutweek}
+\newcommand{\affiliation}{}
+
+
+
+% commands %%%%%%%%%%%%%%%
+\newcommand{\eulere}{\mathrm{e}}
+\renewcommand{\emph}[1]{\textbf{\color{green1}#1}}
+\renewcommand{\cite}[2]{{\color{green1}[\textbf{#1}; #2]}}
+\newcommand{\EX}[1]{\mathbb E\left[ #1 \right]}
+\newcommand{\Pro}[1]{\mathrm{Pr}\left[ #1 \right]}
+\newcommand{\dif}[1]{\mathop{}\!\mathrm{d}#1\mathop{}}
+\DeclareMathOperator{\len}{len}
+% pseudocode %%%%%%%%%%%%%
+\newcommand{\class}[1]{\keyword{class} \textbf{\color{gray1}\textsc{#1}}}
+% \newcommand{\function}[1]{\textbf{\color{blue1}#1}}
+\newcommand{\keyword}[1]{\textbf{\color{green1}#1}}
+\newcommand{\type}[1]{\textit{\color{gray1}#1}}
+\newcommand{\comment}[1]{{\color{red2}// #1}}
+% settings 
+\german
+\renewcommand{\vec}[1]{\mathaccent&quot;017E {#1}}
+\newcommand{\qCite}[1]{\smash{\textcolor{KITblue}{\raisebox{0.1ex}{[}{\small #1}\raisebox{0.1ex}{]}}}\vphantom{Ig}}
+\newcommand{\alert}[1]{\textcolor{KITgreen}{{\bf #1}}}
+\newcommand{\eg}[1]{\textcolor{KITblack!40}{(#1)}}
+\newcommand{\rk}[1]{\smash{\raisebox{0.2ex}{(}{#1}\raisebox{0.2ex}{)}}}
+\newcommand{\ek}[1]{\smash{\raisebox{0.15ex}{[}{#1}\raisebox{0.15ex}{]}}}
+\newcommand{\mm}[1]{\scalebox{1.12}{\textrm{\textit{#1}}}}
+\newcommand{\ml}{\raisebox{0.1ex}{-}}
+\newcommand{\mx}{\raisebox{0.1ex}{+}}
+
+% Farben
+\definecolor{kit-green}{RGB}{0, 150, 130}
+\definecolor{kit-blue}{RGB}{70, 100, 170}
+\definecolor{kit-gray70}{rgb}{0.3, 0.3, 0.3}
+\definecolor{kit-gray30}{rgb}{0.7, 0.7, 0.7}
+\definecolor{kit-orange}{RGB}{223, 155, 27}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\impl}{\ensuremath{\Rightarrow}}
+\newcommand{\appimpl}{\ensuremath{\rightsquigarrow}}
+\newcommand{\eps}{\ensuremath{\varepsilon}}
+\newcommand{\gdw}{\ensuremath{\Leftrightarrow}}
+\newcommand{\assign}{\ensuremath{\gets}}
+\newcommand{\card}[1]{\lvert #1 \rvert}
+\newcommand{\olim}{ \displaystyle{\lim_{n \to \infty}}}
+\newcommand{\ceil}[1]{\lceil {#1} \rceil}
+\newcommand{\floor}[1]{\lfloor {#1} \rfloor}
+\newcommand{\seq}[1]{\langle {#1} \rangle}
+\newcommand{\range}[2]{\seq{{#1}, \dots, {#2}}}
+\newcommand{\inc}{\texttt{++}}
+\newcommand{\word}[1]{\textcolor{blue}{\texttt{#1}}}
+
+% O-Notation
+\renewcommand{\O}[1]{\ensuremath{\mathcal{O}}(#1)}
+\newcommand{\Th}[1]{\Theta\!\left(#1\right)}
+\newcommand{\Oh}[1]{\O\!\left(#1\right)}
+\newcommand{\Om}[1]{\Omega\!\left(#1\right)}
+\newcommand{\oeq}{\asymp}
+\newcommand{\ogeq}{\succeq}
+\newcommand{\oleq}{\preceq}
+
+% geklaut aus der VL
+\DeclareMathOperator{\dist}{dist}
+% pseudocode %%%%%%%%%%%%%
+% \newcommand{\class}[1]{\keyword{class} \textbf{\color{gray1}\textsc{#1}}}
+% \newcommand{\function}[1]{\textbf{\color{blue1}#1}}
+%\newcommand{\keyword}[1]{\textbf{\color{green1}#1}}
+% \newcommand{\type}[1]{\textit{\color{gray1}#1}}
+%\newcommand{\comment}[1]{{\color{red2}// #1}}
+
+\newcommand{\ifNotEmpty}[2]{\if\relax\detokenize{#1}\relax\else#2\fi}
+
+% geklaut von karina-folien
+\newcommand{\alg}[1]{{\bfseries\sffamily\scshape\color{kit-blue}#1}}
+\newcommand{\method}[1]{\texttt{#1}}
+\newcommand{\datatype}[1]{{\color{kit-gray70}\textsl{\textsf{#1}}}}
+\newcommand{\kwfont}[1]{\textbf{\sffamily\textcolor{kit-green}{#1}}}
+\newcommand{\func}[1]{\textbf{\sffamily{\textcolor{kit-blue}{#1}}}}
+\newcommand{\SetDatatype}[1]{\expandafter\newcommand\csname #1\endcsname{\datatype{#1}}}
+% change bar of algorithm2e
+\makeatletter
+\renewcommand{\algocf@Vsline}[1]{%    no vskip in between boxes but a strut to separate them,
+  \strut\par\nointerlineskip% then interblock space stay the same whatever is inside it
+  \algocf@push{\skiprule}%        move to the right before the vertical rule
+  \hbox{{\color{kit-gray30}\vrule width 2pt}%               the vertical rule
+    \vtop{\algocf@push{\skiptext}%move the right after the rule
+      \vtop{\algocf@addskiptotal\advance\hsize by -\skiplength #1}}}% inside the block
+  \algocf@pop{\skiprule}}% restore indentation
+\makeatother
+
+\SetKwSty{kwfont}
+\SetFuncSty{func}
+\SetFuncArgSty{textsf}
+\SetArgSty{textsf}
+\SetKwIF{If}{ElseIf}{Else}{if}{then}{else if}{else}{}
+\SetKwFor{While}{while}{do}{}
+\SetKwRepeat{Do}{do}{while}
+\SetKwFor{For}{for}{do}{}
+\SetKwProg{Fn}{}{}{}
+\SetKw{continue}{continue}
+\SetKwFunction{size}{size}
+\SetKwFunction{ehmpty}{empty} % This is not a typo, it is supposed to be ehmpty, else things break
+\SetKwFunction{enqueue}{enqueue}
+\SetKwFunction{dequeue}{dequeue}
+\SetKwFunction{N}{N}
+\SetKwFunction{push}{push}
+\SetKwFunction{pushBack}{pushBack}
+\SetKwFunction{popMin}{popMin}
+\SetKwFunction{decPrio}{decPrio}
+\SetKwFunction{DFS}{DFS}
+\DontPrintSemicolon
+% usage: \begin{algo}[arguments]{name} <actual algorithm> \end{algo}
+\newenvironment{algo}[2][]{
+    \NoCaptionOfAlgo
+    \SetAlFnt{\sffamily}
+    \begin{algorithm}[H]
+        \caption{\alg{#2}\ifNotEmpty{#1}{(#1)}:}
+        \SetKwFunction{#2}{#2}
+}{
+    \end{algorithm}
+}
+
+% usage: \quickAlgo{name}{args}{<actual algorithm>}
+\newcommand{\quickAlgo}[3]{
+  \Fn{\func{#1}(#2):}{#3}
+}

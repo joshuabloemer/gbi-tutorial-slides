@@ -1,0 +1,5 @@
+
+title = "01 Orga, Mengenlehre"       # the file name of the output pdf
+description = "Orga und Mengenlehre" # 
+content = ["orga", "mengenlehre"]
+xkcd = 934
