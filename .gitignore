@@ -4,4 +4,5 @@
 !pre.ipe
 !post.ipe
 !content/*.ipe
+*autosave.ipe
 tut*/xkcd.png

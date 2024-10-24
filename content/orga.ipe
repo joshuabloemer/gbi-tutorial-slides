@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241024143029" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241024180257" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3747,7 +3747,7 @@ h
 </path>
 </group>
 <text transformations="translations" pos="32 352" stroke="black" type="minipage" width="832" height="12.8627" depth="1.7982" valign="top">\bf Euer Tutor</text>
-<text transformations="translations" pos="32 320" stroke="black" type="minipage" width="832" height="12.9115" depth="1.8204" valign="top" style="item">\name</text>
+<text transformations="translations" pos="32 320" stroke="black" type="minipage" width="832" height="13.0048" depth="1.9092" valign="top" style="item">\name</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 2}</text>
 <text layer="alpha" matrix="1 0 0 1 32 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="336" height="15.0516" depth="3.9738" valign="top" style="item">Fragen:
 </text>
@@ -3815,7 +3815,7 @@ h
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha beta pagenumbers_page" active="beta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="114.889" depth="104.074" valign="top" style="itemize">\item Mi, 9:45 - 11:15, Vorlesung
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="864" height="114.889" depth="104.074" valign="top" style="itemize">\item Mi, 9:45 - 11:15, Vorlesung
 \item Fr, 9:45 - 11:15, 3/4 Vorlesung und 1/4 Übung
 \item Aktuelle Materialien im ILIAS (Beitreten!)  https://s.kit.edu/gbi
 \item Lösungen zu Altklausuren und alten Übungsblättern: https://formal.kastel.kit.edu/teaching/gbi/
@@ -3891,13 +3891,13 @@ Wenn ihr knapp an der Grenze seid kommt es schonmal vor das man sich in ner exce
 <view layers="alpha beta gamma pagenumbers_page" active="gamma"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="17.2094" depth="6.1494" valign="top">\bf Wer bekommt den Übungsschein?</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="17.0518" depth="5.9718" valign="top" style="item">Wöchentliche Übungsblätter</text>
-<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Blatt 1-6 zu zweit abgeben, Blatt 7-12 alleine</text>
+<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Abgabe zu Zweit im Ilias</text>
 <text layer="beta" matrix="1 0 0 1 0 96" transformations="translations" pos="0 192" stroke="black" type="minipage" width="896" height="17.0518" depth="5.9718" valign="top" style="item">Kriterien für den Übungsschein</text>
-<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="896" height="13.229" depth="2.1534" valign="top" style="subitem">40\% der Punkte auf Blatt 1-6</text>
-<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="13.229" depth="2.1534" valign="top" style="subitem">40\% der Punkte auf Blatt 7-12</text>
+<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">50\% der Punkte insgesamt</text>
+<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="subitem">Auf jedem Blatt mindestens 20\% der Punkte</text>
 <text layer="gamma" matrix="1 0 0 1 0 64" transformations="translations" pos="0 96" stroke="black" type="minipage" width="512" height="17.2094" depth="6.1494" valign="top">\bf Brauche ich den Übungsschein?</text>
 <text matrix="1 0 0 1 0 64" transformations="translations" pos="0 64" stroke="black" type="minipage" width="840" height="15.1648" depth="4.0848" valign="top" style="item">Ja, braucht ihr um das Modul zu bestehen (Infos, WInfos, Info Lehramt)</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top" style="subitem">Aber trotzdem 50\% insgesamt</text>
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="368" height="13.1357" depth="2.0646" valign="top" style="subitem">Bis auf 2 Blätter</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
 </page>
 <page title="Übungsblätter">
@@ -3906,12 +3906,40 @@ Wenn ihr knapp an der Grenze seid kommt es schonmal vor das man sich in ner exce
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<text layer="alpha" matrix="1 0 0 1 0 64" transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="item">Ausgabe spätestens Dienstag im Ilias</text>
-<text matrix="1 0 0 1 0 64" transformations="translations" pos="0 288" stroke="black" type="minipage" width="832" height="28.4071" depth="17.3826" valign="top" style="item">Abgabe bis Freitag eine Woche Später 12:30 sowohl Online  im Ilias als auch auf Papier in den Kästen (Bitte Online)</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Handschriftlich (auch gedruckt, z.B. One Note etc.)</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Nicht abschreiben (Obviously)</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Falls ihr auf Papier agbebt (Bitte nicht) lasst genug Rand zum Korrigieren</text>
+<text layer="alpha" matrix="1 0 0 1 0 64" transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="item">Ausgabe \textasciitilde Mittwoch im Ilias</text>
+<text matrix="1 0 0 1 0 64" transformations="translations" pos="0 288" stroke="black" type="minipage" width="832" height="15.2758" depth="4.218" valign="top" style="item">Abgabe bis Freitag eine Woche Später 9:30 Online  im Ilias</text>
+<text layer="beta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Handschriftlich (Eingescannt oder Foto), Getippt</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Nicht abschreiben (Obviously)</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Name und Matrikelnummern von beiden Abgabepartnern auf dem Blatt</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="864" height="14.5144" depth="3.4632" valign="top" style="item">Nur PDFs, alles ander kann ich evtl nicht öffnen</text>
+</page>
+<page title="ChatGPT">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="gamma">
+<path stroke="black" fill="KITred15">
+184 168 m
+592 168 l
+8 0 0 -8 592 160 600 160 a
+600 106.088 l
+192 106.088 l
+8 0 0 -8 192 114.088 184 114.088 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="656" height="15.0516" depth="3.9738" valign="top" style="item">Ist gut darin \textbf{Texte} zu schreiben</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="848" height="15.2203" depth="4.1514" valign="top" style="item">Ist schlecht darin \textbf{logische Probleme} zu lösen</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top">\impl Wenn ihr damit Aufgaben löst sieht das zwar richtig aus ist aber meistens Inhaltlich falsch</text>
+<text layer="beta" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top">\impl Ihr lernt nichts dabei und ich muss mehr Korrigieren</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Meistens sind die Antworten unnötig lange und kommen nicht zum Punkt</text>
+<text layer="gamma" transformations="translations" pos="192 160" stroke="black" type="minipage" width="400" height="28.4848" depth="17.427" valign="top">\bfseries
+Abgaben die mit ChatGPT erstellt werden sind Betrugsversuche</text>
+<text matrix="1 0 0 1 -32 0" transformations="translations" pos="192 96" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top" style="center">(Tutoren erkennen sowas meistens sehr schnell)</text>
 </page>
 <page title="Tutorium">
 <layer name="alpha"/>
