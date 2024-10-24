@@ -3,3 +3,4 @@
 *.ipe
 !pre.ipe
 !post.ipe
+!content/*.ipe
