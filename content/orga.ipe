@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241024180257" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241025224723" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3781,6 +3781,32 @@ h
 <text transformations="translations" pos="32 352" stroke="black" type="minipage" width="832" height="13.078" depth="2.0202" valign="top">\bf Jetzt ihr!</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 3}</text>
 </page>
+<page title="Tutorium">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha" matrix="1 0 0 1 0 -16">
+<path stroke="black" fill="KITgreen15">
+24 376 m
+864 376 l
+8 0 0 -8 864 368 872 368 a
+872 60.5702 l
+32 60.5702 l
+8 0 0 -8 32 68.5702 24 68.5702 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -32 32" transformations="translations" pos="64 320" stroke="black" type="minipage" width="832" height="67.0085" depth="56.055" valign="top" style="itemize">\item Tutorium Nr. \tutid
+\item jeden \tutday ~ \tuttime
+\item hier in \room
+\item Folien, Übungsblattabgabe etc. im Ilias</text>
+<text matrix="1 0 0 1 -32 -16" transformations="translations" pos="64 224" stroke="black" type="minipage" width="496" height="13.078" depth="2.0202" valign="top">\bfseries Was tun wir hier?</text>
+<text matrix="1 0 0 1 -32 -16" transformations="translations" pos="64 192" stroke="black" type="minipage" width="512" height="67.2327" depth="56.2992" valign="top" style="itemize">\item Vorlesungsstoff wiederholen
+\item Inhalte verstehen und anwenden
+\item eure Fragen klären
+\item auf Klausur und Übungsblätter vorbereiten</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
+</page>
 <page title="Was ist GBI?">
 <layer name="alpha"/>
 <layer name="beta"/>
@@ -3872,11 +3898,11 @@ h
 </group>
 </group>
 <text transformations="translations" pos="0 304" stroke="black" type="minipage" width="384" height="13.078" depth="2.0202" valign="top">\bf Was heißt das?</text>
-<text layer="beta" transformations="translations" pos="0 272" stroke="black" type="minipage" width="840" height="28.4071" depth="17.3826" valign="top" style="item">GBI muss bis zum zweiten Semester versucht und bis zum dritten Semester bestanden sein (einschließlich)</text>
-<text layer="gamma" transformations="translations" pos="0 208" stroke="black" type="minipage" width="848" height="13.229" depth="2.1534" valign="top" style="subitem">Sonst werdet ihr Exmatrikuliert!</text>
-<text layer="delta" transformations="translations" pos="0 176" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="subitem">Nach zwei Versuchen (+ Mündliche) ist Schluss, es gibt keinen Härtefallantrag</text>
-<text layer="epsilon" transformations="translations" pos="0 144" stroke="black" type="minipage" width="850" height="15.2758" depth="4.218" valign="top" style="item">Die Klausur wir jedes Semester angeboten $\Rightarrow$ spätestens im zweiten Semester versuchen</text>
-<text layer="zeta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 80" stroke="black" type="minipage" width="896" height="17.0518" depth="5.9718" valign="top" style="item">Der Übungsschein wird nur im Wintersemester angeboten $\Rightarrow$ im ersten Semester versuchen</text>
+<text layer="beta" transformations="translations" pos="0 272" stroke="black" type="minipage" width="888" height="13.229" depth="2.1534" valign="top" style="item">GBI muss bis ende zweites Semester versucht und bis ende drittes Semester bestanden sein</text>
+<text layer="gamma" matrix="1 0 0 1 0 32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="848" height="13.229" depth="2.1534" valign="top" style="subitem">Sonst werdet ihr Exmatrikuliert!</text>
+<text layer="delta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 176" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="subitem">Nach zwei Versuchen (+ Mündliche) ist Schluss, es gibt keinen Härtefallantrag</text>
+<text layer="epsilon" matrix="1 0 0 1 0 32" transformations="translations" pos="0 144" stroke="black" type="minipage" width="850" height="15.2758" depth="4.218" valign="top" style="item">Die Klausur wir jedes Semester angeboten $\Rightarrow$ spätestens im zweiten Semester versuchen</text>
+<text layer="zeta" matrix="1 0 0 1 0 64" transformations="translations" pos="0 80" stroke="black" type="minipage" width="896" height="17.0518" depth="5.9718" valign="top" style="item">Der Übungsschein wird nur im Wintersemester angeboten $\Rightarrow$ im ersten Semester versuchen</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
 </page>
 <page title="Übungsschein">
@@ -3886,19 +3912,22 @@ Wenn ihr knapp an der Grenze seid kommt es schonmal vor das man sich in ner exce
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="delta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha beta pagenumbers_page" active="beta"/>
 <view layers="alpha beta gamma pagenumbers_page" active="gamma"/>
+<view layers="alpha beta gamma pagenumbers_page delta" active="delta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="17.2094" depth="6.1494" valign="top">\bf Wer bekommt den Übungsschein?</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="17.0518" depth="5.9718" valign="top" style="item">Wöchentliche Übungsblätter</text>
 <text matrix="1 0 0 1 0 96" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Abgabe zu Zweit im Ilias</text>
 <text layer="beta" matrix="1 0 0 1 0 96" transformations="translations" pos="0 192" stroke="black" type="minipage" width="896" height="17.0518" depth="5.9718" valign="top" style="item">Kriterien für den Übungsschein</text>
 <text matrix="1 0 0 1 0 96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">50\% der Punkte insgesamt</text>
 <text matrix="1 0 0 1 0 96" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="subitem">Auf jedem Blatt mindestens 20\% der Punkte</text>
-<text layer="gamma" matrix="1 0 0 1 0 64" transformations="translations" pos="0 96" stroke="black" type="minipage" width="512" height="17.2094" depth="6.1494" valign="top">\bf Brauche ich den Übungsschein?</text>
+<text layer="delta" matrix="1 0 0 1 0 64" transformations="translations" pos="0 96" stroke="black" type="minipage" width="512" height="17.2094" depth="6.1494" valign="top">\bf Brauche ich den Übungsschein?</text>
 <text matrix="1 0 0 1 0 64" transformations="translations" pos="0 64" stroke="black" type="minipage" width="840" height="15.1648" depth="4.0848" valign="top" style="item">Ja, braucht ihr um das Modul zu bestehen (Infos, WInfos, Info Lehramt)</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="368" height="13.1357" depth="2.0646" valign="top" style="subitem">Bis auf 2 Blätter</text>
+<text layer="gamma" transformations="translations" pos="0 192" stroke="black" type="minipage" width="368" height="13.1357" depth="2.0646" valign="top" style="subitem">Bis auf 2 Blätter</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
+<text layer="delta" transformations="translations" pos="0 96" stroke="black" type="minipage" width="816" height="12.9115" depth="1.8204" valign="top" style="item">Alle Anderen sollten in ihrem Modulhandbuch schauen</text>
 </page>
 <page title="Übungsblätter">
 <layer name="alpha"/>
@@ -3940,31 +3969,5 @@ h
 <text layer="gamma" transformations="translations" pos="192 160" stroke="black" type="minipage" width="400" height="28.4848" depth="17.427" valign="top">\bfseries
 Abgaben die mit ChatGPT erstellt werden sind Betrugsversuche</text>
 <text matrix="1 0 0 1 -32 0" transformations="translations" pos="192 96" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top" style="center">(Tutoren erkennen sowas meistens sehr schnell)</text>
-</page>
-<page title="Tutorium">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 0 -16">
-<path stroke="black" fill="KITgreen15">
-24 376 m
-864 376 l
-8 0 0 -8 864 368 872 368 a
-872 60.5702 l
-32 60.5702 l
-8 0 0 -8 32 68.5702 24 68.5702 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -32 32" transformations="translations" pos="64 320" stroke="black" type="minipage" width="832" height="67.0085" depth="56.055" valign="top" style="itemize">\item Tutorium Nr. \tutid
-\item jeden \tutday ~ \tuttime
-\item hier in \room
-\item Folien, Übungsblattabgabe etc. im Ilias</text>
-<text matrix="1 0 0 1 -32 -16" transformations="translations" pos="64 224" stroke="black" type="minipage" width="496" height="13.078" depth="2.0202" valign="top">\bfseries Was tun wir hier?</text>
-<text matrix="1 0 0 1 -32 -16" transformations="translations" pos="64 192" stroke="black" type="minipage" width="512" height="67.2327" depth="56.2992" valign="top" style="itemize">\item Vorlesungsstoff wiederholen
-\item Inhalte verstehen und anwenden
-\item eure Fragen klären
-\item auf Klausur und Übungsblätter vorbereiten</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
 </page>
 </ipe>
