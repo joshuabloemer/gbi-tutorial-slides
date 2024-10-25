@@ -15,7 +15,6 @@ if #argv < 2 then
 end
 local inname = argv[1]
 local outname = argv[#argv]
-
 local inputDoc = assert(ipe.Document(inname))
 local ndoc = ipe.Document()
 
@@ -30,7 +29,6 @@ local preamble = properties["preamble"]
 for i = 2, #argv - 1 do
     preamble = preamble .. "\n" .. argv[i]
 end
-
 properties["preamble"] = preamble
 
 ndoc:setProperties(properties)

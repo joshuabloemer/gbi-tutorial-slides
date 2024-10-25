@@ -4,7 +4,7 @@ import argparse
 import os
 import shutil
 import re
-
+from uuid import uuid4
 
 def regex_type(pattern: str | re.Pattern):
     """Argument type for matching a regex pattern."""
@@ -18,6 +18,7 @@ def regex_type(pattern: str | re.Pattern):
 
 
 def createTut(tut: str, noclicks: bool = False) -> None:
+    intermediate = f"{tut}/intermediate-{uuid4()}"
     if not os.path.isdir(tut):
         print(f"Skipping {tut}: folder does not exist")
         return
@@ -50,26 +51,28 @@ def createTut(tut: str, noclicks: bool = False) -> None:
     subprocess.run(
         ["ipescript", "scripts/merge"]
         + includedFiles
-        + [f"{tut}/{config['title']}.ipe"],
+        + [intermediate + ".ipe"],
         check=True,
     )
-    basename = config["title"]
+    special_char_map = {ord('ä'):'ae', ord('ü'):'ue', ord('ö'):'oe', ord('ß'):'ss',ord('Ä'):'Ae', ord('Ü'):'ue', ord('Ö'):'Oe'}
+    basename = config["title"].translate(special_char_map)
 
     # edit preamble
+    subtitle = config["description"].translate(special_char_map)
     subprocess.run(
         ["ipescript", "scripts/edittut"]
-        + [f"{tut}/{basename}.ipe"]
-        + [rf"\renewcommand{{\tutinfo}}{{{config['description']}}}"]
+        + [intermediate + ".ipe"]
+        + [rf"\renewcommand{{\tutinfo}}{{{subtitle}}}"]
         + [rf"\setcounter{{tutweek}}{{{tut[3:]}}}"]
-        + [f"{tut}/{config['title']}.ipe"],
+        + [intermediate + ".ipe"],
         check=True,
     )
 
     if noclicks:
         subprocess.run(
             ["ipescript", "scripts/noclicks"]
-            + [f"{tut}/{basename}.ipe"]
-            + [f"{tut}/{basename}-print.ipe"],
+            + [intermediate + ".ipe"]
+            + [intermediate + "-print.ipe"],
             check=True,
         )
         subprocess.run(
@@ -77,7 +80,7 @@ def createTut(tut: str, noclicks: bool = False) -> None:
                 "ipetoipe",
                 "-pdf",
                 "-export",
-                f"{tut}/{basename}-print.ipe",
+                intermediate + "-print.ipe",
                 f"{tut}/{basename}-print.pdf",
             ],
             check=True,
@@ -88,7 +91,7 @@ def createTut(tut: str, noclicks: bool = False) -> None:
                 "ipetoipe",
                 "-pdf",
                 "-export",
-                f"{tut}/{basename}.ipe",
+                intermediate + ".ipe",
                 f"{tut}/{basename}.pdf",
             ],
             check=True,
@@ -116,7 +119,7 @@ def cleanFolder(tut: str):
     for file in os.listdir(tut):
         if file.endswith(".pdf") or file == "xkcd.png":
             os.remove(f"{tut}/{file}")
-        if file.endswith(".ipe") and file != "pre.ipe" and file != "post.ipe":
+        if file.endswith(".ipe") and file.startswith("intermediate-"):
             os.remove(f"{tut}/{file}")
 
 

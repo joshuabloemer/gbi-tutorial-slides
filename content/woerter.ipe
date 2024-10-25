@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241023091907" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241025230823" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Wörter}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -8044,39 +8044,5 @@ $</text>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <image layer="alpha" matrix="0.725875 0 0 0.725875 11.1872 169.018" rect="0 0 1190 208" bitmap="2"/>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
-</page>
-<page title="Formale Sprachen">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-576 376 l
-8 0 0 -8 576 368 584 368 a
-584 281.855 l
-16 281.855 l
-8 0 0 -8 16 289.855 8 289.855 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Formale Sprache</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="28.4848" depth="17.427" valign="top">Eine \textbf{formale Sprache} L über einem Alphabet A ist eine Teilmenge der Wörter über A, also $L \subseteq A^*$</text>
-<group layer="beta">
-<path stroke="black" fill="KITblue15">
-8 264 m
-576 264 l
-8 0 0 -8 576 256 584 256 a
-584 168.934 l
-16 168.934 l
-8 0 0 -8 16 176.934 8 176.934 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 256" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="560" height="29.0309" depth="18.0042" valign="top">Die Sprache die alle Wörter der Länge 2 über dem Alphabet $\{a,b\}$ enthält ist $L =  \{aa,ab,ba,bb\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 28}</text>
 </page>
 </ipe>

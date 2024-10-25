@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241023091447" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241025230401" title="Quiz" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4004,112 +4004,6 @@ h
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">Hier wieder $R \subseteq A\times B,\quad A = B = \{1,2,3\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 </page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page beta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma" active="alpha"/>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-456 240 m
-8 0 0 8 448 240 448 248 a
-8 248 l
-8 220.608 l
-8 0 0 8 16 220.608 16 212.608 a
-456 212.608 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">Seien $A =\{a, b, c\}$ und $B = \{1, 2, 3\}$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (a,2), (b,2)\}$
-</text>
-<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top">Welche Eigenschaften haben diese Relationen?</text>
-<text layer="gamma" transformations="translations" pos="304 352" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Keine</text>
-<text layer="alpha" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (c,3), (b,2)\}$</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item"> $R = \{\}$</text>
-<text layer="gamma" transformations="translations" pos="304 320" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Alle</text>
-<text transformations="translations" pos="304 288" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top">Linkseindeutig und Rechtseindeutig</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-</page>
-<page title="Abbildungen und Funktionen I">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-320 376 l
-8 0 0 -8 320 368 328 368 a
-328 282.23 l
-16 282.23 l
-8 0 0 -8 16 290.23 8 290.23 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="176" height="13.078" depth="2.0202" valign="top">\bfseries Funktion</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="304" height="28.2939" depth="17.2716" valign="top">Eine Funktion ist eine Linkstotale und Rechtseindeutige Relation</text>
-<text transformations="translations" pos="16 256" stroke="black" type="minipage" width="480" height="14.854" depth="3.774" valign="top" style="item">Statt $f \subseteq A \times B$ schreibt man meistens
-</text>
-<text matrix="1 0 0 1 -112 0" transformations="translations" pos="16 224" stroke="black" type="minipage" width="480" height="36.4635" depth="25.4634" valign="top">$$
-\begin{aligned}
-f : A &amp;\rightarrow B \\
-a &amp;\mapsto b \mbox{ oder } f(a) = b
-\end{aligned}
-$$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Eine rechtstotale Surjektiv</text>
-<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
-<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
-</page>
-<page title="Abbildungen und Funktionen II">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-384 376 l
-8 0 0 -8 384 368 392 368 a
-392 177.882 l
-16 177.882 l
-8 0 0 -8 16 185.882 8 185.882 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="13.078" depth="2.0202" valign="top">\bfseries Bild und Urbild</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="368" height="27.2949" depth="16.2504" valign="top">Für $a\in A, b\in B$ mit $f(a) = b$ heißt b das Bild von a und a das Urbild von b</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="368" height="26.4002" depth="15.3402" valign="top">Die Menge aller Bilder von A (f(A)) heißt Bildbereich von f</text>
-<text matrix="1 0 0 1 32 32" transformations="translations" pos="80 176" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$f(A) :=\{f(a)\vert a \in A\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma" active="gamma"/>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-296 272 m
-8 0 0 8 288 272 288 280 a
-8 280 l
-8 230.26 l
-8 0 0 8 16 230.26 16 222.26 a
-296 222.26 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="592" height="41.7826" depth="30.7914" valign="top">Sei S die Menge von Studenten, die eine Präsenz-Vorlesung GBI
-besuchen wollen und sei A die Menge aller Sitzplätze im Audimax.
-Die Abbildung f ordnet Studenten ihren Sitzplätzen zu</text>
-<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="272" height="26.4002" depth="15.3402" valign="top">Welche Eigenschaften würdet ihr euch von f wünschen?</text>
-<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Injektiv, sonst hätten mehrere Studenten den gleichen Platz</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
-</page>
 <page title="Nochmal Relationen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -4292,6 +4186,112 @@ Die Abbildung f ordnet Studenten ihren Sitzplätzen zu</text>
 <text transformations="translations" pos="0 64" stroke="black" type="minipage" width="656" height="15.1582" depth="4.107" valign="top" style="subitem">Also: Für jedes $y\in$ Zielbereich existiert ein x mit f(x) = y</text>
 <text transformations="translations" pos="0 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="subitem">Oder: Es gibt kein y, zu dem kein x in Relation steht</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page beta" active="gamma"/>
+<view layers="alpha pagenumbers_page gamma" active="alpha"/>
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+456 240 m
+8 0 0 8 448 240 448 248 a
+8 248 l
+8 220.608 l
+8 0 0 8 16 220.608 16 212.608 a
+456 212.608 l
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">Seien $A =\{a, b, c\}$ und $B = \{1, 2, 3\}$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (a,2), (b,2)\}$
+</text>
+<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top">Welche Eigenschaften haben diese Relationen?</text>
+<text layer="gamma" transformations="translations" pos="304 352" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Keine</text>
+<text layer="alpha" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (c,3), (b,2)\}$</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item"> $R = \{\}$</text>
+<text layer="gamma" transformations="translations" pos="304 320" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Alle</text>
+<text transformations="translations" pos="304 288" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top">Linkseindeutig und Rechtseindeutig</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
+</page>
+<page title="Abbildungen und Funktionen I">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+320 376 l
+8 0 0 -8 320 368 328 368 a
+328 282.23 l
+16 282.23 l
+8 0 0 -8 16 290.23 8 290.23 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="176" height="13.078" depth="2.0202" valign="top">\bfseries Funktion</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="304" height="28.2939" depth="17.2716" valign="top">Eine Funktion ist eine Linkstotale und Rechtseindeutige Relation</text>
+<text transformations="translations" pos="16 256" stroke="black" type="minipage" width="480" height="14.854" depth="3.774" valign="top" style="item">Statt $f \subseteq A \times B$ schreibt man meistens
+</text>
+<text matrix="1 0 0 1 -112 0" transformations="translations" pos="16 224" stroke="black" type="minipage" width="480" height="36.4635" depth="25.4634" valign="top">$$
+\begin{aligned}
+f : A &amp;\rightarrow B \\
+a &amp;\mapsto b \mbox{ oder } f(a) = b
+\end{aligned}
+$$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Eine rechtstotale Surjektiv</text>
+<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
+<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+</page>
+<page title="Abbildungen und Funktionen II">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+384 376 l
+8 0 0 -8 384 368 392 368 a
+392 177.882 l
+16 177.882 l
+8 0 0 -8 16 185.882 8 185.882 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="13.078" depth="2.0202" valign="top">\bfseries Bild und Urbild</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="368" height="27.2949" depth="16.2504" valign="top">Für $a\in A, b\in B$ mit $f(a) = b$ heißt b das Bild von a und a das Urbild von b</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="368" height="26.4002" depth="15.3402" valign="top">Die Menge aller Bilder von A (f(A)) heißt Bildbereich von f</text>
+<text matrix="1 0 0 1 32 32" transformations="translations" pos="80 176" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$f(A) :=\{f(a)\vert a \in A\}$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+296 272 m
+8 0 0 8 288 272 288 280 a
+8 280 l
+8 230.26 l
+8 0 0 8 16 230.26 16 222.26 a
+296 222.26 l
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="592" height="41.7826" depth="30.7914" valign="top">Sei S die Menge von Studenten, die eine Präsenz-Vorlesung GBI
+besuchen wollen und sei A die Menge aller Sitzplätze im Audimax.
+Die Abbildung f ordnet Studenten ihren Sitzplätzen zu</text>
+<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="272" height="26.4002" depth="15.3402" valign="top">Welche Eigenschaften würdet ihr euch von f wünschen?</text>
+<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Injektiv, sonst hätten mehrere Studenten den gleichen Platz</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
 </page>
 <page title="Binäre Operation">
 <layer name="alpha"/>
