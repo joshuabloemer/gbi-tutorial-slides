@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20240920225245" title="Algorithmen 1" author="Joshua Blömer" subject="Tutorium Template"/>
+<info created="D:20220409132243" modified="D:20241027132843" title="Algorithmen 1" author="Joshua Blömer" subject="Tutorium Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 
 
@@ -3748,7 +3748,7 @@ h
 <layer name="pagenumbers_dont_count" edit="no"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="title BACKGROUND" active="title"/>
-<text layer="BACKGROUND" matrix="1 0 0 1 -0.625003 52.8" transformations="translations" pos="-32 480" stroke="black" type="minipage" width="960.89" height="301.84" depth="291.464" valign="top">\includegraphics[width=1\textwidth]{/opt/algo-slides/ressources/background.jpg}</text>
+<text layer="BACKGROUND" matrix="1 0 0 1 -0.625003 52.8" transformations="translations" pos="-32 480" stroke="black" type="minipage" width="960.89" height="301.84" depth="291.464" valign="top">\includegraphics[width=1\textwidth]{/opt/gbi-slides/images/background.jpg}</text>
 <group pin="yes">
 <path fill="white">
 -32 -60 m
@@ -3770,7 +3770,7 @@ h
 <text matrix="1 0 0 1 288 -24" transformations="translations" pos="608 -16" stroke="KITblack" type="label" width="95.606" height="12.042" depth="0.2" halign="right" valign="center" size="small">\bf www.kit.edu</text>
 <text layer="title" matrix="1 0 0 1 -213 -114" pos="213 427" stroke="black" type="label" width="630.808" height="25.4276" depth="7.744" valign="baseline" size="LARGE">\bf\prestitle</text>
 <text layer="BACKGROUND" matrix="0.0675421 0 0 0.0675421 -16.2101 448" pos="240 0" stroke="black" type="label" width="2222.1" height="1022.98" depth="0" valign="top">\kitlogo</text>
-<text layer="title" matrix="1 0 0 1 -213 -169" pos="213 427" stroke="black" type="label" width="319.67" height="12.152" depth="0.32" valign="bottom" size="small">\ifnum\value{tutweek}&lt;10 0\fi\arabic{tutweek} $\,\cdot\,$ \tutinfo $\,\cdot\,$ \today</text>
+<text layer="title" matrix="1 0 0 1 -213 -169" pos="213 427" stroke="black" type="label" width="328.842" height="12.152" depth="0.32" valign="bottom" size="small">\ifnum\value{tutweek}&lt;10 0\fi\arabic{tutweek} $\,\cdot\,$ \tutinfo $\,\cdot\,$ \today</text>
 <text matrix="1 0 0 1 -213 -183" pos="213 427" stroke="black" type="label" width="212.806" height="11.772" depth="0.32" valign="baseline" size="small">\name \quad Tutorium \tutid</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 0}</text>
 </page>
