@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241028234640" title="Relationen" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241028234207" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3731,7 +3731,84 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Relationen">
+<page title="Abbildungen und Funktionen I">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+320 376 l
+8 0 0 -8 320 368 328 368 a
+328 282.23 l
+16 282.23 l
+8 0 0 -8 16 290.23 8 290.23 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="176" height="13.078" depth="2.0202" valign="top">\bfseries Funktion</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="304" height="28.2939" depth="17.2716" valign="top">Eine Funktion ist eine Linkstotale und Rechtseindeutige Relation</text>
+<text transformations="translations" pos="16 256" stroke="black" type="minipage" width="480" height="14.854" depth="3.774" valign="top" style="item">Statt $f \subseteq A \times B$ schreibt man meistens
+</text>
+<text matrix="1 0 0 1 -112 0" transformations="translations" pos="16 224" stroke="black" type="minipage" width="480" height="36.4635" depth="25.4634" valign="top">$$
+\begin{aligned}
+f : A &amp;\rightarrow B \\
+a &amp;\mapsto b \mbox{ oder } f(a) = b
+\end{aligned}
+$$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Eine rechtstotale Surjektiv</text>
+<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
+<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+</page>
+<page title="Abbildungen und Funktionen II">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+384 376 l
+8 0 0 -8 384 368 392 368 a
+392 177.882 l
+16 177.882 l
+8 0 0 -8 16 185.882 8 185.882 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="13.078" depth="2.0202" valign="top">\bfseries Bild und Urbild</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="368" height="27.2949" depth="16.2504" valign="top">Für $a\in A, b\in B$ mit $f(a) = b$ heißt b das Bild von a und a das Urbild von b</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="368" height="26.1538" depth="15.1182" valign="top">Die Menge aller Bilder von Elementen aus A heißt Bildbereich von f</text>
+<text matrix="1 0 0 1 32 32" transformations="translations" pos="80 176" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$f(A) :=\{f(a)\vert a \in A\}$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+296 272 m
+8 0 0 8 288 272 288 280 a
+8 280 l
+8 230.26 l
+8 0 0 8 16 230.26 16 222.26 a
+296 222.26 l
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="592" height="41.7826" depth="30.7914" valign="top">Sei S die Menge von Studenten, die eine Präsenz-Vorlesung GBI
+besuchen wollen und sei A die Menge aller Sitzplätze im Audimax.
+Die Abbildung f ordnet Studenten ihren Sitzplätzen zu</text>
+<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="272" height="26.4002" depth="15.3402" valign="top">Welche Eigenschaften würdet ihr euch von f wünschen?</text>
+<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Injektiv, sonst hätten mehrere Studenten den gleichen Platz</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
+</page>
+<page title="Binäre Operation">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
@@ -3739,391 +3816,146 @@ h
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <group layer="beta">
 <path stroke="black" fill="KITblue15">
-8 152 m
-672 152 l
-8 0 0 -8 672 144 680 144 a
-680 4.6083 l
-16 4.6083 l
-8 0 0 -8 16 12.6083 8 12.6083 a
+8 200 m
+576 200 l
+8 0 0 -8 576 192 584 192 a
+584 0.41028 l
+16 0.41028 l
+8 0 0 -8 16 8.41028 8 8.41028 a
 h
 </path>
 </group>
 <group layer="alpha">
 <path stroke="black" fill="KITgreen15">
 8 376 m
-448 376 l
-8 0 0 -8 448 368 456 368 a
-456 174.26 l
-16 174.26 l
-8 0 0 -8 16 182.26 8 182.26 a
+592 376 l
+8 0 0 -8 592 368 600 368 a
+600 212.781 l
+16 212.781 l
+8 0 0 -8 16 220.781 8 220.781 a
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="13.078" depth="2.0202" valign="top">\bfseries Relation</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="432" height="28.4848" depth="17.427" valign="top">Für Mengen A, B ist eine \textbf{binäre Relation} R eine Teilmenge des kartesischen Produkts $A \times B$</text>
-<text matrix="1 0 0 1 80 0" transformations="translations" pos="64 272" stroke="black" type="minipage" width="160" height="14.854" depth="3.774" valign="top">Also: $R \subseteq A \times B$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="29.2285" depth="18.1818" valign="top">Erfüllt $(a,b) \in A \times B$ die Relation R $((a,b)\in R)$ schreibt man kurz $a~R~b$ (infix Schreibweise)</text>
-<text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="656" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 112" stroke="black" type="minipage" width="464" height="14.7963" depth="3.7296" valign="top">Sei A,B = $\mathbb{N}$ und $\leq$ die Kleiner Gleich Relation also</text>
-<text matrix="1 0 0 1 -496 -192" transformations="translations" pos="560 272" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$\leq ~ \subseteq \mathbb N \times \mathbb N  = \{(a,b) \vert a \mbox{ ist kleiner gleich } b\}$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">Also gilt z.B. $(1,2) \in ~ \leq ~ \Rightarrow 1 \leq 2$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="15.0605" depth="3.996" valign="top">\bfseries Binäre Operation</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="41.7271" depth="30.7248" valign="top">Eine \textbf{binäre Operation auf einer Menge} M ist eine Abbildung $f: M\times M \rightarrow M$. Meist wird sie mit Symbol in Infix Schreibweise dargestellt. Also z.B.:</text>
+<text matrix="1 0 0 1 95 25" transformations="translations" pos="144 224" stroke="black" type="minipage" width="176" height="16.5901" depth="5.5278" valign="top">$f(x,y) \eqqcolon x\star y$</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="560" height="15.1648" depth="4.0848" valign="top">Aus der Mathematik kennt ihr schon viele binäre Operationen:</text>
+<text transformations="translations" pos="16 192" stroke="black" type="minipage" width="512" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="464" height="17.4647" depth="6.3936" valign="top" style="item">$f_{add}: \mathbb N_0^2 \rightarrow \mathbb N_0, \quad(x,y) \mapsto x+y$</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="528" height="17.3893" depth="6.327" valign="top" style="item">$f_{sub}: \mathbb Z^2 \rightarrow \mathbb Z, \quad(x,y) \mapsto x-y$</text>
+<text transformations="translations" pos="16 64" stroke="black" type="minipage" width="544" height="17.4647" depth="6.3936" valign="top" style="item">$f_{mult}: \mathbb N_0^2 \rightarrow \mathbb N_0, \quad(x,y) \mapsto x\cdot y$</text>
+<text transformations="translations" pos="16 32" stroke="black" type="minipage" width="544" height="17.3893" depth="6.327" valign="top" style="item">$f_{div}: \mathbb Q^2 \rightarrow \mathbb Q, \quad(x,y) \mapsto x/y$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+</page>
+<page title="Kommutativität">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+752 376 l
+8 0 0 -8 752 368 760 368 a
+760 222.129 l
+16 222.129 l
+8 0 0 -8 16 230.129 8 230.129 a
+h
+</path>
+</group>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 200 m
+512 200 l
+8 0 0 -8 512 192 520 192 a
+520 32.4103 l
+16 32.4103 l
+8 0 0 -8 16 40.4103 8 40.4103 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.0605" depth="3.996" valign="top">\bfseries Kommutative binäre Operation</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="736" height="15.469" depth="4.4178" valign="top">Eine binäre Operation $\diamond$ heißt \textbf{Kommutativ} wenn für alle Elemente $x,y \in M $ gilt:</text>
+<text transformations="translations" pos="192 304" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$f(x,y) = f(y,x)$ bzw. $x\diamond y = y \diamond x$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="720" height="26.4002" depth="15.3402" valign="top">Anschaulich: Die Operanden dürfen vertauscht werden, ohne das
+Ergebnis zu beeinflussen</text>
+<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="432" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
+<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="336" height="12.9115" depth="1.8204" valign="top" style="item">Addition ist kommutativ</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="336" height="14.9184" depth="3.8628" valign="top" style="item">Multiplikation ist kommutativ</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="336" height="13.229" depth="2.1534" valign="top" style="item">Subtraktion ist nicht kommutativ</text>
+<text transformations="translations" pos="16 64" stroke="black" type="minipage" width="496" height="17.3893" depth="6.327" valign="top" style="item">$f_{abstand}: \mathbb Z^2 \rightarrow \mathbb Z, \quad (x,y) \mapsto \vert x -y \vert$ ist kommutativ</text>
+<text transformations="translations" pos="384 96" stroke="black" type="minipage" width="128" height="15.3757" depth="4.2846" valign="top">$x - y \neq y - x$</text>
+<text transformations="translations" pos="384 128" stroke="black" type="minipage" width="128" height="12.5985" depth="1.5318" valign="top">$x \cdot y = y \cdot x$</text>
+<text transformations="translations" pos="384 160" stroke="black" type="minipage" width="128" height="14.1392" depth="3.0636" valign="top">$x + y = y + x$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+</page>
+<page title="Assoziativität">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 200 m
+560 200 l
+8 0 0 -8 560 192 568 192 a
+568 64.4103 l
+16 64.4103 l
+8 0 0 -8 16 72.4103 8 72.4103 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+752 376 l
+8 0 0 -8 752 368 760 368 a
+760 218.068 l
+16 218.068 l
+8 0 0 -8 16 226.068 8 226.068 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.0605" depth="3.996" valign="top">\bfseries Assoziative binäre Operation</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="736" height="15.469" depth="4.4178" valign="top">Eine binäre Operation $\diamond$ heißt \textbf{Assoziativ} wenn für alle Elemente $x,y,z \in M $ gilt:</text>
+<text matrix="1 0 0 1 -64 0" transformations="translations" pos="192 304" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">$f (x, f (y, z)) = f (f (x, y), z)$ bzw. $x \diamond (y \diamond z) = (x \diamond y) \diamond z$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="720" height="28.5403" depth="17.4936" valign="top">Anschaulich: Klammern dürfen hinzugefügt oder weggelassen werden, ohne das
+Ergebnis zu beeinflussen</text>
+<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="464" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
+<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">Addition ist assoziativ $x + (y + z) = (x + y) + z = x + y + z$</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">Subtraktion ist nicht assoziativ $x - (y - z) \neq (x - y) - z$</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="544" height="17.3893" depth="6.327" valign="top" style="item">$f_{abstand}: \mathbb Z^2 \rightarrow \mathbb Z, \quad (x,y) \mapsto \vert x -y \vert$ ist nicht assoziativ</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
-<layer name="kappa"/>
-<layer name="lambda"/>
-<layer name="mu"/>
-<view layers="alpha pagenumbers_page beta" active="alpha"/>
-<view layers="alpha pagenumbers_page gamma delta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page gamma epsilon zeta" active="zeta"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta" active="eta"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta theta" active="theta"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta theta iota" active="iota"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta theta kappa" active="kappa"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta theta kappa lambda" active="lambda"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta theta kappa mu" active="mu"/>
-<group layer="lambda">
+<view layers="alpha pagenumbers_page beta" active="gamma"/>
+<view layers="alpha pagenumbers_page gamma" active="alpha"/>
+<group layer="beta">
 <path stroke="gray1" fill="gray3">
-808 272 m
-8 0 0 8 800 272 800 280 a
-424 280 l
-424 252.761 l
-8 0 0 8 432 252.761 432 244.761 a
-808 244.761 l
+456 240 m
+8 0 0 8 448 240 448 248 a
+8 248 l
+8 220.608 l
+8 0 0 8 16 220.608 16 212.608 a
+456 212.608 l
 h
 </path>
 </group>
-<group layer="iota" matrix="1 0 0 1 -32 0">
-<path stroke="gray1" fill="gray3">
-712 304 m
-8 0 0 8 704 304 704 312 a
-456 312 l
-456 288.669 l
-8 0 0 8 464 288.669 464 280.669 a
-712 280.669 l
-h
-</path>
-</group>
-<group layer="zeta">
-<path stroke="gray1" fill="gray3">
-296 224 m
-8 0 0 8 288 224 288 232 a
-8 232 l
-8 205.212 l
-8 0 0 8 16 205.212 16 197.212 a
-296 197.212 l
-h
-</path>
-</group>
-<group layer="delta">
-<path stroke="gray1" fill="gray3">
-104 288 m
-8 0 0 8 96 288 96 296 a
-8 296 l
-8 272.964 l
-8 0 0 8 16 272.964 16 264.964 a
-104 264.964 l
-h
-</path>
-</group>
-<group layer="beta" matrix="1 0 0 1 -32 32">
-<path stroke="gray1" fill="gray3">
-232 272 m
-8 0 0 8 224 272 224 280 a
-40 280 l
-40 252.761 l
-8 0 0 8 48 252.761 48 244.761 a
-232 244.761 l
-h
-</path>
-</group>
-<text layer="alpha" matrix="1 0 0 1 -32 32" transformations="translations" pos="32 352" stroke="black" type="minipage" width="288" height="14.1392" depth="3.0636" valign="top" style="item">Sei $P = \mathbb N \times \mathbb N$</text>
-<text matrix="1 0 0 1 -32 32" transformations="translations" pos="32 320" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,b) \in P \vert a+b = 0\} \subseteq P$</text>
-<text layer="beta" matrix="1 0 0 1 -32 32" transformations="translations" pos="48 272" stroke="black" type="minipage" width="176" height="15.1648" depth="4.0848" valign="top">Gebt R explizit an</text>
-<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="272" height="14.4411" depth="3.3744" valign="top" style="item">$R = \emptyset$</text>
-<text layer="delta" transformations="translations" pos="16 288" stroke="black" type="minipage" width="80" height="13.1357" depth="2.0646" valign="top">Wieso?</text>
-<text layer="epsilon" transformations="translations" pos="0 288" stroke="black" type="minipage" width="384" height="28.5403" depth="17.4936" valign="top" style="item">Auf den Definitionsbereich achten, hier gibt es keine negativen Zahlen!</text>
-<text layer="zeta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="272" height="14.8807" depth="3.7962" valign="top">Was ist mit $P = \mathbb N_0 \times \mathbb N_0$?</text>
-<text layer="eta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">Für $P = \mathbb N_0 \times \mathbb N_0$ ist $R= \{(0,0)\} $</text>
-<text layer="theta" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 384" stroke="black" type="minipage" width="304" height="15.671" depth="4.6176" valign="top" style="item">Sei $P$ jetzt $\mathbb Z \times \mathbb N_+ \times \mathbb N_0$</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="448 352" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(n,m,r) \in P \vert n\cdot m=r \} \subseteq P$</text>
-<text layer="iota" matrix="1 0 0 1 384 32" transformations="translations" pos="48 272" stroke="black" type="minipage" width="240" height="13.229" depth="2.1534" valign="top">Gebt 4 Elemente aus R an</text>
-<text layer="kappa" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 320" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top" style="item">z.B. $R = \{(0,1,0),(1,1,1),(1,2,2),(5,6,36),\dots\}$</text>
-<text layer="lambda" matrix="1 0 0 1 -16 -16" transformations="translations" pos="448 288" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top">Gilt $(-1,1,-1)\in R$ oder $(42,0,0)\in R$?\</text>
-<text layer="mu" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 288" stroke="black" type="minipage" width="352" height="26.4002" depth="15.3402" valign="top" style="item">Nein! Wie eben auf Definitions und Wertebereich achten</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-</page>
-<page title="Eigenschaften von Relationen I">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 16 -32">
-<path stroke="black" fill="KITgreen15">
--8 216 m
-640 216 l
-8 0 0 -8 640 208 648 208 a
-648 77.7526 l
-0 77.7526 l
-8 0 0 -8 0 85.7526 -8 85.7526 a
-h
-</path>
-</group>
-<group matrix="1 0 0 1 16 -16">
-<path stroke="black" fill="KITgreen15">
--8 360 m
-640 360 l
-8 0 0 -8 640 352 648 352 a
-648 221.753 l
-0 221.753 l
-8 0 0 -8 0 229.753 -8 229.753 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 352" stroke="black" type="minipage" width="128" height="13.078" depth="2.0202" valign="top">\bfseries Linkstotal</text>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352" stroke="black" type="minipage" width="640" height="51.2265" depth="40.2486" valign="top" style="itemize">\item R heißt linkstotal, wenn gilt $\forall a \in A~ \exists b \in B: (a,b) \in R$
-\item Auf deutsch: für jedes a aus A gibt es mindestens ein b aus B
-\item Beispiel: $R = \{(1,1), (1,2), (2,1), (3,2)\}$
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">Seien $A =\{a, b, c\}$ und $B = \{1, 2, 3\}$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (a,2), (b,2)\}$
 </text>
-<text matrix="1 0 0 1 16 -80" transformations="translations" pos="0 256" stroke="black" type="minipage" width="272" height="12.8627" depth="1.7982" valign="top">\bfseries Rechtstoal</text>
-<text matrix="1 0 0 1 16 -80" transformations="translations" pos="0 224" stroke="black" type="minipage" width="640" height="51.2265" depth="40.2486" valign="top" style="itemize">\item R heißt rechtstotal, wenn gilt $\forall b \in B~ \exists a \in A: (a,b) \in R$
-\item Auf deutsch: für jedes b aus B gibt es mindestens ein a aus A
-\item Beispiel: $R = \{(1,1), (1,2), (1,3), (3,1), (3,2)\}$
-</text>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">Hier immer $R \subseteq A\times B,\quad A = B = \{1,2,3\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
-</page>
-<page title="Eigenschaften von Relationen II">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 168 m
-656 168 l
-8 0 0 -8 656 160 664 160 a
-664 3.70752 l
-16 3.70752 l
-8 0 0 -8 16 11.7075 8 11.7075 a
-h
-</path>
-</group>
-<group>
-<path stroke="black" fill="KITgreen15">
-8 344 m
-656 344 l
-8 0 0 -8 656 336 664 336 a
-664 179.708 l
-16 179.708 l
-8 0 0 -8 16 187.708 8 187.708 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 352" stroke="black" type="minipage" width="160" height="15.2203" depth="4.1514" valign="top">\bfseries Linkseindeutig</text>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352" stroke="black" type="minipage" width="640" height="63.6696" depth="52.725" valign="top" style="itemize">\item R heißt linkseindeutig, wenn gilt:\\ $\forall b \in B, a_1,a_2 \in A ~:  (a_1,b) \in R \wedge (a_2,b) \in R \Rightarrow a_1 = a_2$
-\item Auf deutsch: für jedes b aus B gibt es höchstens ein a aus A
-\item Beispiel: $R = \{(1,1), (1,2)\}$
-</text>
-<text matrix="1 0 0 1 16 -96" transformations="translations" pos="0 256" stroke="black" type="minipage" width="272" height="15.2203" depth="4.1514" valign="top">\bfseries Rechtseindeutig</text>
-<text matrix="1 0 0 1 16 -96" transformations="translations" pos="0 224" stroke="black" type="minipage" width="640" height="63.6696" depth="52.725" valign="top" style="itemize">\item R heißt rechtseindeutig wenn gilt:\\ $\forall a \in A, b_1,b_2 \in B ~:  (a,b_1) \in R \wedge (a,b_2) \in R \Rightarrow b_1 = b_2$
-\item Auf deutsch: für jedes a aus A gibt es höchstens ein b aus B
-\item Beispiel: $R = \{(1,1), (2,1),(3,3)\}$
-</text>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">Hier wieder $R \subseteq A\times B,\quad A = B = \{1,2,3\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
-</page>
-<page title="Quiz">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
-<layer name="kappa"/>
-<layer name="lambda"/>
-<view layers="alpha pagenumbers_page beta gamma theta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma delta theta" active="delta"/>
-<view layers="alpha pagenumbers_page beta epsilon theta" active="epsilon"/>
-<view layers="alpha pagenumbers_page epsilon zeta theta" active="zeta"/>
-<view layers="alpha pagenumbers_page beta eta" active="theta"/>
-<view layers="alpha pagenumbers_page eta iota" active="iota"/>
-<view layers="alpha pagenumbers_page beta theta kappa" active="kappa"/>
-<view layers="alpha pagenumbers_page theta kappa lambda" active="lambda"/>
-<path layer="alpha" matrix="0.54014 0 0 1.31063 35.8912 -109.569" stroke="black" fill="KITgreen15">
-100.116 0 0 100.116 47.4466 261.774 e
-</path>
-<path matrix="1.29359 0 0 1.29359 -2.18507 -107.084" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<path matrix="1.29359 0 0 1.29359 -2.18507 -169.176" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<path matrix="1.29359 0 0 1.29359 -2.18507 -231.269" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<path matrix="1.29359 0 0 1.29359 -2.18507 -293.361" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<text matrix="1.29359 0 0 1.29359 -10.07 -175.709" transformations="translations" pos="48 336" stroke="black" type="label" width="16.9697" height="14.4966" depth="0" valign="baseline">2
-</text>
-<text matrix="1.29359 0 0 1.29359 -10.5261 -118.116" transformations="translations" pos="48 336" stroke="black" type="label" width="16.9697" height="14.4966" depth="0" valign="baseline">1
-</text>
-<text matrix="1.29359 0 0 1.29359 -8.24575 -239.054" transformations="translations" pos="48 336" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
-<text matrix="1.29359 0 0 1.29359 -8.70182 -301.559" transformations="translations" pos="48 336" stroke="black" type="label" width="16.9697" height="14.4966" depth="0" valign="baseline">4
-</text>
-<path matrix="0.54014 0 0 1.31063 323.891 -109.569" stroke="black" fill="KITgreen15">
-100.116 0 0 100.116 47.4466 261.774 e
-</path>
-<path matrix="1.29359 0 0 1.29359 285.815 -107.084" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<path matrix="1.29359 0 0 1.29359 285.815 -169.176" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<path matrix="1.29359 0 0 1.29359 285.815 -231.269" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<path layer="theta" matrix="1.29359 0 0 1.29359 285.815 -293.361" stroke="black">
-16 0 0 16 48 336 e
-</path>
-<text layer="alpha" matrix="1.29359 0 0 1.29359 277.474 -177.534" transformations="translations" pos="48 336" stroke="black" type="label" width="16.9697" height="14.4966" depth="0" valign="baseline">2
-</text>
-<text matrix="1.29359 0 0 1.29359 278.092 -115.871" transformations="translations" pos="48 336" stroke="black" type="label" width="16.9697" height="14.4966" depth="0" valign="baseline">1
-</text>
-<text matrix="1.29359 0 0 1.29359 277.474 -236.774" transformations="translations" pos="48 336" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
-<text layer="theta" matrix="1.29359 0 0 1.29359 279.754 -305.208" transformations="translations" pos="48 336" stroke="black" type="label" width="16.9697" height="14.4966" depth="0" valign="baseline">4
-</text>
-<path layer="gamma" stroke="black" arrow="normal/normal">
-80.4609 325.127 m
-327.35 325.154 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.5875 266.313 m
-327.237 264.41 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.5541 204.823 m
-328.531 258.195 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.5813 140.301 m
-327.404 138.454 l
-</path>
-<text layer="beta" transformations="translations" pos="512 320" stroke="black" type="minipage" width="224" height="13.1357" depth="2.0646" valign="top" style="item">Linkstotal?</text>
-<text transformations="translations" pos="512 288" stroke="black" type="minipage" width="224" height="13.1357" depth="2.0646" valign="top" style="item">Rechtstotal?</text>
-<text transformations="translations" pos="512 256" stroke="black" type="minipage" width="224" height="15.2758" depth="4.218" valign="top" style="item">Linkseindeutig?</text>
-<text transformations="translations" pos="512 224" stroke="black" type="minipage" width="224" height="15.2758" depth="4.218" valign="top" style="item">Rechtseindeutig?</text>
-<text transformations="translations" pos="512 192" stroke="black" type="minipage" width="224" height="15.2758" depth="4.218" valign="top" style="item">Abbildung?</text>
-<text layer="delta" transformations="translations" pos="512 320" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotal</text>
-<text transformations="translations" pos="512 288" stroke="red1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Rechtstotal</text>
-<text transformations="translations" pos="512 256" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
-<text transformations="translations" pos="512 224" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig</text>
-<text transformations="translations" pos="512 192" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
-<path layer="epsilon" stroke="black" arrow="normal/normal">
-80.5694 328.77 m
-327.228 326.697 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.6027 327.277 m
-327.282 267.201 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.2501 261.656 m
-327.212 203.691 l
-</path>
-<path stroke="black" arrow="normal/normal">
-79.6725 197.236 m
-327.214 141.686 l
-</path>
-<text layer="zeta" transformations="translations" pos="512 320" stroke="red1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotal</text>
-<text transformations="translations" pos="512 288" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Rechtstotal</text>
-<text transformations="translations" pos="512 256" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
-<text transformations="translations" pos="512 224" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig</text>
-<text transformations="translations" pos="512 192" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
-<path layer="eta" stroke="black" arrow="normal/normal">
-80.5896 326.771 m
-327.211 327.73 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.5702 266.665 m
-327.303 267.434 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.6042 203.232 m
-327.225 204.18 l
-</path>
-<path stroke="black" arrow="normal/normal">
-79.8453 135.73 m
-327.291 201.551 l
-</path>
-<text layer="iota" transformations="translations" pos="512 320" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotal</text>
-<text transformations="translations" pos="512 288" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Rechtstotal</text>
-<text transformations="translations" pos="512 256" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
-<text transformations="translations" pos="512 224" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig</text>
-<text transformations="translations" pos="512 192" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
-<path layer="kappa" stroke="black" arrow="normal/normal">
-80.6036 327.779 m
-327.268 326.009 l
-</path>
-<path stroke="black" arrow="normal/normal">
-79.9062 260.138 m
-327.284 205.13 l
-</path>
-<path stroke="black" arrow="normal/normal">
-79.5698 196.914 m
-327.216 141.781 l
-</path>
-<path stroke="black" arrow="normal/normal">
-80.1299 136.878 m
-327.517 261.916 l
-</path>
-<text layer="lambda" transformations="translations" pos="512 320" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotal</text>
-<text transformations="translations" pos="512 288" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Rechtstotal</text>
-<text transformations="translations" pos="512 256" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
-<text transformations="translations" pos="512 224" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig
-</text>
-<text transformations="translations" pos="512 192" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
-<text layer="iota" matrix="1 0 0 1 0 -16" transformations="translations" pos="496 144" stroke="black" type="minipage" width="240" height="15.2758" depth="4.218" valign="top">Surjektive Abbildung</text>
-<text layer="lambda" matrix="1 0 0 1 0 -16" transformations="translations" pos="496 144" stroke="black" type="minipage" width="240" height="15.0516" depth="3.9738" valign="top">Bijektive Abbildung</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
-</page>
-<page title="Zusammenfassung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotalität</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="816" height="15.1648" depth="4.0848" valign="top" style="subitem">Jedes x hat min. einen Funktionswert f(x) (keine Definitionslücken)</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutigkeit</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein x-Wert hat mehrere y-Werte</text>
-<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="384" height="15.2758" depth="4.218" valign="top" style="item">Linkseindeutigkeit (Injektivität)</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="416" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein y-Wert hat mehrere x-Werte</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="subitem">Also: Aus f(a) = f(b) folgt a = b</text>
-<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="784" height="15.469" depth="4.4178" valign="top" style="subitem">Oder: Es gibt keine zwei Relationen (a, y), (b, y) und $a \neq b$
-</text>
-<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="592" height="15.1648" depth="4.0848" valign="top" style="item">Rechtstotalität (Surjektivität)</text>
-<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="subitem">Jeder y-Wert hat mindestens einen x-Wert</text>
-<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="656" height="15.1582" depth="4.107" valign="top" style="subitem">Also: Für jedes $y\in$ Zielbereich existiert ein x mit f(x) = y</text>
-<text transformations="translations" pos="0 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="subitem">Oder: Es gibt kein y, zu dem kein x in Relation steht</text>
+<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top">Welche Eigenschaften haben diese Relationen?</text>
+<text layer="gamma" transformations="translations" pos="304 352" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Keine</text>
+<text layer="alpha" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (c,3), (b,2)\}$</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item"> $R = \{\}$</text>
+<text layer="gamma" transformations="translations" pos="304 320" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Alle</text>
+<text transformations="translations" pos="304 288" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top">Linkseindeutig und Rechtseindeutig</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
 </ipe>
