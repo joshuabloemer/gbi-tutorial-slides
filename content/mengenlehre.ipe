@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20240920120117" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241028224334" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3755,7 +3755,7 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 -64 16" transformations="translations" pos="80 352" stroke="black" type="minipage" width="64" height="15.0028" depth="3.9294" valign="top">\bf Menge</text>
-<text matrix="1.64286 0 0 1.33333 -352 -69.3333" transformations="translations" pos="224 304" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Ansamlung von unterscheidbaren Objekten (elemente der Menge)</text>
+<text matrix="1.64286 0 0 1.33333 -352 -69.3333" transformations="translations" pos="224 304" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Ansamlung von unterscheidbaren Objekten (Elemente der Menge)</text>
 <text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="256" height="13.078" depth="2.0202" valign="top">\bf Schreibweisen</text>
 <text layer="gamma" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">M = $\{x\in \mathbb N_+ \vert x \leq 4\}$</text>
 <text matrix="1 0 0 1 32 0" transformations="translations" pos="240 224" stroke="black" type="minipage" width="592" height="15.2758" depth="4.218" valign="top">Definition über logische Bedingungen (set comprehension)</text>
@@ -3836,15 +3836,15 @@ h
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="15.469" depth="4.4178" valign="top" style="item">\textbf{Teilmenge:} $\forall a \in A : a\in B \Leftrightarrow A \subseteq B$ </text>
-<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 352" stroke="black" type="minipage" width="880" height="15.2203" depth="4.1514" valign="top" style="item">\textbf{Disjunktheit:} Zwei Mengen sind Disjunkt wenn sie keine gemeinsamen Elemente haben also:</text>
+<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 352" stroke="black" type="minipage" width="880" height="15.2203" depth="4.1514" valign="top" style="item">\textbf{Disjunktheit:} Zwei Mengen sind disjunkt, wenn sie keine gemeinsamen Elemente haben also:</text>
 <text matrix="1 0 0 1 0 -112" transformations="translations" pos="0 320" stroke="black" type="minipage" width="592" height="15.964" depth="4.9062" valign="top" style="subitem">A und B sind Disjunkt  $\Leftrightarrow A\cap B = \emptyset $</text>
 <text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="15.0516" depth="3.9738" valign="top" style="subitem">$\subseteq$: Teilmenge oder gleich</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top" style="subitem">$\subsetneq$: Echte Teilmenge</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="464" height="16.9186" depth="5.8608" valign="top" style="subitem">$\subset$: Je nach Kontext, hier Äquivalent zu $\subsetneq$</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="464" height="14.9184" depth="3.8628" valign="top" style="subitem">$\subset$: Je nach Kontext, hier äquivalent zu $\subsetneq$</text>
 <group layer="delta">
 <text matrix="1 0 0 1 0 -112" transformations="translations" pos="0 288" stroke="black" type="minipage" width="704" height="14.854" depth="3.774" valign="top" style="item">\textbf{Gleichheit:} $A = B \Leftrightarrow A \subseteq B \wedge B\subseteq A$</text>
 </group>
-<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="672" height="28.5403" depth="17.4936" valign="top" style="subitem">Für die gleichheit muss immer überprüft werden ob beide Richtungen der Teilmengenbeziehung gelten</text>
+<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="672" height="28.5403" depth="17.4936" valign="top" style="subitem">Für die Gleichheit muss immer überprüft werden, ob beide Richtungen der Teilmengenbeziehung gelten</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
 </page>
 <page title="Potenzmengen">
@@ -3866,9 +3866,16 @@ h
 <text matrix="1 0 0 1 -16 16" transformations="translations" pos="32 320" stroke="black" type="minipage" width="432" height="42.049" depth="31.0578" valign="top">Die Menge die alle möglichen Teilmengen einer Menge M enthält wird Potenzmenge gennant\\
 Geschrieben : $2^M$ oder $\mathscr P (M)$</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 240" stroke="black" type="minipage" width="496" height="17.6912" depth="6.6156" valign="top" style="item">Beispiel: $M=\{a,b\} \Rightarrow 2^M = \{\emptyset, \{a\},\{b\},\{a,b\}\}$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="160" height="18.1063" depth="7.0596" valign="top" style="item">$\vert 2^M\vert = 2^{\vert M\vert}$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="384" height="18.1063" depth="7.0596" valign="top" style="item">$\vert\mathscr P (M)\vert = \vert 2^M\vert = 2^{\vert M\vert}$</text>
 <text transformations="translations" pos="0 240" stroke="black" type="minipage" width="448" height="15.5444" depth="4.4622" valign="top" style="item">$\emptyset$ und M selber sind immer in $2^M$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
+<path layer="alpha" stroke="black">
+0 176 m
+0 176 l
+0 176 l
+0 176 l
+h
+</path>
 </page>
 <page title="Aufgabe">
 <notes>Am besten kardinalität der vereinigung durch die anderen beiden ausdrücken</notes>
@@ -3934,15 +3941,15 @@ h
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="29.8546" depth="18.8034" valign="top" style="item">Sei $M = \{Apfel, Birne, Erdbeere\}$ und \\$N = \{Birne, Erdbeere, Orange,Kokosnuss\}$</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="29.8546" depth="18.8034" valign="top" style="item">Sei $M = \{Apfel, Birne, Erdbeere\}$ und \\$N = \{Birne, Erdbeere, Orange,Kokosnuss\}$</text>
 <text layer="beta" transformations="translations" pos="16 320" stroke="black" type="minipage" width="240" height="28.7335" depth="17.6934" valign="top">Was ist $M \cup N$ und die dazugehörige Kardinalität?</text>
 <text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$\vert \{Apfel,Birne,Erdbeere,Orange,Kokosnuss\}\vert = 5$</text>
 <text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="176" height="15.469" depth="4.4178" valign="top">Was gilt für $M \cap N$?</text>
 <text layer="epsilon" transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="item">$\vert \{Birne, Erdbeere\} \vert = 2$ </text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="400" height="39.4183" depth="28.3938" valign="top">Könnt ihr einen zusammenhang zwischen den Kardinalitäten von $M,N, M\cup N$ und $M\cap N$ erkennen?</text>
+<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="400" height="39.4183" depth="28.3938" valign="top">Könnt ihr einen Zusammenhang zwischen den Kardinalitäten von $M,N, M\cup N$ und $M\cap N$ erkennen?</text>
 <text layer="eta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="item">$\vert M \cup N \vert = \vert M \vert + \vert N \vert - \vert M \cap N \vert$</text>
 <text layer="theta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="128" height="19.3651" depth="8.325" valign="top">Was ist $2^{2^{2^{\{\}}}}$?</text>
-<text layer="iota" transformations="translations" pos="0 224" stroke="black" type="minipage" width="816" height="22.0202" depth="10.9668" valign="top" style="item">$2^{2^{2^{\{\}}}} = \{\{\},\{\{\}\},\{\{\{\}\}\},\{\{\},\{\{\}\}\}\} = \{\emptyset, \{\emptyset\}, \{\{\emptyset\}\}, \{\emptyset, \{\{\emptyset\}\}\}\}$ </text>
+<text layer="iota" transformations="translations" pos="0 224" stroke="black" type="minipage" width="816" height="22.0202" depth="10.9668" valign="top" style="item">$2^{2^{2^{\{\}}}} = \{\{\},\{\{\}\},\{\{\{\}\}\},\{\{\},\{\{\}\}\}\} = \{\emptyset, \{\emptyset\}, \{\{\emptyset\}\}, \{\emptyset, \{\emptyset\}\}\}$ </text>
 <text transformations="translations" pos="0 176" stroke="black" type="minipage" width="256" height="22.0202" depth="10.9668" valign="top" style="item">$\vert2^{2^{2^{\{\}}}} \vert = 4$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
 </page>

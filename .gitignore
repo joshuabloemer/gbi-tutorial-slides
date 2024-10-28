@@ -6,3 +6,4 @@
 !content/*.ipe
 *autosave.ipe
 tut*/xkcd.png
+tut-config.tex
