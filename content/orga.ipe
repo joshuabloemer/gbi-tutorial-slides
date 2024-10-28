@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241028223130" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20241028231300" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3747,7 +3747,7 @@ h
 </path>
 </group>
 <text transformations="translations" pos="32 352" stroke="black" type="minipage" width="832" height="12.8627" depth="1.7982" valign="top">\bf Euer Tutor</text>
-<text transformations="translations" pos="32 320" stroke="black" type="minipage" width="832" height="15.1648" depth="4.0848" valign="top" style="item">\name</text>
+<text transformations="translations" pos="32 320" stroke="black" type="minipage" width="832" height="13.0048" depth="1.9092" valign="top" style="item">\name</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 2}</text>
 <text layer="alpha" matrix="1 0 0 1 32 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="336" height="15.0516" depth="3.9738" valign="top" style="item">Fragen:
 </text>
@@ -3943,6 +3943,15 @@ Wenn ihr knapp an der Grenze seid kommt es schonmal vor das man sich in ner exce
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
 <text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Name und Matrikelnummern von beiden Abgabepartnern auf dem Blatt</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="864" height="14.5144" depth="3.4632" valign="top" style="item">Nur PDFs, alles andere kann ich evtl nicht öffnen</text>
+</page>
+<page title="Abgabe">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="13.229" depth="2.1534" valign="top" style="item">Ihr könnt in ILIAS Teams erstellen</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="848" height="15.0516" depth="3.9738" valign="top" style="item">Nur einer aus dem Team muss abgeben</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="800" height="15.2203" depth="4.1514" valign="top" style="item">Alles in \textbf{genau einer} PDF Datei</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="640" height="15.0516" depth="3.9738" valign="top" style="item">Beide Teammitglieder bekommen das Feedback</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Abgaben mit Leuten aus anderen Tutorien gehen \impl Einfach gleich zu mir kommen</text>
 </page>
 <page title="ChatGPT">
 <layer name="alpha"/>
