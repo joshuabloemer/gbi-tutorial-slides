@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241029121344" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241029124326" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3954,10 +3954,9 @@ Tipp, falls ihr ein gegenbeispiel finden wollt probiert immer zuerst aus die lee
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="14.4411" depth="3.3744" valign="top">Sei $A = \emptyset$</text>
-<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="15.469" depth="4.4178" valign="top" style="item">$\forall a \in A : 1=2$ ist wahr (letztes mal schon gesehen)</text>
+<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="13.7507" depth="2.664" valign="top" style="item">$\forall a \in A : 1=2$ ist wahr</text>
 <text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="720" height="13.7507" depth="2.664" valign="top" style="item">$\exists a \in A : 1 = 1$ ist falsch</text>
 <text layer="epsilon" matrix="1 0 0 1 0 32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top" style="item">$\{\} \neq \{\{\}\}$ wird oft falsch gemacht</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
