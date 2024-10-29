@@ -1,5 +1,5 @@
 
-title = "02 Alphabete, Wörter, Formale Sprachen"       # the file name of the output pdf
-description = "Alphabete, Wörter und Formale Sprachen" # 
-content = ["relationen", "abbildungen"]
+title = "02 Alphabete, Wörter, Formale Sprachen"                      # the file name of the output pdf
+description = "Alphabete, Wörter und Formale Sprachen"                # 
+content = ["relationen", "abbildungen", "woerter", "formalesprachen"]
 xkcd = 1445
