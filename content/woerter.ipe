@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+layou<?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241025230823" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241029150650" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Wörter}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -7859,14 +7859,14 @@ a &amp;:&amp; i = 7 \\
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="gamma" matrix="1 0 0 1 0 14">
+<group layer="gamma">
 <path stroke="black" fill="KITblue15">
-8 120 m
-512 120 l
-8 0 0 -8 512 112 520 112 a
-520 16.4103 l
-16 16.4103 l
-8 0 0 -8 16 24.4103 8 24.4103 a
+8 134 m
+528 134 l
+8 0 0 -8 528 126 536 126 a
+536 30.2837 l
+16 30.2837 l
+8 0 0 -8 16 38.2837 8 38.2837 a
 h
 </path>
 </group>
@@ -7899,7 +7899,7 @@ h
 <text matrix="1 0 0 1 80 32" transformations="translations" pos="64 208" stroke="black" type="minipage" width="144" height="50.3851" depth="39.405" valign="top">$$A^* = \bigcup_{i=0}^\infty A^i$$</text>
 <text layer="gamma" matrix="1 0 0 1 0 14" transformations="translations" pos="16 112" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
 <text matrix="1 0 0 1 0 14" transformations="translations" pos="16 80" stroke="black" type="minipage" width="496" height="17.3893" depth="6.327" valign="top">$anna \in \{a, n\}^4, \quad ana \notin \{a, n\}^4$</text>
-<text matrix="1 0 0 1 0 14" transformations="translations" pos="16 48" stroke="black" type="minipage" width="496" height="30.6538" depth="19.6026" valign="top">$A^0 = \{\epsilon\}, \quad \{a,b\}^* = \{\epsilon, a, b, aa, ab, ba, bb, aaa, \dots\}$</text>
+<text matrix="1 0 0 1 0 14" transformations="translations" pos="16 48" stroke="black" type="minipage" width="512" height="17.3893" depth="6.327" valign="top">$A^0 = \{\epsilon\}, \quad \{a,b\}^* = \{\epsilon, a, b, aa, ab, ba, bb, aaa, \dots\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
 </page>
 <page title="Konkatenation">
