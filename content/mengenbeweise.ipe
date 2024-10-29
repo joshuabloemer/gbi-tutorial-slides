@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241028224946" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20241029121344" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3753,7 +3753,7 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">Sei $M$ eine beliebige Menge und $A,B \subseteq M$. Zeige:</text>
-<text matrix="1 0 0 1 32 16" transformations="translations" pos="80 320" stroke="black" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top">$M \backslash (A \cup B) = (M\backslash A) \cap (M\backslash A)$</text>
+<text matrix="1 0 0 1 32 16" transformations="translations" pos="80 320" stroke="black" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top">$M \backslash (A \cup B) = (M\backslash A) \cap (M\backslash B)$</text>
 <text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 288" stroke="black" type="minipage" width="496" height="15.1648" depth="4.0848" valign="top" style="item">Wie zum Teufel macht man das jetzt?</text>
 <text layer="beta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="608" height="15.469" depth="4.4178" valign="top" style="item">Wir wissen: $A = B$ genau dann wenn $A\subseteq B$ und $B\subseteq A$</text>
 <text layer="gamma" transformations="translations" pos="0 224" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top">$\Rightarrow$ Plan: wir zeigen beide Teilmengenbeziehungen separat</text>
@@ -3833,7 +3833,7 @@ h
 <text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="496" height="12.9115" depth="1.8204" valign="top" style="item">Probieren wir es mal aus:</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Seien $A = \{0,1,2\}$ und $B = \{2,3,4\}$</text>
 <text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="subitem">Also ist $(A\backslash B) \cup (B\backslash A) = \{0,1\} \cup \{3,4\} = \{0,1,3,4\}$</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="subitem">Und $(A \cup B) \backslash (A \cap B) = \{0,1,2,3,4\} \backslash {2} = \{0,1,3,4\}$</text>
+<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="subitem">Und $(A \cup B) \backslash (A \cap B) = \{0,1,2,3,4\} \backslash \{2\} = \{0,1,3,4\}$</text>
 <text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top">$\Rightarrow$ Die Aussage gilt zumindest für diese speziellen A und B</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
@@ -3956,7 +3956,6 @@ Tipp, falls ihr ein gegenbeispiel finden wollt probiert immer zuerst aus die lee
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="14.4411" depth="3.3744" valign="top">Sei $A = \emptyset$</text>
 <text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="15.469" depth="4.4178" valign="top" style="item">$\forall a \in A : 1=2$ ist wahr (letztes mal schon gesehen)</text>
 <text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="720" height="13.7507" depth="2.664" valign="top" style="item">$\exists a \in A : 1 = 1$ ist falsch</text>
@@ -3971,14 +3970,14 @@ Tipp, falls ihr ein gegenbeispiel finden wollt probiert immer zuerst aus die lee
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="gamma" matrix="1 0 0 1 80 -16">
+<group layer="gamma">
 <path stroke="black" fill="KITblue15">
-56 184 m
-624 184 l
-8 0 0 -8 624 176 632 176 a
-632 81.8821 l
-64 81.8821 l
-8 0 0 -8 64 89.8821 56 89.8821 a
+136 168 m
+768 168 l
+8 0 0 -8 768 160 776 160 a
+776 33.8821 l
+144 33.8821 l
+8 0 0 -8 144 41.8821 136 41.8821 a
 h
 </path>
 </group>
@@ -3988,8 +3987,9 @@ h
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="subitem">Oft die leere Menge, Mengen mit nur einem Element oder Mengen die gleich sind</text>
 <text layer="beta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="784" height="28.5403" depth="17.4936" valign="top" style="item">Falls die Aussage in der Form &apos;&apos;Seien A,B Mengen mit Bedingung x, dann gilt ...&apos;&apos; ist muss das Gegenbeispiel immer noch die Bedingung erfüllen</text>
 <text layer="gamma" matrix="1 0 0 1 80 -32" transformations="translations" pos="64 192" stroke="black" type="minipage" width="416" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text matrix="1 0 0 1 80 -16" transformations="translations" pos="64 144" stroke="black" type="minipage" width="560" height="15.469" depth="4.4178" valign="top" style="item">Für beliebige Mengen A, B gilt: Wenn $A \subsetneq B$, dann $B \subseteq A$</text>
-<text matrix="1 0 0 1 80 -16" transformations="translations" pos="64 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$A = \{0\}, B = \{1\}$ ist ein Gegenbeispiel</text>
+<text matrix="1 0 0 1 80 -16" transformations="translations" pos="64 144" stroke="black" type="minipage" width="560" height="15.469" depth="4.4178" valign="top" style="item">Für beliebige Mengen A, B gilt: Wenn $A \not \subset B$, dann $B \subseteq A$</text>
+<text matrix="1 0 0 1 80 -48" transformations="translations" pos="64 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$A = \{0\}, B = \{1\}$ ist \textbf{ein} Gegenbeispiel </text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
+<text layer="gamma" matrix="1 0 0 1 0 32" transformations="translations" pos="144 64" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$A = \{0\}, B = \{0,1\}$ ist \textbf{kein} Gegenbeispiel (Weil $\{0\} \subset \{0,1\}$)</text>
 </page>
 </ipe>
