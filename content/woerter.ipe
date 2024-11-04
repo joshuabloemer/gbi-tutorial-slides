@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241025230823" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241105001848" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Wörter}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -7899,7 +7899,7 @@ h
 <text matrix="1 0 0 1 80 32" transformations="translations" pos="64 208" stroke="black" type="minipage" width="144" height="50.3851" depth="39.405" valign="top">$$A^* = \bigcup_{i=0}^\infty A^i$$</text>
 <text layer="gamma" matrix="1 0 0 1 0 14" transformations="translations" pos="16 112" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
 <text matrix="1 0 0 1 0 14" transformations="translations" pos="16 80" stroke="black" type="minipage" width="496" height="17.3893" depth="6.327" valign="top">$anna \in \{a, n\}^4, \quad ana \notin \{a, n\}^4$</text>
-<text matrix="1 0 0 1 0 14" transformations="translations" pos="16 48" stroke="black" type="minipage" width="496" height="30.6538" depth="19.6026" valign="top">$A^0 = \{\epsilon\}, \quad \{a,b\}^* = \{\epsilon, a, b, aa, ab, ba, bb, aaa, \dots\}$</text>
+<text matrix="1 0 0 1 0 14" transformations="translations" pos="16 48" stroke="black" type="minipage" width="512" height="17.3893" depth="6.327" valign="top">$A^0 = \{\epsilon\}, \quad \{a,b\}^* = \{\epsilon, a, b, aa, ab, ba, bb, aaa, \dots\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
 </page>
 <page title="Konkatenation">
@@ -7932,8 +7932,8 @@ h
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="28.5403" depth="17.4936" valign="top">Seien $w_1, w_2$ zwei Wörter, ihre \textbf{Konkatenation} $w_1 \cdot w_2$ ist gegeben durch:</text>
 <text matrix="1 0 0 1 -112 48" transformations="translations" pos="128 256" stroke="black" type="minipage" width="560" height="44.198" depth="33.2112" valign="top">$$w_1 \cdot w_2 : \mathbb Z_{m+n} \rightarrow A, \quad
 i \mapsto \left\{\begin{array}{rcl}
-w_1(i) &amp;:&amp; 0 \leq  i &lt; m\\
-w_2(i) &amp;:&amp; m \leq  i &lt; n+m
+w_1(i) &amp;\vert &amp; 0 \leq  i &lt; m\\
+w_2(i) &amp;\vert &amp; m \leq  i &lt; n+m
 \end{array}\right.$$</text>
 <text transformations="translations" pos="16 192" stroke="black" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Potenz von Wörtern</text>
 <text transformations="translations" pos="16 160" stroke="black" type="minipage" width="560" height="13.1357" depth="2.0646" valign="top">Die n-te Potenz eines Wortes w ist Induktiv definiert durch:</text>

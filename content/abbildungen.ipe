@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241028234207" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241105001656" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3734,7 +3734,26 @@ h
 <page title="Abbildungen und Funktionen I">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<group layer="epsilon">
+<path stroke="black" fill="KITred15">
+536 344 m
+816 344 l
+8 0 0 -8 816 336 824 336 a
+824 282.088 l
+544 282.088 l
+8 0 0 -8 544 290.088 536 290.088 a
+h
+</path>
+</group>
 <group layer="alpha">
 <path stroke="black" fill="KITgreen15">
 8 376 m
@@ -3756,17 +3775,32 @@ f : A &amp;\rightarrow B \\
 a &amp;\mapsto b \mbox{ oder } f(a) = b
 \end{aligned}
 $$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Eine rechtstotale Surjektiv</text>
-<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
-<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
+<text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
+<text layer="delta" transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+<text layer="epsilon" matrix="1 0 0 1 -32 16" transformations="translations" pos="576 320" stroke="black" type="minipage" width="272" height="28.4848" depth="17.427" valign="top">\bfseries Definitions und Zielbereich immer mit angeben</text>
 </page>
 <page title="Abbildungen und Funktionen II">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page gamma" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="gamma"/>
 <group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+408 376 m
+800 376 l
+8 0 0 -8 800 368 808 368 a
+808 209.882 l
+416 209.882 l
+8 0 0 -8 416 217.882 408 217.882 a
+h
+</path>
+</group>
+<group>
 <path stroke="black" fill="KITgreen15">
 8 376 m
 384 376 l
@@ -3782,6 +3816,75 @@ h
 <text transformations="translations" pos="16 272" stroke="black" type="minipage" width="368" height="26.1538" depth="15.1182" valign="top">Die Menge aller Bilder von Elementen aus A heißt Bildbereich von f</text>
 <text matrix="1 0 0 1 32 32" transformations="translations" pos="80 176" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$f(A) :=\{f(a)\vert a \in A\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+<text layer="alpha" transformations="translations" pos="416 368" stroke="black" type="minipage" width="368" height="15.2203" depth="4.1514" valign="top">\bfseries Fallunterscheidungen</text>
+<text layer="gamma" transformations="translations" pos="416 336" stroke="black" type="minipage" width="384" height="44.198" depth="33.2112" valign="top">$$f: \mathbb R\rightarrow \mathbb R, \quad
+x \mapsto \left\{\begin{array}{rcl}
+-1 &amp;\vert &amp;  x &lt; 0\\
+1 &amp;\vert &amp; x \geq 0
+\end{array}\right.$$</text>
+<text layer="alpha" transformations="translations" pos="416 240" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top">$f(x)$ ist $-1$ falls $x &lt; 0$, sonst 1</text>
+<text layer="beta" transformations="translations" pos="416 336" stroke="black" type="minipage" width="384" height="44.198" depth="33.2112" valign="top">$$f: \mathbb R\rightarrow \mathbb R, \quad
+x \mapsto \left\{\begin{array}{rcl}
+-1 &amp;\vert &amp;  x &lt; 0\\
+1 &amp;\vert &amp; \mbox{sonst}
+\end{array}\right.$$</text>
+</page>
+<page title="Zusammenfassung">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotalität</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="816" height="15.1648" depth="4.0848" valign="top" style="subitem">Jedes x hat min. einen Funktionswert f(x) (keine Definitionslücken)</text>
+<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutigkeit</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein x-Wert hat mehrere y-Werte</text>
+<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="384" height="15.2758" depth="4.218" valign="top" style="item">Linkseindeutigkeit (Injektivität)</text>
+<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="416" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein y-Wert hat mehrere x-Werte</text>
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="subitem">Also: Aus f(a) = f(b) folgt a = b</text>
+<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="784" height="15.469" depth="4.4178" valign="top" style="subitem">Oder: Es gibt keine zwei Relationen (a, y), (b, y) und $a \neq b$
+</text>
+<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="592" height="15.1648" depth="4.0848" valign="top" style="item">Rechtstotalität (Surjektivität)</text>
+<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="subitem">Jeder y-Wert hat mindestens einen x-Wert</text>
+<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="656" height="15.1582" depth="4.107" valign="top" style="subitem">Also: Für jedes $y\in$ Zielbereich existiert ein x mit f(x) = y</text>
+<text transformations="translations" pos="0 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="subitem">Oder: Es gibt kein y, zu dem kein x in Relation steht</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
+</page>
+<page title="Beispiel">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+840 352 m
+8 0 0 8 832 352 832 360 a
+568 360 l
+568 329.882 l
+8 0 0 8 576 329.882 576 321.882 a
+840 321.882 l
+h
+</path>
+</group>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="18.0308" depth="6.9708" valign="top">Zeige das $f : \mathbb N \rightarrow \mathbb R, x \mapsto \frac{x}{x+1}$ injektiv ist</text>
+<text transformations="translations" pos="576 352" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top">$f(a) = f(b) \Rightarrow a = b$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">Seien $x_1, x_2 \in \mathbb N$ mit $f(x_1) = f(x_2)$</text>
+<text layer="gamma" matrix="1 0 0 1 16 0" transformations="translations" pos="0 304" stroke="black" type="minipage" width="448" height="18.4993" depth="7.4592" valign="top">\impl $ \frac{x_1}{x_1+1} =  \frac{x_2}{x_2+1}$</text>
+<text layer="delta" matrix="1 0 0 1 16 -43" transformations="translations" pos="0 304" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">\impl$ x_1(x_2+1) =  x_2(x_1+1)$</text>
+<text layer="epsilon" matrix="1 0 0 1 16 2" transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="14.4411" depth="3.3744" valign="top">\impl$x_1 x_2 + x_1 = x_1 x_2+ x2$</text>
+<text layer="zeta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 192" stroke="black" type="minipage" width="464" height="12.1034" depth="1.0434" valign="top">\impl$x_1 = x_2$</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -3928,34 +4031,5 @@ Ergebnis zu beeinflussen</text>
 <text transformations="translations" pos="16 128" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">Subtraktion ist nicht assoziativ $x - (y - z) \neq (x - y) - z$</text>
 <text transformations="translations" pos="16 96" stroke="black" type="minipage" width="544" height="17.3893" depth="6.327" valign="top" style="item">$f_{abstand}: \mathbb Z^2 \rightarrow \mathbb Z, \quad (x,y) \mapsto \vert x -y \vert$ ist nicht assoziativ</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page beta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma" active="alpha"/>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-456 240 m
-8 0 0 8 448 240 448 248 a
-8 248 l
-8 220.608 l
-8 0 0 8 16 220.608 16 212.608 a
-456 212.608 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">Seien $A =\{a, b, c\}$ und $B = \{1, 2, 3\}$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (a,2), (b,2)\}$
-</text>
-<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top">Welche Eigenschaften haben diese Relationen?</text>
-<text layer="gamma" transformations="translations" pos="304 352" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Keine</text>
-<text layer="alpha" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (c,3), (b,2)\}$</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item"> $R = \{\}$</text>
-<text layer="gamma" transformations="translations" pos="304 320" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Alle</text>
-<text transformations="translations" pos="304 288" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top">Linkseindeutig und Rechtseindeutig</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
 </ipe>

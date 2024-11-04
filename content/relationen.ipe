@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241028234640" title="Relationen" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241105001027" title="Relationen" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4027,12 +4027,10 @@ h
 <text transformations="translations" pos="512 288" stroke="black" type="minipage" width="224" height="13.1357" depth="2.0646" valign="top" style="item">Rechtstotal?</text>
 <text transformations="translations" pos="512 256" stroke="black" type="minipage" width="224" height="15.2758" depth="4.218" valign="top" style="item">Linkseindeutig?</text>
 <text transformations="translations" pos="512 224" stroke="black" type="minipage" width="224" height="15.2758" depth="4.218" valign="top" style="item">Rechtseindeutig?</text>
-<text transformations="translations" pos="512 192" stroke="black" type="minipage" width="224" height="15.2758" depth="4.218" valign="top" style="item">Abbildung?</text>
 <text layer="delta" transformations="translations" pos="512 320" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotal</text>
 <text transformations="translations" pos="512 288" stroke="red1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Rechtstotal</text>
 <text transformations="translations" pos="512 256" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
 <text transformations="translations" pos="512 224" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig</text>
-<text transformations="translations" pos="512 192" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
 <path layer="epsilon" stroke="black" arrow="normal/normal">
 80.5694 328.77 m
 327.228 326.697 l
@@ -4053,7 +4051,6 @@ h
 <text transformations="translations" pos="512 288" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Rechtstotal</text>
 <text transformations="translations" pos="512 256" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
 <text transformations="translations" pos="512 224" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig</text>
-<text transformations="translations" pos="512 192" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
 <path layer="eta" stroke="black" arrow="normal/normal">
 80.5896 326.771 m
 327.211 327.73 l
@@ -4074,7 +4071,6 @@ h
 <text transformations="translations" pos="512 288" stroke="maygreen1" type="minipage" width="224" height="12.9115" depth="1.8204" valign="top" style="item">Rechtstotal</text>
 <text transformations="translations" pos="512 256" stroke="red1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
 <text transformations="translations" pos="512 224" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig</text>
-<text transformations="translations" pos="512 192" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
 <path layer="kappa" stroke="black" arrow="normal/normal">
 80.6036 327.779 m
 327.268 326.009 l
@@ -4096,34 +4092,35 @@ h
 <text transformations="translations" pos="512 256" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Linkseindeutig</text>
 <text transformations="translations" pos="512 224" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutig
 </text>
-<text transformations="translations" pos="512 192" stroke="maygreen1" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top" style="item">Abbildung</text>
-<text layer="iota" matrix="1 0 0 1 0 -16" transformations="translations" pos="496 144" stroke="black" type="minipage" width="240" height="15.2758" depth="4.218" valign="top">Surjektive Abbildung</text>
-<text layer="lambda" matrix="1 0 0 1 0 -16" transformations="translations" pos="496 144" stroke="black" type="minipage" width="240" height="15.0516" depth="3.9738" valign="top">Bijektive Abbildung</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 </page>
-<page title="Zusammenfassung">
+<page title="Aufgabe">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotalität</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="816" height="15.1648" depth="4.0848" valign="top" style="subitem">Jedes x hat min. einen Funktionswert f(x) (keine Definitionslücken)</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutigkeit</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein x-Wert hat mehrere y-Werte</text>
-<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="384" height="15.2758" depth="4.218" valign="top" style="item">Linkseindeutigkeit (Injektivität)</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="416" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein y-Wert hat mehrere x-Werte</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="subitem">Also: Aus f(a) = f(b) folgt a = b</text>
-<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="784" height="15.469" depth="4.4178" valign="top" style="subitem">Oder: Es gibt keine zwei Relationen (a, y), (b, y) und $a \neq b$
+<view layers="alpha pagenumbers_page beta" active="gamma"/>
+<view layers="alpha pagenumbers_page gamma" active="alpha"/>
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+456 240 m
+8 0 0 8 448 240 448 248 a
+8 248 l
+8 220.608 l
+8 0 0 8 16 220.608 16 212.608 a
+456 212.608 l
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">Seien $A =\{a, b, c\}$ und $B = \{1, 2, 3\}$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (a,2), (b,2)\}$
 </text>
-<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="592" height="15.1648" depth="4.0848" valign="top" style="item">Rechtstotalität (Surjektivität)</text>
-<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="subitem">Jeder y-Wert hat mindestens einen x-Wert</text>
-<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="656" height="15.1582" depth="4.107" valign="top" style="subitem">Also: Für jedes $y\in$ Zielbereich existiert ein x mit f(x) = y</text>
-<text transformations="translations" pos="0 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="subitem">Oder: Es gibt kein y, zu dem kein x in Relation steht</text>
+<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top">Welche Eigenschaften haben diese Relationen?</text>
+<text layer="gamma" transformations="translations" pos="304 352" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Keine</text>
+<text layer="alpha" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (c,3), (b,2)\}$</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item"> $R = \{\}$</text>
+<text layer="gamma" transformations="translations" pos="304 320" stroke="black" type="minipage" width="176" height="12.9115" depth="1.8204" valign="top">Alle</text>
+<text transformations="translations" pos="304 288" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top">Linkseindeutig und Rechtseindeutig</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
 </ipe>
