@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241025230800" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241105151933" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3760,7 +3760,7 @@ h
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Formale Sprache</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="28.4848" depth="17.427" valign="top">Eine \textbf{formale Sprache} L über einem Alphabet A ist eine Teilmenge der Wörter über A, also $L \subseteq A^*$</text>
 <text transformations="translations" pos="16 256" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="560" height="29.0309" depth="18.0042" valign="top">Die Sprache die alle Wörter der Länge 2 über dem Alphabet $\{a,b\}$ enthält ist $L =  \{aa,ab,ba,bb\}$</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="560" height="29.0309" depth="18.0042" valign="top">Die Sprache, die alle Wörter der Länge 2 über dem Alphabet $\{a,b\}$ enthält ist $L =  \{aa,ab,ba,bb\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
 </page>
 <page title="Konkatenation von Sprachen">
@@ -3883,7 +3883,7 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Es sei $A = \{a, b\}$. Drücke folgende Sprachen $L1, L2, L3 \subseteq A^*$ formell aus:
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Es sei $A = \{a, b\}$. Drücke folgenden Sprachen $L1, L2, L3 \subseteq A^*$ formell aus:
 </text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="832" height="14.8807" depth="3.7962" valign="top" style="item">$L_1$ enthält nur Wörter mit mindestens drei Vorkommen von a</text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="832" height="15.469" depth="4.4178" valign="top" style="item">$L_2$ enthält nur Wörter, in denen die Zeichenfolge bb nicht vorkommt</text>
