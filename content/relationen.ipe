@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241105001027" title="Relationen" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241105113454" title="Relationen" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3764,8 +3764,8 @@ h
 <text matrix="1 0 0 1 80 0" transformations="translations" pos="64 272" stroke="black" type="minipage" width="160" height="14.854" depth="3.774" valign="top">Also: $R \subseteq A \times B$</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="29.2285" depth="18.1818" valign="top">Erfüllt $(a,b) \in A \times B$ die Relation R $((a,b)\in R)$ schreibt man kurz $a~R~b$ (infix Schreibweise)</text>
 <text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="656" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 112" stroke="black" type="minipage" width="464" height="14.7963" depth="3.7296" valign="top">Sei A,B = $\mathbb{N}$ und $\leq$ die Kleiner Gleich Relation also</text>
-<text matrix="1 0 0 1 -496 -192" transformations="translations" pos="560 272" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$\leq ~ \subseteq \mathbb N \times \mathbb N  = \{(a,b) \vert a \mbox{ ist kleiner gleich } b\}$</text>
+<text transformations="translations" pos="16 112" stroke="black" type="minipage" width="464" height="15.6355" depth="4.551" valign="top">Sei A,B = $\mathbb{N}_+ $ und $\leq$ die Kleiner Gleich Relation also</text>
+<text matrix="1 0 0 1 -496 -192" transformations="translations" pos="560 272" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$\leq ~ \subseteq \mathbb N_+ \times \mathbb N_+  = \{(a,b) \vert a \mbox{ ist kleiner gleich } b\}$</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">Also gilt z.B. $(1,2) \in ~ \leq ~ \Rightarrow 1 \leq 2$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 </page>
@@ -3848,7 +3848,7 @@ h
 h
 </path>
 </group>
-<text layer="alpha" matrix="1 0 0 1 -32 32" transformations="translations" pos="32 352" stroke="black" type="minipage" width="288" height="14.1392" depth="3.0636" valign="top" style="item">Sei $P = \mathbb N \times \mathbb N$</text>
+<text layer="alpha" matrix="1 0 0 1 -32 32" transformations="translations" pos="32 352" stroke="black" type="minipage" width="288" height="15.671" depth="4.6176" valign="top" style="item">Sei $P = \mathbb N_+ \times \mathbb N_+$</text>
 <text matrix="1 0 0 1 -32 32" transformations="translations" pos="32 320" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,b) \in P \vert a+b = 0\} \subseteq P$</text>
 <text layer="beta" matrix="1 0 0 1 -32 32" transformations="translations" pos="48 272" stroke="black" type="minipage" width="176" height="15.1648" depth="4.0848" valign="top">Gebt R explizit an</text>
 <text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="272" height="14.4411" depth="3.3744" valign="top" style="item">$R = \emptyset$</text>
@@ -3859,7 +3859,7 @@ h
 <text layer="theta" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 384" stroke="black" type="minipage" width="304" height="15.671" depth="4.6176" valign="top" style="item">Sei $P$ jetzt $\mathbb Z \times \mathbb N_+ \times \mathbb N_0$</text>
 <text matrix="1 0 0 1 -32 0" transformations="translations" pos="448 352" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(n,m,r) \in P \vert n\cdot m=r \} \subseteq P$</text>
 <text layer="iota" matrix="1 0 0 1 384 32" transformations="translations" pos="48 272" stroke="black" type="minipage" width="240" height="13.229" depth="2.1534" valign="top">Gebt 4 Elemente aus R an</text>
-<text layer="kappa" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 320" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top" style="item">z.B. $R = \{(0,1,0),(1,1,1),(1,2,2),(5,6,36),\dots\}$</text>
+<text layer="kappa" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 320" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top" style="item">z.B. $R = \{(0,1,0),(1,1,1),(1,2,2),(5,6,30),\dots\}$</text>
 <text layer="lambda" matrix="1 0 0 1 -16 -16" transformations="translations" pos="448 288" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top">Gilt $(-1,1,-1)\in R$ oder $(42,0,0)\in R$?\</text>
 <text layer="mu" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 288" stroke="black" type="minipage" width="352" height="26.4002" depth="15.3402" valign="top" style="item">Nein! Wie eben auf Definitions und Wertebereich achten</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
