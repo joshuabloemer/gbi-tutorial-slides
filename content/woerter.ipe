@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241105001848" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241105142657" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Wörter}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -7758,18 +7758,31 @@ h
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<group layer="delta" matrix="1 0 0 1 0 -16">
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<group layer="epsilon">
 <path stroke="black" fill="KITred15">
-8 88 m
-640 88 l
-8 0 0 -8 640 80 648 80 a
-648 17.8821 l
-16 17.8821 l
-8 0 0 -8 16 25.8821 8 25.8821 a
+280 72 m
+448 72 l
+8 0 0 -8 448 64 456 64 a
+456 1.88214 l
+288 1.88214 l
+8 0 0 -8 288 9.88214 280 9.88214 a
+h
+</path>
+</group>
+<group layer="delta">
+<path stroke="black" fill="KITred15">
+8 72 m
+240 72 l
+8 0 0 -8 240 64 248 64 a
+248 1.88214 l
+16 1.88214 l
+8 0 0 -8 16 9.88214 8 9.88214 a
 h
 </path>
 </group>
@@ -7808,14 +7821,52 @@ h
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="368" height="15.0605" depth="3.996" valign="top">\bfseries Wort (formell)</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="624" height="28.8067" depth="17.76" valign="top">Ein \textbf{Wort} w über einem Alphabet A ist eine Abbildung\\
-$w:\mathbb Z_n \rightarrow A$ mit $\mathbb Z_n \coloneqq \{i\in \mathbb Z \vert  0\leq i &lt; n\}$</text>
+$w: [n] \rightarrow A$ mit $\mathbb [n] \coloneqq \{i\in \mathbb N_+ \vert  1 \leq i \leq n\}$</text>
 <text layer="beta" transformations="translations" pos="16 256" stroke="black" type="minipage" width="624" height="15.0605" depth="3.996" valign="top">\bfseries Leeres Wort (formell)</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">Das \textbf{leere Wort} $\epsilon$ ist die Abbildung $\epsilon : \mathbb Z_0  =\{\}\rightarrow\{\}$</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">Das \textbf{leere Wort} $\epsilon$ ist die Abbildung $\epsilon : [0] \rightarrow A$ \quad(also $\epsilon : \emptyset \rightarrow A$)</text>
 <text layer="gamma" transformations="translations" pos="16 160" stroke="black" type="minipage" width="624" height="15.2203" depth="4.1514" valign="top">\bfseries Länge eines Wortes</text>
 <text transformations="translations" pos="16 128" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">Sei w ein Wort. Dann bezeichen wir mit $\vert w \vert = n$ die Länge von w</text>
-<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="368" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">$\{\epsilon\} \neq \{\}$</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="160" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$\{\epsilon\} \neq \{\} \neq \{\emptyset \}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
+<text layer="epsilon" matrix="1 0 0 1 272 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="160" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
+<text transformations="translations" pos="288 32" stroke="black" type="minipage" width="160" height="16.5901" depth="5.5278" valign="top">$\vert \epsilon \vert = 0$</text>
+</page>
+<page title="Beispiel">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+648 368 m
+8 0 0 8 640 368 640 376 a
+296 376 l
+296 345.882 l
+8 0 0 8 304 345.882 304 337.882 a
+648 337.882 l
+h
+</path>
+</group>
+<group>
+<path stroke="black" fill="KITblue15">
+8 376 m
+224 376 l
+8 0 0 -8 224 368 232 368 a
+232 167.722 l
+16 167.722 l
+8 0 0 -8 16 175.722 8 175.722 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="160" height="12.9115" depth="1.8204" valign="top">w = hallo</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$w : [5] \rightarrow \{a,h,l,o\} :$</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="32 304" stroke="black" type="minipage" width="112" height="69.6037" depth="58.6746" valign="top">$
+w(1) = h\\
+w(2) = a\\
+w(3) = l\\
+w(4) =l\\
+w(5) =l
+$</text>
+<text transformations="translations" pos="304 368" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">Statt $w(i)$ schreiben wir meistens $w_i$</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -7824,7 +7875,7 @@ $w:\mathbb Z_n \rightarrow A$ mit $\mathbb Z_n \coloneqq \{i\in \mathbb Z \vert 
 <layer name="gamma"/>
 <view layers="alpha pagenumbers_page beta" active="gamma"/>
 <view layers="alpha pagenumbers_page gamma" active="beta"/>
-<group layer="beta">
+<group layer="beta" matrix="1 0 0 1 0 -16">
 <path stroke="gray1" fill="gray3">
 552 352 m
 8 0 0 8 544 352 544 360 a
@@ -7835,20 +7886,20 @@ $w:\mathbb Z_n \rightarrow A$ mit $\mathbb Z_n \coloneqq \{i\in \mathbb Z \vert 
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="608" height="16.5901" depth="5.5278" valign="top" style="item">Sei D das deutsche Alphabet und $A = D \cup \{.,\textvisiblespace\}$</text>
-<text layer="beta" transformations="translations" pos="16 352" stroke="black" type="minipage" width="528" height="15.0028" depth="3.9516" valign="top">Gebt eine formelle Defintion des Wortes &apos;&apos;Dr.\textvisiblespace Meta&apos;&apos; an</text>
-<text layer="gamma" matrix="1 0 0 1 -48 64" transformations="translations" pos="192 272" stroke="black" type="minipage" width="448" height="123.723" depth="112.931" valign="top">$$w: \mathbb Z_7 \rightarrow A, \quad w(i) =
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">Sei D das deutsche Alphabet und $A = D \cup \{.,\text{\textvisiblespace\}}$ \quad (\textvisiblespace ~ ist ein Leerzeichen) </text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 352" stroke="black" type="minipage" width="528" height="15.0028" depth="3.9516" valign="top">Gebt eine formelle Defintion des Wortes &apos;&apos;Dr.\textvisiblespace Meta&apos;&apos; an</text>
+<text layer="gamma" matrix="1 0 0 1 -176 80" transformations="translations" pos="192 272" stroke="black" type="minipage" width="448" height="123.723" depth="112.931" valign="top">$$w: \mathbb Z_7 \rightarrow A, \quad w(i) =
 \left\{\begin{array}{lcl} 
-D &amp;:&amp; i = 0 \\
-r &amp;:&amp; i = 1 \\
-. &amp;:&amp; i = 2 \\
-\textvisiblespace &amp;:&amp; i = 3 \\
-M &amp;:&amp; i = 4 \\
-e &amp;:&amp; i = 5 \\
-t &amp;:&amp; i = 6 \\
-a &amp;:&amp; i = 7 \\
+D &amp;\vert&amp; i = 1 \\
+r &amp;\vert&amp; i = 2 \\
+. &amp;\vert&amp; i = 3 \\
+\text{\textvisiblespace}  &amp;\vert&amp; i = 4 \\
+M &amp;\vert&amp; i = 5 \\
+e &amp;\vert&amp; i = 6 \\
+t &amp;\vert&amp; i = 7 \\
+a &amp;\vert&amp; i = 8 \\
 \end{array}\right.$$</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="528" height="14.7785" depth="3.7074" valign="top" style="item">Normlerweise schreiben wir aber w  = Dr.\textvisiblespace Meta</text>
+<text transformations="translations" pos="0 80" stroke="black" type="minipage" width="528" height="14.7785" depth="3.7074" valign="top" style="item">Normlerweise schreiben wir aber w  = Dr.\textvisiblespace Meta</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 24}</text>
 </page>
 <page title="Wörter">
