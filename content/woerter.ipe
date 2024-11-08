@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241106121351" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20241108123939" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Wörter}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -7888,7 +7888,7 @@ h
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">Sei D das deutsche Alphabet und $A = D \cup \{.,\text{\textvisiblespace\}}$ \quad (\textvisiblespace ~ ist ein Leerzeichen) </text>
 <text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 352" stroke="black" type="minipage" width="528" height="15.0028" depth="3.9516" valign="top">Gebt eine formelle Defintion des Wortes &apos;&apos;Dr.\textvisiblespace Meta&apos;&apos; an</text>
-<text layer="gamma" matrix="1 0 0 1 -176 80" transformations="translations" pos="192 272" stroke="black" type="minipage" width="448" height="123.723" depth="112.931" valign="top">$$w: \mathbb N_8 \rightarrow A, \quad w(i) =
+<text layer="gamma" matrix="1 0 0 1 -176 80" transformations="translations" pos="192 272" stroke="black" type="minipage" width="448" height="123.723" depth="112.931" valign="top">$$w: [8] \rightarrow A, \quad w(i) =
 \left\{\begin{array}{lcl} 
 D &amp;\vert&amp; i = 1 \\
 r &amp;\vert&amp; i = 2 \\
@@ -7959,6 +7959,17 @@ h
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <group layer="alpha">
 <path stroke="black" fill="KITgreen15">
+8 376 m
+608 376 l
+8 0 0 -8 608 368 616 368 a
+616 218.591 l
+16 218.591 l
+8 0 0 -8 16 226.591 8 226.591 a
+h
+</path>
+</group>
+<group>
+<path stroke="black" fill="KITgreen15">
 8 200 m
 576 200 l
 8 0 0 -8 576 192 584 192 a
@@ -7968,20 +7979,9 @@ h
 h
 </path>
 </group>
-<group>
-<path stroke="black" fill="KITgreen15">
-8 376 m
-576 376 l
-8 0 0 -8 576 368 584 368 a
-584 218.591 l
-16 218.591 l
-8 0 0 -8 16 226.591 8 226.591 a
-h
-</path>
-</group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="13.078" depth="2.0202" valign="top">\bfseries Konkatenation</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="28.5403" depth="17.4936" valign="top">Seien $w_1, w_2$ zwei Wörter, ihre \textbf{Konkatenation} $w_1 \cdot w_2$ ist gegeben durch:</text>
-<text matrix="1 0 0 1 -112 48" transformations="translations" pos="128 256" stroke="black" type="minipage" width="560" height="44.198" depth="33.2112" valign="top">$$w_1 \cdot w_2 : \mathbb N_{m+n} \rightarrow A, \quad
+<text matrix="1 0 0 1 -112 48" transformations="translations" pos="128 256" stroke="black" type="minipage" width="592" height="44.198" depth="33.2112" valign="top">$$w_1 \cdot w_2 : [m+n] \rightarrow A, \quad
 i \mapsto \left\{\begin{array}{rcl}
 w_1(i) &amp;\vert &amp; 1 \leq  i \leq m\\
 w_2(i - m) &amp;\vert &amp; m &lt;  i \leq n+m
