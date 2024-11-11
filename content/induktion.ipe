@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241111184624" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241111235836" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
@@ -4173,7 +4173,20 @@ h
 <page title="Vollständige Induktion">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITred15">
+8 168 m
+704 168 l
+8 0 0 -8 704 160 712 160 a
+712 19.8735 l
+16 19.8735 l
+8 0 0 -8 16 27.8735 8 27.8735 a
+h
+</path>
+</group>
 <group layer="alpha">
 <path stroke="black" fill="KITgreen15">
 8 376 m
@@ -4188,37 +4201,15 @@ h
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="15.2203" depth="4.1514" valign="top">\bfseries Vollständige Induktion</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top">\textbf{Induktionsanfang (I.A.)}: Zeige, dass $\mathpzc A_n$ n = 1 (bzw. n = 0) gilt.</text>
 <text transformations="translations" pos="16 304" stroke="black" type="minipage" width="688" height="15.5422" depth="4.4622" valign="top">\textbf{Induktionsschritt (I.S.)}: Zeige, dass, wenn $\mathpzc A_{n-1}$ gilt, auch $\mathpzc A_{n}$ gilt</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="688" height="15.4334" depth="4.3512" valign="top" style="item">Sei $n \in \mathbb N$ \textbf{beliebig}</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="688" height="15.4334" depth="4.3512" valign="top" style="item">Sei $n \in \mathbb N$ \textbf{fest aber beliebig}</text>
 <text transformations="translations" pos="16 240" stroke="black" type="minipage" width="480" height="15.5422" depth="4.4622" valign="top" style="item">\textbf{Induktionsvoraussetzung (I.V.)}: $\mathpzc A_{n-1}$ sei wahr.</text>
 <text transformations="translations" pos="16 208" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top" style="item">Zeige durch Umformungen und mit der I.V., dass dann auch $\mathpzc A_{n}$ wahr ist</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
-<text layer="alpha" transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
+<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
 <text transformations="translations" pos="16 128" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Wenn ihr Umformungen macht startet \textbf{immer} mit $\mathpzc A_n$ bzw $\mathpzc A_{n+1}$ \\
 (Also der Aussage die ihr Zeigen wollt)</text>
-</page>
-<page title="Vollständige Induktion">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="15.7909" depth="4.7286" valign="top" style="item">Wir haben also eine Kette von Abhängigkeiten: $\dots \rightarrow A_{n-1} \rightarrow A_n \rightarrow A_{n+1} \rightarrow \dots $</text>
-<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="784" height="41.9758" depth="30.9912" valign="top" style="item">Wenn wir jetzt zeigen können das das erste Element der Kette gilt ($A_0$ also unser Induktionsanfang) bedeutet das, dass durch die Implikationen alle anderen Aussagen auch gelten</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
-<text layer="alpha" transformations="translations" pos="0 160" stroke="black" type="minipage" width="688" height="15.671" depth="4.6176" valign="top" style="item">Also: Zeige das $A_{n+1}$ gilt unter der Annahme das $A_n $ bereits gilt</text>
-<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="800" height="28.7335" depth="17.6934" valign="top" style="item">Fange dazu bei $A_{n+1}$ und forme so lange um bis man die Tatsache ausnutzen kann das $A_n$ schon gilt</text>
-</page>
-<page title="Vollständige Induktion">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="624" height="15.0028" depth="3.9294" valign="top">\bfseries Problemstellung:</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="15.469" depth="4.4178" valign="top" style="item">Für jedes $n \in \mathbb N$ ist eine Aussage $\mathcal A_n$ definiert</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="15.469" depth="4.4178" valign="top" style="item">Zeige das $\mathcal A_n$ für alle n gilt</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="15.358" depth="4.2846" valign="top" style="item">Das ist etwas mühsam per Hand für alle $\mathcal A_n$ zu machen</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="592" height="15.2203" depth="4.1514" valign="top">\bfseries Lösung:</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="672" height="28.7335" depth="17.6934" valign="top" style="item">Wenn wir für beliebiges n zeigen können das Wenn $\mathcal A_n$ gilt auch $\mathcal A_{n+1}$ gilt können wir &apos;&apos;alles auf einmal&apos;&apos; beweisen</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
+<text matrix="1 0 0 1 0 10" transformations="translations" pos="16 64" stroke="black" type="minipage" width="576" height="15.5977" depth="4.5288" valign="top">Ihr wollt die Aussage $ \mathpzc A_n$ zeigen und dürft dafür $\mathpzc A_{n-1}$ benutzen</text>
+<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="608" height="15.5977" depth="4.5288" valign="top">Aus $\mathpzc A_{n-1}$ ein Beispiel für $\mathpzc A_{n}$ zu konstruieren zeigt nicht  $\mathpzc A_n $ allgemein </text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -4333,7 +4324,7 @@ h
 <text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="512" height="13.078" depth="2.0202" valign="top">\bfseries Beweis</text>
 <text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="608" height="16.8964" depth="5.8164" valign="top">I.A.: Es sei $n = 0$. Es gilt $0^3+2\cdot 0 = 0$</text>
 <text layer="epsilon" matrix="1 0 0 1 0 16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="608" height="13.946" depth="2.8638" valign="top">I.S.: $n \rightsquigarrow n+1$</text>
-<text matrix="1 0 0 1 16 16" transformations="translations" pos="16 224" stroke="black" type="minipage" width="576" height="15.4334" depth="4.3512" valign="top" style="item">Sei $n\in \mathbb N$  beliebig</text>
+<text matrix="1 0 0 1 16 16" transformations="translations" pos="16 224" stroke="black" type="minipage" width="576" height="15.4334" depth="4.3512" valign="top" style="item">Sei $n\in \mathbb N_0$  fest aber beliebig</text>
 <text layer="zeta" matrix="1 0 0 1 16 16" transformations="translations" pos="16 192" stroke="black" type="minipage" width="576" height="16.8964" depth="5.8164" valign="top" style="item">I.V.: Es gelte $n^3 +2\cdot n$ ist durch 3 Teilbar</text>
 <text layer="eta" matrix="1 0 0 1 -16 32" transformations="translations" pos="48 176" stroke="black" type="minipage" width="464" height="104.482" depth="93.6174" valign="top">\begin{align*}
 (n+1)^3 + 2\cdot (n+1) &amp;= (n^2 + 2n + 1) \cdot (n+1) + (n+1)\\
@@ -4345,6 +4336,59 @@ h
 <text matrix="1 0 0 1 16 -27" transformations="translations" pos="16 32" stroke="black" type="minipage" width="400" height="17.3893" depth="6.327" valign="top" style="item">$3(n^2 + n +1)$ ist durch 3 Teilbar</text>
 <text layer="iota" matrix="1 0 0 1 0 -32" transformations="translations" pos="432 48" stroke="black" type="minipage" width="192" height="15.2536" depth="4.1736" valign="top">$\Rightarrow \mathpzc A_{n+1}$ ist wahr</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
+</page>
+<page title="Negativbeispiel Vorwärtsinduktion">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITred15">
+8 376 m
+880 376 l
+8 0 0 -8 880 368 888 368 a
+888 20.7504 l
+16 20.7504 l
+8 0 0 -8 16 28.7504 8 28.7504 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="800" height="13.078" depth="2.0202" valign="top">\bfseries So bitte nicht machen</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="608" height="26.4002" depth="15.3402" valign="top">Beh: Jeder kreisfreie, zusammenhängende Graph mit n Knoten und n-1 Kanten hat min. ein Blatt</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">I.A.: n = 1 Der Graph mit einem Knoten und keinen Kanten ist zusammenhängend, kreisfrei und der Knoten ist ein Blatt</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 240" stroke="black" type="minipage" width="672" height="13.946" depth="2.8638" valign="top">I.S.: $n \rightsquigarrow n+1$</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="16 208" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">I.V.: Es gelte die Behauptung für ein festes aber beliebiges n</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="16 176" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">Sei G ein kreisfreier, zusammenhängender Graph mit n Knoten und n-1 Kanten</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">Der n+1te Knoten und eine neue Kante müssen als neues Blatt eingefügt werden</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 112" stroke="black" type="minipage" width="832" height="12.9115" depth="1.8204" valign="top">Nach I.V. hat dieser ein Blatt</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 48" stroke="black" type="minipage" width="864" height="15.1648" depth="4.0848" valign="top">\impl Der Graph G&apos; mit n+1 Knoten und n Kanten hat ein Blatt</text>
+</page>
+<page title="Negativbeispiel Vorwärtsinduktion">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<group layer="alpha">
+<path stroke="black" fill="KITred15">
+8 376 m
+880 376 l
+8 0 0 -8 880 368 888 368 a
+888 20.7504 l
+16 20.7504 l
+8 0 0 -8 16 28.7504 8 28.7504 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="800" height="13.078" depth="2.0202" valign="top">\bfseries So bitte nicht machen</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="768" height="13.1357" depth="2.0646" valign="top">Was ist hier Passiert?</text>
+<text layer="beta" transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top" style="item">Wir haben nur gezeigt das Graphen die auf diese weise Konstruiert werden ein Blatt haben</text>
+<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="864" height="15.0516" depth="3.9738" valign="top" style="item">Wir haben ignoriert das man auch noch Kanten verschieben könnte</text>
+<text layer="delta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="848" height="26.4002" depth="15.3402" valign="top" style="item">Wir müssten jetzt auch noch Zeigen das \textbf{alle} kreisfreien, zusammenhängenden Graphen mit n Knoten und n-1 Kanten auf diese Weise konstruiert werden können</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -6" transformations="translations" pos="16 192" stroke="black" type="minipage" width="848" height="15.0516" depth="3.9738" valign="top" style="item">\dots und wir haben die Induktionsvorrausetzung nicht benutzt</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -4467,16 +4511,16 @@ h
 </path>
 </group>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">Seine $A = \{a,b\}$ ein Alphabet und</text>
-<text matrix="1 0 0 1 -16 5" transformations="translations" pos="32 320" stroke="black" type="minipage" width="208" height="44.198" depth="33.2112" valign="top">$$
+<text matrix="1 0 0 1 0 5" transformations="translations" pos="32 320" stroke="black" type="minipage" width="208" height="44.198" depth="33.2112" valign="top">$$
 x \rightarrow \left\{ \begin{array}{ll}
 xx &amp;\vert x=a \\
 x &amp;\vert sonst
 \end{array}\right.
 $$</text>
 <text matrix="1 0 0 1 -48 32" transformations="translations" pos="64 304" stroke="black" type="minipage" width="112" height="13.2268" depth="2.1312" valign="top">$f: A \rightarrow A^*$</text>
-<text transformations="translations" pos="272 336" stroke="black" type="minipage" width="160" height="15.3757" depth="4.2846" valign="top">$g: A^* \rightarrow A^*$</text>
-<text transformations="translations" pos="272 304" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">$g(\epsilon) = \epsilon$</text>
-<text transformations="translations" pos="272 272" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$g(xw) = f(x) \cdot g(w) \quad \quad x \in A, w\in A^*$</text>
+<text matrix="1 0 0 1 96 0" transformations="translations" pos="272 336" stroke="black" type="minipage" width="160" height="15.3757" depth="4.2846" valign="top">$g: A^* \rightarrow A^*$</text>
+<text matrix="1 0 0 1 112 0" transformations="translations" pos="272 304" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">$g(\epsilon) = \epsilon$</text>
+<text matrix="1 0 0 1 112 0" transformations="translations" pos="272 272" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$g(xw) = f(x) \cdot g(w) \quad \quad x \in A, w\in A^*$</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">Außerdem sei $N_a(w)$ die Anzahl der a&apos;s in w</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 176" stroke="black" type="minipage" width="512" height="29.2241" depth="18.204" valign="top">Behauptung: Für alle $n\in N$ gilt: für alle $w\in A^*$ der Länge $\vert w \vert = n$ gilt: $\vert g(w) \vert = 2N_a(w) + N_b(w)$</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 96" stroke="black" type="minipage" width="448" height="28.8067" depth="17.76" valign="top">Zeigt die Behauptung mit Vollständiger Induktion über die Wortlänge $\vert w \vert = n$</text>
@@ -4580,7 +4624,7 @@ h
 <text layer="gamma" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Wähle $i = \max \{j \in \mathbb N_0  \vert 2^j \leq n\} $. Dann lässt sich n schreiben als $n = 2^i  + m$ mit $m \in \mathbb N_0 , m &lt; n$</text>
 <text layer="delta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="17.0185" depth="5.9496" valign="top">Außerdem $m \leq 2^i$ da sonst $n &gt; 2^i + 2^i = 2^{i+1}$ Widerspruch zu $i = \max \dots$</text>
 <text layer="epsilon" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Falls $m = 0$ ist Z einfach $\{2^i\}$ und wir sind fertig.</text>
-<text layer="zeta" matrix="1 0 0 1 16 -56" transformations="translations" pos="0 192" stroke="black" type="minipage" width="880" height="29.506" depth="18.4704" valign="top">Falls nicht können wir die $\underset{\text{Starke Induktion}}{\underbrace{\text{I.V. auf } m \text { anwenden}}}$. D.h. es gibt eine Menge $Z&apos;$ sodass $\sum_{z\in Z&apos;} \limits z = m $</text>
+<text layer="zeta" matrix="1 0 0 1 16 -56" transformations="translations" pos="0 192" stroke="black" type="minipage" width="880" height="30.9912" depth="19.98" valign="top">Falls nicht können wir die $\underset{\text{Starke Induktion } m \text{ evtl } \neq n-1}{\underbrace{\text{I.V. auf } m \text { anwenden}}}$. D.h. es gibt eine Menge $Z&apos;$ sodass $\sum_{z\in Z&apos;} \limits z = m $</text>
 <text layer="eta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Da $2^i \not \in Z&apos;$ ($m &lt; 2^i$) finden wir $Z = Z&apos; \cup \{2^i\}$</text>
 <text layer="beta" transformations="translations" pos="16 288" stroke="black" type="minipage" width="688" height="28.7335" depth="17.6934" valign="top">\textbf{I.V.:} Für alle $k \in \mathbb N_0$  mit $k &lt; n$ gilt: $k$ kann als Summe paarweiser verschiedener Zweierpotenzen dargestellt werden</text>
 </page>
