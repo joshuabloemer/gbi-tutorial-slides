@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241111160423" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241111182052" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
@@ -4520,5 +4520,65 @@ $\vert g(xw)\vert = \vert f(x) \vert  + \vert g(w)\vert$</text>
 &amp;= 2 N_a(xw) + N_b(xw)
 \end{align*}</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+</page>
+<page title="Starke Induktion vs Vollständige Induktion">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="beta" matrix="1 0 0 1 0 16">
+<path stroke="gray1" fill="gray3">
+808 64 m
+8 0 0 8 800 64 800 72 a
+8 72 l
+8 44.9746 l
+8 0 0 8 16 44.9746 16 36.9746 a
+808 36.9746 l
+h
+</path>
+</group>
+<group>
+<path stroke="black" fill="KITblue15">
+8 312 m
+864 312 l
+8 0 0 -8 864 304 872 304 a
+872 103.288 l
+16 103.288 l
+8 0 0 -8 16 111.288 8 111.288 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.3735" depth="4.2846" valign="top" style="item">Bei Vollständiger Induktion benutzen wir \textbf{nur} $\mathpzc A_{n-1}$ um $\mathpzc A_{n}$ zu beweisen</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="15.5977" depth="4.5288" valign="top" style="item">Manchmal ist es einfacher auch die Aussagen $\mathpzc A_0$ bis $\mathpzc A_{n-1}$ zu benutzen</text>
+<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 304" stroke="black" type="minipage" width="368" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 272" stroke="black" type="minipage" width="848" height="15.469" depth="4.4178" valign="top">Jede Zahl $\in N_0$ kann als Summe paarweise verschiedener Zweierpotenzen dargestellt werden</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 240" stroke="black" type="minipage" width="800" height="15.2758" depth="4.218" valign="top">$\mathpzc A_n: n$ kann als Summe paarweise verschiedener Zweierpotenzen dargestellt werden</text>
+<text matrix="1 0 0 1 144 0" transformations="translations" pos="0 208" stroke="black" type="minipage" width="528" height="53.8439" depth="42.8682" valign="top">Wir suchen also eine Menge Z von Zweierpotenzen sodass $$n = \sum_{z\in Z} \limits z$$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 64" stroke="black" type="minipage" width="784" height="15.0516" depth="3.9738" valign="top">Jede starke Induktion kann auch in eine Vollständige Induktion umgeschrieben werden</text>
+</page>
+<page title="Starke Induktion">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="13.0048" depth="1.9092" valign="top">\textbf{I.A.} n = 0</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top">Die Leere Summe hat den Wert 0 ($Z = \{\}$)</text>
+<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="13.8905" depth="2.7972" valign="top">\bfseries I.S.  $n-1 \rightsquigarrow  n$</text>
+<text layer="gamma" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Wähle $i = \max \{j \in \mathbb N_0  \vert 2^j \leq n\} $. Dann lässt sich n schreiben als $n = 2^i  + m$ mit $m \in \mathbb N_0 , m &lt; n$</text>
+<text layer="delta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="17.0185" depth="5.9496" valign="top">Außerdem $m \leq 2^i$ da sonst $n &gt; 2^i + 2^i = 2^{i+1}$ Widerspruch zu $i = \max \dots$</text>
+<text layer="epsilon" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Falls $m = 0$ ist Z einfach $\{2^i\}$ und wir sind fertig.</text>
+<text layer="zeta" matrix="1 0 0 1 16 -56" transformations="translations" pos="0 192" stroke="black" type="minipage" width="880" height="29.506" depth="18.4704" valign="top">Falls nicht können wir die $\underset{\text{Starke Induktion}}{\underbrace{\text{I.V. auf } m \text { anwenden}}}$. D.h. es gibt eine Menge $Z&apos;$ sodass $\sum_{z\in Z&apos;} \limits z = m $</text>
+<text layer="eta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Da $2^i \not \in Z&apos;$ ($m &lt; 2^i$) finden wir $Z = Z&apos; \cup \{2^i\}$</text>
+<text layer="beta" transformations="translations" pos="16 288" stroke="black" type="minipage" width="688" height="28.7335" depth="17.6934" valign="top">\textbf{I.V.:} Für alle $k \in \mathbb N_0$  mit $k &lt; n$ gilt: $k$ kann als Summe paarweiser verschiedener Zweierpotenzen dargestellt werden</text>
 </page>
 </ipe>
