@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241108123939" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241112001603" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Wörter}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -7944,7 +7944,7 @@ h
 </path>
 </group>
 <text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="368" height="13.2268" depth="2.1312" valign="top">\bfseries $A^n$</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">$A^n$ ist die Menge aller Wört der länge n über A</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">$A^n$ ist die Menge aller Wörter der länge n über A</text>
 <text layer="beta" transformations="translations" pos="16 288" stroke="black" type="minipage" width="368" height="13.2268" depth="2.1312" valign="top">$A^*$</text>
 <text transformations="translations" pos="16 256" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">$A^*$ ist die Menge aller Wörter beliebiger Länge über A</text>
 <text matrix="1 0 0 1 80 32" transformations="translations" pos="64 208" stroke="black" type="minipage" width="144" height="50.3851" depth="39.405" valign="top">$$A^* = \bigcup_{i=0}^\infty A^i$$</text>
@@ -7968,7 +7968,7 @@ h
 h
 </path>
 </group>
-<group>
+<group matrix="1 0 0 1 0 15">
 <path stroke="black" fill="KITgreen15">
 8 200 m
 576 200 l
@@ -7986,11 +7986,31 @@ i \mapsto \left\{\begin{array}{rcl}
 w_1(i) &amp;\vert &amp; 1 \leq  i \leq m\\
 w_2(i - m) &amp;\vert &amp; m &lt;  i \leq n+m
 \end{array}\right.$$</text>
-<text transformations="translations" pos="16 192" stroke="black" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Potenz von Wörtern</text>
-<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="560" height="13.1357" depth="2.0646" valign="top">Die n-te Potenz eines Wortes w ist Induktiv definiert durch:</text>
-<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="560" height="14.6342" depth="3.552" valign="top" style="item">$w^0 = \epsilon$</text>
-<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="560" height="16.2859" depth="5.217" valign="top" style="item">Für alle $n\in N_0: w^{n+1} = w^n \cdot w$</text>
+<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 192" stroke="black" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Potenz von Wörtern</text>
+<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 160" stroke="black" type="minipage" width="560" height="13.1357" depth="2.0646" valign="top">Die n-te Potenz eines Wortes w ist Induktiv definiert durch:</text>
+<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 128" stroke="black" type="minipage" width="560" height="14.6342" depth="3.552" valign="top" style="item">$w^0 = \epsilon$</text>
+<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 96" stroke="black" type="minipage" width="560" height="16.2859" depth="5.217" valign="top" style="item">Für alle $n\in N_0: w^{n+1} = w^n \cdot w$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 26}</text>
+</page>
+<page title="Anmerkungen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITred15">
+8 376 m
+832 376 l
+8 0 0 -8 832 368 840 368 a
+840 177.882 l
+16 177.882 l
+8 0 0 -8 16 185.882 8 185.882 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 304" transformations="translations" pos="16 64" stroke="black" type="minipage" width="592" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
+<text matrix="1 0 0 1 0 304" transformations="translations" pos="16 32" stroke="black" type="minipage" width="816" height="28.5403" depth="17.4936" valign="top" style="item">Wörter der Länge 1 und Zeichen aus dem Alphabet sind nicht das Gleiche. Wörter sind Abbildungen und
+Zeichen Elemente des Alphabets.</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="816" height="28.7335" depth="17.6934" valign="top" style="item">Die Konkatenation ist nur für Wörter definiert. $w_1 \cdot x$  mit $w_1$ ist ein Wort und $x \in A$ ist keine gültige Konkatenation</text>
+<text transformations="translations" pos="16 208" stroke="black" type="minipage" width="816" height="16.5901" depth="5.5278" valign="top" style="item">$w_1(i)$ ist wieder ein Zeichen</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
