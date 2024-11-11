@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241111235836" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241112004540" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
@@ -4206,7 +4206,7 @@ h
 <text transformations="translations" pos="16 208" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top" style="item">Zeige durch Umformungen und mit der I.V., dass dann auch $\mathpzc A_{n}$ wahr ist</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
 <text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
-<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Wenn ihr Umformungen macht, startet \textbf{immer} mit $\mathpzc A_n$ bzw $\mathpzc A_{n+1}$ \\
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Wenn ihr Umformungen macht, startet \textbf{immer} mit $\mathpzc A_n$
 (Also der Aussage die ihr Zeigen wollt)</text>
 <text matrix="1 0 0 1 0 10" transformations="translations" pos="16 64" stroke="black" type="minipage" width="576" height="15.5977" depth="4.5288" valign="top">Ihr wollt die Aussage $ \mathpzc A_n$ zeigen und dürft dafür $\mathpzc A_{n-1}$ benutzen</text>
 <text transformations="translations" pos="16 48" stroke="black" type="minipage" width="608" height="15.5977" depth="4.5288" valign="top">Aus $\mathpzc A_{n-1}$ ein Beispiel für $\mathpzc A_{n}$ zu konstruieren zeigt nicht  $\mathpzc A_n $ allgemein </text>
@@ -4254,9 +4254,9 @@ h
 <text matrix="1 0 0 1 -32 0" transformations="translations" pos="48 336" stroke="black" type="minipage" width="320" height="13.078" depth="2.0202" valign="top">\bfseries Beweis</text>
 <text matrix="1 0 0 1 -32 16" transformations="translations" pos="48 368" stroke="black" type="minipage" width="640" height="16.8964" depth="5.8164" valign="top">\textbf{Behauptung:} Für alle $n \in \mathbb N_0$ ist $n^2 +n$ eine gerade Zahl</text>
 <text layer="beta" matrix="1 0 0 1 -48 32" transformations="translations" pos="64 272" stroke="black" type="minipage" width="640" height="16.8964" depth="5.8164" valign="top">I.A.; Es sei $n = 0$. Es gilt $0^2 + 0 = 0 $ ist eine gerade Zahl  $\Rightarrow \mathcal A_0$ ist wahr</text>
-<text layer="gamma" matrix="1 0 0 1 -32 0" transformations="translations" pos="48 272" stroke="black" type="minipage" width="640" height="13.946" depth="2.8638" valign="top">I.S.: $n \rightsquigarrow n+1$</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="48 240" stroke="black" type="minipage" width="640" height="15.4334" depth="4.3512" valign="top" style="item">Sei $n \in \mathbb N_0$ fest aber beliebig</text>
-<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="48 208" stroke="black" type="minipage" width="640" height="16.8964" depth="5.8164" valign="top" style="item">I.V.: Es gelte $n^2+n$ ist eine gerade Zahl</text>
+<text layer="gamma" matrix="1 0 0 1 -32 0" transformations="translations" pos="48 272" stroke="black" type="minipage" width="640" height="13.946" depth="2.8638" valign="top">I.S.: $n-1 \rightsquigarrow n$</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="48 240" stroke="black" type="minipage" width="640" height="15.6355" depth="4.551" valign="top" style="item">Sei $n \in \mathbb N_+$ fest aber beliebig</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="48 208" stroke="black" type="minipage" width="640" height="17.3893" depth="6.327" valign="top" style="item">I.V.: Es gelte $(n-1)^2+(n-1)$ ist eine gerade Zahl</text>
 <text layer="epsilon" matrix="1 0 0 1 -16 32" transformations="translations" pos="48 176" stroke="black" type="minipage" width="352" height="69.8812" depth="58.941" valign="top">\begin{align*}
 (n+1)^2 + (n+1) &amp;= n^2 + 2n + 1 + (n+1)\\
 &amp;= (n^2+n) + (2n+2)\\
@@ -4449,10 +4449,10 @@ h
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="576" height="13.229" depth="2.1534" valign="top">Sei w ein Wort</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="432" height="17.6912" depth="6.6156" valign="top">\textbf{Behauptung:} Für alle $k\in \mathbb N_0$ gilt $\vert w^k \vert = k\cdot \vert w \vert$</text>
 <text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="17.6912" depth="6.6156" valign="top">I.A.: Es sei $k = 0 $. Es gilt $\vert w ^k \vert = \vert w^0\vert = \vert \epsilon \vert = 0 = 0 \cdot \vert w\vert = k \cdot \vert w \vert $</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="576" height="14.1392" depth="3.0636" valign="top">I.S.: $ k \rightsquigarrow k+1$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 224" stroke="black" type="minipage" width="576" height="15.469" depth="4.4178" valign="top" style="item">Sei $k \in \mathbb N_0$ beliebig</text>
-<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="576" height="17.6912" depth="6.6156" valign="top" style="item">I.V.: Es gelte $\vert w^k\vert = k\cdot \vert w\vert$</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 144" stroke="black" type="minipage" width="576" height="20.7725" depth="9.7236" valign="top" style="item">$\vert w^{k+1} \vert =  \vert w^k \cdot w \vert  = \vert w^k \vert + \vert w \vert \stackrel{\text{I.V.}}{=}  k \cdot \vert w\vert + \vert w\vert  = (k+1) \cdot \vert w \vert$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="576" height="14.1392" depth="3.0636" valign="top">I.S.: $ k-1 \rightsquigarrow k$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 224" stroke="black" type="minipage" width="576" height="15.671" depth="4.6176" valign="top" style="item">Sei $k \in \mathbb N_+$ beliebig</text>
+<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="576" height="17.6912" depth="6.6156" valign="top" style="item">I.V.: Es gelte $\vert w^{k-1}\vert = (k-1)\cdot \vert w\vert$</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 144" stroke="black" type="minipage" width="576" height="20.7725" depth="9.7236" valign="top" style="item">$\vert w^{k} \vert =  \vert w^{k-1} \cdot w \vert  = \vert w^{k-1} \vert + \vert w \vert \stackrel{\text{I.V.}}{=}  (k-1) \cdot \vert w\vert + \vert w\vert  = k \cdot \vert w \vert$</text>
 <text layer="alpha" transformations="translations" pos="16 288" stroke="black" type="minipage" width="576" height="13.078" depth="2.0202" valign="top">\bfseries Beweis</text>
 <path layer="iota" matrix="1 0 0 1 13 0" fill="white">
 600 89.6104 m
@@ -4521,8 +4521,8 @@ $$</text>
 <text matrix="1 0 0 1 96 0" transformations="translations" pos="272 336" stroke="black" type="minipage" width="160" height="15.3757" depth="4.2846" valign="top">$g: A^* \rightarrow A^*$</text>
 <text matrix="1 0 0 1 112 0" transformations="translations" pos="272 304" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">$g(\epsilon) = \epsilon$</text>
 <text matrix="1 0 0 1 112 0" transformations="translations" pos="272 272" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$g(xw) = f(x) \cdot g(w) \quad \quad x \in A, w\in A^*$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">Außerdem sei $N_a(w)$ die Anzahl der a&apos;s in w</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 176" stroke="black" type="minipage" width="512" height="29.2241" depth="18.204" valign="top">Behauptung: Für alle $n\in N$ gilt: für alle $w\in A^*$ der Länge $\vert w \vert = n$ gilt: $\vert g(w) \vert = 2N_a(w) + N_b(w)$</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">Außerdem sei $\vert w \vert_a$ die Anzahl der a&apos;s in w</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 176" stroke="black" type="minipage" width="512" height="29.2241" depth="18.204" valign="top">Behauptung: Für alle $n\in N$ gilt: für alle $w\in A^*$ der Länge $\vert w \vert = n$ gilt: $\vert g(w) \vert = 2\vert w \vert_a+ \vert w \vert_b$</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 96" stroke="black" type="minipage" width="448" height="28.8067" depth="17.76" valign="top">Zeigt die Behauptung mit vollständiger Induktion über die Wortlänge $\vert w \vert = n$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 </page>
@@ -4530,12 +4530,12 @@ $$</text>
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">I.A.:  $n = 0 \Rightarrow \vert w \vert = 0 \Rightarrow w = \epsilon \Rightarrow \vert g(w)\vert =\vert g(\epsilon)\vert = \vert \epsilon\vert = 0 = 2N_a(\epsilon) + N_b(\epsilon) = 2\cdot 0 + 0$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="416" height="13.946" depth="2.8638" valign="top">I.S.: $n \rightsquigarrow n+1$</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="512" height="15.4334" depth="4.3512" valign="top" style="item">Es sei $n \in \mathbb N$ beliebig</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top" style="item">I.V.: Für alle Wörter der Länge $\vert w\vert = n$ gilt $\vert g(w) \vert = 2N_a(w) + N_b(w)$</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="656" height="43.0969" depth="32.1012" valign="top" style="item">Es sei $w  \in A^*$ mit $\vert w\vert = n$ und $x \in A$\\
-$\vert xw\vert = n +1$\\
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">I.A.:  $n = 0 \Rightarrow \vert w \vert = 0 \Rightarrow w = \epsilon \Rightarrow \vert g(w)\vert =\vert g(\epsilon)\vert = \vert \epsilon\vert = 0 = 2\vert\epsilon\vert_a + \vert\epsilon\vert_b = 2\cdot 0 + 0$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="416" height="13.946" depth="2.8638" valign="top">I.S.: $n-1 \rightsquigarrow n$</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="512" height="15.6355" depth="4.551" valign="top" style="item">Es sei $n \in \mathbb N_+$ beliebig</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top" style="item">I.V.: Für \textbf{alle} Wörter der Länge $\vert w\vert = n-1$ gilt $\vert g(w) \vert = 2\vert w \vert_a+ \vert w \vert_b$</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="816" height="43.1146" depth="32.1234" valign="top" style="item">Es sei $w&apos;  \in A^*$ mit $\vert w&apos;\vert = n$ \\
+Wir betrachten das erste zeichen $x$ von $w&apos;$ ($w&apos; = x \cdot w )$\\
 $\vert g(xw)\vert = \vert f(x) \vert  + \vert g(w)\vert$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
@@ -4544,13 +4544,14 @@ $\vert g(xw)\vert = \vert f(x) \vert  + \vert g(w)\vert$</text>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="288" height="12.9115" depth="1.8204" valign="top">Fall 1: $x= a$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="item">$N_a(xw) = N_a(w) +1, N_b(xw) = N_b(w)$</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="104.393" depth="93.5286" valign="top">\begin{align*}
-\vert g(xw)\vert &amp;= \vert f(x) \vert + \vert g(w)\vert \\
-&amp;\stackrel{\text{I.V.}}{=} \vert aa\vert + 2 N_a(w) + N_b(w)\\
-&amp;= 2 + 2 N_a(w) + N_b(w)\\
-&amp;= 2 (1+N_a(w)) + N_b(w)\\
-&amp;= 2 N_a(xw) + N_b(xw) \quad \quad \text{wegen }N_a(xw) = N_a(w) +1, N_b(xw) = N_b(w)
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="16.6056" depth="5.55" valign="top" style="item">$\vert w&apos; \vert_a = \vert xw \vert_a = \vert w \vert_a+1,\quad \vert w&apos; \vert _b = \vert xw \vert_b = \vert w \vert_b$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="864" height="120.941" depth="110.156" valign="top">\begin{align*}
+\vert g(w&apos;)\vert  = \vert g(xw)\vert &amp;= \vert f(x) \vert + \vert g(w)\vert \\
+&amp;\stackrel{\text{I.V.}}{=} \vert aa\vert + 2 \vert w \vert_a+ \vert w \vert_b\\
+&amp;= 2 + 2 \vert w \vert_a+ \vert w \vert_b\\
+&amp;= 2 (1+\vert w \vert_a) + \vert w \vert_b\\
+&amp;= 2 \vert xw \vert_a+ \vert xw \vert_b \quad \quad \text{wegen }\vert xw \vert_a= \vert w \vert_a+1, \vert xw \vert_b= \vert w \vert_b\\
+&amp;= 2 \vert w&apos; \vert_a + \vert w&apos; \vert_b 
 \end{align*}</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
 </page>
@@ -4559,12 +4560,13 @@ $\vert g(xw)\vert = \vert f(x) \vert  + \vert g(w)\vert$</text>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="288" height="13.3289" depth="2.2644" valign="top">Fall 2: $x= b$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="item">$N_a(xw) = N_a(w), N_b(xw) = N_b(w) +1 $</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="0 320" stroke="black" type="minipage" width="304" height="87.8232" depth="76.923" valign="top">\begin{align*}
-\vert g(xw)\vert &amp;= \vert f(x) \vert + \vert g(w)\vert \\
-&amp;\stackrel{\text{I.V.}}{=} \vert b\vert + 2 N_a(w) + N_b(w)\\
-&amp;= 2 N_a(w) + N_b(w) +1 \\
-&amp;= 2 N_a(xw) + N_b(xw)
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="736" height="16.6056" depth="5.55" valign="top" style="item">$\vert w&apos; \vert_a= \vert xw \vert_a= \vert w \vert_a, \quad \vert w&apos; \vert_b= \vert xw \vert_a= \vert w \vert_a+1 $</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="416" height="104.393" depth="93.5286" valign="top">\begin{align*}
+\vert g(w&apos;)\vert  = \vert g(xw)\vert &amp;= \vert f(x) \vert + \vert g(w)\vert \\
+&amp;\stackrel{\text{I.V.}}{=} \vert b\vert + 2 \vert w \vert_a+ \vert w \vert_b\\
+&amp;= 2 \vert w \vert_a + \vert w \vert_b +1 \\
+&amp;= 2 \vert xw \vert_a + \vert xw \vert_b\\
+&amp;= 2 \vert w&apos; \vert_a+ \vert w&apos; \vert_b
 \end{align*}</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
 </page>
