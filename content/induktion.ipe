@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241023092427" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241111152939" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gbi-slides/tut-config}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}</preamble>
 <bitmap id="1" width="612" height="612" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="DCTDecode" length="20692" encoding="base64">
 /9j/4AAQSkZJRgABAQEBLAEsAAD/4QBVRXhpZgAASUkqAAgAAAADAA4BAgALAAAAMgAAABoB
 BQABAAAAPQAAABsBBQABAAAARQAAAAAAAABkb21pbm9lcyAzRCwBAAABAAAALAEAAAEAAAD/
@@ -4133,7 +4134,7 @@ h
 <text layer="beta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="352" height="15.2758" depth="4.218" valign="top">Behauptung: Der 7. Stein wird umfallen</text>
 <text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="464" height="12.9115" depth="1.8204" valign="top">Beweis:</text>
 <text transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="13.229" depth="2.1534" valign="top" style="item">Der erste Stein fällt um</text>
-<text layer="delta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="480" height="13.229" depth="2.1534" valign="top" style="item">Wenn ein Stein umfällt fällt der nächste auch um</text>
+<text layer="delta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top" style="item">Ein Stein fällt um wenn der Stein davor umgefallen ist</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 4}</text>
 </page>
 <page title="Vollständige Induktion">
@@ -4148,13 +4149,25 @@ h
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Wir haben: Eine Aussage A die für alle n gelten soll</text>
+<group layer="delta">
+<path stroke="black" fill="KITred15">
+616 248 m
+896 248 l
+8 0 0 -8 896 240 904 240 a
+904 216.8 l
+624 216.8 l
+8 0 0 -8 624 224.8 616 224.8 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Wir haben: Eine Aussage $\mathpzc A$ die für alle n gelten soll</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top" style="item">Wir wollen: Beweisen das diese Aussage gilt</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="560" height="28.5403" depth="17.4936" valign="top" style="item">Diese Aussage die für jedes n gelten soll können wir auch als n Aussagen auffassen die jeweils für ein n gelten</text>
-<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="608" height="28.5403" depth="17.4936" valign="top" style="item">Wenn wir jetzt Zeigen können das wenn eine Aussage (n) gilt auch die nächste (n+1) gilt sind wir eigentlich schon fertig</text>
-<text layer="delta" transformations="translations" pos="0 160" stroke="black" type="minipage" width="688" height="15.671" depth="4.6176" valign="top" style="item">Also: Zeige das $A_{n+1}$ gilt unter der Annahme das $A_n $ bereits gilt</text>
-<text layer="epsilon" transformations="translations" pos="0 128" stroke="black" type="minipage" width="800" height="28.7335" depth="17.6934" valign="top" style="item">Fange dazu bei $A_{n+1}$ und forme so lange um bis man die Tatsache ausnutzen kann das $A_n$ schon gilt</text>
+<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="608" height="28.5403" depth="17.4936" valign="top" style="item">Diese Aussage $\mathpzc A$ die für jedes n gelten soll können wir auch als n Aussagen $\mathpzc A_1, \mathpzc A_2, \dots $auffassen die jeweils für ein festes n gelten</text>
+<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="608" height="41.5584" depth="30.5472" valign="top" style="item">Wenn wir jetzt Zeigen können das eine Aussage $\mathpzc A_n$ gilt wenn die vorherige Aussage $\mathpzc A_{n-1}$ (Das nennt man Indutkionsschritt) sind wir eigentlich schon fertig </text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="640 240" stroke="black" type="minipage" width="272" height="13.1357" depth="2.0646" valign="top">Hä? Wieso Funktioniert das?</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -208" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.3735" depth="4.2846" valign="top" style="item">Wie bei Domino haben wir eine Kette von Abhängigkeiten: $\dots \rightarrow \mathpzc A_{n-1} \rightarrow \mathpzc  A_n \rightarrow \mathpzc A_{n+1} \rightarrow \dots $</text>
+<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="768" height="15.0516" depth="3.9738" valign="top" style="subitem">Das diese Kette gilt zeigen wir mit dem Induktionschritt</text>
 </page>
 <page title="Vollständige Induktion">
 <layer name="alpha"/>
@@ -4165,6 +4178,8 @@ h
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="15.7909" depth="4.7286" valign="top" style="item">Wir haben also eine Kette von Abhängigkeiten: $\dots \rightarrow A_{n-1} \rightarrow A_n \rightarrow A_{n+1} \rightarrow \dots $</text>
 <text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="784" height="41.9758" depth="30.9912" valign="top" style="item">Wenn wir jetzt zeigen können das das erste Element der Kette gilt ($A_0$ also unser Induktionsanfang) bedeutet das, dass durch die Implikationen alle anderen Aussagen auch gelten</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
+<text layer="alpha" transformations="translations" pos="0 160" stroke="black" type="minipage" width="688" height="15.671" depth="4.6176" valign="top" style="item">Also: Zeige das $A_{n+1}$ gilt unter der Annahme das $A_n $ bereits gilt</text>
+<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="800" height="28.7335" depth="17.6934" valign="top" style="item">Fange dazu bei $A_{n+1}$ und forme so lange um bis man die Tatsache ausnutzen kann das $A_n$ schon gilt</text>
 </page>
 <page title="Vollständige Induktion">
 <layer name="alpha"/>
