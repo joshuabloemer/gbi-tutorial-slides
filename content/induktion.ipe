@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241111184624" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241111231242" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
@@ -4134,7 +4134,7 @@ h
 <text layer="beta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="352" height="15.2758" depth="4.218" valign="top">Behauptung: Der 7. Stein wird umfallen</text>
 <text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="464" height="12.9115" depth="1.8204" valign="top">Beweis:</text>
 <text transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="13.229" depth="2.1534" valign="top" style="item">Der erste Stein fällt um</text>
-<text layer="delta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top" style="item">Ein Stein fällt um wenn der Stein davor umgefallen ist</text>
+<text layer="delta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top" style="item">Ein Stein fällt um, wenn der Stein davor umgefallen ist</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 4}</text>
 </page>
 <page title="Vollständige Induktion">
@@ -4162,10 +4162,10 @@ h
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Wir haben: Eine Aussage $\mathpzc A$ die für alle n gelten soll</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top" style="item">Wir wollen: Beweisen das diese Aussage gilt</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="608" height="28.5403" depth="17.4936" valign="top" style="item">Diese Aussage $\mathpzc A$ die für jedes n gelten soll können wir auch als n Aussagen $\mathpzc A_1, \mathpzc A_2, \dots $auffassen die jeweils für ein festes n gelten</text>
-<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="608" height="41.5584" depth="30.5472" valign="top" style="item">Wenn wir jetzt Zeigen können das eine Aussage $\mathpzc A_n$ gilt wenn die vorherige Aussage $\mathpzc A_{n-1}$ (Das nennt man Indutkionsschritt) sind wir eigentlich schon fertig </text>
+<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="624" height="28.5403" depth="17.4936" valign="top" style="item">Diese Aussage $\mathpzc A$, die für jedes n gelten soll können wir auch als n Aussagen $\mathpzc A_1, \mathpzc A_2, \dots $auffassen, die jeweils für ein festes n gelten</text>
+<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="608" height="41.5584" depth="30.5472" valign="top" style="item">Wenn wir jetzt Zeigen können, dass eine Aussage $\mathpzc A_n$ gilt, wenn die vorherige Aussage $\mathpzc A_{n-1}$ (Das nennt man Indutkionsschritt) gilt, sind wir eigentlich schon fertig </text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
-<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="640 240" stroke="black" type="minipage" width="272" height="13.1357" depth="2.0646" valign="top">Hä? Wieso Funktioniert das?</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="640 240" stroke="black" type="minipage" width="272" height="13.1357" depth="2.0646" valign="top">Hä? Wieso funktioniert das?</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -208" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.3735" depth="4.2846" valign="top" style="item">Wie bei Domino haben wir eine Kette von Abhängigkeiten: $\dots \rightarrow \mathpzc A_{n-1} \rightarrow \mathpzc  A_n \rightarrow \mathpzc A_{n+1} \rightarrow \dots $</text>
 <text transformations="translations" pos="0 144" stroke="black" type="minipage" width="768" height="15.0516" depth="3.9738" valign="top" style="subitem">Das diese \textbf{Kette} gilt zeigen wir mit dem Induktionschritt</text>
 <text transformations="translations" pos="0 112" stroke="black" type="minipage" width="688" height="28.2939" depth="17.2716" valign="top" style="subitem">Um die \textbf{Aussagen} zu zeigen müssen wir noch die erste Aussage in der Kette $\mathpzc A_0$ zeigen (Das nennt man Induktionsanfang)</text>
@@ -4193,7 +4193,7 @@ h
 <text transformations="translations" pos="16 208" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top" style="item">Zeige durch Umformungen und mit der I.V., dass dann auch $\mathpzc A_{n}$ wahr ist</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
 <text layer="alpha" transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
-<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Wenn ihr Umformungen macht startet \textbf{immer} mit $\mathpzc A_n$ bzw $\mathpzc A_{n+1}$ \\
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Wenn ihr Umformungen macht, startet \textbf{immer} mit $\mathpzc A_n$ bzw $\mathpzc A_{n+1}$ \\
 (Also der Aussage die ihr Zeigen wollt)</text>
 </page>
 <page title="Vollständige Induktion">
@@ -4203,10 +4203,10 @@ h
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="15.7909" depth="4.7286" valign="top" style="item">Wir haben also eine Kette von Abhängigkeiten: $\dots \rightarrow A_{n-1} \rightarrow A_n \rightarrow A_{n+1} \rightarrow \dots $</text>
-<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="784" height="41.9758" depth="30.9912" valign="top" style="item">Wenn wir jetzt zeigen können das das erste Element der Kette gilt ($A_0$ also unser Induktionsanfang) bedeutet das, dass durch die Implikationen alle anderen Aussagen auch gelten</text>
+<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="880" height="28.7335" depth="17.6934" valign="top" style="item">Wenn wir jetzt zeigen können, dass das erste Element der Kette gilt ($A_1$ also unser Induktionsanfang) bedeutet das, dass durch die Implikationen alle anderen Aussagen auch gelten</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
-<text layer="alpha" transformations="translations" pos="0 160" stroke="black" type="minipage" width="688" height="15.671" depth="4.6176" valign="top" style="item">Also: Zeige das $A_{n+1}$ gilt unter der Annahme das $A_n $ bereits gilt</text>
-<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="800" height="28.7335" depth="17.6934" valign="top" style="item">Fange dazu bei $A_{n+1}$ und forme so lange um bis man die Tatsache ausnutzen kann das $A_n$ schon gilt</text>
+<text layer="alpha" transformations="translations" pos="0 160" stroke="black" type="minipage" width="688" height="15.7909" depth="4.7286" valign="top" style="item">Also: Zeige, dass $A_{n}$ gilt unter der Annahme das $A_{n-1} $ bereits gilt</text>
+<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="752" height="29.0554" depth="18.0042" valign="top" style="item">Fange dazu bei $A_{n}$ und forme so lange um bis man die Tatsache ausnutzen kann, dass $A_{n-1}$ schon gilt</text>
 </page>
 <page title="Vollständige Induktion">
 <layer name="alpha"/>
@@ -4217,7 +4217,7 @@ h
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="15.469" depth="4.4178" valign="top" style="item">Zeige das $\mathcal A_n$ für alle n gilt</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="15.358" depth="4.2846" valign="top" style="item">Das ist etwas mühsam per Hand für alle $\mathcal A_n$ zu machen</text>
 <text transformations="translations" pos="0 256" stroke="black" type="minipage" width="592" height="15.2203" depth="4.1514" valign="top">\bfseries Lösung:</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="672" height="28.7335" depth="17.6934" valign="top" style="item">Wenn wir für beliebiges n zeigen können das Wenn $\mathcal A_n$ gilt auch $\mathcal A_{n+1}$ gilt können wir &apos;&apos;alles auf einmal&apos;&apos; beweisen</text>
+<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="672" height="28.7335" depth="17.6934" valign="top" style="item">Wenn wir für beliebiges n zeigen können das Wenn $\mathcal A_{n-1}$ gilt auch $\mathcal A_{n}$ gilt können wir &apos;&apos;alles auf einmal&apos;&apos; beweisen</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
 </page>
 <page title="Beispiel">
@@ -4466,7 +4466,7 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">Seine $A = \{a,b\}$ ein Alphabet und</text>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">Sei nun $A = \{a,b\}$ ein Alphabet und</text>
 <text matrix="1 0 0 1 -16 5" transformations="translations" pos="32 320" stroke="black" type="minipage" width="208" height="44.198" depth="33.2112" valign="top">$$
 x \rightarrow \left\{ \begin{array}{ll}
 xx &amp;\vert x=a \\
@@ -4479,7 +4479,7 @@ $$</text>
 <text transformations="translations" pos="272 272" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$g(xw) = f(x) \cdot g(w) \quad \quad x \in A, w\in A^*$</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">Außerdem sei $N_a(w)$ die Anzahl der a&apos;s in w</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 176" stroke="black" type="minipage" width="512" height="29.2241" depth="18.204" valign="top">Behauptung: Für alle $n\in N$ gilt: für alle $w\in A^*$ der Länge $\vert w \vert = n$ gilt: $\vert g(w) \vert = 2N_a(w) + N_b(w)$</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 96" stroke="black" type="minipage" width="448" height="28.8067" depth="17.76" valign="top">Zeigt die Behauptung mit Vollständiger Induktion über die Wortlänge $\vert w \vert = n$</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 96" stroke="black" type="minipage" width="448" height="28.8067" depth="17.76" valign="top">Zeigt die Behauptung mit vollständiger Induktion über die Wortlänge $\vert w \vert = n$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 </page>
 <page title="Lösung">
