@@ -63,6 +63,12 @@ def createTut(tut: str, noclicks: bool = False) -> None:
         ["ipescript", "scripts/edittut"]
         + [intermediate + ".ipe"]
         + [rf"\renewcommand{{\tutinfo}}{{{subtitle}}}"]
+        + [intermediate + ".ipe"],
+        check=True,
+    )
+    subprocess.run(
+        ["ipescript", "scripts/repalcepreamble"]
+        + [intermediate + ".ipe"]
         + [rf"\setcounter{{tutweek}}{{{tut[3:]}}}"]
         + [intermediate + ".ipe"],
         check=True,
