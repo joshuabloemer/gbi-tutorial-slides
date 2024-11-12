@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241112165315" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241112174622" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
@@ -4426,10 +4426,10 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="800" height="13.078" depth="2.0202" valign="top">\bfseries So bitte nicht machen</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="768" height="13.1357" depth="2.0646" valign="top">Was ist hier Passiert?</text>
-<text layer="beta" transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top" style="item">Wir haben nur gezeigt das Graphen die auf diese weise Konstruiert werden ein Blatt haben</text>
-<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="864" height="15.0516" depth="3.9738" valign="top" style="item">Wir haben ignoriert das man auch noch Kanten verschieben könnte</text>
-<text layer="delta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="848" height="26.4002" depth="15.3402" valign="top" style="item">Wir müssten jetzt auch noch Zeigen das \textbf{alle} kreisfreien, zusammenhängenden Graphen mit n Knoten und n-1 Kanten auf diese Weise konstruiert werden können</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="768" height="15.1648" depth="4.0848" valign="top">Was ist hier passiert?</text>
+<text layer="beta" transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top" style="item">Wir haben nur gezeigt, dass Graphen, die auf diese Weise konstruiert werden ein Blatt haben</text>
+<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="864" height="15.0516" depth="3.9738" valign="top" style="item">Wir haben ignoriert, dass man auch noch Kanten verschieben könnte</text>
+<text layer="delta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="848" height="26.4002" depth="15.3402" valign="top" style="item">Wir müssten jetzt auch noch zeigen, dass \textbf{alle} kreisfreien, zusammenhängenden Graphen mit n Knoten und n-1 Kanten auf diese Weise konstruiert werden können</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -6" transformations="translations" pos="16 192" stroke="black" type="minipage" width="848" height="15.0516" depth="3.9738" valign="top" style="item">\dots und wir haben die Induktionsvorrausetzung nicht benutzt</text>
 </page>
 <page title="Beispiel">
@@ -4577,7 +4577,7 @@ $$</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="512" height="15.6355" depth="4.551" valign="top" style="item">Es sei $n \in \mathbb N_+$ beliebig</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top" style="item">I.V.: Für \textbf{alle} Wörter der Länge $\vert w\vert = n-1$ gilt $\vert g(w) \vert = 2\vert w \vert_a+ \vert w \vert_b$</text>
 <text transformations="translations" pos="0 256" stroke="black" type="minipage" width="816" height="43.1146" depth="32.1234" valign="top" style="item">Es sei $w&apos;  \in A^*$ mit $\vert w&apos;\vert = n$ \\
-Wir betrachten das erste zeichen $x$ von $w&apos;$ ($w&apos; = x \cdot w )$\\
+Wir betrachten das erste Zeichen $x$ von $w&apos;$ ($w&apos; = x \cdot w )$\\
 $\vert g(xw)\vert = \vert f(x) \vert  + \vert g(w)\vert$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
@@ -4644,7 +4644,7 @@ h
 <text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 304" stroke="black" type="minipage" width="368" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 272" stroke="black" type="minipage" width="848" height="15.469" depth="4.4178" valign="top">Jede Zahl $\in N_0$ kann als Summe paarweise verschiedener Zweierpotenzen dargestellt werden</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 240" stroke="black" type="minipage" width="800" height="15.2758" depth="4.218" valign="top">$\mathpzc A_n: n$ kann als Summe paarweise verschiedener Zweierpotenzen dargestellt werden</text>
-<text matrix="1 0 0 1 144 0" transformations="translations" pos="0 208" stroke="black" type="minipage" width="528" height="53.8439" depth="42.8682" valign="top">Wir suchen also eine Menge Z von Zweierpotenzen sodass $$n = \sum_{z\in Z} \limits z$$</text>
+<text matrix="1 0 0 1 144 0" transformations="translations" pos="0 208" stroke="black" type="minipage" width="528" height="54.3345" depth="43.3788" valign="top">Wir suchen also eine Menge Z von Zweierpotenzen, sodass $$n = \sum_{z\in Z} \limits z$$</text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 64" stroke="black" type="minipage" width="784" height="15.0516" depth="3.9738" valign="top">Jede starke Induktion kann auch in eine Vollständige Induktion umgeschrieben werden</text>
 </page>
 <page title="Starke Induktion">
@@ -4663,12 +4663,12 @@ h
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="13.0048" depth="1.9092" valign="top">\textbf{I.A.:} n = 0</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top">Die Leere Summe hat den Wert 0 ($Z = \{\}$)</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top">Die leere Summe hat den Wert 0 ($Z = \{\}$)</text>
 <text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="15.4334" depth="4.3512" valign="top">\textbf{I.S.:}  $n-1 \rightsquigarrow  n$ Sei $n \in \mathbb N_0$ fest aber beliebig.</text>
 <text layer="gamma" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Wähle $i = \max \{j \in \mathbb N_0  \vert 2^j \leq n\} $. Dann lässt sich n schreiben als $n = 2^i  + m$ mit $m \in \mathbb N_0 , m &lt; n$</text>
 <text layer="delta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="17.0185" depth="5.9496" valign="top">Außerdem $m \leq 2^i$ da sonst $n &gt; 2^i + 2^i = 2^{i+1}$ Widerspruch zu $i = \max \dots$</text>
 <text layer="epsilon" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Falls $m = 0$ ist Z einfach $\{2^i\}$ und wir sind fertig.</text>
-<text layer="zeta" matrix="1 0 0 1 16 -56" transformations="translations" pos="0 192" stroke="black" type="minipage" width="880" height="30.9912" depth="19.98" valign="top">Falls nicht können wir die $\underset{\text{Starke Induktion } m \text{ evtl } \neq n-1}{\underbrace{\text{I.V. auf } m \text { anwenden}}}$. D.h. es gibt eine Menge $Z&apos;$ sodass $\sum_{z\in Z&apos;} \limits z = m $</text>
+<text layer="zeta" matrix="1 0 0 1 16 -56" transformations="translations" pos="0 192" stroke="black" type="minipage" width="880" height="30.9912" depth="19.98" valign="top">Falls nicht, können wir die $\underset{\text{Starke Induktion } m \text{ evtl } \neq n-1}{\underbrace{\text{I.V. auf } m \text { anwenden}}}$. D.h. es gibt eine Menge $Z&apos;$, sodass $\sum_{z\in Z&apos;} \limits z = m $</text>
 <text layer="eta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Da $2^i \not \in Z&apos;$ ($m &lt; 2^i$) finden wir $Z = Z&apos; \cup \{2^i\}$</text>
 <text layer="beta" transformations="translations" pos="16 288" stroke="black" type="minipage" width="688" height="28.7335" depth="17.6934" valign="top">\textbf{I.V.:} Für alle $k \in \mathbb N_0$  mit $k &lt; n$ gilt: $k$ kann als Summe paarweiser verschiedener Zweierpotenzen dargestellt werden</text>
 </page>
