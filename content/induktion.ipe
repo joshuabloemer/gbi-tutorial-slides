@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241112092409" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241112115759" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
@@ -4229,6 +4229,17 @@ h
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta" active="theta"/>
+<group layer="theta">
+<path stroke="black" fill="KITgreen15">
+8 344 m
+656 344 l
+8 0 0 -8 656 336 664 336 a
+664 4.6083 l
+16 4.6083 l
+8 0 0 -8 16 12.6083 8 12.6083 a
+h
+</path>
+</group>
 <path layer="eta" matrix="1.5232 0 0 1 -181.628 -76.4598" stroke="black" fill="KITred70">
 160 112 m
 160 80 l
@@ -4264,24 +4275,13 @@ h
 240 112 l
 h
 </path>
-<path matrix="0.869383 0 0 1 262.497 -0" stroke="black" fill="KITcyanblue70">
+<path matrix="0.869383 0 0 1 262.497 0" stroke="black" fill="KITcyanblue70">
 160 112 m
 160 80 l
 240 80 l
 240 112 l
 h
 </path>
-<group layer="theta">
-<path stroke="black" fill="KITgreen15">
-8 344 m
-656 344 l
-8 0 0 -8 656 336 664 336 a
-664 4.6083 l
-16 4.6083 l
-8 0 0 -8 16 12.6083 8 12.6083 a
-h
-</path>
-</group>
 <group layer="alpha">
 <path stroke="black" fill="KITblue15">
 8 392 m
@@ -4327,26 +4327,26 @@ h
 <view layers="alpha pagenumbers_page gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha pagenumbers_page gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha pagenumbers_page gamma delta epsilon zeta eta theta" active="theta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon zeta eta theta iota" active="alpha"/>
-<group layer="iota">
-<path stroke="black" fill="KITgreen15">
-8 344 m
-624 344 l
-8 0 0 -8 624 336 632 336 a
-632 -22.3917 l
-16 -22.3917 l
-8 0 0 -8 16 -14.3917 8 -14.3917 a
-h
-</path>
-</group>
+<view layers="alpha pagenumbers_page gamma delta epsilon zeta eta theta iota" active="iota"/>
 <group layer="alpha">
 <path stroke="black" fill="KITblue15">
 8 392 m
-624 392 l
-8 0 0 -8 624 384 632 384 a
-632 353.525 l
-16 353.525 l
-8 0 0 -8 16 361.525 8 361.525 a
+752 392 l
+8 0 0 -8 752 384 760 384 a
+760 353.287 l
+16 353.287 l
+8 0 0 -8 16 361.287 8 361.287 a
+h
+</path>
+</group>
+<group layer="iota">
+<path stroke="black" fill="KITgreen15">
+8 344 m
+752 344 l
+8 0 0 -8 752 336 760 336 a
+760 -26.7163 l
+16 -26.7163 l
+8 0 0 -8 16 -18.7163 8 -18.7163 a
 h
 </path>
 </group>
@@ -4361,14 +4361,14 @@ h
 h
 </path>
 </group>
-<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="608" height="16.8964" depth="5.8164" valign="top">\textbf{Behauptung:} $n^3+2n$ ist durch 3 teilbar</text>
+<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="16.8964" depth="5.8164" valign="top">\textbf{Behauptung:} Für alle $n \in \mathbb N_0$ ist $n^3+2n$ durch 3 teilbar</text>
 <text layer="beta" transformations="translations" pos="16 320" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top">Zeigt die Behauptung mit vollständiger Induktion</text>
 <text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="512" height="13.078" depth="2.0202" valign="top">\bfseries Beweis</text>
 <text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="608" height="16.8964" depth="5.8164" valign="top">I.A.: Es sei $n = 0$. Es gilt $0^3+2\cdot 0 = 0$</text>
 <text layer="epsilon" matrix="1 0 0 1 0 16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="608" height="13.946" depth="2.8638" valign="top">I.S.: $n-1 \rightsquigarrow n$</text>
 <text matrix="1 0 0 1 16 16" transformations="translations" pos="16 224" stroke="black" type="minipage" width="576" height="15.4334" depth="4.3512" valign="top" style="item">Sei $n\in \mathbb N$  fest aber beliebig</text>
 <text layer="zeta" matrix="1 0 0 1 16 16" transformations="translations" pos="16 192" stroke="black" type="minipage" width="576" height="17.3893" depth="6.327" valign="top" style="item">I.V.: Es gelte $(n-1)^3 +2\cdot (n-1)$ ist durch 3 teilbar</text>
-<text layer="eta" matrix="1 0 0 1 -16 32" transformations="translations" pos="48 176" stroke="black" type="minipage" width="464" height="104.482" depth="93.6174" valign="top">\begin{align*}
+<text layer="eta" matrix="1 0 0 1 -16 32" transformations="translations" pos="48 176" stroke="black" type="minipage" width="720" height="104.482" depth="93.6174" valign="top">\begin{align*}
 (n)^3 + 2\cdot (n) &amp;= (n \cdot n \cdot n) + 2 (( n - 1) + 1)\\
 &amp;= ((n - 1) + 1)^3 + 2 (n - 1) + 2\\
 &amp;=(n - 1)^3 + 3 (n - 1)^2 1 + 3 (n - 1) 1^2 + 1^3 + 2 (n - 1) + 2\\
