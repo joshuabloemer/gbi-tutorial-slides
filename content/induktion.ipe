@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241112091635" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20241112092409" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
@@ -4229,6 +4229,48 @@ h
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta" active="theta"/>
+<path layer="eta" matrix="1.5232 0 0 1 -181.628 -76.4598" stroke="black" fill="KITred70">
+160 112 m
+160 80 l
+240 80 l
+240 112 l
+h
+</path>
+<path matrix="0.242245 0 0 1 453.008 -0.00036324" stroke="black" fill="KITred70">
+160 112 m
+160 80 l
+240 80 l
+240 112 l
+h
+</path>
+<path matrix="1.51243 0 0 1 15.5097 -0.00018162" stroke="black" fill="KITred70">
+160 112 m
+160 80 l
+240 80 l
+240 112 l
+h
+</path>
+<path layer="zeta" matrix="2.16026 0 0 1 -171.358 -45.5678" stroke="black" fill="KITcyanblue70">
+160 112 m
+160 80 l
+240 80 l
+240 112 l
+h
+</path>
+<path matrix="1 0 0 1 -3.44541 0" stroke="black" fill="KITcyanblue70">
+160 112 m
+160 80 l
+240 80 l
+240 112 l
+h
+</path>
+<path matrix="0.869383 0 0 1 262.497 -0" stroke="black" fill="KITcyanblue70">
+160 112 m
+160 80 l
+240 80 l
+240 112 l
+h
+</path>
 <group layer="theta">
 <path stroke="black" fill="KITgreen15">
 8 344 m
