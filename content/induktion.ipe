@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241112005232" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241112010710" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}
-\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}</preamble>
+</preamble>
 <bitmap id="1" width="612" height="612" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="DCTDecode" length="20692" encoding="base64">
 /9j/4AAQSkZJRgABAQEBLAEsAAD/4QBVRXhpZgAASUkqAAgAAAADAA4BAgALAAAAMgAAABoB
 BQABAAAAPQAAABsBBQABAAAARQAAAAAAAABkb21pbm9lcyAzRCwBAAABAAAALAEAAAEAAAD/
