@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241117223803" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241117232346" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4048,6 +4048,46 @@ Für jede aussagelogische Formel $F$ definiere $val_I (F )$ wie folgt:
 <text layer="zeta" transformations="translations" pos="16 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\rightarrow H ) \coloneqq b_\rightarrow(val_I(G), val_I(H))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
 </page>
+<page title="Bindungstärken">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="gamma">
+<path stroke="black" fill="KITred15">
+8 104 m
+640 104 l
+8 0 0 -8 640 96 648 96 a
+648 43.176 l
+16 43.176 l
+8 0 0 -8 16 51.176 8 51.176 a
+h
+</path>
+</group>
+<group layer="beta" matrix="1 0 0 1 0 48">
+<path stroke="black" fill="KITred15">
+8 136 m
+464 136 l
+8 0 0 -8 464 128 472 128 a
+472 74.4345 l
+16 74.4345 l
+8 0 0 -8 16 82.4345 8 82.4345 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 48" transformations="translations" pos="16 128" stroke="black" type="minipage" width="448" height="28.2939" depth="17.2716" valign="top">Wenn ihr darüber nachdenken müsst ob ihr eine Klammer weglassen könnt lasst sie lieber da</text>
+<text layer="alpha" matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">$\neg$ Bindet am stärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="12.9115" depth="1.8204" valign="top" style="item">$\wedge$ bindet am zweitstärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="592" height="12.9115" depth="1.8204" valign="top" style="item">$\vee$ bindet am drittstärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">$\rightarrow$ bindet am viertstärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="624" height="12.9115" depth="1.8204" valign="top" style="item">$
+\leftrightarrow$ bindet am schwächsten</text>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.0516" depth="3.9738" valign="top">Wenn sich dadurch die Bedeutung der Formel nicht ändert könnt ihr Klammern auch weglassen</text>
+<text layer="gamma" transformations="translations" pos="16 96" stroke="black" type="minipage" width="624" height="27.9298" depth="16.8942" valign="top">Die offizielle Syntax änder sich nicht das hier sind nur Abkürzungen\\
+Wörter in $For_{AL}$ sind immernoch mit Klammern</text>
+</page>
 <page title="Wahrheitstabellen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -4083,6 +4123,52 @@ h
 \item Wahrheitswerte für Teilformeln
 \item Wahrheitswerte für ganze Formel</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
+</page>
+<page title="Wahrheitstabellen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="pagenumbers_page beta gamma" active="gamma"/>
+<view layers="pagenumbers_page beta delta" active="delta"/>
+<view layers="pagenumbers_page beta delta epsilon" active="epsilon"/>
+<group layer="gamma">
+<path stroke="gray1" fill="gray3">
+392 208 m
+8 0 0 8 384 208 384 216 a
+8 216 l
+8 188.773 l
+8 0 0 8 16 188.773 16 180.773 a
+392 180.773 l
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+440 368 m
+8 0 0 8 432 368 432 376 a
+8 376 l
+8 326.413 l
+8 0 0 8 16 326.413 16 318.413 a
+440 318.413 l
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="416" height="26.2471" depth="15.207" valign="top">Wie viele Zeilen Hätte eine wahrheitstabelle mit 1500 Variablen?</text>
+<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="80.8924" depth="69.9966" valign="top" style="item">$2^{1500} = 3507466211043403874762758796028085799352401588033082882407579802479096\\
+3850563322203657080886584969261653150406795437517399294548941469959754171038\\
+9180047008478899564853290972644868027115834629465366821843401386294513554582\\
+6494634252538361938931496064466505255175144233550924917336113035579610970988\\
+5580674313954210217657847432626760733004753275317192133674703563372783297041\\
+993227052663333668509952000175053355529058880434182538386715523683713208549376$</text>
+<text layer="gamma" transformations="translations" pos="16 208" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top">Wie viele Atome gibt es im Universum?</text>
+<text layer="delta" transformations="translations" pos="0 208" stroke="black" type="minipage" width="896" height="27.8765" depth="16.8498" valign="top" style="item">ca. $10^{88}= 10000000000000000000000000000000000000000000000000000000000000000000\\
+000000000000000000000$</text>
+<text layer="epsilon" matrix="1 0 0 1 -32 0" transformations="translations" pos="32 128" stroke="black" type="minipage" width="208" height="13.1357" depth="2.0646" valign="top">Ihr seht das Problem?</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
 </page>
 <page title="Wahrheitstabellen">
 <layer name="alpha"/>
@@ -4198,6 +4284,15 @@ gilt</text>
 <text transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$((\neg A \rightarrow B) \wedge (\neg (A\leftrightarrow B) \vee A)) \equiv (A\wedge B)$</text>
 <text transformations="translations" pos="16 96" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top" style="item">$A\rightarrow B \equiv \neg A \vee B\quad$    \textbf{Wichtig}</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+</page>
+<page title="Anmerkungen zur Schreibweise">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">$=$ bedeutet 2 Formeln sind syntaktisch gleich. $\equiv$ bedeutet sie haben für die gleiche Variablenbelegung den gleichen Wahrheitswert</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="784" height="28.4071" depth="17.3826" valign="top" style="item">$\leftrightarrow$ dürft ihr in AL Formeln benutzen, $\Leftrightarrow$ nur wenn ihr auf &apos;&apos;Metaebene&apos;&apos; (also in Texten etc.) über Formeln redet.</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="624" height="13.229" depth="2.1534" valign="top" style="item">Gilt auch für $\rightarrow$ und $\Rightarrow$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -4459,5 +4554,97 @@ Formeln und boolschen Funktionen</text>
 <text layer="eta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$= w \vee \neg val_I (H)$</text>
 <text layer="theta" transformations="translations" pos="0 160" stroke="black" type="minipage" width="528" height="11.7616" depth="0.6882" valign="top" style="item">$= w$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
+</page>
+<page title="Von natürlicher Sprache zu aussagenlogischen Formeln">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Aussagen Variablen zuordnen</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="14.9184" depth="3.8628" valign="top" style="subitem">p: Es ist bewölkt.</text>
+<text matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top" style="subitem">q: Es regnet.</text>
+<text matrix="1 0 0 1 -16 -64" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="13.229" depth="2.1534" valign="top" style="subitem">r : Die Sonne scheint.</text>
+<text matrix="1 0 0 1 -16 -96" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="subitem">s: Es ist kalt.</text>
+<text matrix="1 0 0 1 -16 -128" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="subitem">t: Der Wind bläst.</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
+</page>
+<page title="Formalisierungen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Danach können dann aus Sätzen formeln Abgeleitet werden</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="14.2901" depth="3.219" valign="top" style="item">Es ist nicht der Fall, dass es bewölkt ist.
+</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">Es ist nicht bewölkt.</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">Es ist unbewölkt.
+</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="704" height="12.9115" depth="1.8204" valign="top" style="item">Es ist wolkenlos.</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="64" height="12.5985" depth="1.5318" valign="top">$\Rightarrow \neg p$</text>
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="400" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint, und es ist kalt.</text>
+<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="448" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint, aber es ist kalt.
+</text>
+<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="560" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint, obwohl es kalt ist.
+</text>
+<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="576" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint; trotzdem ist es kalt.</text>
+<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="608" height="13.229" depth="2.1534" valign="top" style="item">
+Trotz Sonnenscheins ist es kalt.</text>
+<text matrix="1 0 0 1 0 -192" transformations="translations" pos="16 224" stroke="black" type="minipage" width="64" height="11.6883" depth="0.5994" valign="top">$\Rightarrow r \wedge s $</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
+</page>
+<page title="Formalisierungen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="352" height="14.2901" depth="3.219" valign="top" style="item">Der Wind bläst, oder es ist kalt.
+</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="14.5144" depth="3.4632" valign="top" style="item">Der Wind bläst, und/oder es ist kalt.
+</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="12.9115" depth="1.8204" valign="top" style="item">Mindestens eines von beiden ist der Fall:
+</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="subitem">Der Wind bläst.
+</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="subitem">Es ist kalt.</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="80" height="11.8615" depth="0.777" valign="top">$\Rightarrow t \vee s$</text>
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es bewölkt ist, dann regnet es.
+</text>
+<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es bewölkt ist, so regnet es.
+</text>
+<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Falls es bewölkt ist, regnet es.
+</text>
+<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Es regnet, wenn es bewölkt ist.
+</text>
+<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="544" height="15.2758" depth="4.218" valign="top" style="item">Es regnet, falls es bewölkt ist.</text>
+<text matrix="1 0 0 1 0 -192" transformations="translations" pos="16 224" stroke="black" type="minipage" width="144" height="12.5985" depth="1.5318" valign="top">$\Rightarrow p\rightarrow q$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
+</page>
+<page title="Formalisierungen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+520 64 m
+8 0 0 8 512 64 512 72 a
+8 72 l
+8 44.7726 l
+8 0 0 8 16 44.7726 16 36.7726 a
+520 36.7726 l
+h
+</path>
+</group>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Nur wenn es bewölkt ist, dann regnet es.
+</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="15.0516" depth="3.9738" valign="top" style="item">Nur wenn es bewölkt ist, regnet es.
+</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="592" height="15.0516" depth="3.9738" valign="top" style="item">Es regnet nur, wenn es bewölkt ist.</text>
+<text matrix="1 0 0 1 0 64" transformations="translations" pos="16 224" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">$\Rightarrow (\neg p \rightarrow \neg q) \Rightarrow q\rightarrow p$</text>
+<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Es ist kalt genau dann, wenn der Wind bläst.
+</text>
+<text transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="14.2901" depth="3.219" valign="top" style="item">Es ist dann und nur dann kalt, wenn der Wind bläst.
+</text>
+<text transformations="translations" pos="0 176" stroke="black" type="minipage" width="624" height="26.1538" depth="15.1182" valign="top" style="item">Wenn es kalt ist, dann bläst der Wind, und wenn der Wind
+bläst, dann ist es kalt.</text>
+<text matrix="1 0 0 1 0 -112" transformations="translations" pos="16 224" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$\Rightarrow (s \leftrightarrow t) \Rightarrow (s\rightarrow t)  \wedge  (t \rightarrow s)$</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top">Das ganze geht Natürlich auch in die andere Richtung</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
 </page>
 </ipe>
