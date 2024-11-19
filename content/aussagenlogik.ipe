@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241119010938" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241119115848" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -40,15 +40,15 @@ h
 h
 </path>
 </symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
 <symbol name="mark/circle(sx)" transformations="translations">
 <path fill="sym-stroke">
 0.6 0 0 0.6 0 0 e
 0.4 0 0 0.4 0 0 e
-</path>
-</symbol>
-<symbol name="mark/disk(sx)" transformations="translations">
-<path fill="sym-stroke">
-0.6 0 0 0.6 0 0 e
 </path>
 </symbol>
 <symbol name="mark/fdisk(sfx)" transformations="translations">
@@ -4085,7 +4085,7 @@ Für jede Aussagenlogische Formel $F$ definiere $val_I (F )$ wie folgt:
 <text layer="gamma" transformations="translations" pos="16 208" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(\neg G)\coloneqq b_\neg(val_I(G))$</text>
 <text layer="delta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \wedge H) \coloneqq b_\wedge(val_I(G), val_I(H))$
 </text>
-<text layer="epsilon" transformations="translations" pos="16 144" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\vee H) \coloneqq b_\wedge(val_I(G),val_I(H))$</text>
+<text layer="epsilon" transformations="translations" pos="16 144" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\vee H) \coloneqq b_\vee(val_I(G),val_I(H))$</text>
 <text layer="zeta" transformations="translations" pos="16 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\rightarrow H ) \coloneqq b_\rightarrow(val_I(G), val_I(H))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
 </page>
@@ -4258,8 +4258,8 @@ h
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Seien A und B Aussagenvariablen</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Weiter sei $val(A) = w$ und $val(B) = f$</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Was ist $val((A \wedge B)  \rightarrow (A \vee B)) $?</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Weiter sei $val_I(A) = w$ und $val_I(B) = f$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Was ist $val_I((A \wedge B)  \rightarrow (A \vee B)) $?</text>
 <text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 256" stroke="black" type="minipage" width="496" height="73.1512" depth="62.2044" valign="top">
 \begin{center}
 \begin{tabular}{|c c | c c c|} 
@@ -4297,7 +4297,7 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="288" height="29.0309" depth="18.0042" valign="top">Gebt alle Interpretationen der Formel $F=(A \wedge B) \vee A$ an</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="288" height="29.0309" depth="18.0042" valign="top">Gebt alle Auswertungen der Formel $F=(A \wedge B) \vee A$ an</text>
 <text layer="beta" matrix="1 0 0 1 -32 48" transformations="translations" pos="32 256" stroke="black" type="minipage" width="288" height="73.1512" depth="62.2044" valign="top">
 \begin{center}
 \begin{tabular}{|c c | c c|} 
