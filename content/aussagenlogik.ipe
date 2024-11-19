@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241119003446" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241119010938" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4088,6 +4088,36 @@ Für jede Aussagenlogische Formel $F$ definiere $val_I (F )$ wie folgt:
 <text layer="epsilon" transformations="translations" pos="16 144" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\vee H) \coloneqq b_\wedge(val_I(G),val_I(H))$</text>
 <text layer="zeta" transformations="translations" pos="16 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\rightarrow H ) \coloneqq b_\rightarrow(val_I(G), val_I(H))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="alpha" matrix="1 0 0 1 0 -16">
+<path stroke="gray1" fill="gray3">
+520 320 m
+8 0 0 8 512 320 512 328 a
+8 328 l
+8 297.882 l
+8 0 0 8 16 297.882 16 289.882 a
+520 289.882 l
+h
+</path>
+</group>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $I$ eine Interpretation mit $I(P) = \textbf w, I(Q) = \textbf  f, I(S) =  \textbf  w$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">$G = (Q \rightarrow S) \vee P$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="528" height="116.648" depth="105.85" valign="top">
+\begin{align*}
+val_I( (Q \rightarrow S) \vee P) &amp;= b_\vee (val_I(Q \rightarrow S), val_I(P))\\
+&amp;= b_\vee ( b_\rightarrow (val_I(Q),val_I(S)) , val_I(P))\\
+&amp;= b_\vee ( b_\rightarrow (I(Q), I(S)) , I(P))\\
+&amp;= b_\vee ( b_\rightarrow (\textbf f , \textbf w) , \textbf w)\\
+&amp;= b_\vee ( \textbf w , \textbf w)\\
+&amp;= \textbf w
+\end{align*}
+</text>
+<text layer="alpha" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">Berechnet $val_I(G)$ durch anwenden der Definitionen</text>
 </page>
 <page title="Bindungstärken">
 <layer name="alpha"/>
