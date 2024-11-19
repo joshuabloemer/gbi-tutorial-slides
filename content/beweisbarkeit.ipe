@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241119003443" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241119175454" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3833,7 +3833,7 @@ $G, H \in For_{AL}$ $G \rightarrow (H \rightarrow G)$ eine Tautologie ist.\\
 Verwendet dabei die formellen Definitionen der Auswertung von Aussagenlogischen Formeln und boolschen Funktionen</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 288" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Behauptung: $\models G \rightarrow (H \rightarrow G)$</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top">Beweis: Seien $G, H \in For_{AL}$ und $I : Var \rightarrow \mathbb B$ eine \textbf{beliebige} Interpretation. Dann gilt:</text>
-<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \rightarrow (H \rightarrow G)) = \neg val_I \vee val_I(H \rightarrow G)$</text>
+<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \rightarrow (H \rightarrow G)) = \neg val_I(G) \vee val_I(H \rightarrow G)$</text>
 <text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 160" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">$= \neg val_I(G) \vee (\neg val_I(H)\vee val_I(G))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 24}</text>
 </page>
