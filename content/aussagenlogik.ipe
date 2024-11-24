@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241119122826" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241119175159" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4266,7 +4266,7 @@ h
  \hline
  A &amp; B &amp; $A\wedge B$&amp; $A\vee B$ &amp; $(A \wedge B)  \rightarrow (A \vee B) $ \\
  \hline
- f &amp; f &amp; w &amp; f &amp; f \\ 
+ f &amp; f &amp; f &amp; f &amp; f \\ 
 
  f &amp; w &amp; f&amp; w &amp; w \\
 
