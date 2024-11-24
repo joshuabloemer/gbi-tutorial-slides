@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241119003443" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241124160344" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3736,53 +3736,58 @@ h
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
+<layer name="delta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="gamma" matrix="1 0 0 1 0 16">
-<path stroke="black" fill="KITgreen15">
-8 72 m
-720 72 l
-8 0 0 -8 720 64 728 64 a
-728 -21.9318 l
-16 -21.9318 l
-8 0 0 -8 16 -13.9318 8 -13.9318 a
-h
-</path>
-</group>
-<group layer="beta" matrix="1 0 0 1 0 32">
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<group layer="beta">
 <path stroke="black" fill="KITblue15">
-8 200 m
-720 200 l
-8 0 0 -8 720 192 728 192 a
-728 65.8821 l
-16 65.8821 l
-8 0 0 -8 16 73.8821 8 73.8821 a
+8 232 m
+656 232 l
+8 0 0 -8 656 224 664 224 a
+664 97.8821 l
+16 97.8821 l
+8 0 0 -8 16 105.882 8 105.882 a
 h
 </path>
 </group>
-<group layer="alpha" matrix="1 0 0 1 0 16">
+<group layer="delta">
 <path stroke="black" fill="KITgreen15">
-8 376 m
-720 376 l
-8 0 0 -8 720 368 728 368 a
-728 229.139 l
-16 229.139 l
-8 0 0 -8 16 237.139 8 237.139 a
+8 88 m
+656 88 l
+8 0 0 -8 656 80 664 80 a
+664 -6.42686 l
+16 -6.42686 l
+8 0 0 -8 16 1.57314 8 1.57314 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 392 m
+656 392 l
+8 0 0 -8 656 384 664 384 a
+664 243.507 l
+16 243.507 l
+8 0 0 -8 16 251.507 8 251.507 a
 h
 </path>
 </group>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="12.8627" depth="1.7982" valign="top">\bfseries Modell</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="704" height="55.7375" depth="44.7552" valign="top">Eine Interpretation $I$ heißt Modell einer Formel G, wenn $val_I(G) = w$.\\
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="640" height="55.7375" depth="44.7552" valign="top">Eine Interpretation $I$ heißt Modell einer Formel G, wenn $val_I(G) = w$.\\
 \\
 Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn I Modell jeder Formel $G \in  \Gamma$ ist</text>
-<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="704" height="13.078" depth="2.0202" valign="top">\bfseries Schreibweise</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="704" height="12.9115" depth="1.8204" valign="top">Wir schreiben:</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 128" stroke="black" type="minipage" width="704" height="16.5901" depth="5.5278" valign="top" style="item">$\Gamma \models G$ Falls jedes Modell von $\Gamma$ auch ein Model von $G$ ist</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 96" stroke="black" type="minipage" width="704" height="16.5901" depth="5.5278" valign="top" style="item">$\models G$ wenn $G$ für alle Interpretationen wahr ist.</text>
-<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 64" stroke="black" type="minipage" width="704" height="13.078" depth="2.0202" valign="top">\bfseries Erfüllbarkeit</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="704" height="28.7335" depth="17.6934" valign="top">Eine Formel heißt erfüllbar wenn es mindestens eine Interpretation $I$ gibt, für die $val_I = w$ gilt</text>
+<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="640" height="13.078" depth="2.0202" valign="top">\bfseries Schreibweise</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="640" height="12.9115" depth="1.8204" valign="top">Wir schreiben:</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 128" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$\Gamma \models G$ Falls jedes Modell von $\Gamma$ auch ein Model von $G$ ist</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 96" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$\models G$ (statt $\emptyset \models G$) wenn $G$ für \emph{alle} Interpretationen wahr ist.</text>
+<text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 64" stroke="black" type="minipage" width="640" height="13.078" depth="2.0202" valign="top">\bfseries Erfüllbarkeit</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="624" height="28.7335" depth="17.6934" valign="top">Eine Formel heißt erfüllbar wenn es mindestens eine Interpretation $I$ gibt, für die $val_I = w$ gilt</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 22}</text>
+<text layer="gamma" transformations="translations" pos="672 224" stroke="black" type="minipage" width="224" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
+<text transformations="translations" pos="672 192" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$\{P \vee Q, P, P\rightarrow Q\} \models Q$</text>
+<text transformations="translations" pos="672 160" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$P \models P\vee Q$</text>
 </page>
 <page title="Tautologien">
 <notes>Wahrheitstabelle zum durchrechnen</notes>
@@ -3817,7 +3822,7 @@ h
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="39.8357" depth="28.8378" valign="top">Eine Formel $G$ heißt Tautologie, wenn jede Interpretation $I$ ein Modell ist. Das heißt, für jede Belegung der Aussagenvariablen ist die Formel wahr:</text>
 <text transformations="translations" pos="96 240" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">$val_I(G) = w$ für alle $I\quad\quad$ bzw. $\models G$</text>
 <text layer="beta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="576" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="576" height="13.2268" depth="2.1312" valign="top" style="item">$\neg P \vee P$</text>
+<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$\models \neg P \vee P$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
 </page>
 <page title="Tautologien beweisen">
@@ -3827,15 +3832,27 @@ h
 <layer name="gamma"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma" active="beta"/>
+<group layer="beta" matrix="1 0 0 1 16 -16">
+<path stroke="black" fill="KITred15">
+-8 168 m
+672 168 l
+8 0 0 -8 672 160 680 160 a
+680 132.113 l
+0 132.113 l
+8 0 0 -8 0 140.113 -8 140.113 a
+h
+</path>
+</group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="66.3447" depth="55.4112" valign="top">Es sei $Var_{AL}$ eine Menge von Aussagevariablen und $For_{AL}$ die Menge aller \\ aussagenlogischen Formeln über $Var_{AL}$. \\ Beweise, dass für alle
 $G, H \in For_{AL}$ $G \rightarrow (H \rightarrow G)$ eine Tautologie ist.\\
 Verwendet dabei die formellen Definitionen der Auswertung von Aussagenlogischen Formeln und boolschen Funktionen</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 288" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Behauptung: $\models G \rightarrow (H \rightarrow G)$</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top">Beweis: Seien $G, H \in For_{AL}$ und $I : Var \rightarrow \mathbb B$ eine \textbf{beliebige} Interpretation. Dann gilt:</text>
-<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \rightarrow (H \rightarrow G)) = \neg val_I \vee val_I(H \rightarrow G)$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 160" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">$= \neg val_I(G) \vee (\neg val_I(H)\vee val_I(G))$</text>
+<text layer="beta" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \rightarrow (H \rightarrow G)) = \neg val_I(G) \vee val_I(H \rightarrow G)$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">$= \neg val_I(G) \vee (\neg val_I(H)\vee val_I(G))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 24}</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 160" stroke="black" type="minipage" width="672" height="15.469" depth="4.4178" valign="top">Achtung: Zeichen außerhalb von $val_I$ sind die Konnektive auf \emph{ Metaebene}</text>
 </page>
 <page title="Fallunterscheidung">
 <layer name="alpha"/>
@@ -3864,5 +3881,32 @@ Verwendet dabei die formellen Definitionen der Auswertung von Aussagenlogischen 
 <text layer="eta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$= w \vee \neg val_I (H)$</text>
 <text layer="theta" transformations="translations" pos="0 160" stroke="black" type="minipage" width="528" height="11.7616" depth="0.6882" valign="top" style="item">$= w$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
+</page>
+<page title="Umformungen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITblue15">
+8 360 m
+816 360 l
+8 0 0 -8 816 352 824 352 a
+824 55.342 l
+16 55.342 l
+8 0 0 -8 16 63.342 8 63.342 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="13.2268" depth="2.1312" valign="top" style="item">$\neg \neg G \equiv G$</text>
+<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$(G \rightarrow H) \equiv (\neg G \vee H)$</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">$(G \rightarrow H) \equiv (\neg H \rightarrow \neg G)$</text>
+<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 256" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$\neg (G \wedge H) \equiv (\neg G \vee \neg H)$ \quad  bzw. \quad  $\neg (G \vee H) \equiv (\neg G \wedge \neg H)$</text>
+<text matrix="1 0 0 1 16 -96" transformations="translations" pos="0 256" stroke="black" type="minipage" width="576" height="13.3289" depth="2.2644" valign="top" style="item">$G \wedge G \equiv G$ \quad und \quad  $G \vee G \equiv G$</text>
+<text matrix="1 0 0 1 16 -112" transformations="translations" pos="0 224" stroke="black" type="minipage" width="576" height="29.8546" depth="18.8034" valign="top" style="item">$G \wedge (H \vee Q) \equiv  (G \wedge H)\vee (G \wedge Q)$ \\ \quad bzw. \quad $G \vee (H \wedge Q) \equiv  (G \vee H)\wedge (G \vee Q)$ </text>
+<text matrix="1 0 0 1 -112 -32" transformations="translations" pos="768 240" stroke="black" type="minipage" width="160" height="15.0028" depth="3.9294" valign="top">\emph{De Morgan}</text>
+<text matrix="1 0 0 1 -112 -32" transformations="translations" pos="768 144" stroke="black" type="minipage" width="144" height="13.078" depth="2.0202" valign="top">\emph{Distributivität}</text>
+</page>
+<page>
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
 </page>
 </ipe>
