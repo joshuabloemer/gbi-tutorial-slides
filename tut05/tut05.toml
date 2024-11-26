@@ -1,0 +1,9 @@
+
+title = "05 Aussagenlogik und Beweisbarkeit" # the file name of the output pdf
+description = "05 Aussagenlogik und Beweisbarkeit" # 
+content = [
+    "aussagenlogik",
+    "beweisbarkeit",
+
+]
+xkcd = 1033

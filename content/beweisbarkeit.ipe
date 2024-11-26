@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241126004043" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241126123416" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3777,16 +3777,16 @@ h
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="12.8627" depth="1.7982" valign="top">\bfseries Modell</text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="640" height="55.7375" depth="44.7552" valign="top">Eine Interpretation $I$ heißt Modell einer Formel G, wenn $val_I(G) = w$.\\
 \\
-Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn I Modell jeder Formel $G \in  \Gamma$ ist</text>
+Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn $I$ Modell jeder Formel $G \in  \Gamma$ ist</text>
 <text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="640" height="13.078" depth="2.0202" valign="top">\bfseries Schreibweise</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="640" height="12.9115" depth="1.8204" valign="top">Wir schreiben:</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 128" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$\Gamma \models G$ Falls jedes Modell von $\Gamma$ auch ein Model von $G$ ist</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 96" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$\models G$ (statt $\emptyset \models G$) wenn $G$ für \emph{alle} Interpretationen wahr ist.</text>
 <text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 64" stroke="black" type="minipage" width="640" height="13.078" depth="2.0202" valign="top">\bfseries Erfüllbarkeit</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="624" height="28.7335" depth="17.6934" valign="top">Eine Formel heißt erfüllbar wenn es mindestens eine Interpretation $I$ gibt, für die $val_I = w$ gilt</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="624" height="29.2241" depth="18.204" valign="top">Eine Formel $F$ heißt erfüllbar wenn es mindestens eine Interpretation $I$ gibt, für die $val_I(F) = w$ gilt</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 22}</text>
 <text layer="gamma" transformations="translations" pos="672 224" stroke="black" type="minipage" width="224" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
-<text transformations="translations" pos="672 192" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$\{P \vee Q, P, P\rightarrow Q\} \models Q$</text>
+<text transformations="translations" pos="672 192" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$\{P, P\rightarrow Q\} \models Q$</text>
 <text transformations="translations" pos="672 160" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$P \models P\vee Q$</text>
 </page>
 <page title="Tautologien">
@@ -3924,15 +3924,15 @@ nennt man \emph{Kalkül}</text>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="66.9596" depth="56.0106" valign="top">
 \begin{align*}
  Ax_{AL} &amp;= \{(G\rightarrow (H \rightarrow G))  ~\vert G,H ~ \in For_{AL}\}\\
-&amp;= \cup \{(G\rightarrow (H \rightarrow K))  \rightarrow ((G\rightarrow H) \rightarrow (G \rightarrow K)) ~\vert ~G,H,K \in For_{AL} \}\\
-&amp;= \cup \{(\neg H \rightarrow \neg G) \rightarrow ((\neg H \rightarrow G) \rightarrow H)    ~\vert ~G,H \in For_{AL} \}
+&amp; \cup \{(G\rightarrow (H \rightarrow K))  \rightarrow ((G\rightarrow H) \rightarrow (G \rightarrow K)) ~\vert ~G,H,K \in For_{AL} \}\\
+&amp; \cup \{(\neg H \rightarrow \neg G) \rightarrow ((\neg H \rightarrow G) \rightarrow H)    ~\vert ~G,H \in For_{AL} \}
 \end{align*}</text>
 <text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 208" stroke="black" type="minipage" width="416" height="15.2203" depth="4.1514" valign="top">\bfseries Schlussregeln:</text>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="752" height="17.7667" depth="6.6822" valign="top">Modus Ponens: $MP = \{(G \rightarrow H, G ,H) \quad \vert \quad G,H \in For_{AL}\} \subseteq For_{AL}^3$</text>
 <text matrix="1 0 0 1 16 -112" transformations="translations" pos="0 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Aus \enquote{Es regnet.} und \enquote{Wenn es regnet wird die Straße nass.} folgt \enquote{Die Straße wird nass.}</text>
 <text matrix="1 0 0 1 208 -16" transformations="translations" pos="32 128" stroke="black" type="minipage" width="160" height="29.6303" depth="18.5814" valign="top">\begin{prooftree}
 \AxiomC{$G\rightarrow H$}
-\AxiomC{$H$}
+\AxiomC{$G$}
 \BinaryInfC{H}
 
 \end{prooftree}</text>
@@ -3965,16 +3965,16 @@ nennt man \emph{Kalkül}</text>
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="KITblack70" type="minipage" width="880" height="15.469" depth="4.4178" valign="top">Wir haben: Formelsammlung $\Gamma \subseteq For_{AL}$ (\enquote{Hypothesen} / \emph{\enquote{Prämissen}})</text>
-<text transformations="translations" pos="0 352" stroke="KITblack70" type="minipage" width="576" height="13.3289" depth="2.2644" valign="top">Wir wollen: eine Formel $G$ daraus ableiten</text>
-<text layer="beta" transformations="translations" pos="0 304" stroke="KITblack70" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">\emph{Ableitung} von $G$ aus $\Gamma $:</text>
-<text transformations="translations" pos="0 272" stroke="KITblack70" type="minipage" width="752" height="15.469" depth="4.4178" valign="top">Eine \enquote{Abfolge} von Formeln die mit $G$ endet (Schreibweise $\Gamma \vdash G$)</text>
-<text layer="gamma" transformations="translations" pos="0 240" stroke="KITblack70" type="minipage" width="576" height="13.1357" depth="2.0646" valign="top">Was dürfen wir machen?</text>
-<text transformations="translations" pos="0 208" stroke="KITblack70" type="minipage" width="720" height="15.1093" depth="4.0182" valign="top" style="item">aus syntaktisch korrekten Formeln \emph{Axiome} bilden und hinschreiben</text>
-<text layer="delta" transformations="translations" pos="0 176" stroke="KITblack70" type="minipage" width="768" height="13.3489" depth="2.2644" valign="top" style="item">\emph{Prämissen} aus $\Gamma$ hinschreiben</text>
-<text layer="epsilon" transformations="translations" pos="0 144" stroke="KITblack70" type="minipage" width="720" height="15.0516" depth="3.9738" valign="top" style="item">aus zwei vorherigen Formeln mit \emph{Modus Ponens} eine neue konstruieren</text>
-<text layer="zeta" transformations="translations" pos="0 112" stroke="KITblack70" type="minipage" width="512" height="15.469" depth="4.4178" valign="top">\impl das machen wir solange, bis wir $G$ konstruiert haben</text>
-<text layer="eta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 64" stroke="KITblack70" type="minipage" width="624" height="16.0972" depth="5.0172" valign="top">Formeln die mit $\Gamma = \emptyset$ bewiesen werden können sind Allgemeingültig</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top">Wir haben: Formelsammlung $\Gamma \subseteq For_{AL}$ (\enquote{Hypothesen} / \emph{\enquote{Prämissen}})</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="13.3289" depth="2.2644" valign="top">Wir wollen: eine Formel $G$ daraus ableiten</text>
+<text layer="beta" transformations="translations" pos="0 304" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">\emph{Ableitung} von $G$ aus $\Gamma $:</text>
+<text transformations="translations" pos="0 272" stroke="black" type="minipage" width="752" height="15.469" depth="4.4178" valign="top">Eine \enquote{Abfolge} von Formeln die mit $G$ endet (Schreibweise $\Gamma \vdash G$)</text>
+<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="576" height="13.1357" depth="2.0646" valign="top">Was dürfen wir machen?</text>
+<text transformations="translations" pos="0 208" stroke="black" type="minipage" width="720" height="15.1093" depth="4.0182" valign="top" style="item">aus syntaktisch korrekten Formeln \emph{Axiome} bilden und hinschreiben</text>
+<text layer="delta" transformations="translations" pos="0 176" stroke="black" type="minipage" width="768" height="13.3489" depth="2.2644" valign="top" style="item">\emph{Prämissen} aus $\Gamma$ hinschreiben</text>
+<text layer="epsilon" transformations="translations" pos="0 144" stroke="black" type="minipage" width="720" height="15.0516" depth="3.9738" valign="top" style="item">aus zwei vorherigen Formeln mit \emph{Modus Ponens} eine neue konstruieren</text>
+<text layer="zeta" transformations="translations" pos="0 112" stroke="black" type="minipage" width="512" height="15.469" depth="4.4178" valign="top">\impl das machen wir solange, bis wir $G$ konstruiert haben</text>
+<text layer="eta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 64" stroke="black" type="minipage" width="624" height="16.0972" depth="5.0172" valign="top">Formeln die mit $\Gamma = \emptyset$ bewiesen werden können sind Allgemeingültig</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -3994,7 +3994,7 @@ h
 <text matrix="1 0 0 1 32 15" transformations="translations" pos="0 160" stroke="black" type="minipage" width="320" height="13.2268" depth="2.1312" valign="top">$\neg A$</text>
 <text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="336 320" stroke="black" type="minipage" width="416" height="14.7297" depth="3.6408" valign="top">Prämisse 1; ist $\in \Gamma$</text>
 <text matrix="1 0 0 1 32 0" transformations="translations" pos="336 288" stroke="black" type="minipage" width="400" height="14.7297" depth="3.6408" valign="top">Prämisse 2; ist $\in \Gamma$</text>
-<text layer="gamma" matrix="1 0 0 1 32 0" transformations="translations" pos="336 256" stroke="black" type="minipage" width="384" height="15.469" depth="4.4178" valign="top">Anwedung von $Ax_{AL3}$</text>
+<text layer="gamma" matrix="1 0 0 1 32 0" transformations="translations" pos="336 256" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top">Anwedung von $Ax_{AL3} (H = \neg A, G = \neg B)$</text>
 <text layer="delta" matrix="1 0 0 1 32 -17" transformations="translations" pos="336 224" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top">MP(3,1) (Modus Ponens mit Formeln 3 und 1)</text>
 <text matrix="1 0 0 1 32 -17" transformations="translations" pos="336 192" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top">MP(4,2) (Modus Ponens mit Formeln 4 und 2)</text>
 <text layer="gamma" matrix="1 0 0 1 32 9" transformations="translations" pos="336 224" stroke="KITblack70" type="minipage" width="576" height="13.952" depth="3.98" valign="top" size="small">Schema $AX_{AL3}: (\neg H \rightarrow \neg G) \rightarrow ((\neg H \rightarrow G) \rightarrow H)$</text>
