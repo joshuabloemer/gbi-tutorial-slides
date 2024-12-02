@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241105151933" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20241202104713" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3760,14 +3760,25 @@ h
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Formale Sprache</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="28.4848" depth="17.427" valign="top">Eine \textbf{formale Sprache} L über einem Alphabet A ist eine Teilmenge der Wörter über A, also $L \subseteq A^*$</text>
 <text transformations="translations" pos="16 256" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="560" height="29.0309" depth="18.0042" valign="top">Die Sprache, die alle Wörter der Länge 2 über dem Alphabet $\{a,b\}$ enthält ist $L =  \{aa,ab,ba,bb\}$</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="560" height="29.0309" depth="18.0042" valign="top">Die Sprache, die alle Wörter der Länge 2 über dem Alphabet $\{a,b\}$ enthält, ist $L =  \{aa,ab,ba,bb\} = A^2 \subset A^*$ </text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
 </page>
 <page title="Konkatenation von Sprachen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 0 -16">
+<group layer="alpha">
+<path stroke="black" fill="KITred15">
+8 200 m
+560 200 l
+8 0 0 -8 560 192 568 192 a
+568 161.882 l
+16 161.882 l
+8 0 0 -8 16 169.882 8 169.882 a
+h
+</path>
+</group>
+<group matrix="1 0 0 1 0 -16">
 <path stroke="black" fill="KITgreen15">
 8 360 m
 560 360 l
@@ -3780,10 +3791,11 @@ h
 </group>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="16.9186" depth="5.8608" valign="top">Ähnlich wie bei Wörtern können wir auch formale Sprachen konkatenieren</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 352" stroke="black" type="minipage" width="432" height="15.0605" depth="3.996" valign="top">\bfseries Produkt formaler Sprachen</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="544" height="28.6003" depth="17.5824" valign="top">Es sei $A$ ein Alphabet, sowie $L, S \subseteq A$ formale Sprachen.
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="544" height="28.6003" depth="17.5824" valign="top">Es sei $A$ ein Alphabet, sowie $L_1, L_2 \subseteq A^*$ formale Sprachen.
 Das Produkt der Sprachen ist definiert durch:</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="112 256" stroke="black" type="minipage" width="288" height="16.5901" depth="5.5278" valign="top">$L \cdot S \coloneqq \{u \cdot v | u \in L \text{ und  }v  \in S\}$</text>
+<text matrix="1 0 0 1 -32 -16" transformations="translations" pos="112 256" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top">$L_1 \cdot L_2 \coloneqq \{w_1 \cdot w_2 | w_1 \in L_1 \text{ und  }w_2  \in L_2\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 22}</text>
+<text layer="alpha" transformations="translations" pos="16 192" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top">$L \cdot \{\epsilon\} = L$ \quad (Analog zu $w \cdot \epsilon = \epsilon$ mit $w \in L$)</text>
 </page>
 <page title="Potenzen und Abschlüsse">
 <layer name="alpha"/>
