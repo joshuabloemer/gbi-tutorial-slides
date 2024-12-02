@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241202143023" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241202234141" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3749,14 +3749,14 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="544" height="15.0605" depth="3.996" valign="top">\bfseries Homomorphismus</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="864" height="68.7268" depth="57.8088" valign="top">Ein Homomorphismus ist eine strukturerhaltende Abbildung. Wir
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="864" height="68.558" depth="57.6312" valign="top">Ein Homomorphismus ist eine strukturerhaltende Abbildung. \\Wir
 betrachten \emph{Homomorphismen} auf Wörtern, dabei muss die
 Konkatenation erhalten werden.\\
-Seien A, B Alphabete, dann ist eine Abbildung $h: A^* \rightarrow B^*$ ein \emph{Homomorphismus} wenn\\
+Seien A, B Alphabete, dann ist eine Abbildung $h: A^* \rightarrow B^*$ ein \emph{Homomorphismus} wenn,\\
 \\
 $\forall x,y \in A^* : h(x \cdot y) = h(x) \cdot h(y)$</text>
 <text layer="beta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="704" height="41.5584" depth="30.5472" valign="top">Also in Deutsch:\\
-Bei einem Homomorphismus ist es egal ob ihr erst konkateniert und dann die Funktion anwendet oder umgekehrt</text>
+Bei einem Homomorphismus ist es egal, ob ihr erst konkateniert und dann die Funktion anwendet oder umgekehrt</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
 </page>
 <page title="Homomorphismen Konstruieren">
@@ -3789,9 +3789,9 @@ f^{**}(\epsilon) &amp;=  \epsilon\\
 <layer name="delta"/>
 <layer name="epsilon"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma delta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
-<group layer="delta" matrix="1 0 0 1 0 32">
+<view layers="alpha pagenumbers_page beta gamma delta" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<group layer="delta" matrix="1 0 0 1 0 -32">
 <path stroke="gray1" fill="gray3">
 568 160 m
 8 0 0 8 560 160 560 168 a
@@ -3802,7 +3802,7 @@ f^{**}(\epsilon) &amp;=  \epsilon\\
 h
 </path>
 </group>
-<group layer="beta">
+<group layer="beta" matrix="1 0 0 1 0 16">
 <path stroke="gray1" fill="gray3">
 280 224 m
 8 0 0 8 272 224 272 232 a
@@ -3813,16 +3813,15 @@ h
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="528" height="68.8045" depth="57.8532" valign="top">Gegeben sei die folgende Abbildung über dem Alphabet\\
-$A= \{a,b,c,\dots,z\}\\
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="56.3614" depth="45.3768" valign="top">Gegeben sei die folgende Abbildung über dem Alphabet $A= \{a,b,c,\dots,z\}\\
 \\
 R(\epsilon) = \epsilon\\
 R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*, x \in A
-)$</text>
-<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Ist R ein Homomorphismus?</text>
-<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top" style="item">R ist kein Homomorphismus, denn $R(a \cdot b) = ba \neq ab = R(a) \cdot R(b)$.</text>
-<text layer="delta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top">Gebt ein Alphabet A&apos; an, sodass R ein Homomorphismus ist.</text>
-<text layer="epsilon" transformations="translations" pos="0 208" stroke="black" type="minipage" width="768" height="16.6056" depth="5.55" valign="top" style="item">R ist ein Homomorphismus, wenn $\vert A&apos; \vert = 1$</text>
+)$ :</text>
+<text layer="beta" matrix="1 0 0 1 16 16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Ist R ein Homomorphismus?</text>
+<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top" style="item">R ist kein Homomorphismus, denn $R(a \cdot b) = ba \neq ab = R(a) \cdot R(b)$.</text>
+<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top">Gebt ein Alphabet A&apos; an, sodass R ein Homomorphismus ist.</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -128" transformations="translations" pos="0 208" stroke="black" type="minipage" width="768" height="16.6056" depth="5.55" valign="top" style="item">R ist ein Homomorphismus, wenn $\vert A&apos; \vert = 1$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
 </page>
 <page title="Präfixfreie Homomorphismen">
@@ -3838,9 +3837,9 @@ R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*, x \in A
 8 280 m
 736 280 l
 8 0 0 -8 736 272 744 272 a
-744 185.702 l
-16 185.702 l
-8 0 0 -8 16 193.702 8 193.702 a
+744 158.032 l
+16 158.032 l
+8 0 0 -8 16 166.032 8 166.032 a
 h
 </path>
 </group>
@@ -3848,11 +3847,11 @@ h
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top" style="item">Für welches w gilt h(w) = 10?</text>
 <text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="496" height="12.9115" depth="1.8204" valign="top" style="item">Für w = ba und w = c</text>
 <text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="592" height="15.0605" depth="3.996" valign="top">\bfseries Präfixfreie Homomorphismen</text>
-<text transformations="translations" pos="16 240" stroke="black" type="minipage" width="720" height="29.2241" depth="18.204" valign="top">Sei $h: A^* \rightarrow B^*$ ein Homomorphismus. h heißt präfixfrei, wenn für
-keine zwei verschiedenen Symbole $x_1, x_2 \in A$ gilt: $h(x_1) $ ist ein Präfix von
+<text transformations="translations" pos="16 240" stroke="black" type="minipage" width="720" height="42.4886" depth="31.4796" valign="top">Sei $h: A^* \rightarrow B^*$ ein Homomorphismus. h heißt präfixfrei, wenn für
+\\keine zwei verschiedenen Symbole $x_1, x_2 \in A$ gilt: \\ $h(x_1) $ ist ein Präfix von
 $h(x_2)$.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
-<text layer="gamma" transformations="translations" pos="16 160" stroke="black" type="minipage" width="592" height="15.2758" depth="4.218" valign="top">Analog ist Suffixfreiheit definiert</text>
+<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 160" stroke="black" type="minipage" width="592" height="15.2758" depth="4.218" valign="top">Analog ist Suffixfreiheit definiert</text>
 </page>
 <page title="Codierung">
 <layer name="alpha"/>
@@ -3883,7 +3882,7 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="15.2203" depth="4.1514" valign="top">\bfseries Codierung</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="528" height="28.5403" depth="17.4936" valign="top">Präfixfreie Homomorphismen sind injektiv. Das wollen wir
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="528" height="28.5403" depth="17.4936" valign="top">Präfixfreie Homomorphismen sind injektiv. \\Diese wollen wir
 Codierungen nennen.</text>
 <text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="528" height="13.229" depth="2.1534" valign="top">Präfixfreie Codes kann man einfach decodieren:</text>
 <text transformations="translations" pos="16 208" stroke="black" type="minipage" width="528" height="45.3013" depth="34.3212" valign="top">$u(w) = \left\{ \begin{array}{ll}
@@ -3892,6 +3891,6 @@ x u(w&apos;) &amp;\vert w =  h(x) w&apos; \text{für ein } x\in A \\
 \bot &amp;\vert \text{sonst}
 \end{array}\right.$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
-<text layer="beta" transformations="translations" pos="16 96" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top">Analog mit Suffixfreien</text>
+<text layer="beta" transformations="translations" pos="16 96" stroke="black" type="minipage" width="704" height="15.2758" depth="4.218" valign="top">Analog mit suffixfreien Homomorphismen (dann Decodierung von hinten)</text>
 </page>
 </ipe>
