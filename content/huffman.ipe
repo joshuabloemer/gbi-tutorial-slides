@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241023093232" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241202143025" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -5915,251 +5915,24 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Homomorphismen">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-880 376 l
-8 0 0 -8 880 368 888 368 a
-888 202.783 l
-16 202.783 l
-8 0 0 -8 16 210.783 8 210.783 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="544" height="15.0605" depth="3.996" valign="top">\bfseries Homomorphismus</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="864" height="68.558" depth="57.6312" valign="top">Ein Homomorphismus ist eine strukturerhaltende Abbildung. Wir
-betrachten Homomorphismen auf Wörtern, dabei muss die
-Konkatenation erhalten werden.
-Seien A, B Alphabete, dann ist eine Abbildung $h: A^* \rightarrow B^*$ ein Homomorphismus wenn\\
-\\
-$\forall x,y \in A^* : h(x \cdot y) = h(x) \cdot h(y)$</text>
-<text layer="beta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="704" height="41.5584" depth="30.5472" valign="top">Also in Deutsch:\\
-Bei einem Homomorphismus ist es egal ob ihr erst konkateniert und dann die Funktion anwendet oder umgekehrt</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma delta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
-<group layer="delta" matrix="1 0 0 1 0 32">
-<path stroke="gray1" fill="gray3">
-568 160 m
-8 0 0 8 560 160 560 168 a
-8 168 l
-8 140.761 l
-8 0 0 8 16 140.761 16 132.761 a
-568 132.761 l
-h
-</path>
-</group>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-280 224 m
-8 0 0 8 272 224 272 232 a
-8 232 l
-8 205.057 l
-8 0 0 8 16 205.057 16 197.057 a
-280 197.057 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="528" height="68.8045" depth="57.8532" valign="top">Gegeben sei die folgende Abbildung über dem Alphabet\\
-$A= \{a,b,c,\dots,z\}\\
-\\
-R(\epsilon) = \epsilon\\
-R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*
-)$</text>
-<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Ist R ein Homomorphismus?</text>
-<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top" style="item">R ist kein Homomorphismus, denn $R(a \cdot b) = ba \neq ab = R(a) \cdot R(b)$.</text>
-<text layer="delta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top">Gebt ein Alphabet A&apos; an, sodass R ein Homomorphismus ist.</text>
-<text layer="epsilon" transformations="translations" pos="0 208" stroke="black" type="minipage" width="768" height="16.6056" depth="5.55" valign="top" style="item">R ist ein Homomorphismus, wenn $\vert A&apos; \vert = 1$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma delta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
-<group layer="delta" matrix="1 0 0 1 0 32">
-<path stroke="gray1" fill="gray3">
-568 160 m
-8 0 0 8 560 160 560 168 a
-8 168 l
-8 140.761 l
-8 0 0 8 16 140.761 16 132.761 a
-568 132.761 l
-h
-</path>
-</group>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-280 224 m
-8 0 0 8 272 224 272 232 a
-8 232 l
-8 205.057 l
-8 0 0 8 16 205.057 16 197.057 a
-280 197.057 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="528" height="68.8045" depth="57.8532" valign="top">Gegeben sei die folgende Abbildung über dem Alphabet\\
-$A= \{a,b,c,\dots,z\}\\
-\\
-R(\epsilon) = \epsilon\\
-R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*
-)$</text>
-<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Ist R ein Homomorphismus?</text>
-<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top" style="item">R ist kein Homomorphismus, denn $R(a \cdot b) = ba \neq ab = R(a) \cdot R(b)$.</text>
-<text layer="delta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top">Gebt ein Alphabet A&apos; an, sodass R ein Homomorphismus ist.</text>
-<text layer="epsilon" transformations="translations" pos="0 208" stroke="black" type="minipage" width="768" height="16.6056" depth="5.55" valign="top" style="item">R ist ein Homomorphismus, wenn $\vert A&apos; \vert = 1$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma delta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
-<group layer="delta" matrix="1 0 0 1 0 32">
-<path stroke="gray1" fill="gray3">
-568 160 m
-8 0 0 8 560 160 560 168 a
-8 168 l
-8 140.761 l
-8 0 0 8 16 140.761 16 132.761 a
-568 132.761 l
-h
-</path>
-</group>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-280 224 m
-8 0 0 8 272 224 272 232 a
-8 232 l
-8 205.057 l
-8 0 0 8 16 205.057 16 197.057 a
-280 197.057 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="528" height="68.8045" depth="57.8532" valign="top">Gegeben sei die folgende Abbildung über dem Alphabet\\
-$A= \{a,b,c,\dots,z\}\\
-\\
-R(\epsilon) = \epsilon\\
-R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*
-)$</text>
-<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Ist R ein Homomorphismus?</text>
-<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top" style="item">R ist kein Homomorphismus, denn $R(a \cdot b) = ba \neq ab = R(a) \cdot R(b)$.</text>
-<text layer="delta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top">Gebt ein Alphabet A&apos; an, sodass R ein Homomorphismus ist.</text>
-<text layer="epsilon" transformations="translations" pos="0 208" stroke="black" type="minipage" width="768" height="16.6056" depth="5.55" valign="top" style="item">R ist ein Homomorphismus, wenn $\vert A&apos; \vert = 1$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
-</page>
-<page title="Präfixfreie Homomorphismen">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="gamma">
-<path stroke="black" fill="KITgreen15">
-8 280 m
-736 280 l
-8 0 0 -8 736 272 744 272 a
-744 185.702 l
-16 185.702 l
-8 0 0 -8 16 193.702 8 193.702 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="416" valign="top" style="item">h(a) = 0, h(b) = 1, h(c) = 10</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" valign="top" style="item">Für welches w gilt h(w) = 10?</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="496" valign="top" style="item">Für w = ba und w = c</text>
-<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="592" valign="top">\bfseries Präfixfreie Homomorphismen</text>
-<text transformations="translations" pos="16 240" stroke="black" type="minipage" width="720" valign="top">Sei $h: A^* \rightarrow B^*$ ein Homomorphismus. h heißt präfixfrei, wenn für
-keine zwei verschiedenen Symbole $x_1, x_2 \in A$ gilt: $h(x_1) $ ist ein Präfix von
-$h(x_2)$.</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 6}</text>
-</page>
-<page title="Codierung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
-<path stroke="black" fill="KITblue15">
-8 248 m
-544 248 l
-8 0 0 -8 544 240 552 240 a
-552 120.377 l
-16 120.377 l
-8 0 0 -8 16 128.377 8 128.377 a
-h
-</path>
-</group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-544 376 l
-8 0 0 -8 544 368 552 368 a
-552 282.068 l
-16 282.068 l
-8 0 0 -8 16 290.068 8 290.068 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" valign="top">\bfseries Codierung</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="528" valign="top">Präfixfreie Homomorphismen sind injektiv. Das wollen wir
-Codierungen nennen.</text>
-<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="528" valign="top">Präfixfreie Codes kann man einfach decodieren:</text>
-<text transformations="translations" pos="16 208" stroke="black" type="minipage" width="528" valign="top">$u(w) = \left\{ \begin{array}{ll}
-\epsilon &amp;\vert w = \epsilon\\
-x u(w&apos;) &amp;\vert w =  h(x) w&apos; \text{für ein } x\in A \\
-\bot &amp;\vert \text{sonst}
-\end{array}\right.$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 7}</text>
-</page>
 <page title="Bäume">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="864" valign="top" style="itemize">\item Baum: besteht aus Knoten, die über Kanten miteinander verbunden
+<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="864" height="66.247" depth="55.3002" valign="top" style="itemize">\item Baum: besteht aus Knoten, die über Kanten miteinander verbunden
 sind
 \item Wurzel: Knoten, von dem aus alle anderen Knoten erreichbar sind
 \item Blatt: Ein Knoten ohne ausgehende Kanten
 \item Innerer Knoten: Alle Knoten, die keine Blätter sind</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" valign="top">Das ist alles nur informell,  genaue Definition kommen dann später</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 8}</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top">Das ist alles nur informell,  genaue Definition kommen dann später</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
 </page>
 <page title="Huffman Codierung">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="832" valign="top">Das Ziel der Huffman Codierung ist eine Möglich kurze Codierung für ein Wort zu haben, dabei werden für häufig vorkommende Zeichen kurze Codes verwendet und für seltene Zeichen lange</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 9}</text>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="832" height="41.7826" depth="30.7914" valign="top">Das Ziel der Huffman Codierung ist eine Möglich kurze Codierung für ein Wort zu haben, dabei werden für häufig vorkommende Zeichen kurze Codes verwendet und für seltene Zeichen lange</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
 </page>
 <page title="Huffman Baum">
 <layer name="alpha"/>
@@ -6178,18 +5951,18 @@ sind
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" valign="top">Eine Huffman Codierung zu einem Wort kann durch einen Baum Beschrieben werden</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" valign="top" style="itemize">\item Alle Zeichen mit ihrer Häufigkeit als Blätter in die unterste Ebene
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top">Eine Huffman Codierung zu einem Wort kann durch einen Baum Beschrieben werden</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" height="108.918" depth="98.0796" valign="top" style="itemize">\item Alle Zeichen mit ihrer Häufigkeit als Blätter in die unterste Ebene
 zeichnen.
 \item Jeweils zwei Knoten/Bäume (nicht unbeding Blätter!) mit den
 geringsten Häufigkeiten verbinden, indem man ihnen eine
-gemeinsame Wurzel gibst, die die Summe der Häufigkeiten erhält.
+gemeinsame Wurzel gibt, die die Summe der Häufigkeiten erhält.
 \item Fortfahren, bis nur noch ein Baum übrig ist.
 \item  Die linken Äste jeweils mit 0 beschriften, die rechten Äste mit 1.
 \item Die Codierung einzelner Zeichen kann man entlang der Pfade von
 der Wurzel zum jeweiligen Zeichen ablesen</text>
-<text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="0 80" stroke="black" type="minipage" width="400" valign="top">Die Codierung müsst ihr dann immer noch durch z.B. eine Tabelle angeben</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 10}</text>
+<text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="0 80" stroke="black" type="minipage" width="400" height="28.5403" depth="17.4936" valign="top">Die Codierung müsst ihr dann immer noch durch z.B. eine Tabelle angeben</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -6227,14 +6000,14 @@ der Wurzel zum jeweiligen Zeichen ablesen</text>
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="336" valign="top">w = abadcadaac (10 Zeichen)</text>
-<text layer="beta" matrix="1 0 0 1 -32 16" transformations="translations" pos="32 48" stroke="black" type="label" valign="baseline">1,b</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="144 64" stroke="black" type="label" valign="baseline">2,d</text>
-<text layer="gamma" matrix="1 0 0 1 -32 16" transformations="translations" pos="96 144" stroke="black" type="label" valign="baseline">3</text>
-<text layer="beta" matrix="1 0 0 1 -32 16" transformations="translations" pos="240 144" stroke="black" type="label" valign="baseline">2,c</text>
-<text layer="delta" matrix="1 0 0 1 -32 16" transformations="translations" pos="176 240" stroke="black" type="label" valign="baseline">5</text>
-<text layer="beta" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 256" stroke="black" type="label" valign="baseline">5,a</text>
-<text layer="epsilon" matrix="1 0 0 1 -32 16" transformations="translations" pos="320 320" stroke="black" type="label" valign="baseline">10</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="336" height="15.1648" depth="4.0848" valign="top">w = abadcadaac (10 Zeichen)</text>
+<text layer="beta" matrix="1 0 0 1 -32 16" transformations="translations" pos="32 48" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">1,b</text>
+<text matrix="1 0 0 1 -32 0" transformations="translations" pos="144 64" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">2,d</text>
+<text layer="gamma" matrix="1 0 0 1 -32 16" transformations="translations" pos="96 144" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+<text layer="beta" matrix="1 0 0 1 -32 16" transformations="translations" pos="240 144" stroke="black" type="label" width="27.1439" height="14.5121" depth="2.997" valign="baseline">2,c</text>
+<text layer="delta" matrix="1 0 0 1 -32 16" transformations="translations" pos="176 240" stroke="black" type="label" width="11.3131" height="13.8239" depth="0.3996" valign="baseline">5</text>
+<text layer="beta" matrix="1 0 0 1 -32 0" transformations="translations" pos="448 256" stroke="black" type="label" width="28.2828" height="13.8195" depth="2.997" valign="baseline">5,a</text>
+<text layer="epsilon" matrix="1 0 0 1 -32 16" transformations="translations" pos="320 320" stroke="black" type="label" width="22.6262" height="14.5144" depth="0.3996" valign="baseline">10</text>
 <path layer="gamma" matrix="1 0 0 1 -32 16" stroke="black">
 57.3387 71.2893 m
 94.2862 138.257 l
@@ -6259,7 +6032,7 @@ h
 450.675 256.027 m
 342.912 320.685 l
 </path>
-<text layer="zeta" matrix="1 0 0 1 -240 112" transformations="translations" pos="512 128" stroke="black" type="minipage" width="384" valign="top">\begin{tabular}{ |c| c| c| c| c| }
+<text layer="zeta" matrix="1 0 0 1 -240 112" transformations="translations" pos="512 128" stroke="black" type="minipage" width="384" height="47.0862" depth="36.075" valign="top">\begin{tabular}{ |c| c| c| c| c| }
 \hline
  x &amp; a &amp; b &amp; c &amp; d\\ 
 \hline
@@ -6270,18 +6043,18 @@ h
 
 \end{tabular}
 </text>
-<text layer="eta" matrix="1 0 0 1 -176 48" transformations="translations" pos="480 80" stroke="black" type="minipage" width="192" valign="top">Was ist also $ h^{**}(w)$?</text>
-<text layer="theta" matrix="1 0 0 1 -208 80" transformations="translations" pos="480 64" stroke="black" type="minipage" width="592" valign="top" style="item">$h^{**}(abadcadaac) = 100010010110011101$</text>
-<text layer="kappa" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 80" stroke="black" type="minipage" width="480" valign="top" style="item">Das codierte Wort ist länger als das Original</text>
-<text layer="lambda" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 48" stroke="black" type="minipage" width="544" valign="top" style="item">Um ein Zeichen aus \{a,b,c,d\} zu codieren braucht man mindestens 2 bit</text>
-<text layer="mu" transformations="translations" pos="272 16" stroke="black" type="minipage" width="624" valign="top" style="item">$\Rightarrow$Unsere codierung ist in Binär trotzdem kürzer</text>
-<text layer="zeta" matrix="1 0 0 1 7.98121 -11.9718" transformations="translations" pos="192 320" stroke="black" type="label" valign="baseline">0</text>
-<text matrix="1 0 0 1 5.58685 -7.18309" transformations="translations" pos="80 224" stroke="black" type="label" valign="baseline">0</text>
-<text matrix="1 0 0 1 8.77933 -6.38497" transformations="translations" pos="16 128" stroke="black" type="label" valign="baseline">0</text>
-<text matrix="1 0 0 1 -16.7605 -4.78872" transformations="translations" pos="128 128" stroke="black" type="label" valign="baseline">1</text>
-<text matrix="1 0 0 1 -11.9718 2.39436" transformations="translations" pos="208 224" stroke="black" type="label" valign="baseline">1</text>
-<text matrix="1 0 0 1 -15.1643 -11.1737" transformations="translations" pos="384 320" stroke="black" type="label" valign="baseline">1</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 11}</text>
+<text layer="eta" matrix="1 0 0 1 -176 48" transformations="translations" pos="480 80" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist also $ h^{**}(w)$?</text>
+<text layer="theta" matrix="1 0 0 1 -208 80" transformations="translations" pos="480 64" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$h^{**}(abadcadaac) = 100010010110011101$</text>
+<text layer="kappa" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 80" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top" style="item">Das codierte Wort ist länger als das Original</text>
+<text layer="lambda" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 48" stroke="black" type="minipage" width="544" height="26.1538" depth="15.1182" valign="top" style="item">Um ein Zeichen aus \{a,b,c,d\} zu codieren braucht man mindestens 2 bit</text>
+<text layer="mu" transformations="translations" pos="272 16" stroke="black" type="minipage" width="624" height="15.0516" depth="3.9738" valign="top" style="item">$\Rightarrow$Unsere codierung ist in Binär trotzdem kürzer</text>
+<text layer="zeta" matrix="1 0 0 1 7.98121 -11.9718" transformations="translations" pos="192 320" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
+<text matrix="1 0 0 1 5.58685 -7.18309" transformations="translations" pos="80 224" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
+<text matrix="1 0 0 1 8.77933 -6.38497" transformations="translations" pos="16 128" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
+<text matrix="1 0 0 1 -16.7605 -4.78872" transformations="translations" pos="128 128" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">1</text>
+<text matrix="1 0 0 1 -11.9718 2.39436" transformations="translations" pos="208 224" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">1</text>
+<text matrix="1 0 0 1 -15.1643 -11.1737" transformations="translations" pos="384 320" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">1</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -6303,14 +6076,14 @@ h
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" valign="top">Sei $w =acab$</text>
-<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="528" valign="top">Bestimmt eine mögliche Huffman Codierung des
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="13.4221" depth="2.3532" valign="top">Sei $w =acab$</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top">Bestimmt eine mögliche Huffman Codierung des
 Wortes w</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="32 160" stroke="black" type="label" valign="baseline">1,b</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="112 160" stroke="black" type="label" valign="baseline">1,c</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="64 208" stroke="black" type="label" valign="baseline">2</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="192 208" stroke="black" type="label" valign="baseline">2,a</text>
-<text transformations="translations" pos="128 256" stroke="black" type="label" valign="baseline">4</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="32 160" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">1,b</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="112 160" stroke="black" type="label" width="27.1439" height="14.5121" depth="2.997" valign="baseline">1,c</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="64 208" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">2</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="192 208" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">2,a</text>
+<text transformations="translations" pos="128 256" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">4</text>
 <path stroke="black">
 48.0103 143.633 m
 79.9563 189.709 l
@@ -6327,11 +6100,11 @@ Wortes w</text>
 192.996 205.682 m
 142.619 258.515 l
 </path>
-<text matrix="1 0 0 1 2.45738 -2.45738" transformations="translations" pos="89.7858 238.242" stroke="black" type="label" valign="baseline">0</text>
-<text matrix="1 0 0 1 -6.14345 -4.91476" transformations="translations" pos="179.48 238.856" stroke="black" type="label" valign="baseline">1</text>
-<text matrix="1 0 0 1 -6.75779 -10.4439" transformations="translations" pos="119.274 182.951" stroke="black" type="label" valign="baseline">1</text>
-<text matrix="1 0 0 1 -4.91476 0" transformations="translations" pos="52.3108 169.435" stroke="black" type="label" valign="baseline">0</text>
-<text layer="delta" matrix="1 0 0 1 -208 80" transformations="translations" pos="512 128" stroke="black" type="minipage" width="384" valign="top">\begin{tabular}{ |c| c| c| c| }
+<text matrix="1 0 0 1 2.45738 -2.45738" transformations="translations" pos="89.7858 238.242" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
+<text matrix="1 0 0 1 -6.14345 -4.91476" transformations="translations" pos="179.48 238.856" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">1</text>
+<text matrix="1 0 0 1 -6.75779 -10.4439" transformations="translations" pos="119.274 182.951" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">1</text>
+<text matrix="1 0 0 1 -4.91476 0" transformations="translations" pos="52.3108 169.435" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
+<text layer="delta" matrix="1 0 0 1 -208 80" transformations="translations" pos="512 128" stroke="black" type="minipage" width="384" height="47.0862" depth="36.075" valign="top">\begin{tabular}{ |c| c| c| c| }
 \hline
  x &amp; a &amp; b &amp; c \\ 
 \hline
@@ -6342,109 +6115,21 @@ Wortes w</text>
 
 \end{tabular}
 </text>
-<text transformations="translations" pos="304 96" stroke="black" type="minipage" width="256" valign="top">$h^{**}(w) = 101100$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 12}</text>
+<text transformations="translations" pos="304 96" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top">$h^{**}(w) = 101100$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
 </page>
 <page title="Klausuraufgabe WS 18/19">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <image layer="alpha" matrix="0.479831 0 0 0.479831 66.5366 -19.5569" rect="0 0 1475 859" bitmap="1"/>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 13}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
 </page>
 <page title="Lösung">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <image layer="alpha" matrix="0.464387 0 0 0.464387 137.734 -5.54933" rect="0 0 1208 874" bitmap="2"/>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 14}</text>
-</page>
-<page title="Erweiterung der Huffman Codierung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-824 208 m
-8 0 0 8 816 208 816 216 a
-8 216 l
-8 96.6687 l
-8 0 0 8 16 96.6687 16 88.6687 a
-824 88.6687 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" valign="top">Wir können nicht nur einzelne Buchstaben codieren.
-Bei $w = a^{10}b^{10}c^{10}$ lohnt es sich zum Beispiel, ganze Blöcke aus nur einem
-Zeichen zu codieren.</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="720" valign="top" style="item">Vorgehen wie eben nur das statt Zeichen (Wörtern der Länge 1) Wörter der Länge n gezählt und codiert werden</text>
-<text layer="beta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="800" valign="top">Das Wort
-w = 0000000100110001001100000000111000010000
-soll komprimiert werden.</text>
-<text transformations="translations" pos="16 176" stroke="black" type="minipage" width="800" valign="top" style="item">Zerlegt das Wort in Viererblöcke und bestimmt die Häufigkeiten der Blöcke</text>
-<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="800" valign="top" style="item">Stellt den Huffman Baum auf</text>
-<text transformations="translations" pos="16 112" stroke="black" type="minipage" width="800" valign="top" style="item">Gebt das codierte Wort an</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 15}</text>
-</page>
-<page title="Lösung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" valign="top" style="item">w = 0000 0001 0011 0001 0011 0000 0000 1110 0001 0000</text>
-<text matrix="1 0 0 1 -512 224" transformations="translations" pos="512 128" stroke="black" type="minipage" width="416" valign="top">\begin{tabular}{ |c| c| c| c| c| }
-\hline
- Block &amp; 0000 &amp; 0001 &amp; 0011 &amp; 1110\\ 
-\hline
- Häufigkeit &amp; 4 &amp; 3&amp; 2 &amp; 1\\  
-\hline
-
-\end{tabular}
-</text>
-<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="32 64" stroke="black" type="label" valign="baseline">1,1110</text>
-<text matrix="1 0 0 1 32 -48" transformations="translations" pos="128 64" stroke="black" type="label" valign="baseline">2,0011</text>
-<text matrix="1 0 0 1 64 -32" transformations="translations" pos="256 192" stroke="black" type="label" valign="baseline">4,0000</text>
-<text matrix="1 0 0 1 64 -16" transformations="translations" pos="192 112" stroke="black" type="label" valign="baseline">3,0001</text>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="96 144" stroke="black" type="label" valign="baseline">3</text>
-<text matrix="1 0 0 1 32 -48" transformations="translations" pos="160 208" stroke="black" type="label" valign="baseline">6</text>
-<text matrix="1 0 0 1 48 -32" transformations="translations" pos="208 256" stroke="black" type="label" valign="baseline">10</text>
-<path stroke="black">
-64 32 m
-112 96 l
-</path>
-<path stroke="black">
-192 32 m
-128 96 l
-</path>
-<path stroke="black">
-128 112 m
-192 160 l
-</path>
-<path stroke="black">
-208 160 m
-256 112 l
-</path>
-<path stroke="black">
-256 224 m
-208 176 l
-</path>
-<path stroke="black">
-272 224 m
-320 176 l
-</path>
-<text matrix="1 0 0 1 -6.92765 3.07896" transformations="translations" pos="169.146 65.2797" stroke="black" type="label" valign="baseline">1</text>
-<text transformations="translations" pos="233.034 136.096" stroke="black" type="label" valign="baseline">1</text>
-<text matrix="1 0 0 1 3.07896 -9.23687" transformations="translations" pos="300.002 211.53" stroke="black" type="label" valign="baseline">1</text>
-<text matrix="1 0 0 1 3.07896 -10.7763" transformations="translations" pos="210.712 213.07" stroke="black" type="label" valign="baseline">0</text>
-<text transformations="translations" pos="145.284 140.714" stroke="black" type="label" valign="baseline">0</text>
-<text matrix="1 0 0 1 1.53948 -7.69739" transformations="translations" pos="73.6982 75.2863" stroke="black" type="label" valign="baseline">0</text>
-<text layer="gamma" matrix="1 0 0 1 -128 -64" transformations="translations" pos="448 128" stroke="black" type="minipage" width="576" valign="top">h(0000 0001 0011 0001 0011 0000 0000 1110 0001 0000) =\\
-1 01 001 01 001 1 1 000 01 1</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" valign="top" size="veryTiny">{\bf 16}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
 </page>
 </ipe>
