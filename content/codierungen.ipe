@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241202133345" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241202175012" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4040,8 +4040,8 @@ h
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">Was ist $Repr_2(75)$?</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">Was ist $Repr_{16}(111)$?</text>
-<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_2(75) = 1001011$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_{16}(111) = 6F$</text>
+<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_2(75) = \z{1001011}$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_{16}(111) = \z{6F}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
 </page>
 <page title="Übersetzungen">
