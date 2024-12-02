@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241202133345" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241202123837" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3805,9 +3805,9 @@ h
 <group layer="beta">
 <path stroke="black" fill="KITblue15">
 8 232 m
-640 232 l
-8 0 0 -8 640 224 648 224 a
-648 193.882 l
+496 232 l
+8 0 0 -8 496 224 504 224 a
+504 193.882 l
 16 193.882 l
 8 0 0 -8 16 201.882 8 201.882 a
 h
@@ -3825,9 +3825,9 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="14.8807" depth="3.7962" valign="top">{$Z_n$}</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="432" height="15.3313" depth="4.2402" valign="top">Das \textbf{Alphabet} $Z_n$ enthält die \textbf{Zeichen} \z{0} bis \z{n-1}</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="432" height="15.3313" depth="4.2402" valign="top">Das \textbf{Alphabet} $Z_n$ enthält die \textbf{Zeichen} 0 bis n-1</text>
 <text transformations="translations" pos="16 304" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">$Z_n \neq \mathbb [n]$ das eine sind Zeichen das andere Zahlen</text>
-<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">$Z_{16} = \{\z{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}\}$</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">$Z_{16} = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
 <text layer="alpha" matrix="1 0 0 1 0 160" transformations="translations" pos="16 112" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top">(und [n] fängt bei 1 an)</text>
 </page>
@@ -3851,8 +3851,8 @@ h
 <text transformations="translations" pos="16 304" stroke="black" type="minipage" width="384" height="16.6056" depth="5.55" valign="top">\bfseries $Num_k(w&apos;)$ zur basis $k$</text>
 <text matrix="1 0 0 1 0 128" transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.3392" depth="5.2836" valign="top">$Num_k: Z_k^* \rightarrow \mathbb N_0$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
-<text layer="alpha" matrix="1 0 0 1 16 80" transformations="translations" pos="16 144" stroke="black" type="minipage" width="352" height="16.5901" depth="5.5278" valign="top">$Num_k(\epsilon) = 0$</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 192" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top">$Num_k(wx) = k\cdot Num_k(w) + Num_k(x)$</text>
+<text layer="alpha" matrix="1 0 0 1 0 80" transformations="translations" pos="16 144" stroke="black" type="minipage" width="352" height="16.5901" depth="5.5278" valign="top">$Num_k(\epsilon) = 0$</text>
+<text transformations="translations" pos="16 192" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top">$Num_k(wx) = k\cdot Num_k(w) + Num_k(x)$</text>
 <text matrix="1 0 0 1 -32 0" transformations="translations" pos="464 192" stroke="black" type="minipage" width="176" height="16.9675" depth="5.883" valign="top">$(w \in Z_k^*, x \in Z_k)$</text>
 <text transformations="translations" pos="16 144" stroke="black" type="minipage" width="672" height="16.5901" depth="5.5278" valign="top">Da ein Alphabet endlich ist können wir $Num_k(x)$ z.B. als Tabelle angeben</text>
 </page>
@@ -3903,21 +3903,21 @@ h
 </group>
 <text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="352" height="66.9596" depth="56.0106" valign="top">\begin{align*}
-Num_2(\z{11}) &amp;= 2 \cdot  Num_2(\z{1}) + Num_2(\z{1})\\
+Num_2(11) &amp;= 2 \cdot  Num_2(1) + Num_2(1)\\
 &amp;= 2\cdot 1 +1\\
 &amp;= 3
 \end{align*}</text>
 <text layer="beta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist $Num_4(321)$?</text>
 <text layer="gamma" matrix="1 0 0 1 0 80" transformations="translations" pos="16 176" stroke="black" type="minipage" width="528" height="84.9905" depth="74.0814" valign="top">\begin{align*}
-Num_4(\z{321}) &amp;= 4 \cdot Num_4(\z{32}) + Num_4(\z 1)\\
-&amp;= 4 \cdot  ( 4 \cdot (Num_4(\z 3) + Num_4(\z 2)) + Num_4(\z 1)\\
-&amp;= 4^2 \cdot Num_4(\z 3) + 4\cdot Num_4(\z 2) + Num_4(\z 1)\\
+Num_4(321) &amp;= 4 \cdot Num_4(32) + Num_4(1)\\
+&amp;= 4 \cdot  ( 4 \cdot (Num_4(3) + Num_4(2)) + Num_4(1)\\
+&amp;= 4^2 \cdot Num_4(3) + 4\cdot Num_4(2) + Num_4(1)\\
 &amp;= 57
 \end{align*}
 </text>
-<text layer="delta" transformations="translations" pos="16 64" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist $Num_{16}(\z{B2})$?</text>
+<text layer="delta" transformations="translations" pos="16 64" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist $Num_{16}(B2)$?</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -64" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="66.9596" depth="56.0106" valign="top">\begin{align*}
-Num_{16}(\z{B2}) &amp;= 16 \cdot  Num_{16} (\z B) + Num_{16}(\z 2)\\
+Num_{16}(B2) &amp;= 16 \cdot  Num_{16} (B) + Num_{16}(2)\\
 &amp;= 16 \cdot 11 +2\\
 &amp;= 178
 \end{align*}
@@ -3928,10 +3928,8 @@ Num_{16}(\z{B2}) &amp;= 16 \cdot  Num_{16} (\z B) + Num_{16}(\z 2)\\
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
-<layer name="gamma"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma" active="beta"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
 <group layer="alpha" matrix="1 0 0 1 16 0">
 <path stroke="black" fill="KITgreen15">
 -8 344 m
@@ -3943,30 +3941,12 @@ Num_{16}(\z{B2}) &amp;= 16 \cdot  Num_{16} (\z B) + Num_{16}(\z 2)\\
 h
 </path>
 </group>
-<group layer="gamma" matrix="1 0 0 1 0 -16">
-<path stroke="black" fill="KITred15">
-248 344 m
-464 344 l
-8 0 0 -8 464 336 472 336 a
-472 313.554 l
-256 313.554 l
-8 0 0 -8 256 321.554 248 321.554 a
-h
-</path>
-</group>
-<path stroke="black" fill="KITred15">
-80 288 m
-80 272 l
-112 272 l
-112 288 l
-h
-</path>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="14.8807" depth="3.7962" valign="top" style="item">$Num_k$ hat eine Umkehrfunktion</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 336" stroke="black" type="minipage" width="464" height="72.3631" depth="61.4274" valign="top">$Repr_k: \mathbb N_0 \rightarrow Z_k^*\\
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="14.8807" depth="3.7962" valign="top" style="item">$Num_k$ hat eine Umkehrfunktion</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 336" stroke="black" type="minipage" width="464" height="72.3631" depth="61.4274" valign="top">$Repr_k: \mathbb N_0 \rightarrow Z_k\\
 \\
 n \mapsto \left\{ \begin{array}{ll}
-\texttt{\color{blue}n} &amp; \vert  n &lt; k\\
-Repr_k(n \text{ div } k) \cdot Repr_k(n \text{ mod } k) &amp; \vert  n\geq k
+repr_k(n) &amp; \vert  n &lt; k\\
+Repr_k(n \text{ div } k) \cdot repr_k(n \text{ mod } k) &amp; \vert  n\geq k
 \end{array}\right.\\
 \\
 repr_x = \text{Die darstellung von x im Dezimalsystem}
@@ -3974,13 +3954,6 @@ $</text>
 <text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top" style="item">x div y ist die ganzzahlige Division von x durch y</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 176" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top" style="item">x mod y liefert den Rest dieser Division</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
-<path layer="gamma" stroke="black" pen="0.8" arrow="normal/normal">
-248 311.078 m
-192 280
-128 280
-112 280 c
-</path>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="256 336" stroke="black" type="minipage" width="208" height="12.206" depth="2.24" valign="top" size="small">Das ist das \textbf{Zeichen} $\texttt{\color{blue}n} \in Z_k$</text>
 </page>
 <page>
 <layer name="alpha"/>
@@ -3989,24 +3962,24 @@ $</text>
 <group layer="alpha">
 <path stroke="black" fill="KITblue15">
 8 376 m
-512 376 l
-8 0 0 -8 512 368 520 368 a
-520 71.1514 l
+496 376 l
+8 0 0 -8 496 368 504 368 a
+504 71.1514 l
 16 71.1514 l
 8 0 0 -8 16 79.1514 8 79.1514 a
 h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="336" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="149.788" depth="139.061" valign="top">\begin{align*}
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="480" height="151.451" depth="140.726" valign="top">\begin{align*}
 Repr_2(55) &amp;= Repr_2(55/2) \cdot repr_2(55 \% 2)\\
-&amp;= Repr_2(27/2) \cdot repr_2(27\%2) \cdot \z 1 \\
-&amp;= Repr_2(13/2) \cdot repr_2 (13\%2) \cdot \z 1 \cdot \z 1\\
-&amp;= Repr_2(6/2) \cdot repr_2 (6\%2) \cdot \z 1 \cdot \z 1\cdot \z 1\\
-&amp;= Repr_2(3/2) \cdot repr_2(3\%2) \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1\\
-&amp;= Repr_2(1/2) \cdot repr_2(1\%2) \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1 \\
-&amp;= Repr_2(0) \cdot \z 1 \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1\\
-&amp;= \z 0 \cdot \z 1 \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1
+&amp;= Repr_2(27/2) \cdot repr_2(27\%2) \cdot 1 \\
+&amp;= Repr_2(13/2) \cdot repr_2 (13\%2) \cdot 1 \dot 1\\
+&amp;= Repr_2(6/2) \cdot repr_2 (6\%2) \cdot 1 \cdot 1\cdot 1\\
+&amp;= Repr_2(3/2) \cdot repr_2(3\%2) \cdot 0 \cdot 1 \cdot 1\cdot 1\\
+&amp;= Repr_2(1/2) \cdot repr_2(1\%2) \cdot 1 \cdot 0 \cdot 1 \cdot 1\cdot 1\\
+&amp;= Repr_2(0) \cdot 1 \cdot 1 \cdot 0 \cdot 1 \cdot 1\cdot 1\\
+&amp;= 0 \cdot 1 \cdot 1 \cdot 0 \cdot 1 \cdot 1\cdot 1
 \end{align*}</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
 </page>
@@ -4018,28 +3991,28 @@ Repr_2(55) &amp;= Repr_2(55/2) \cdot repr_2(55 \% 2)\\
 <view layers="pagenumbers_page beta" active="beta"/>
 <group layer="alpha">
 <path stroke="gray1" fill="gray3">
-232 320 m
-8 0 0 8 224 320 224 328 a
+216 320 m
+8 0 0 8 208 320 208 328 a
 8 328 l
-8 297.882 l
-8 0 0 8 16 297.882 16 289.882 a
-232 289.882 l
+8 300.895 l
+8 0 0 8 16 300.895 16 292.895 a
+216 292.895 l
 h
 </path>
 </group>
 <group>
 <path stroke="gray1" fill="gray3">
-232 368 m
-8 0 0 8 224 368 224 376 a
+200 368 m
+8 0 0 8 192 368 192 376 a
 8 376 l
-8 345.882 l
-8 0 0 8 16 345.882 16 337.882 a
-232 337.882 l
+8 348.895 l
+8 0 0 8 16 348.895 16 340.895 a
+200 340.895 l
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">Was ist $Repr_2(75)$?</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">Was ist $Repr_{16}(111)$?</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="176" height="28.8067" depth="17.76" valign="top">Was ist $Repr_2(75)$?</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="192" height="28.8067" depth="17.76" valign="top">Was ist $Repr_{16}(111)$?</text>
 <text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_2(75) = 1001011$</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_{16}(111) = 6F$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
@@ -4050,17 +4023,6 @@ h
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-592 376 l
-8 0 0 -8 592 368 600 368 a
-600 244.34 l
-16 244.34 l
-8 0 0 -8 16 252.34 8 252.34 a
-h
-</path>
-</group>
 <group layer="beta">
 <path stroke="black" fill="KITgreen15">
 8 232 m
@@ -4072,12 +4034,23 @@ h
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="128" height="15.0605" depth="3.996" valign="top">\bfseries Komposition</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="29.0309" depth="18.0042" valign="top">Wenn wir zwei funktionen nacheinander auf eine Eingabe anwenden wollen schreiben wir $f(g(x))$ oder auch $(f \circ g )(x)$</text>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+544 376 l
+8 0 0 -8 544 368 552 368 a
+552 244.608 l
+16 244.608 l
+8 0 0 -8 16 252.608 8 252.608 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="128" height="15.0605" depth="3.996" valign="top">\bfseries Komposition</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="528" height="42.2954" depth="31.2798" valign="top">Wenn wir zwei funktionen nacheinander auf eine Eingabe anwenden wollen schreiben wir $f(g(x))$ oder auch $(f \circ g )(x)$</text>
 <text transformations="translations" pos="16 272" stroke="black" type="minipage" width="528" height="15.3757" depth="4.2846" valign="top">Dabei ist $f \circ g$ wieder eine Funktion (Komposition)</text>
 <text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="528" height="17.2094" depth="6.1494" valign="top">\bfseries Übersetzung</text>
 <text transformations="translations" pos="16 192" stroke="black" type="minipage" width="528" height="52.6606" depth="41.6916" valign="top">Um von einer Zahlendarstellung in eine andere zu kommen finden wir erst mit Num den Wert der Zahl heraus und können dann mit Repr die Zahl in einem beliebigen System darstellen</text>
-<text transformations="translations" pos="16 80" stroke="black" type="minipage" width="496" height="15.8863" depth="4.8174" valign="top">Also z.B. $Trans_{16,2} = Repr_{2} \circ Num_{16}$</text>
+<text transformations="translations" pos="16 80" stroke="black" type="minipage" width="496" height="15.8863" depth="4.8174" valign="top">Also z.B. $Trans_{2,16} = Repr_{2} \circ Num_{16}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
 <page title="Aufgabe">
@@ -4097,9 +4070,9 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="320" height="29.2241" depth="18.204" valign="top">Gebt ein Wort $w \in  Z_2^*$ an, sodass $Num_2(w) = Num_{16}(\z{B3C8})$ gilt</text>
-<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$Num_{16}(\z{B3C8}) = {46024}$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_2(46024) = \z{1011001111001000} = w$</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="320" height="29.2241" depth="18.204" valign="top">Gebt ein Wort $w \in  Z_2^*$ an, sodass $Num_2(w) = Num_{16}(\text{B3C8})$ gilt</text>
+<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$Num_{16}(\text{B3C8} = 46024)$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_2(46024) = 1011001111001000 = w$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
 </page>
 </ipe>
