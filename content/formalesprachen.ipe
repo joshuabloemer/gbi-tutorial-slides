@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241202104713" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241202150916" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3911,5 +3911,51 @@ von a hat, so hat w auch mindestens zwei Vorkommen von b</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="16.9808" depth="5.9274" valign="top" style="item">$L_2 = \{a\}^* \cdot \{b,\epsilon\} \cdot (\{a\}^+ \cdot \{b\})^* \cdot \{a\}^*$</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="816" height="16.5901" depth="5.5278" valign="top" style="item">$L_3 = \{b, \epsilon\} \cup \{a,ab,ba\} \cup \{aa,aab,aba,baa\} \cup (\{a,b\}^* \cdot \{b\} \cdot \{a,b\}^* \cdot \{b\} \cdot \{a,b\}^*)$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 27}</text>
+</page>
+<page title="A wild Induktionsaufgabe appeared!">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="gamma">
+<path stroke="black" fill="KITgreen15">
+8 248 m
+896 248 l
+8 0 0 -8 896 240 904 240 a
+904 -20.6846 l
+16 -20.6846 l
+8 0 0 -8 16 -12.6846 8 -12.6846 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+712 384 m
+8 0 0 8 704 384 704 392 a
+8 392 l
+8 300.975 l
+8 0 0 8 16 300.975 16 292.975 a
+712 292.975 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="28.7335" depth="17.6934" valign="top">Es sei $L$ eine Sprache über einem Alphabet $A$ mit $L \cdot L \subseteq L$.\\
+        Behauptung: $L = L^+$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 288" stroke="black" type="minipage" width="880" height="15.671" depth="4.6176" valign="top">Beweis: \qquad
+    Wir zeigen zuerst $\forall n \in \mathbb{N}_+: L^n \subseteq L$ mit vollständiger Induktion:
+</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 256" stroke="black" type="minipage" width="624" height="28.5403" depth="17.4936" valign="top">\textbf{I.A.} Induktionsanfang $n=1$ \\ Es gilt: $L^1 = L \subseteq L$
+</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 192" stroke="black" type="minipage" width="656" height="58.6679" depth="47.7078" valign="top">
+\textbf{I.S.} Induktionsschritt $n-1 \leadsto n$ \\ 
+ Sei $n &gt; 1$ fest, aber beliebig und es gelte die I.V: $L^{n-1} \subseteq L$\\
+
+Dann gilt: $L^{n} = L \cdot L^{n-1} \overset{IV}{\subseteq} L^{n-1} \cdot L \subseteq L$
+</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="768" height="19.8712" depth="8.8134" valign="top">Folglich gilt $L^+ = \bigcup_{i \in \mathbb{N}_+} L^i \subseteq L$ und wegen $L \subseteq L^+$ folgt $L = L^+$</text>
+<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top">Zeight die Behauptung mit Vollständiger Induktion</text>
+<text layer="beta" matrix="1 0 0 1 0 8" transformations="translations" pos="16 272" stroke="black" type="minipage" width="576" height="15.469" depth="4.4178" valign="top">Hinweis zeigt $L^n \subseteq L$</text>
 </page>
 </ipe>
