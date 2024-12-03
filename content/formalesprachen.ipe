@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241202150916" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241203010326" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3769,6 +3769,17 @@ h
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <group layer="alpha">
 <path stroke="black" fill="KITred15">
+8 152 m
+128 152 l
+8 0 0 -8 128 144 136 144 a
+136 118.184 l
+16 118.184 l
+8 0 0 -8 16 126.184 8 126.184 a
+h
+</path>
+</group>
+<group>
+<path stroke="black" fill="KITred15">
 8 200 m
 560 200 l
 8 0 0 -8 560 192 568 192 a
@@ -3796,6 +3807,7 @@ Das Produkt der Sprachen ist definiert durch:</text>
 <text matrix="1 0 0 1 -32 -16" transformations="translations" pos="112 256" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top">$L_1 \cdot L_2 \coloneqq \{w_1 \cdot w_2 | w_1 \in L_1 \text{ und  }w_2  \in L_2\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 22}</text>
 <text layer="alpha" transformations="translations" pos="16 192" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top">$L \cdot \{\epsilon\} = L$ \quad (Analog zu $w \cdot \epsilon = \epsilon$ mit $w \in L$)</text>
+<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="112" height="14.4411" depth="3.3744" valign="top">$L \cdot \emptyset = \emptyset$</text>
 </page>
 <page title="Potenzen und Abschlüsse">
 <layer name="alpha"/>
@@ -3876,8 +3888,8 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="576" height="29.3395" depth="18.315" valign="top">Sei A das Alphabet $\{a,b\}$ und L die Sprache die alle Wörter enthält die mit a anfangen und mit b aufhören</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Dann ist $L=\{a\}\cdot \{a,b\}^* \cdot \{b\}$</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="576" height="29.3395" depth="18.315" valign="top">Sei A das Alphabet $\{a,b\}$ und L die Sprache die alle Wörter enthält die mit a anfangen und mit b aufhören, oder nur bs enthalten.</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Dann ist $L=(\{a\}\cdot \{a,b\}^* \cdot \{b\}) \cup \{b\}^*$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
 </page>
 <page title="Aufgabe">
