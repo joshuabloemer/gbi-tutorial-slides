@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241203010326" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241203113823" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3889,7 +3889,7 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="576" height="29.3395" depth="18.315" valign="top">Sei A das Alphabet $\{a,b\}$ und L die Sprache die alle Wörter enthält die mit a anfangen und mit b aufhören, oder nur bs enthalten.</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Dann ist $L=(\{a\}\cdot \{a,b\}^* \cdot \{b\}) \cup \{b\}^*$</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="16.9808" depth="5.9274" valign="top">Dann ist $L=(\{a\}\cdot \{a,b\}^* \cdot \{b\}) \cup \{b\}^+$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
 </page>
 <page title="Aufgabe">
@@ -3901,18 +3901,18 @@ h
 856 368 m
 8 0 0 8 848 368 848 376 a
 8 376 l
-8 230.413 l
-8 0 0 8 16 230.413 16 222.413 a
-856 222.413 l
+8 203.327 l
+8 0 0 8 16 203.327 16 195.327 a
+856 195.327 l
 h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Es sei $A = \{a, b\}$. Drücke folgenden Sprachen $L1, L2, L3 \subseteq A^*$ formell aus:
 </text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="832" height="14.8807" depth="3.7962" valign="top" style="item">$L_1$ enthält nur Wörter mit mindestens drei Vorkommen von a</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="832" height="15.469" depth="4.4178" valign="top" style="item">$L_2$ enthält nur Wörter, in denen die Zeichenfolge bb nicht vorkommt</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="784" height="26.5934" depth="15.54" valign="top" style="item">Für alle Wörter w in $L_3$ gilt: Wenn w mindestens drei Vorkommen
-von a hat, so hat w auch mindestens zwei Vorkommen von b</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="832" height="14.8807" depth="3.7962" valign="top" style="item">$L_1$ enthält alle Wörter mit mindestens drei Vorkommen von a</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="832" height="15.469" depth="4.4178" valign="top" style="item">$L_2$ enthält alle Wörter, in denen die Zeichenfolge bb nicht vorkommt</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="832" height="39.8357" depth="28.8378" valign="top" style="item">Für alle Wörter w in $L_3$ gilt: Wenn w mindestens drei Vorkommen
+von a hat, so hat w auch mindestens zwei Vorkommen von b. L soll alle Wörter enthalten, die diese Bedingung erfüllen</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 26}</text>
 </page>
 <page title="Lösung">
@@ -3964,7 +3964,7 @@ h
 \textbf{I.S.} Induktionsschritt $n-1 \leadsto n$ \\ 
  Sei $n &gt; 1$ fest, aber beliebig und es gelte die I.V: $L^{n-1} \subseteq L$\\
 
-Dann gilt: $L^{n} = L \cdot L^{n-1} \overset{IV}{\subseteq} L^{n-1} \cdot L \subseteq L$
+Dann gilt: $L^{n} = L \cdot L^{n-1} \overset{IV}{\subseteq} L \cdot L \subseteq L$
 </text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="768" height="19.8712" depth="8.8134" valign="top">Folglich gilt $L^+ = \bigcup_{i \in \mathbb{N}_+} L^i \subseteq L$ und wegen $L \subseteq L^+$ folgt $L = L^+$</text>
 <text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top">Zeight die Behauptung mit Vollständiger Induktion</text>

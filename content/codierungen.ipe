@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241203011304" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241203114425" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3929,6 +3929,17 @@ Num_{16}(\z{B2}) &amp;= 16 \cdot  Num_{16} (\z B) + Num_{16}(\z 2)\\
 <view layers="alpha pagenumbers_page beta gamma" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<group layer="epsilon">
+<path stroke="black" fill="KITgreen15">
+8 344 m
+496 344 l
+8 0 0 -8 496 336 504 336 a
+504 193.208 l
+16 193.208 l
+8 0 0 -8 16 201.208 8 201.208 a
+h
+</path>
+</group>
 <group layer="delta" matrix="1 0 0 1 0 -16">
 <path stroke="gray1" fill="gray3">
 696 112 m
@@ -3951,17 +3962,6 @@ h
 h
 </path>
 </group>
-<group layer="alpha" matrix="1 0 0 1 16 0">
-<path stroke="black" fill="KITgreen15">
--8 344 m
-464 344 l
-8 0 0 -8 464 336 472 336 a
-472 194.334 l
-0 194.334 l
-8 0 0 -8 0 202.334 -8 202.334 a
-h
-</path>
-</group>
 <group layer="gamma" matrix="1 0 0 1 0 -16">
 <path stroke="black" fill="KITred15">
 248 344 m
@@ -3981,14 +3981,14 @@ h
 h
 </path>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="14.8807" depth="3.7962" valign="top" style="item">$Num_k$ hat eine Umkehrfunktion</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 336" stroke="black" type="minipage" width="464" height="72.3631" depth="61.4274" valign="top">$Repr_k: \mathbb N_0 \rightarrow Z_k^*\\
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 336" stroke="black" type="minipage" width="480" height="72.8537" depth="61.938" valign="top">$Repr_k: \mathbb N_0 \rightarrow Z_k^*\\
 \\
 n \mapsto \left\{ \begin{array}{ll}
 \texttt{\color{blue}n} &amp; \vert  n &lt; k\\
 Repr_k(n \text{ div } k) \cdot Repr_k(n \text{ mod } k) &amp; \vert  n\geq k
 \end{array}\right.\\
 \\
-repr_x = \text{Die darstellung von x im Dezimalsystem}
+Repr_{10}(x) = \text{Die darstellung von x im Dezimalsystem}
 $</text>
 <text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top" style="item">x div y ist die ganzzahlige Division von x durch y</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 176" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top" style="item">x mod y liefert den Rest dieser Division</text>
@@ -4001,7 +4001,7 @@ $</text>
 </path>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="256 336" stroke="black" type="minipage" width="208" height="12.206" depth="2.24" valign="top" size="small">Das ist das \textbf{Zeichen} $\texttt{\color{blue}n} \in Z_k$</text>
 <text layer="delta" matrix="1 0 0 1 -16 -32" transformations="translations" pos="32 128" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">Achtung: $Repr_k(Num_k(w))$ ist machnmal $\neq w$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="512 112" stroke="black" type="minipage" width="176" height="15.1648" depth="4.0848" valign="top">Wann passier das?</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="512 112" stroke="black" type="minipage" width="192" height="15.1648" depth="4.0848" valign="top">Wann passiert das?</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="512 64" stroke="black" type="minipage" width="272" height="13.1357" depth="2.0646" valign="top">Wenn w führende Nullen hat</text>
 </page>
 <page>
@@ -4021,12 +4021,12 @@ h
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="336" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="149.788" depth="139.061" valign="top">\begin{align*}
-Repr_2(55) &amp;= Repr_2(55/2) \cdot repr_2(55 \% 2)\\
-&amp;= Repr_2(27/2) \cdot repr_2(27\%2) \cdot \z 1 \\
-&amp;= Repr_2(13/2) \cdot repr_2 (13\%2) \cdot \z 1 \cdot \z 1\\
-&amp;= Repr_2(6/2) \cdot repr_2 (6\%2) \cdot \z 1 \cdot \z 1\cdot \z 1\\
-&amp;= Repr_2(3/2) \cdot repr_2(3\%2) \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1\\
-&amp;= Repr_2(1/2) \cdot repr_2(1\%2) \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1 \\
+Repr_2(55) &amp;= Repr_2(55/2) \cdot Repr_2(55 \% 2)\\
+&amp;= Repr_2(27/2) \cdot Repr_2(27\%2) \cdot \z 1 \\
+&amp;= Repr_2(13/2) \cdot Repr_2 (13\%2) \cdot \z 1 \cdot \z 1\\
+&amp;= Repr_2(6/2) \cdot Repr_2 (6\%2) \cdot \z 1 \cdot \z 1\cdot \z 1\\
+&amp;= Repr_2(3/2) \cdot Repr_2(3\%2) \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1\\
+&amp;= Repr_2(1/2) \cdot Repr_2(1\%2) \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1 \\
 &amp;= Repr_2(0) \cdot \z 1 \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1\\
 &amp;= \z 0 \cdot \z 1 \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1
 \end{align*}</text>
