@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241203114425" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241203233413" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3841,13 +3841,13 @@ h
 </group>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Wir haben: Ein Wort</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="12.9115" depth="1.8204" valign="top" style="item">Wir wollen: Das Wort in eine Zahl umwandeln</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="384" height="16.6056" depth="5.55" valign="top">\bfseries $Num_k(w&apos;)$ zur basis $k$</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="384" height="16.6056" depth="5.55" valign="top">\bfseries $Num_k(w&apos;)$ zur Basis $k$</text>
 <text matrix="1 0 0 1 0 128" transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.3392" depth="5.2836" valign="top">$Num_k: Z_k^* \rightarrow \mathbb N_0$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
 <text layer="alpha" matrix="1 0 0 1 16 80" transformations="translations" pos="16 144" stroke="black" type="minipage" width="352" height="16.5901" depth="5.5278" valign="top">$Num_k(\epsilon) = 0$</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="16 192" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top">$Num_k(wx) = k\cdot Num_k(w) + Num_k(x)$</text>
 <text matrix="1 0 0 1 -32 0" transformations="translations" pos="464 192" stroke="black" type="minipage" width="176" height="16.9675" depth="5.883" valign="top">$(w \in Z_k^*, x \in Z_k)$</text>
-<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="672" height="16.5901" depth="5.5278" valign="top">Da ein Alphabet endlich ist können wir $Num_k(x)$ z.B. als Tabelle angeben</text>
+<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="672" height="16.5901" depth="5.5278" valign="top">Da ein Alphabet endlich ist, können wir $Num_k(x)$ z.B. als Tabelle angeben</text>
 </page>
 <page title="Von Wörtern zu Zahlen">
 <layer name="alpha"/>
@@ -3988,7 +3988,7 @@ n \mapsto \left\{ \begin{array}{ll}
 Repr_k(n \text{ div } k) \cdot Repr_k(n \text{ mod } k) &amp; \vert  n\geq k
 \end{array}\right.\\
 \\
-Repr_{10}(x) = \text{Die darstellung von x im Dezimalsystem}
+Repr_{10}(x) = \text{Die Darstellung von x im Dezimalsystem}
 $</text>
 <text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top" style="item">x div y ist die ganzzahlige Division von x durch y</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 176" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top" style="item">x mod y liefert den Rest dieser Division</text>
@@ -4095,7 +4095,7 @@ h
 </path>
 </group>
 <text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="128" height="15.0605" depth="3.996" valign="top">\bfseries Komposition</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="29.0309" depth="18.0042" valign="top">Wenn wir zwei funktionen nacheinander auf eine Eingabe anwenden wollen schreiben wir $f(g(x))$ oder auch $(f \circ g )(x)$</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="29.0309" depth="18.0042" valign="top">Wenn wir zwei Funktionen nacheinander auf eine Eingabe anwenden wollen schreiben wir $f(g(x))$ oder auch $(f \circ g )(x)$</text>
 <text transformations="translations" pos="16 272" stroke="black" type="minipage" width="528" height="15.3757" depth="4.2846" valign="top">Dabei ist $f \circ g$ wieder eine Funktion (Komposition)</text>
 <text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="528" height="17.2094" depth="6.1494" valign="top">\bfseries Übersetzung</text>
 <text transformations="translations" pos="16 192" stroke="black" type="minipage" width="528" height="52.6606" depth="41.6916" valign="top">Um von einer Zahlendarstellung in eine andere zu kommen finden wir erst mit Num den Wert der Zahl heraus und können dann mit Repr die Zahl in einem beliebigen System darstellen</text>
