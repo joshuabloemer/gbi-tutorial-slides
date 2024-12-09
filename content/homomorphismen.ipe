@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241209155216" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241209235528" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3917,6 +3917,6 @@ x u(w&apos;) &amp;\vert w =  h(x) w&apos; \text{für ein } x\in A \\
 \end{array}\right.$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
 <text layer="beta" transformations="translations" pos="16 96" stroke="black" type="minipage" width="704" height="15.2758" depth="4.218" valign="top">Analog mit suffixfreien Homomorphismen (dann Decodierung von hinten)</text>
-<text layer="gamma" transformations="translations" pos="576 240" stroke="black" type="minipage" width="288" height="28.4071" depth="17.3826" valign="top">Das liegt daran das Präfixfreie Homomorphismen injektiv sind.</text>
+<text layer="gamma" transformations="translations" pos="576 240" stroke="black" type="minipage" width="288" height="28.4071" depth="17.3826" valign="top">Das liegt daran, dass präfixfreie Homomorphismen injektiv sind.</text>
 </page>
 </ipe>
