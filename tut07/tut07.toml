@@ -1,0 +1,5 @@
+
+title = "07 Homomorphismen, Huffman, Wiederholung,"    # the file name of the output pdf
+description = "Homomorphismen, Huffman, Wiederholung"  # 
+content = ["homomorphismen", "huffman"]
+xkcd = 1322

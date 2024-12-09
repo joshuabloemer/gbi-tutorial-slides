@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241203011501" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241209155216" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3755,7 +3755,7 @@ Konkatenation erhalten werden.\\
 Seien A, B Alphabete, dann ist eine Abbildung $h: A^* \rightarrow B^*$ ein \emph{Homomorphismus} wenn,\\
 \\
 $\forall x,y \in A^* : h(x \cdot y) = h(x) \cdot h(y)$</text>
-<text layer="beta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="704" height="41.5584" depth="30.5472" valign="top">Also in Deutsch:\\
+<text layer="beta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="704" height="41.7826" depth="30.7914" valign="top">Also auf Deutsch:\\
 Bei einem Homomorphismus ist es egal, ob ihr erst konkateniert und dann die Funktion anwendet oder umgekehrt</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
 </page>

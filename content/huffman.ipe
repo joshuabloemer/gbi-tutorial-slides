@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241202143025" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241209155222" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -5924,7 +5924,7 @@ sind
 \item Wurzel: Knoten, von dem aus alle anderen Knoten erreichbar sind
 \item Blatt: Ein Knoten ohne ausgehende Kanten
 \item Innerer Knoten: Alle Knoten, die keine Blätter sind</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top">Das ist alles nur informell,  genaue Definition kommen dann später</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top">Das ist alles nur informell,  genaue Definitionen kommen dann später</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
 </page>
 <page title="Huffman Codierung">
@@ -5951,7 +5951,7 @@ sind
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top">Eine Huffman Codierung zu einem Wort kann durch einen Baum Beschrieben werden</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top">Eine Huffman Codierung zu \textbf{einem Wort} kann durch einen Baum Beschrieben werden</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" height="108.918" depth="98.0796" valign="top" style="itemize">\item Alle Zeichen mit ihrer Häufigkeit als Blätter in die unterste Ebene
 zeichnen.
 \item Jeweils zwei Knoten/Bäume (nicht unbeding Blätter!) mit den
