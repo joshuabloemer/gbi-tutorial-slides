@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241209155216" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241210113126" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3855,8 +3855,8 @@ R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*, x \in A
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">h(a) = 0, h(b) = 1, h(c) = 10</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top" style="item">Für welches w gilt h(w) = 10?</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="416" height="15.2758" depth="4.218" valign="top" style="item">g(a) = 0, g(b) = 1, g(c) = 10</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top" style="item">Für welches w gilt g(w) = 10?</text>
 <text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="496" height="12.9115" depth="1.8204" valign="top" style="item">Für w = ba und w = c</text>
 <text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="592" height="15.0605" depth="3.996" valign="top">\bfseries Präfixfreie Homomorphismen</text>
 <text transformations="translations" pos="16 240" stroke="black" type="minipage" width="720" height="42.4886" depth="31.4796" valign="top">Sei $h: A^* \rightarrow B^*$ ein Homomorphismus. h heißt präfixfrei, wenn für

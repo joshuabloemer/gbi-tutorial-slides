@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241209155222" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241210112053" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -6036,7 +6036,7 @@ h
 \hline
  x &amp; a &amp; b &amp; c &amp; d\\ 
 \hline
- $N_x(w)$ &amp; 5 &amp; 1&amp; 2 &amp; 2\\  
+ $\vert w\vert_x$ &amp; 5 &amp; 1&amp; 2 &amp; 2\\  
 \hline
  $h(x)$ &amp; 1 &amp; 000 &amp; 01 &amp; 001\\
 \hline
@@ -6108,7 +6108,7 @@ Wortes w</text>
 \hline
  x &amp; a &amp; b &amp; c \\ 
 \hline
- $N_x(w)$ &amp; 2 &amp; 1&amp; 1\\  
+ $\vert w \vert_x$ &amp; 2 &amp; 1&amp; 1\\  
 \hline
  $h(x)$ &amp; 1 &amp; 00 &amp; 01\\
 \hline
