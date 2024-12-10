@@ -5931,7 +5931,7 @@ sind
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="832" height="41.7826" depth="30.7914" valign="top">Das Ziel der Huffman Codierung ist eine Möglich kurze Codierung für ein Wort zu haben, dabei werden für häufig vorkommende Zeichen kurze Codes verwendet und für seltene Zeichen lange</text>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="832" height="41.7826" depth="30.7914" valign="top">Das Ziel der Huffman Codierung ist eine möglichst kurze Codierung für ein Wort zu haben. Dabei werden für häufig vorkommende Zeichen kurze Codes verwendet und \\ für seltenere Zeichen längere Codes.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
 </page>
 <page title="Huffman Baum">
@@ -5951,17 +5951,17 @@ sind
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top">Eine Huffman Codierung zu \textbf{einem Wort} kann durch einen Baum Beschrieben werden</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" height="108.918" depth="98.0796" valign="top" style="itemize">\item Alle Zeichen mit ihrer Häufigkeit als Blätter in die unterste Ebene
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top">Eine Huffman Codierung zu \textbf{einem Wort} kann durch einen Baum beschrieben werden</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" height="108.918" depth="98.0796" valign="top" style="itemize">\item 1. Alle Zeichen mit ihrer Häufigkeit als Blätter in die unterste Ebene
 zeichnen.
-\item Jeweils zwei Knoten/Bäume (nicht unbeding Blätter!) mit den
+\item 2. Jeweils zwei Knoten/Bäume (nicht unbeding Blätter!) mit den
 geringsten Häufigkeiten verbinden, indem man ihnen eine
 gemeinsame Wurzel gibt, die die Summe der Häufigkeiten erhält.
-\item Fortfahren, bis nur noch ein Baum übrig ist.
-\item  Die linken Äste jeweils mit 0 beschriften, die rechten Äste mit 1.
-\item Die Codierung einzelner Zeichen kann man entlang der Pfade von
+\item 3. 2.Schritt wiederholen, bis nur noch ein Baum übrig ist.
+\item  4. Die linken Äste jeweils mit 0 beschriften, die rechten Äste mit 1.
+\item 5. Die Codierung einzelner Zeichen kann man entlang der Pfade von
 der Wurzel zum jeweiligen Zeichen ablesen</text>
-<text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="0 80" stroke="black" type="minipage" width="400" height="28.5403" depth="17.4936" valign="top">Die Codierung müsst ihr dann immer noch durch z.B. eine Tabelle angeben</text>
+<text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="0 80" stroke="black" type="minipage" width="400" height="28.5403" depth="17.4936" valign="top">Die Codierung müsst ihr dann immer noch durch z.B. eine Tabelle explizit angeben</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
 </page>
 <page title="Beispiel">
@@ -6047,7 +6047,7 @@ h
 <text layer="theta" matrix="1 0 0 1 -208 80" transformations="translations" pos="480 64" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$h^{**}(abadcadaac) = 100010010110011101$</text>
 <text layer="kappa" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 80" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top" style="item">Das codierte Wort ist länger als das Original</text>
 <text layer="lambda" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 48" stroke="black" type="minipage" width="544" height="26.1538" depth="15.1182" valign="top" style="item">Um ein Zeichen aus \{a,b,c,d\} zu codieren braucht man mindestens 2 bit</text>
-<text layer="mu" transformations="translations" pos="272 16" stroke="black" type="minipage" width="624" height="15.0516" depth="3.9738" valign="top" style="item">$\Rightarrow$Unsere codierung ist in Binär trotzdem kürzer</text>
+<text layer="mu" transformations="translations" pos="272 16" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">$\Rightarrow$Unsere Codierung ist in Binär trotzdem kürzer</text>
 <text layer="zeta" matrix="1 0 0 1 7.98121 -11.9718" transformations="translations" pos="192 320" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
 <text matrix="1 0 0 1 5.58685 -7.18309" transformations="translations" pos="80 224" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
 <text matrix="1 0 0 1 8.77933 -6.38497" transformations="translations" pos="16 128" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
