@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241216204113" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241216232949" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -10241,9 +10241,9 @@ h
 <layer name="beta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<text layer="alpha" matrix="1 0 0 1 0 -88" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="26.4002" depth="15.3402" valign="top" style="item">Aussagen wie \enquote{Für alle x gilt} oder \enquote{Es existiert ein y, sodass} lassen sich in der Aussagenlogik nicht darstellen</text>
+<text layer="alpha" matrix="1 0 0 1 0 -88" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Quantifizierte Aussagen wie: \enquote{Für alle x gilt} oder \enquote{Es existiert ein y, sodass} \\ lassen sich in der Aussagenlogik nicht darstellen</text>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Aussagenlogik kann nur mit Aussagen umgehen</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Aussagen über arbiträre Elemente die bestimmte Eigenschaften haben oder nicht haben lassen sich nur Schlecht in der Aussagenlogik darstellen</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Aussagen über arbiträre Elemente, die bestimmte Eigenschaften haben, oder nicht haben, \\ lassen sich nur schlecht in der Aussagenlogik darstellen</text>
 <text layer="beta" matrix="1 0 0 1 176 -64" transformations="translations" pos="0 224" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top">\impl \emph{Prädikatenlogik} löst diese Probleme mit Quantoren</text>
 </page>
 <page title="Prädikatenlogik Syntax">
@@ -10258,15 +10258,15 @@ h
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="656" height="12.8627" depth="1.7982" valign="top" style="item">\emph{Terme}</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="subitem">Variablensymbole, Konstantensymbole, Funktionssymbole</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="720" height="15.2758" depth="4.218" valign="top" style="subitem">Sind atomar, also nicht weiter zerlegbar</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="subitem">liefern \enquote{Werte} wie etwa Zahlenwerte, Wörter</text>
-<text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="656" height="12.8627" depth="1.7982" valign="top" style="item">\emph{Atomare Formeln}</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">zusammengesetzt aus Termen und Relationssymbolen, die die Terme
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="subitem">liefern \enquote{Werte} wie etwa Zahlenwerte oder Wörter</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="656" height="12.8627" depth="1.7982" valign="top" style="item">\emph{Atomare Formeln}</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 192" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="subitem">Setzen sich zusammen aus Termen, sowie Relationssymbolen, welche die Terme
 verbinden</text>
-<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="736" height="13.1357" depth="2.0646" valign="top" style="subitem">Liefern Wahrheitswerte</text>
-<text layer="gamma" transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="15.2203" depth="4.1514" valign="top" style="item">\emph{Prädikatenlogische Formeln}</text>
-<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="subitem">zusammengesetzt aus atomaren Formeln, aussagenlogischen
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 160" stroke="black" type="minipage" width="736" height="13.1357" depth="2.0646" valign="top" style="subitem">Liefern Wahrheitswerte</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="15.2203" depth="4.1514" valign="top" style="item">\emph{Prädikatenlogische Formeln}</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 96" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="subitem">Zusammengesetzt aus atomaren Formeln, aussagenlogischen
 Konnektiven und Quantoren</text>
-<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="848" height="13.1357" depth="2.0646" valign="top" style="subitem">Liefern Wahrheitswerte</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 64" stroke="black" type="minipage" width="848" height="13.1357" depth="2.0646" valign="top" style="subitem">Liefern Wahrheitswerte</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
 </page>
 <page title="Terme">
@@ -10278,10 +10278,10 @@ Konnektiven und Quantoren</text>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="560" height="12.9115" depth="1.8204" valign="top">Bestehen aus:</text>
-<text matrix="1 0 0 1 16 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="592" height="15.0605" depth="3.996" valign="top">\emph{Variabelnsymbolen}</text>
+<text matrix="1 0 0 1 16 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="592" height="15.0605" depth="3.996" valign="top">\emph{Variablensymbolen}</text>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="832" height="15.0516" depth="3.9738" valign="top" style="item">Können in einer Formel beliebige Werte annehmen</text>
 <text matrix="1 0 0 1 16 16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$x_i (i\in \mathbb N) \quad \z{x,y,z}$</text>
-<text layer="gamma" matrix="1 0 0 1 16 -144" transformations="translations" pos="0 256" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top">\emph{Konstantensymbolen} (Funktionssymbolen mit stelligkeit 0)</text>
+<text layer="gamma" matrix="1 0 0 1 16 -144" transformations="translations" pos="0 256" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top">\emph{Konstantensymbolen} (Funktionssymbolen mit Stelligkeit 0)</text>
 <text matrix="1 0 0 1 16 -144" transformations="translations" pos="0 224" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$c_i (i\in \mathbb N) \quad \z{c,d}$</text>
 <text matrix="1 0 0 1 16 -144" transformations="translations" pos="0 192" stroke="black" type="minipage" width="832" height="15.0516" depth="3.9738" valign="top" style="item">haben einen konstanten Wert in der gesamten Formel</text>
 <text layer="beta" matrix="1 0 0 1 16 112" transformations="translations" pos="0 160" stroke="black" type="minipage" width="704" height="15.0605" depth="3.996" valign="top">\emph{Funktionssymbolen}</text>
@@ -10312,12 +10312,12 @@ h
 </group>
 <text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="0 368" stroke="black" type="minipage" width="528" height="12.9115" depth="1.8204" valign="top">Bestehen aus:</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 352" stroke="black" type="minipage" width="640" height="15.0605" depth="3.996" valign="top">\emph{Relationssymbolen}</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="16.6189" depth="5.5722" valign="top" style="item">$\doteq $ immer und $R_i  (i  \in \mathbb N)$ \quad \z{R$(\cdot)$},\z{S$(\cdot)$}</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="16.6189" depth="5.5722" valign="top" style="item">$\doteq $ sowie weitere: $R_i  (i  \in \mathbb N)$ \quad \z{R$(\cdot)$},\z{S$(\cdot)$}</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 288" stroke="black" type="minipage" width="704" height="15.0516" depth="3.9738" valign="top" style="item">Die Argumente von Relationssymbolen sind immer Terme</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 256" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top" style="item">Relationen haben wie Funktionen eine stelligkeit $ar(R_i) \in \mathbb N_+$</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 256" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top" style="item">Relationen haben, wie Funktionen eine Stelligkeit $ar(R_i) \in \mathbb N_+$</text>
 <text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="0 208" stroke="black" type="minipage" width="640" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="16 176" stroke="black" type="minipage" width="512" height="16.6189" depth="5.5722" valign="top">$x \doteq c \quad \quad  g(x) \doteq g(y) \quad \quad R(g(c)) \quad \quad  S(x,f(x,y))$</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 144" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Hier $ar(g) = 1, ar(f) = 2, ar(R) = 1, ar(S) = 2$</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 144" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Hier: $ar(g) = 1, ar(f) = 2, ar(R) = 1, ar(S) = 2$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
 </page>
 <page title="Prädikatenlogische Formeln">
@@ -10360,7 +10360,7 @@ h
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="15.0516" depth="3.9738" valign="top">Zusammengesetzt aus:</text>
 <text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="736" height="12.9115" depth="1.8204" valign="top" style="item">Atomaren Formeln</text>
-<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Aussagenlogischen konnektiven ($\neg, \vee \wedge \rightarrow$ und Klammern)</text>
+<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Aussagenlogischen Konnektiven ($\neg, \vee, \wedge, \rightarrow$ (,plus Klammern))</text>
 <text layer="delta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="688" height="15.358" depth="4.2846" valign="top" style="item">Quantoren ($\forall \quad \exists$)</text>
 <text layer="epsilon" transformations="translations" pos="0 240" stroke="black" type="minipage" width="704" height="15.469" depth="4.4178" valign="top">Verwendung: ($\forall x_i \dots \text{Formel} \dots$)</text>
 <text layer="eta" matrix="1 0 0 1 400 -32" transformations="translations" pos="0 192" stroke="black" type="minipage" width="416" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung:</text>
@@ -10398,7 +10398,7 @@ $</text>
 <text layer="alpha" matrix="1 0 0 1 0 -35.9439" transformations="translations" pos="0 160" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x (S(x) \wedge T(x))  \rightarrow  \exists R( \forall x R(x,x))$</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -35.9439" transformations="translations" pos="0 128" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top">Relationen können nicht quantifiziert werden</text>
 <text layer="alpha" matrix="1 0 0 1 0 -23.8879" transformations="translations" pos="0 224" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x \forall y R(f(x,f(y)))$</text>
-<text layer="delta" matrix="1 0 0 1 0 -23.8879" transformations="translations" pos="0 192" stroke="black" type="minipage" width="704" height="15.1648" depth="4.0848" valign="top">ar(f) = 1 oder ar(f) = 2, aber nicht beides in einer Formel.</text>
+<text layer="delta" matrix="1 0 0 1 0 -23.8879" transformations="translations" pos="0 192" stroke="black" type="minipage" width="704" height="15.2758" depth="4.218" valign="top">Entweder gilt: ar(f) = 1 oder ar(f) = 2, aber nicht beides in einer Formel</text>
 <text layer="alpha" matrix="1 0 0 1 0 -12.0561" transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$S(c) \wedge T(d) \rightarrow S(R(c,d))$</text>
 <text layer="gamma" matrix="1 0 0 1 0 -12.0561" transformations="translations" pos="0 256" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Nur Terme als Argumente, keine Relationen</text>
 <text layer="alpha" transformations="translations" pos="0 352" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top" style="item">$\exists z ~f(z)$</text>
