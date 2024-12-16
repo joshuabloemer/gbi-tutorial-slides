@@ -10404,82 +10404,6 @@ $</text>
 <text layer="alpha" transformations="translations" pos="0 352" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top" style="item">$\exists z ~f(z)$</text>
 <text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="432" height="15.1648" depth="4.0848" valign="top">Funktionen (f) sind keine Relationen</text>
 </page>
-<page title="Formeln aufstellen">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
-<group layer="zeta" matrix="1 0 0 1 16 16">
-<path stroke="black" fill="KITred15">
-8 104 m
-768 104 l
-8 0 0 -8 768 96 776 96 a
-776 42.2303 l
-16 42.2303 l
-8 0 0 -8 16 50.2303 8 50.2303 a
-h
-</path>
-</group>
-<group layer="epsilon">
-<path stroke="black" fill="KITblue15">
-8 376 m
-416 376 l
-8 0 0 -8 416 368 424 368 a
-424 148.4 l
-16 148.4 l
-8 0 0 -8 16 156.4 8 156.4 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="384" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top">Alle Menschen lieben Weihnachten.</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="400" height="13.1357" depth="2.0646" valign="top">Was brauchen wir?</text>
-<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Menschen</text>
-<text layer="gamma" transformations="translations" pos="16 240" stroke="black" type="minipage" width="400" height="15.0516" depth="3.9738" valign="top" style="item">&apos;&apos;lieben&apos;&apos; als Beziehung zwischen Dingen</text>
-<text layer="delta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Weihnachten</text>
-<text layer="epsilon" transformations="translations" pos="16 176" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$\forall x (Mensch(x) \rightarrow liebt(x, Weihnachten))$</text>
-<text layer="zeta" matrix="1 0 0 1 16 16" transformations="translations" pos="16 96" stroke="black" type="minipage" width="752" height="28.2939" depth="17.2716" valign="top">Das ist wie in der Aussagenlogik erstmal nur ein Wort über einem Alphabet, die Beduetung kommt dann wieder durch Interpretationen</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<group layer="alpha">
-<path stroke="gray1" fill="gray3">
-632 368 m
-8 0 0 8 624 368 624 376 a
-8 376 l
-8 253.057 l
-8 0 0 8 16 253.057 16 245.057 a
-632 245.057 l
-h
-</path>
-</group>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Formuliert die folgenden Aussagen als Formeln in Prädikatenlogik:</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="512" height="15.2758" depth="4.218" valign="top" style="item">Nicht alle Vögel können fliegen.</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="608" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es irgendjemand kann, dann kann es Donald Ervin Knuth.</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="608" height="14.9184" depth="3.8628" valign="top" style="item">John liebt jeden, der sich nicht selbst liebt.</text>
-<text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\exists x (Vogel(x) \wedge  \neg flugf\ddot{a} hig(x)) $</text>
-<text layer="gamma" transformations="translations" pos="0 176" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top">$\exists x (kann\_ es(x)) \rightarrow kann\_ es (knuth)$</text>
-<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\forall x (\neg liebt(x,x) \rightarrow liebt(John,x))$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
-</page>
 <page title="Semantik">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -10517,6 +10441,90 @@ $\Rightarrow$ jedem Konstantensymbol wird ein fester Wert aus D zugeordnet</text
 <text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 96" stroke="black" type="minipage" width="624" height="15.469" depth="4.4178" valign="top">Eine \emph{Variablenbelegung} $\beta$ ordnet jeder Variable einen Wert aus D zu</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 64" stroke="black" type="minipage" width="672" height="15.3757" depth="4.2846" valign="top" style="item">Also $\beta : Var_{PL}  \rightarrow D$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
+</page>
+<page title="Formeln aufstellen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
+<group layer="eta" matrix="1 0 0 1 0 16">
+<path stroke="black" fill="KITred15">
+8 104 m
+768 104 l
+8 0 0 -8 768 96 776 96 a
+776 42.2303 l
+16 42.2303 l
+8 0 0 -8 16 50.2303 8 50.2303 a
+h
+</path>
+</group>
+<group layer="zeta">
+<path stroke="black" fill="KITblue15">
+8 376 m
+416 376 l
+8 0 0 -8 416 368 424 368 a
+424 148.4 l
+16 148.4 l
+8 0 0 -8 16 156.4 8 156.4 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="384" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top">Alle Menschen lieben Weihnachten.</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="400" height="13.1357" depth="2.0646" valign="top">Was brauchen wir?</text>
+<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Menschen</text>
+<text layer="gamma" transformations="translations" pos="16 240" stroke="black" type="minipage" width="400" height="15.0516" depth="3.9738" valign="top" style="item">&apos;&apos;lieben&apos;&apos; als Beziehung zwischen Dingen</text>
+<text layer="delta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Weihnachten</text>
+<text layer="zeta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$\forall x (Mensch(x) \rightarrow Liebt(x, Weihnachten))$</text>
+<text layer="eta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 96" stroke="black" type="minipage" width="752" height="28.2939" depth="17.2716" valign="top">Das ist wie in der Aussagenlogik erstmal nur ein Wort über einem Alphabet, die Bedeutung kommt dann wieder durch Interpretationen</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -48" transformations="translations" pos="448 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$Var_{PL} = \{x\}, Fun_{PL} = \{Weihnachten\}, \\Rel_{PL} = \{Mensch, Liebt\}$</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="448 304" stroke="black" type="minipage" width="320" height="29.8546" depth="18.8034" valign="top">$ar(Mensch) = 1, ar(Liebt) = 2,\\ ar(Weihnachten) = 0$</text>
+<text transformations="translations" pos="448 352" stroke="black" type="minipage" width="464" height="15.0516" depth="3.9738" valign="top">D = Die Menge aller Lebewesen und Feiertage</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="alpha"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+632 368 m
+8 0 0 8 624 368 624 376 a
+8 376 l
+8 253.057 l
+8 0 0 8 16 253.057 16 245.057 a
+632 245.057 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Formuliert die folgenden Aussagen als Formeln in Prädikatenlogik:</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="512" height="15.2758" depth="4.218" valign="top" style="item">Nicht alle Vögel können fliegen.</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="608" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es irgendjemand kann, dann kann es Donald Ervin Knuth.</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="608" height="14.9184" depth="3.8628" valign="top" style="item">John liebt jeden, der sich nicht selbst liebt.</text>
+<text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\exists x (Vogel(x) \wedge  \neg Flugf\ddot{a} hig(x)) $</text>
+<text layer="gamma" transformations="translations" pos="0 176" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top">$\exists x (Kann\_ es(x)) \rightarrow Kann\_ es (Knuth)$</text>
+<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\forall x (\neg Liebt(x,x) \rightarrow Liebt(John,x))$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
+<text layer="alpha" matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$Var_{PL} = \{x\}, Fun_{PL} = \{Knuth, John\}, \\Rel_{PL} = \{Flugf\ddot{a} hig, Kann\_es, Vogel, Liebt\}$</text>
+<text matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 304" stroke="black" type="minipage" width="464" height="43.0969" depth="32.1012" valign="top">$ar(Vogel) = ar(Kann_es) = ar(Flugf\ddot{a} hig) = 1,\\ ar(Liebt) = 2,\\ ar(Knuth) = ar(John) = 0$</text>
+<text matrix="1 0 0 1 -64 -128" transformations="translations" pos="448 352" stroke="black" type="minipage" width="464" height="15.0516" depth="3.9738" valign="top">D = Die Menge aller Lebewesen</text>
 </page>
 <page title="Auswertungsfunktion">
 <layer name="alpha"/>
