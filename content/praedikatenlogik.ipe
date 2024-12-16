@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241216200034" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241216202719" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -10238,7 +10238,13 @@ h
 </ipestyle>
 <page title="Motivation">
 <layer name="alpha"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<text layer="alpha" matrix="1 0 0 1 0 -88" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="26.4002" depth="15.3402" valign="top" style="item">Aussagen wie \enquote{Für alle x gilt} oder \enquote{Es existiert ein y, sodass} lassen sich in der Aussagenlogik nicht darstellen</text>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Aussagenlogik kann nur mit Aussagen umgehen</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Aussagen über arbiträre Elemente die bestimmte Eigenschaften haben oder nicht haben lassen sich nur Schlecht in der Aussagenlogik darstellen</text>
+<text layer="beta" matrix="1 0 0 1 176 -64" transformations="translations" pos="0 224" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top">\impl \emph{Prädikatenlogik} löst diese Probleme mit Quantoren</text>
 </page>
 <page title="Prädikatenlogik Syntax">
 <layer name="alpha"/>
@@ -10248,16 +10254,16 @@ h
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="656" height="15.0516" depth="3.9738" valign="top">Bestandteile prädikatenlogische Formeln sind:</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="item">Terme</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="656" height="15.0516" depth="3.9738" valign="top">Bestandteile prädikatenlogischer Formeln sind:</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="656" height="12.8627" depth="1.7982" valign="top" style="item">\emph{Terme}</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="subitem">Variablensymbole, Konstantensymbole, Funktionssymbole</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="720" height="15.2758" depth="4.218" valign="top" style="subitem">Sind atomar, also nicht weiter zerlegbar</text>
 <text transformations="translations" pos="0 256" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="subitem">liefern \enquote{Werte} wie etwa Zahlenwerte, Wörter</text>
-<text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="item">Atomare Formeln</text>
+<text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="656" height="12.8627" depth="1.7982" valign="top" style="item">\emph{Atomare Formeln}</text>
 <text transformations="translations" pos="0 192" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">zusammengesetzt aus Termen und Relationssymbolen, die die Terme
 verbinden</text>
 <text transformations="translations" pos="0 160" stroke="black" type="minipage" width="736" height="13.1357" depth="2.0646" valign="top" style="subitem">Liefern Wahrheitswerte</text>
-<text layer="gamma" transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="15.0516" depth="3.9738" valign="top" style="item">Prädikatenlogische Formeln</text>
+<text layer="gamma" transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="15.2203" depth="4.1514" valign="top" style="item">\emph{Prädikatenlogische Formeln}</text>
 <text transformations="translations" pos="0 96" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="subitem">zusammengesetzt aus atomaren Formeln, aussagenlogischen
 Konnektiven und Quantoren</text>
 <text transformations="translations" pos="0 64" stroke="black" type="minipage" width="848" height="13.1357" depth="2.0646" valign="top" style="subitem">Liefern Wahrheitswerte</text>
