@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241216202719" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20241216204113" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -10328,13 +10328,26 @@ h
 <layer name="delta"/>
 <layer name="epsilon"/>
 <layer name="zeta"/>
+<layer name="eta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
-<group layer="zeta">
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
+<group layer="zeta" matrix="1 0 0 1 -16 64">
+<path stroke="black" fill="KITblue15">
+24 104 m
+368 104 l
+8 0 0 -8 368 96 376 96 a
+376 -11.996 l
+32 -11.996 l
+8 0 0 -8 32 -3.996 24 -3.996 a
+h
+</path>
+</group>
+<group layer="eta" matrix="1 0 0 1 384 -32">
 <path stroke="black" fill="KITred15">
 8 200 m
 432 200 l
@@ -10350,11 +10363,19 @@ h
 <text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Aussagenlogischen konnektiven ($\neg, \vee \wedge \rightarrow$ und Klammern)</text>
 <text layer="delta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="688" height="15.358" depth="4.2846" valign="top" style="item">Quantoren ($\forall \quad \exists$)</text>
 <text layer="epsilon" transformations="translations" pos="0 240" stroke="black" type="minipage" width="704" height="15.469" depth="4.4178" valign="top">Verwendung: ($\forall x_i \dots \text{Formel} \dots$)</text>
-<text layer="zeta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 192" stroke="black" type="minipage" width="416" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung:</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 160" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Nur Variablen können quantifiziert werden</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 128" stroke="black" type="minipage" width="416" height="15.358" depth="4.2846" valign="top" style="item">Der Doppelpunkt in \enquote{$\forall x_i :$ Formel} ist falsch</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 96" stroke="black" type="minipage" width="416" height="13.5975" depth="2.5086" valign="top" style="item">Quantoren binden stärker als alles Andere</text>
+<text layer="eta" matrix="1 0 0 1 400 -32" transformations="translations" pos="0 192" stroke="black" type="minipage" width="416" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung:</text>
+<text matrix="1 0 0 1 400 -32" transformations="translations" pos="0 160" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Nur Variablen können quantifiziert werden</text>
+<text matrix="1 0 0 1 400 -32" transformations="translations" pos="0 128" stroke="black" type="minipage" width="416" height="15.358" depth="4.2846" valign="top" style="item">Der Doppelpunkt in \enquote{$\forall x_i :$ Formel} ist falsch</text>
+<text matrix="1 0 0 1 400 -32" transformations="translations" pos="0 96" stroke="black" type="minipage" width="416" height="13.5975" depth="2.5086" valign="top" style="item">Quantoren binden stärker als alles Andere</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
+<text layer="zeta" matrix="1 0 0 1 -16 64" transformations="translations" pos="32 48" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">${\color{red}\forall} {\color{green} x} {\color{red} \exists}  {\color{green}y} {\color{blue}R(}{\color{green}y,x}{\color{blue})} {\color{orange}\wedge} {\color{blue}S(} {\color{purple}f(}{\color{green}y}{\color{purple})} {\color{blue})}
+$</text>
+<text matrix="1 0 0 1 0 48" transformations="translations" pos="16 112" stroke="black" type="minipage" width="304" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text matrix="1 0 0 1 -64 48" transformations="translations" pos="304 112" stroke="black" type="minipage" width="112" height="54.936" depth="45.06" valign="top" size="small">{\color{red} Quantoren}\\
+{\color{green} Variablen}\\
+{\color{blue} Relationen}\\
+{\color{orange}AL. Konnektive}\\
+{\color{purple}Funktionen}</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -10371,17 +10392,17 @@ h
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Findet jeweils den syntaktischen Fehler in den folgenden prädikatenlogischen Formeln:</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top" style="item">$\exists z ~f(z)$</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="432" height="15.1648" depth="4.0848" valign="top">Funktionen (f) sind keine Relationen</text>
-<text layer="alpha" transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$S(c) \wedge T(d) \rightarrow S(R(c,d))$</text>
-<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Nur Terme als Argumente, keine Relationen</text>
-<text layer="alpha" transformations="translations" pos="0 224" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x \forall y R(f(x,f(y)))$</text>
-<text layer="delta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="704" height="15.1648" depth="4.0848" valign="top">ar(f) = 1 oder ar(f) = 2, aber nicht beides in einer Formel.</text>
-<text layer="alpha" transformations="translations" pos="0 160" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x (S(x) \wedge T(x))  \rightarrow  \exists R( \forall x R(x,x))$</text>
-<text layer="epsilon" transformations="translations" pos="0 128" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top">Relationen können nicht quantifiziert werden</text>
-<text layer="alpha" transformations="translations" pos="0 96" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$\forall f ~ S(f) \wedge  \forall x  ~g(R(x))$</text>
-<text layer="zeta" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top">Nur Terme als Argumente, keine Relationen</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
+<text layer="alpha" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 96" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$\forall f ~ S(f) \wedge  \forall x  ~g(R(x))$</text>
+<text layer="zeta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top">Nur Terme als Argumente, keine Relationen</text>
+<text layer="alpha" matrix="1 0 0 1 0 -35.9439" transformations="translations" pos="0 160" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x (S(x) \wedge T(x))  \rightarrow  \exists R( \forall x R(x,x))$</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -35.9439" transformations="translations" pos="0 128" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top">Relationen können nicht quantifiziert werden</text>
+<text layer="alpha" matrix="1 0 0 1 0 -23.8879" transformations="translations" pos="0 224" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x \forall y R(f(x,f(y)))$</text>
+<text layer="delta" matrix="1 0 0 1 0 -23.8879" transformations="translations" pos="0 192" stroke="black" type="minipage" width="704" height="15.1648" depth="4.0848" valign="top">ar(f) = 1 oder ar(f) = 2, aber nicht beides in einer Formel.</text>
+<text layer="alpha" matrix="1 0 0 1 0 -12.0561" transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$S(c) \wedge T(d) \rightarrow S(R(c,d))$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -12.0561" transformations="translations" pos="0 256" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Nur Terme als Argumente, keine Relationen</text>
+<text layer="alpha" transformations="translations" pos="0 352" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top" style="item">$\exists z ~f(z)$</text>
+<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="432" height="15.1648" depth="4.0848" valign="top">Funktionen (f) sind keine Relationen</text>
 </page>
 <page title="Formeln aufstellen">
 <layer name="alpha"/>
@@ -10487,8 +10508,8 @@ h
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="608" height="28.5403" depth="17.4936" valign="top" style="item">Prädikatenlogische Formeln werde immer auf einer nicht
 leeren Grundmenge D interpretiert, diese nennen wir \emph{Universum}</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="640" height="15.1648" depth="4.0848" valign="top">Eine \emph{Interpretation} (D,I) ordnet</text>
-<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="832" height="27.1994" depth="16.1616" valign="top" style="item">Jedem Funktionssymbol eine Abbildung, die $ar(f_i)$ viele
-Elemente aus D auf ein Element aus  D abbildet zu</text>
+<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="832" height="28.5803" depth="17.5602" valign="top" style="item">Jedem Funktionssymbol eine Abbildung, die $ar(f_i)$ viele
+Elemente aus D auf ein Element aus  D abbildet, zu</text>
 <text layer="gamma" matrix="1 0 0 1 0 -4" transformations="translations" pos="0 240" stroke="black" type="minipage" width="864" height="29.3395" depth="18.315" valign="top" style="item">Für $ar(c_i)= 0$ wäre das eine Funktion $\{()\} \rightarrow D$ also eine \emph {konstante} Funktion\\
 $\Rightarrow$ jedem Konstantensymbol wird ein fester Wert aus D zugeordnet</text>
 <text layer="delta" transformations="translations" pos="0 176" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item">Jedem Relationssymbol eine Menge von Tupeln (also Relationen) über D zu</text>
