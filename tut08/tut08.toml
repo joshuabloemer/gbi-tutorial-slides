@@ -1,5 +1,5 @@
 
 title = "08 Praedikatenlogik"   # the file name of the output pdf
 description = "Praedikatenlogik" # 
-content = ["praedikatenlogik"]
+content = ["feedback06","praedikatenlogik"]
 xkcd = 988

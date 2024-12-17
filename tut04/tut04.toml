@@ -2,6 +2,7 @@
 title = "04 Induktion und Aussagenlogik" # the file name of the output pdf
 description = "04 Induktion und Aussagenlogik" # 
 content = [
+    "feedback02",
     "induktion",
     "aussagenlogik"
 ]
