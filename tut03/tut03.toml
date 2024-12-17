@@ -2,7 +2,6 @@
 title = "03 Alphabete, Woerter und Induktion" # the file name of the output pdf
 description = "03 Alphabete, Woerter und Induktion" # 
 content = [
-    "feedback01",
     "woerter",
     "induktion",
 ]
