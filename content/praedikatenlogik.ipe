@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241217120911" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20241217005111" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -10503,23 +10503,6 @@ h
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="448 304" stroke="black" type="minipage" width="320" height="29.8546" depth="18.8034" valign="top">$ar(Mensch) = 1, ar(Liebt) = 2,\\ ar(Weihnachten) = 0$</text>
 <text transformations="translations" pos="448 352" stroke="black" type="minipage" width="464" height="15.0516" depth="3.9738" valign="top">D = Die Menge aller Lebewesen und Feiertage</text>
 </page>
-<page title="Anmerkungen zu Quantoren">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" matrix="1 0 0 1 -16 80" transformations="translations" pos="16 304" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Quantoren beziehen sich immer auf D. Sowas wie $\forall x \in \mathbb N_0$ gibt es in der Prädikatenlogik nicht</text>
-<text matrix="1 0 0 1 0 64" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="subitem">Entweder muss $D = \mathbb N_0$ gewählt werden, oder wenn das nicht geht:</text>
-<text layer="beta" matrix="1 0 0 1 0 64" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">muss durch Relationen eine Einschränkung simuliert werden</text>
-<text layer="gamma" matrix="1 0 0 1 0 64" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \forall x (R(x) \rightarrow \dots) \quad $ R sei hier die \enquote{ist eine natürliche Zahl} Relation</text>
-<text layer="delta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \exists x (R(x) \wedge \dots) \quad $ R ist hier die \enquote{ist eine natürliche Zahl} Relation</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-</page>
 <page title="Aufgabe">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -10550,7 +10533,7 @@ h
 <text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\forall x (\neg Liebt(x,x) \rightarrow Liebt(John,x))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
 <text layer="alpha" matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$Var_{PL} = \{x\}, Fun_{PL} = \{Knuth, John\}, \\Rel_{PL} = \{Flugf\ddot{a} hig, Kann\_es, Vogel, Liebt\}$</text>
-<text matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 304" stroke="black" type="minipage" width="464" height="56.3614" depth="45.3768" valign="top">$ar(Vogel) = ar(Kann\_es) = ar(Flugf\ddot{a} hig) = 1,\\ ar(Liebt) = 2,\\ ar(Knuth) = ar(John) = 0$</text>
+<text matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 304" stroke="black" type="minipage" width="464" height="43.0969" depth="32.1012" valign="top">$ar(Vogel) = ar(Kann_es) = ar(Flugf\ddot{a} hig) = 1,\\ ar(Liebt) = 2,\\ ar(Knuth) = ar(John) = 0$</text>
 <text matrix="1 0 0 1 -64 -128" transformations="translations" pos="448 352" stroke="black" type="minipage" width="464" height="15.0516" depth="3.9738" valign="top">D = Die Menge aller Lebewesen</text>
 </page>
 <page title="Auswertungsfunktion">
