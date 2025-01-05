@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250104223118" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250105220402" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4219,6 +4219,7 @@ h
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G - e$ für den Graphen ohne die Kante $e$ $\quad V(G-e) = V(G), \quad E(G-e) = E(G)\textbackslash e $</text>
 <text transformations="translations" pos="0 240" stroke="black" type="minipage" width="928" height="16.5901" depth="5.5278" valign="top" style="item">$G - v$ für den Graphen ohne den Knoten $v \quad V(G-v) = V(G)\textbackslash v, \quad E(G-v) = \set{e\in E(G) \given v \notin e}$</text>
 <text transformations="translations" pos="0 192" stroke="black" type="minipage" width="848" height="16.5901" depth="5.5278" valign="top" style="item">$N(v) = \set{v \in V \given uv \in E}$ enthält alle Nachbarn von v</text>
+<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="912" height="16.5901" depth="5.5278" valign="top" style="item">$deg(v) = \vert \set{e \in E \given v \in e} \vert$ Der \emph{Grad} von $v$, also die Anzahl an inzidenten Kanten von $v$</text>
 </page>
 <page title="Aufgaben">
 <layer name="alpha"/>
@@ -4233,128 +4234,128 @@ h
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path layer="alpha" matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 128 320 m
 64 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 64 320 m
 0 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 64 320 m
 64 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 64 320 m
 128 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 64 320 m
 192 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 64 320 m
 272 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 128 320 m
 128 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 128 320 m
 192 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 128 320 m
 272 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 192 320 m
 128 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 192 320 m
 192 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 192 320 m
 272 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 256 320 m
 192 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 256 320 m
 272 192 l
 </path>
-<path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 256 -48" stroke="black" fill="white" pen="1.3">
 320 320 m
 272 192 l
 </path>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
-<group layer="alpha" matrix="1 0 0 1 192 -64">
+<group layer="alpha" matrix="1 0 0 1 192 -48">
 <path stroke="black" fill="white" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -7.2483" transformations="translations" pos="128 320" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">1</text>
 </group>
-<group matrix="1 0 0 1 192 -64">
+<group matrix="1 0 0 1 192 -48">
 <path matrix="1 0 0 1 64 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -7.2483" transformations="translations" pos="192 320" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">2</text>
 </group>
-<group matrix="1 0 0 1 192 -64">
+<group matrix="1 0 0 1 192 -48">
 <path matrix="1 0 0 1 128 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="256 320" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
 </group>
-<group matrix="1 0 0 1 192 -64">
+<group matrix="1 0 0 1 192 -48">
 <path matrix="1 0 0 1 192 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -7.2483" transformations="translations" pos="320 320" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">4</text>
 </group>
-<group matrix="1 0 0 1 -192 -192">
+<group matrix="1 0 0 1 -192 -176">
 <path matrix="1 0 0 1 384 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -6.90309" transformations="translations" pos="512 320" stroke="black" type="label" width="11.3131" height="13.8062" depth="0" valign="baseline">7</text>
 </group>
-<group matrix="1 0 0 1 -192 -192">
+<group matrix="1 0 0 1 -192 -176">
 <path matrix="1 0 0 1 448 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="576 320" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">8</text>
 </group>
-<group matrix="1 0 0 1 -208 -192">
+<group matrix="1 0 0 1 -208 -176">
 <path matrix="1 0 0 1 528 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 74.3434 -7.05738" transformations="translations" pos="576 320" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">9</text>
 </group>
-<group matrix="1 0 0 1 -224 -192">
+<group matrix="1 0 0 1 -224 -176">
 <path matrix="1 0 0 1 624 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 164.687 -7.05738" transformations="translations" pos="576 320" stroke="black" type="label" width="22.6262" height="14.5144" depth="0.3996" valign="baseline">10</text>
 </group>
-<group matrix="1 0 0 1 -192 -192">
+<group matrix="1 0 0 1 -192 -176">
 <path matrix="1 0 0 1 320 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="448 320" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">6</text>
 </group>
-<group matrix="1 0 0 1 192 -64">
+<group matrix="1 0 0 1 192 -48">
 <path matrix="1 0 0 1 256 0" stroke="black" fill="1" pen="1.3">
 16 0 0 16 128 320 e
 </path>
 <text matrix="1 0 0 1 -5.65656 -6.71217" transformations="translations" pos="384 320" stroke="black" type="label" width="11.3131" height="13.8239" depth="0.3996" valign="baseline">5</text>
 </group>
-<text matrix="1 0 0 1 272 -256" transformations="translations" pos="0 352" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top" style="item">$G_1 = ( \mathbb [10], \{ \{x, y\} \vert x + 4 &lt; y\} )$</text>
+<text matrix="1 0 0 1 256 -240" transformations="translations" pos="0 352" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top" style="item">$G_1 = ( \mathbb [10], \{ \{x, y\} \vert x + 4 &lt; y\} )$</text>
 </page>
 <page title="Lösung $G_2$">
 <layer name="alpha"/>
@@ -4450,6 +4451,167 @@ h
 <text matrix="1 0 0 1 -16.9697 -5.328" transformations="translations" pos="128 320" stroke="black" type="label" width="33.9394" height="10.878" depth="0.222" valign="baseline">aaa</text>
 </group>
 <text matrix="1 0 0 1 256 -192" transformations="translations" pos="0 304" stroke="black" type="minipage" width="432" height="17.3893" depth="6.327" valign="top" style="item">$G_2 = (\set{a, b}^3, \set{ \set{ x, y } \given \vert x\vert_a = \vert y\vert_b} )$</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+408 368 m
+8 0 0 8 400 368 400 376 a
+8 376 l
+8 322.21 l
+8 0 0 8 16 322.21 16 314.21 a
+408 314.21 l
+h
+</path>
+</group>
+<path layer="beta" matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+176 304 m
+336 176 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+176 304 m
+640 96 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+176 304 m
+272 80
+272 80 c
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+176 304 m
+528 224 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+176 304 m
+416 304 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+336 176 m
+528 224 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+640 96 m
+336 176 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+640 96 m
+272 80 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+336 176 m
+272 80 l
+</path>
+<path matrix="1 0 0 1 192 -32" stroke="black" fill="white" pen="1.3">
+528 224 m
+416 304 l
+</path>
+<group layer="alpha" matrix="1 0 0 1 80 -112">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 448 256 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.2483" transformations="translations" pos="448 256" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">4</text>
+</group>
+<group matrix="1 0 0 1 0 80">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 608 192 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.2483" transformations="translations" pos="608 192" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">2</text>
+</group>
+<group matrix="1 0 0 1 256 64">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 464 128 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="464 128" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+</group>
+<group matrix="1 0 0 1 192 -32">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 272 80 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="272 80" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+</group>
+<group matrix="1 0 0 1 192 -32">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 176 304 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -6.71217" transformations="translations" pos="176 304" stroke="black" type="label" width="11.3131" height="13.8239" depth="0.3996" valign="baseline">5</text>
+</group>
+<group matrix="1 0 0 1 560 -128">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 272 192 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="272 192" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="384" height="28.4071" depth="17.3826" valign="top">Die Knoten sind mit ihrem Grad beschriftet\\
+Rekonstruiert die Kanten des Graphen</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITred15">
+8 248 m
+496 248 l
+8 0 0 -8 496 240 504 240 a
+504 186.21 l
+16 186.21 l
+8 0 0 -8 16 194.21 8 194.21 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+280 368 m
+8 0 0 8 272 368 272 376 a
+8 376 l
+8 348.75 l
+8 0 0 8 16 348.75 16 340.75 a
+280 340.75 l
+h
+</path>
+</group>
+<group matrix="1 0 0 1 0 80">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 608 192 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.2483" transformations="translations" pos="608 192" stroke="black" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">2</text>
+</group>
+<group matrix="1 0 0 1 256 64">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 464 128 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="464 128" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+</group>
+<group matrix="1 0 0 1 192 -32">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 272 80 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="272 80" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+</group>
+<group matrix="1 0 0 1 192 -32">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 176 304 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -6.71217" transformations="translations" pos="176 304" stroke="black" type="label" width="11.3131" height="13.8239" depth="0.3996" valign="baseline">5</text>
+</group>
+<group matrix="1 0 0 1 560 -128">
+<path stroke="black" fill="white" pen="1.3">
+16 0 0 16 272 192 e
+</path>
+<text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="272 192" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Geht das jetzt immernoch?</text>
+<text layer="beta" matrix="1 0 0 1 0 -64" transformations="translations" pos="16 304" stroke="black" type="minipage" width="480" height="28.4071" depth="17.3826" valign="top">Nein, die Summe der Knotengrade mus gerade sein\\
+(Jede Kante erhöht den Grad von 2 Knoten um 1)</text>
+<path layer="alpha" matrix="1 0 0 1 80 -112" stroke="black" fill="white" pen="1.3">
+16 0 0 16 448 256 e
+</path>
+<text matrix="1 0 0 1 74.3434 -119.248" transformations="translations" pos="448 256" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
 </page>
 <page title="Isomorphie">
 <layer name="alpha"/>
@@ -4552,6 +4714,8 @@ Man schreibt dann auch $G\cong G&apos;$</text>
 <text matrix="1 0 0 1 -5.08713 -5.328" transformations="translations" pos="448 64" stroke="black" type="label" width="10.1743" height="10.878" depth="0.222" valign="baseline">c</text>
 <text matrix="1 0 0 1 -5.65656 -7.14396" transformations="translations" pos="576 64" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">d</text>
 <text matrix="1 0 0 1 41 0" transformations="translations" pos="256 144" stroke="black" type="minipage" width="48" height="23.5767" depth="13.146" valign="top" size="Huge">$\cong$</text>
+<text matrix="1 0 0 1 409 0" transformations="translations" pos="256 144" stroke="black" type="minipage" width="48" height="23.5767" depth="13.146" valign="top" size="Huge">$\cong$</text>
+<text matrix="1 0 0 1 505 8" transformations="translations" pos="256 144" stroke="black" type="minipage" width="48" height="28.2702" depth="17.829" valign="top" size="Huge">$K_4$</text>
 </page>
 <page title="Isomorphie, etwas formaler">
 <layer name="alpha"/>
@@ -4678,17 +4842,30 @@ h
 25.1513 0 0 25.1513 105.215 266.65 e
 </path>
 </group>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="304 96" stroke="black" type="label" width="40.4859" height="33.7239" depth="7.686" valign="baseline" size="Huge">$\supseteq$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="304 96" stroke="black" type="label" width="40.4859" height="33.7239" depth="7.686" valign="baseline" size="Huge" style="math">\supseteq</text>
 </page>
-<page title="Pfade und Erreichbarkeit">
+<page title="Pfade, Wege und Erreichbarkeit">
 <notes>Die existiert ein pfad der länge n relation ist die n-te Potenz 
 Erreichbarkeit ist die reflexiv transitive Hülle der kantenrelation</notes>
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <group layer="beta">
+<path stroke="black" fill="KITgreen15">
+8 200 m
+704 200 l
+8 0 0 -8 704 192 712 192 a
+712 132.975 l
+16 132.975 l
+8 0 0 -8 16 140.975 8 140.975 a
+h
+</path>
+</group>
+<group layer="gamma" matrix="1 0 0 1 0 -64">
 <path stroke="black" fill="KITgreen15">
 8 184 m
 608 184 l
@@ -4710,13 +4887,15 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 -1 -31" transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="29.8546" depth="18.8034" valign="top">Ein (n+1)-Tupel $p = (v_0,v_1,\dots,v_n)$ mit $v_i \in V$ paarweise Verschieden heißt Pfad von $v_0$ nach $v_n$ gdw: $\forall i \in \set{0,\dots,n-1} : \set{v_i,v_{i+1}} \in E$</text>
+<text matrix="1 0 0 1 -1 -31" transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="29.8546" depth="18.8034" valign="top">Ein (n+1)-Tupel $p = (v_0,v_1,\dots,v_n)$ mit $v_i \in V$ paarweise Verschieden heißt \emph{Pfad} von $v_0$ nach $v_n$ gdw: $\forall i \in \set{0,\dots,n-1} : \set{v_i,v_{i+1}} \in E$</text>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="13.078" depth="2.0202" valign="top">\bfseries Pfad</text>
 <text transformations="translations" pos="16 272" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top">Dabei ist die Länge des Pfades die Anzahl der Kanten (Anzahl Knoten - 1)</text>
 <text transformations="translations" pos="16 240" stroke="black" type="minipage" width="688" height="16.5901" depth="5.5278" valign="top">Pfade mit Länge 0 sind auch erlaubt $p=(v_0)$</text>
-<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 192" stroke="0" type="minipage" width="592" height="28.4848" depth="17.427" valign="top" style="item">Ein Knoten y ist von einem Knoten x \emph{erreichbar} wenn es einen Pfad zwischen x und y gibt</text>
-<text transformations="translations" pos="16 176" stroke="0" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Erreichbarkeit</text>
+<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="16 192" stroke="0" type="minipage" width="592" height="28.4848" depth="17.427" valign="top" style="item">Ein Knoten y ist von einem Knoten x \emph{erreichbar} wenn es einen Pfad zwischen x und y gibt</text>
+<text matrix="1 0 0 1 0 -64" transformations="translations" pos="16 176" stroke="0" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Erreichbarkeit</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
+<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="320" height="15.0028" depth="3.9294" valign="top">\bfseries Weg</text>
+<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Falls die $v_i$ nicht mehr Paarweise verschieden sind sprechen wir von \emph{Wegen}</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -5095,145 +5274,67 @@ h
 <page title="Aufgabe">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<path layer="alpha" stroke="black" fill="white" pen="1.3">
-512 256 m
-640 256 l
-</path>
-<path stroke="black" fill="white" pen="1.3">
-640 256 m
-640 128 l
-</path>
-<path stroke="black" fill="white" pen="1.3">
-640 128 m
-512 128 l
-</path>
-<path stroke="black" fill="white" pen="1.3">
-512 128 m
-640 256 l
-</path>
-<group>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<group layer="alpha">
 <path stroke="gray1" fill="gray3">
-344 48 m
-8 0 0 8 336 48 336 56 a
+232 48 m
+8 0 0 8 224 48 224 56 a
 24 56 l
-24 29.6872 l
-8 0 0 8 32 29.6872 32 21.6872 a
-344 21.6872 l
+24 32.2247 l
+8 0 0 8 32 32.2247 32 24.2247 a
+232 24.2247 l
 h
 </path>
 </group>
-<group matrix="1 0 0 1 95.6517 61.813">
-<text matrix="1 0 0 1 -118.785 42.6496" transformations="translations" pos="224 224" stroke="black" type="label" width="19.3732" height="24.8358" depth="0.704" halign="center" valign="center" size="LARGE">0</text>
-<path stroke="black" pen="1">
-25.1513 0 0 25.1513 105.215 266.65 e
-</path>
-</group>
-<group>
-<text matrix="1 0 0 1 -23.1333 -7.5374" transformations="translations" pos="224 224" stroke="black" type="label" width="19.3732" height="24.827" depth="0" halign="center" valign="center" size="LARGE">1</text>
-<path matrix="1 0 0 1 95.6517 -50.187" stroke="black" pen="1">
-25.1513 0 0 25.1513 105.215 266.65 e
-</path>
-</group>
-<group>
-<group>
-<group>
-<path matrix="1 0 0 1 -32.3483 -50.187" stroke="black" pen="1">
-25.1513 0 0 25.1513 105.215 266.65 e
-</path>
-<group>
-<text matrix="1 0 0 1 -151.133 -7.5374" transformations="translations" pos="224 224" stroke="black" type="label" width="19.3732" height="24.827" depth="0" halign="center" valign="center" size="LARGE">4</text>
-</group>
-</group>
-</group>
-</group>
-<path stroke="0" pen="2" arrow="normal/normal">
-202.775 303.384 m
-202.775 241.542 l
-</path>
-<path stroke="0" pen="2" arrow="normal/normal">
-202.775 191.384 m
-202.775 129.542 l
-</path>
-<path stroke="0" pen="2" arrow="normal/normal">
-175.721 104.977 m
-97.9874 105.704 l
-</path>
-<group>
-<text matrix="1 0 0 1 -23.1333 -119.537" transformations="translations" pos="224 224" stroke="black" type="label" width="19.3732" height="24.827" depth="0" halign="center" valign="center" size="LARGE">2</text>
-<path matrix="1 0 0 1 95.6517 -162.187" stroke="black" pen="1">
-25.1513 0 0 25.1513 105.215 266.65 e
-</path>
-</group>
-<group>
-<text matrix="1 0 0 1 -151.133 -119.537" transformations="translations" pos="224 224" stroke="black" type="label" width="19.3732" height="24.8358" depth="0.704" halign="center" valign="center" size="LARGE">3</text>
-<path matrix="1 0 0 1 -32.3483 -162.187" stroke="black" pen="1">
-25.1513 0 0 25.1513 105.215 266.65 e
-</path>
-</group>
-<text transformations="translations" pos="48 352" stroke="0" type="minipage" width="96" height="14.8807" depth="3.7962" valign="top">$G_1:$</text>
-<text matrix="1 0 0 1 432 0" transformations="translations" pos="48 352" stroke="0" type="minipage" width="96" height="14.8807" depth="3.7962" valign="top">$G_2:$</text>
-<text transformations="translations" pos="32 48" stroke="0" type="minipage" width="304" height="14.8807" depth="3.7962" valign="top">Gebt alle Pfade auf $G_1$ und $G_2$ an</text>
-<path stroke="0" pen="2" arrow="normal/normal">
-71.0475 191.378 m
-71.1509 129.556 l
-</path>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="48 352" stroke="0" type="minipage" width="96" height="13.2268" depth="2.1312" valign="top">$G$</text>
+<text transformations="translations" pos="32 48" stroke="0" type="minipage" width="192" height="13.4221" depth="2.3532" valign="top">Gebt alle Pfade auf $G$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-<group layer="alpha">
+<path layer="alpha" matrix="1 0 0 1 -432 0" stroke="black" fill="white" pen="1.3">
+512 256 m
+640 256 l
+</path>
+<path matrix="1 0 0 1 -432 0" stroke="black" fill="white" pen="1.3">
+640 256 m
+640 128 l
+</path>
+<path matrix="1 0 0 1 -432 0" stroke="black" fill="white" pen="1.3">
+640 128 m
+512 128 l
+</path>
+<group matrix="1 0 0 1 -432 0">
 <path matrix="1 0 0 1 384 -64" stroke="black" fill="white" pen="1.3">
 22.6274 0 0 22.6274 256 320 e
 </path>
 <text matrix="1 0 0 1 -8.14518 -10.4384" transformations="translations" pos="640 256" stroke="black" type="label" width="16.2904" height="20.8769" depth="0" valign="baseline" size="Large">1</text>
 </group>
-<group>
+<group matrix="1 0 0 1 -560 0">
 <path matrix="1 0 0 1 384 -192" stroke="black" fill="white" pen="1.3">
 22.6274 0 0 22.6274 256 320 e
 </path>
 <text matrix="1 0 0 1 -8.14518 -10.1387" transformations="translations" pos="640 128" stroke="black" type="label" width="16.2904" height="20.8769" depth="0.5994" valign="baseline" size="Large">3</text>
 </group>
-<group>
+<group matrix="1 0 0 1 -304 0">
 <path matrix="1 0 0 1 256 -192" stroke="black" fill="white" pen="1.3">
 22.6274 0 0 22.6274 256 320 e
 </path>
 <text matrix="1 0 0 1 -8.14518 -10.4384" transformations="translations" pos="512 128" stroke="black" type="label" width="16.2904" height="20.8769" depth="0" valign="baseline" size="Large">2</text>
 </group>
-<group>
+<group matrix="1 0 0 1 -432 0">
 <path matrix="1 0 0 1 256 -64" stroke="black" fill="white" pen="1.3">
 22.6274 0 0 22.6274 256 320 e
 </path>
 <text matrix="1 0 0 1 -8.14518 -10.1387" transformations="translations" pos="512 256" stroke="black" type="label" width="16.2904" height="20.8769" depth="0.5994" valign="baseline" size="Large">0</text>
 </group>
-</page>
-<page title="Lösung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<group layer="delta" matrix="1 0 0 1 0.528117 -8.79966">
-<path stroke="black" fill="KITblue15">
-24 264 m
-400 264 l
-8 0 0 -8 400 256 408 256 a
-408 232.8 l
-32 232.8 l
-8 0 0 -8 32 240.8 24 240.8 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="0" type="minipage" width="400" height="14.8807" depth="3.7962" valign="top" style="item">Pfade auf $G_1$:</text>
-<text layer="beta" transformations="translations" pos="0 352" stroke="0" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top" style="subitem">$p_1 = (0,1), p_2 = (0,1,2), p_3 = (0,1,2,3)$</text>
-<text transformations="translations" pos="0 320" stroke="0" type="minipage" width="784" height="16.5901" depth="5.5278" valign="top" style="subitem">$p_4 = (1,2), p_5 = (1,2,3), p_6 = (2,3), p_7 = (4,3)$</text>
-<text layer="gamma" transformations="translations" pos="0 288" stroke="0" type="minipage" width="512" height="14.8807" depth="3.7962" valign="top" style="item">Pfade auf $G_2:$</text>
-<text layer="delta" matrix="1 0 0 1 32.5281 -8.79966" transformations="translations" pos="0 256" stroke="0" type="minipage" width="368" height="13.1357" depth="2.0646" valign="top">Wieso funktioniert das nicht so wirklich?</text>
-<text layer="epsilon" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 192" stroke="0" type="minipage" width="224" height="14.8807" depth="3.7962" valign="top">$G_2 $ enthält einen \emph{Kreis}</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+<text matrix="1 0 0 1 320 -80" transformations="translations" pos="0 384" stroke="0" type="minipage" width="400" height="13.3289" depth="2.2644" valign="top">Pfade auf $G$:</text>
+<text layer="beta" matrix="1 0 0 1 320 -80" transformations="translations" pos="0 352" stroke="0" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top" style="subitem">$p_1 = (0,1), p_2 = (0,1,2), p_3 = (0,1,2,3)$</text>
+<text matrix="1 0 0 1 320 -80" transformations="translations" pos="0 320" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="subitem">$p_4 = (1,2), p_5 = (1,2,3), p_6 = (1,0)$</text>
+<text matrix="1 0 0 1 320 -112" transformations="translations" pos="0 320" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="subitem">$p_7 = (2,3), p_8 = (2,1), p_9 = (2,1,0)$</text>
+<text matrix="1 0 0 1 320 -144" transformations="translations" pos="0 320" stroke="0" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="subitem">$p_{10} = (3,2), p_{11} = (3,2,1), p_ {12} = (3,2,1,0)$</text>
+<text layer="gamma" matrix="1 0 0 1 48 -32" transformations="translations" pos="272 176" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="subitem">$p_{13} = (0), p_{14} = (1), p_{15} = (2), p_{16} = (3)$</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -5288,6 +5389,398 @@ h
 <text layer="delta" matrix="1 0 0 1 464 -16" transformations="translations" pos="80 160" stroke="black" type="label" width="12.432" height="14.965" depth="4.2846" valign="baseline">:)</text>
 <text layer="beta" matrix="1 0 0 1 -16 -16" transformations="translations" pos="80 160" stroke="black" type="label" width="12.432" height="14.965" depth="4.2846" valign="baseline">:)</text>
 </page>
+<page title="Zusammenhang">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<path layer="beta" matrix="1 0 0 1 0 -16" stroke="black" fill="maygreen3" dash="dashed" pen="1.3">
+640 224
+560 32
+800 16
+832 208
+704 176 u
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" fill="purple3" dash="dashed" pen="1.3">
+784 384
+576 384
+640 208
+800 224 u
+</path>
+<group layer="alpha" matrix="1 0 0 1 0 16">
+<path stroke="black" fill="KITgreen15">
+8 232 m
+496 232 l
+8 0 0 -8 496 224 504 224 a
+504 137.573 l
+16 137.573 l
+8 0 0 -8 16 145.573 8 145.573 a
+h
+</path>
+</group>
+<group>
+<path stroke="black" fill="KITgreen15">
+8 376 m
+496 376 l
+8 0 0 -8 496 368 504 368 a
+504 282.434 l
+16 282.434 l
+8 0 0 -8 16 290.434 8 290.434 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="28.2939" depth="17.2716" valign="top">Alle Knoten die voneinander aus Erreichbar sind, sind in einer \emph{Zusammenhangskomponente}</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="432" height="15.0028" depth="3.9294" valign="top">\bfseries Zusammenhangskomponente</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="480" height="15.2203" depth="4.1514" valign="top">\bfseries Zusammenhängender Graph</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 240" stroke="black" type="minipage" width="480" height="28.7335" depth="17.6934" valign="top">Besteht ein Graph $G$ nur aus einer Zusammenhangskomponente so heißt $G$ \emph{zusammenhängend}</text>
+<use layer="beta" matrix="1 0 0 1 0 32" name="mark/disk(sx)" pos="640 352" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 32" name="mark/disk(sx)" pos="672 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 32" name="mark/disk(sx)" pos="640 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 32" name="mark/disk(sx)" pos="736 352" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 32" name="mark/disk(sx)" pos="736 256" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 0 32" stroke="black" pen="1.3">
+672 320 m
+640 288 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" pen="1.3">
+736 256 m
+736 352 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" pen="1.3">
+672 320 m
+640 352 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" pen="1.3">
+640 352 m
+736 352 l
+</path>
+<path matrix="1 0 0 1 0 32" stroke="black" pen="1.3">
+672 320 m
+736 256 l
+</path>
+<use matrix="1 0 0 1 32 -32" name="mark/disk(sx)" pos="624 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 32 -32" name="mark/disk(sx)" pos="640 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 -16" name="mark/disk(sx)" pos="768 96" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 32 -32" name="mark/disk(sx)" pos="608 80" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 -16" name="mark/disk(sx)" pos="736 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 -16" name="mark/disk(sx)" pos="720 64" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 -16" name="mark/disk(sx)" pos="784 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 -16" name="mark/disk(sx)" pos="736 128" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 0 -16" stroke="black" pen="1.3">
+736 160 m
+736 128 l
+</path>
+<path matrix="1 0 0 1 0 -16" stroke="black" pen="1.3">
+736 128 m
+784 144 l
+</path>
+<path matrix="1 0 0 1 0 -16" stroke="black" pen="1.3">
+784 144 m
+768 96 l
+</path>
+<path matrix="1 0 0 1 0 -16" stroke="black" pen="1.3">
+736 128 m
+720 64 l
+</path>
+<path matrix="1 0 0 1 32 -32" stroke="black" pen="1.3">
+624 160 m
+608 80 l
+</path>
+<path matrix="1 0 0 1 32 -32" stroke="black" pen="1.3">
+624 160 m
+640 192 l
+</path>
+<text matrix="1 0 0 1 0 -5" transformations="translations" pos="624 16" stroke="black" type="minipage" width="208" height="15.0516" depth="3.9738" valign="top">Unzusammenhängend</text>
+<text matrix="1 0 0 1 0 41" transformations="translations" pos="624 208" stroke="black" type="minipage" width="224" height="15.0516" depth="3.9738" valign="top">Zusammenhängend</text>
+<path layer="gamma" matrix="1 0 0 1 -1 -8" stroke="black" fill="maygreen3" pen="1.3" arrow="normal/normal">
+592 128 m
+656 144 l
+</path>
+<path matrix="1 0 0 1 2 -2" stroke="black" fill="maygreen3" pen="1.3" arrow="normal/normal">
+544 112 m
+720 80 l
+</path>
+<text matrix="1 0 0 1 -128 64" transformations="translations" pos="416 64" stroke="black" type="minipage" width="304" height="15.0028" depth="3.9294" valign="top">\emph{Zusammenhangskomponenten}</text>
+<path matrix="1 0 0 1 0 2" stroke="black" fill="maygreen3" pen="1.3" arrow="normal/normal">
+560 128 m
+672 336 l
+</path>
+</page>
+<page title="Bäume">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<path layer="gamma" matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" dash="dashed" pen="1.3">
+320 208
+160 176
+208 32
+272 64
+384 32
+304 176 u
+</path>
+<path layer="beta" matrix="1 0 0 1 16 16" stroke="black" fill="orange3" dash="dashed" pen="1.3">
+16 224
+-16 0
+48 -16
+112 -16
+160 0
+160 48
+112 208 u
+</path>
+<path layer="delta" matrix="1 0 0 1 -32 16" stroke="black" fill="cyan3" dash="dashed" pen="1.3">
+560 208
+416 128
+488 -1.6
+544 48
+688 32
+656 192 u
+</path>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+560 376 l
+8 0 0 -8 560 368 568 368 a
+568 276.75 l
+16 276.75 l
+8 0 0 -8 16 284.75 8 284.75 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top" style="item">Bäume sind zusammenhängend und kreisfrei</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="480" height="12.9115" depth="1.8204" valign="top" style="item">Bäume haben n-1 Kanten</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top" style="item">Ein Graph, der aus mehreren Bäumen besteht heißt Wald</text>
+<use layer="beta" matrix="1 0 0 1 16 16" name="mark/disk(sx)" pos="64 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 16" name="mark/disk(sx)" pos="32 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 16" name="mark/disk(sx)" pos="96 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 0 32" name="mark/disk(sx)" pos="80 48" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 32" name="mark/disk(sx)" pos="128 48" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" pen="1.3">
+64 192 m
+32 128 l
+</path>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" pen="1.3">
+64 192 m
+96 128 l
+</path>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" pen="1.3">
+96 128 m
+64 64 l
+</path>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" pen="1.3">
+96 128 m
+128 64 l
+</path>
+<use matrix="1 0 0 1 16 16" name="mark/disk(sx)" pos="32 0" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 16" name="mark/disk(sx)" pos="80 0" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 16" name="mark/disk(sx)" pos="128 0" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" pen="1.3">
+64 64 m
+32 0 l
+</path>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" pen="1.3">
+64 64 m
+80 0 l
+</path>
+<path matrix="1 0 0 1 16 16" stroke="black" fill="maygreen3" pen="1.3">
+64 64 m
+128 0 l
+</path>
+<text matrix="1 0 0 1 16 16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="64" height="12.9115" depth="1.8204" valign="top">Baum</text>
+<text layer="gamma" matrix="1 0 0 1 16 16" transformations="translations" pos="224 240" stroke="black" type="minipage" width="160" height="12.9115" depth="1.8204" valign="top">Kein Baum</text>
+<use matrix="1 0 0 1 16 0" name="mark/disk(sx)" pos="224 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 0" name="mark/disk(sx)" pos="288 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 0" name="mark/disk(sx)" pos="304 80" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 16 0" name="mark/disk(sx)" pos="240 96" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="maygreen3" pen="1.3">
+288 192 m
+240 96 l
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="maygreen3" pen="1.3">
+288 192 m
+304 80 l
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="maygreen3" pen="1.3">
+224 160 m
+240 96 l
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="maygreen3" pen="1.3">
+224 160 m
+288 192 l
+</path>
+<text layer="delta" matrix="1 0 0 1 208 16" transformations="translations" pos="224 240" stroke="black" type="minipage" width="288" height="12.9115" depth="1.8204" valign="top">Auch kein Baum aber ein Wald</text>
+<use matrix="1 0 0 1 -16 -16" name="mark/disk(sx)" pos="512 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -16 -16" name="mark/disk(sx)" pos="480 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -16 -16" name="mark/disk(sx)" pos="544 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -96 -16" name="mark/disk(sx)" pos="688 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -96 -16" name="mark/disk(sx)" pos="672 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -96 -32" name="mark/disk(sx)" pos="656 112" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 -96 -16" stroke="black" fill="maygreen3" pen="1.3">
+656 96 m
+672 144 l
+</path>
+<path matrix="1 0 0 1 -96 -16" stroke="black" fill="maygreen3" pen="1.3">
+672 144 m
+688 192 l
+</path>
+<path matrix="1 0 0 1 -16 -16" stroke="black" fill="maygreen3" pen="1.3">
+512 192 m
+544 144 l
+</path>
+<path matrix="1 0 0 1 -16 -16" stroke="black" fill="maygreen3" pen="1.3">
+512 192 m
+480 144 l
+</path>
+<use matrix="1 0 0 1 -128 -112" name="mark/disk(sx)" pos="608 192" size="normal" stroke="black"/>
+</page>
+<page title="Etwas Biologie">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<path layer="beta" stroke="black" fill="green3" dash="dashed" pen="1.3">
+672 256
+864 256
+864 224
+688 224 u
+</path>
+<path layer="gamma" stroke="black" fill="red3" dash="dashed" pen="1.3">
+768 416
+720 320
+704 288
+832 288
+816 320 u
+</path>
+<path layer="delta" stroke="black" pen="0.7" arrow="normal/normal">
+656 384 m
+720 384
+760 369 c
+</path>
+<path layer="epsilon" matrix="1 0 0 1 0 -7" stroke="black" pen="0.7" arrow="normal/normal">
+672 176 m
+704 192
+704 240 c
+</path>
+<path stroke="black" pen="0.7" arrow="normal/normal">
+672 160 m
+768 169
+768 233 c
+</path>
+<group matrix="1 0 0 1 4 4">
+<path stroke="gray1" fill="gray3">
+684.132 176 m
+8 0 0 8 676.132 176 676.132 184 a
+616 184 l
+616 138.574 l
+8 0 0 8 624 138.574 624 130.574 a
+684.132 130.574 l
+h
+</path>
+</group>
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+908.594 231 m
+8 0 0 8 900.594 231 900.594 239 a
+840 239 l
+840 218.758 l
+8 0 0 8 848 218.758 848 210.758 a
+908.594 210.758 l
+h
+</path>
+</group>
+<group layer="zeta" matrix="1 0 0 1 -4 4">
+<path stroke="gray1" fill="gray3">
+666.812 312 m
+8 0 0 8 658.812 312 658.812 320 a
+612 320 l
+612 300.114 l
+8 0 0 8 620 300.114 620 292.114 a
+666.812 292.114 l
+h
+</path>
+</group>
+<group layer="gamma">
+<path stroke="gray1" fill="gray3">
+920 368 m
+8 0 0 8 912 368 912 376 a
+792 376 l
+792 356.114 l
+8 0 0 8 800 356.114 800 348.114 a
+920 348.114 l
+h
+</path>
+</group>
+<group layer="delta">
+<path stroke="gray1" fill="gray3">
+664.812 390 m
+8 0 0 8 656.812 390 656.812 398 a
+594 398 l
+594 378.114 l
+8 0 0 8 602 378.114 602 370.114 a
+664.812 370.114 l
+h
+</path>
+</group>
+<use layer="alpha" matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="512 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="480 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="544 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="512 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="448 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="576 192" size="normal" stroke="black"/>
+<text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="448" height="13.229" depth="2.1534" valign="top" style="item">Knoten mit Grad $1$ heißen \emph{Blätter}</text>
+<text layer="gamma" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="448" height="14.6609" depth="3.5742" valign="top" style="item">Knoten mit Grad $\geq 2$ Heißen \emph{innere Knoten}</text>
+<text layer="delta" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="624" height="15.1648" depth="4.0848" valign="top" style="item">Bäume haben eine \emph{Wurzel} (Jeder Knoten kann Wurzel sein)</text>
+<path layer="alpha" matrix="1 0 0 1 64 48" stroke="black" fill="cyan3" pen="1.3">
+704 320 m
+672 256 l
+</path>
+<path matrix="1 0 0 1 64 48" stroke="black" fill="cyan3" pen="1.3">
+704 320 m
+736 256 l
+</path>
+<path matrix="1 0 0 1 64 48" stroke="black" fill="cyan3" pen="1.3">
+672 256 m
+640 192 l
+</path>
+<path matrix="1 0 0 1 64 48" stroke="black" fill="cyan3" pen="1.3">
+672 256 m
+704 192 l
+</path>
+<path matrix="1 0 0 1 64 48" stroke="black" fill="cyan3" pen="1.3">
+736 256 m
+768 192 l
+</path>
+<text layer="epsilon" transformations="translations" pos="0 288" stroke="black" type="minipage" width="512" height="26.398" depth="15.3624" valign="top" style="item">Die Knoten, die einen größeren Abstand zur Wurzel haben als ein Knoten $v$ heißen \emph{Kinder} von $v$</text>
+<text layer="zeta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="592" height="13.1557" depth="2.0646" valign="top" style="item">$v$ heißt \emph{Elter} seiner Kinder</text>
+<text layer="gamma" matrix="1 0 0 1 144 -16" transformations="translations" pos="656 384" stroke="black" type="minipage" width="112" height="10.926" depth="0.96" valign="top" size="small">\emph{Innere Knoten}</text>
+<text layer="beta" matrix="1 0 0 1 192 7" transformations="translations" pos="656 224" stroke="black" type="minipage" width="52.594" height="11.102" depth="1.14" valign="top" size="small">\emph{Blätter}</text>
+<text layer="delta" matrix="1 0 0 1 10 6" transformations="translations" pos="592 384" stroke="black" type="minipage" width="54.812" height="10.926" depth="0.96" valign="top" size="small">\emph{Wurzel}</text>
+<text layer="epsilon" matrix="1 0 0 1 37 -1" transformations="translations" pos="704 304" stroke="black" type="label" width="10.446" height="7.97" depth="0" valign="baseline" size="small">$v$</text>
+<text matrix="1 0 0 1 84 36" transformations="translations" pos="544 144" stroke="black" type="minipage" width="52.132" height="23.686" depth="13.74" valign="top" size="small">\emph{Kinder}\\
+(von v)</text>
+<path layer="zeta" stroke="black" pen="0.7" arrow="normal/normal">
+662.755 300.853 m
+688 288
+729 302 c
+</path>
+<text matrix="1 0 0 1 24 12" transformations="translations" pos="592 304" stroke="black" type="minipage" width="38.812" height="10.926" depth="0.96" valign="top" size="small">\emph{Elter}</text>
+<use layer="delta" name="mark/fdisk(sfx)" pos="768 368" size="normal" stroke="black" fill="orange1"/>
+<use layer="epsilon" name="mark/fdisk(sfx)" pos="736 304" size="normal" stroke="black" fill="cyan1"/>
+</page>
 <page title="Färbarkeit">
 <layer name="alpha"/>
 <layer name="beta"/>
@@ -5295,35 +5788,35 @@ h
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
-<path layer="gamma" matrix="1 0 0 1 0 2" stroke="black" fill="green3" dash="dashed" pen="1">
+<path layer="gamma" matrix="1 0 0 1 0 18" stroke="black" fill="green3" dash="dashed" pen="1">
 32 96
 112 96
 80 -32
 32 0 u
 </path>
-<path stroke="black" fill="red3" dash="dashed" pen="1">
+<path matrix="1 0 0 1 -4 12" stroke="black" fill="red3" dash="dashed" pen="1">
 144 96
 256 112
 240 -16
 160 -16 u
 </path>
-<path stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
 208 64 m
 80 32 l
 </path>
-<path stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
 208 64 m
 48 64 l
 </path>
-<path stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
 64 0 m
 192 0 l
 </path>
-<path stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
 192 32 m
 80 32 l
 </path>
-<path stroke="black" fill="white" pen="1.3">
+<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
 192 80 m
 48 64 l
 </path>
@@ -5354,16 +5847,16 @@ h
 <text layer="beta" matrix="1 0 0 1 0 28" transformations="translations" pos="16 240" stroke="black" type="minipage" width="624" height="15.3313" depth="4.2402" valign="top">Für $k = 2$ heißt $G$ auch \emph{bipartit}</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">$G$ bipartit $\Leftrightarrow \exists A,B \subseteq V : \forall e = uv \in E(G) : u \in A \wedge v \in B \vee u \in B \wedge v \in A$</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="880" height="28.5403" depth="17.4936" valign="top">Die Knoten eines \emph{bipartiten} Graph lassen sich in 2 disjunkte Teilmengen aufteillen, sodass keine Kanten zwischen Knoten in einer Teilmenge existieren</text>
-<use layer="gamma" name="mark/fdisk(sfx)" pos="48 64" size="normal" stroke="black" fill="green1"/>
-<use matrix="1 0 0 1 16 -16" name="mark/fdisk(sfx)" pos="48 16" size="normal" stroke="black" fill="green1"/>
-<use matrix="1 0 0 1 0 -16" name="mark/fdisk(sfx)" pos="80 48" size="normal" stroke="black" fill="green1"/>
-<use matrix="1 0 0 1 -32 0" name="mark/fdisk(sfx)" pos="224 80" size="normal" stroke="black" fill="red1"/>
-<use name="mark/fdisk(sfx)" pos="192 0" size="normal" stroke="black" fill="red1"/>
-<use matrix="1 0 0 1 32 0" name="mark/fdisk(sfx)" pos="176 64" size="normal" stroke="black" fill="red1"/>
-<use matrix="1 0 0 1 -32 -16" name="mark/fdisk(sfx)" pos="224 48" size="normal" stroke="black" fill="red1"/>
-<text matrix="1 0 0 1 -4 -9" transformations="translations" pos="64 112" stroke="black" type="label" width="19.2274" height="14.4966" depth="0" valign="baseline">A
+<use layer="gamma" matrix="1 0 0 1 0 16" name="mark/fdisk(sfx)" pos="48 64" size="normal" stroke="black" fill="green1"/>
+<use matrix="1 0 0 1 16 0" name="mark/fdisk(sfx)" pos="48 16" size="normal" stroke="black" fill="green1"/>
+<use name="mark/fdisk(sfx)" pos="80 48" size="normal" stroke="black" fill="green1"/>
+<use matrix="1 0 0 1 -32 16" name="mark/fdisk(sfx)" pos="224 80" size="normal" stroke="black" fill="red1"/>
+<use matrix="1 0 0 1 0 16" name="mark/fdisk(sfx)" pos="192 0" size="normal" stroke="black" fill="red1"/>
+<use matrix="1 0 0 1 32 16" name="mark/fdisk(sfx)" pos="176 64" size="normal" stroke="black" fill="red1"/>
+<use matrix="1 0 0 1 -32 0" name="mark/fdisk(sfx)" pos="224 48" size="normal" stroke="black" fill="red1"/>
+<text matrix="1 0 0 1 -36 -105" transformations="translations" pos="64 112" stroke="black" type="label" width="19.2274" height="14.4966" depth="0" valign="baseline">A
 </text>
-<text matrix="1 0 0 1 -4 -9" transformations="translations" pos="208 112" stroke="black" type="label" width="13.5709" height="14.4966" depth="0" valign="baseline">B</text>
+<text matrix="1 0 0 1 25 -106" transformations="translations" pos="208 112" stroke="black" type="label" width="13.5709" height="14.4966" depth="0" valign="baseline">B</text>
 </page>
 <page title="Induktion">
 <layer name="alpha"/>
