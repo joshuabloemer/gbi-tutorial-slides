@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250105220402" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20250107001910" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3959,9 +3959,9 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top">Gebt eine Formale Definition des Vollständigen Graphen mit 4 Knoten an $(K_4)$</text>
-<text matrix="1 0 0 1 16 -272" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">Gebt eine Formale Definition des Kreises mit 4 Knoten an $(C_4)$</text>
-<text matrix="1 0 0 1 16 -160" transformations="translations" pos="0 384" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Gebt eine Formale Definition des Pfades mit 4 Knoten an $(P_4)$</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top">Gebt eine formale Definition des vollständigen Graphen mit 4 Knoten an $(K_4)$</text>
+<text matrix="1 0 0 1 16 -272" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">Gebt eine formale Definition des Kreises mit 4 Knoten an $(C_4)$</text>
+<text matrix="1 0 0 1 16 -160" transformations="translations" pos="0 384" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Gebt eine formale Definition des Pfades mit 4 Knoten an $(P_4)$</text>
 <text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="144 336" stroke="black" type="minipage" width="288" height="16.5901" depth="5.5278" valign="top">$V = \set{0,1,2,3}$</text>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="144 304" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">$E = \set{\set{0,1}, \set{0,2}, \set{0,3}, \set{1,2},\set{1,3},\set{2,3}}$</text>
 <text layer="gamma" matrix="1 0 0 1 16 -152" transformations="translations" pos="144 336" stroke="black" type="minipage" width="288" height="16.5901" depth="5.5278" valign="top">$V = \set{0,1,2,3}$</text>
@@ -4102,9 +4102,9 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 16 -17" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="15.469" depth="4.4178" valign="top">Gebt eine Formale Definition des Vollständigen Graphen mit \emph{n} Knoten an (\emph{$K_n$})</text>
-<text matrix="1 0 0 1 16 -273" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="15.358" depth="4.2846" valign="top">Gebt eine Formale Definition des Kreises mit \emph{n} Knoten an (\emph{$C_n$})</text>
-<text matrix="1 0 0 1 16 -161" transformations="translations" pos="0 384" stroke="black" type="minipage" width="576" height="15.358" depth="4.2846" valign="top">Gebt eine Formale Definition des Pfades mit \emph{n} Knoten an (\emph{$P_n$})</text>
+<text matrix="1 0 0 1 16 -17" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="15.469" depth="4.4178" valign="top">Gebt eine formale Definition des vollständigen Graphen mit \emph{n} Knoten an (\emph{$K_n$})</text>
+<text matrix="1 0 0 1 16 -273" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="15.358" depth="4.2846" valign="top">Gebt eine formale Definition des Kreises mit \emph{n} Knoten an (\emph{$C_n$})</text>
+<text matrix="1 0 0 1 16 -161" transformations="translations" pos="0 384" stroke="black" type="minipage" width="576" height="15.358" depth="4.2846" valign="top">Gebt eine formale Definition des Pfades mit \emph{n} Knoten an (\emph{$P_n$})</text>
 <text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="144 336" stroke="black" type="minipage" width="96" height="16.5901" depth="5.5278" valign="top">$V = \set{[n]}$</text>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="144 304" stroke="black" type="minipage" width="96" height="19.7069" depth="8.658" valign="top">$E = \binom{V}{2}$</text>
 <text layer="gamma" matrix="1 0 0 1 16 -152" transformations="translations" pos="144 336" stroke="black" type="minipage" width="96" height="16.5901" depth="5.5278" valign="top">$V = \set{[n]}$</text>
@@ -4545,7 +4545,7 @@ h
 </path>
 <text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="272 192" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="384" height="28.4071" depth="17.3826" valign="top">Die Knoten sind mit ihrem Grad beschriftet\\
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="384" height="28.4071" depth="17.3826" valign="top">Die Knoten sind mit ihrem Grad beschriftet.\\
 Rekonstruiert die Kanten des Graphen</text>
 </page>
 <page title="Aufgabe">
@@ -4556,9 +4556,9 @@ Rekonstruiert die Kanten des Graphen</text>
 <group layer="beta">
 <path stroke="black" fill="KITred15">
 8 248 m
-496 248 l
-8 0 0 -8 496 240 504 240 a
-504 186.21 l
+528 248 l
+8 0 0 -8 528 240 536 240 a
+536 186.21 l
 16 186.21 l
 8 0 0 -8 16 194.21 8 194.21 a
 h
@@ -4606,8 +4606,8 @@ h
 <text matrix="1 0 0 1 -5.65656 -7.05738" transformations="translations" pos="272 192" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Geht das jetzt immernoch?</text>
-<text layer="beta" matrix="1 0 0 1 0 -64" transformations="translations" pos="16 304" stroke="black" type="minipage" width="480" height="28.4071" depth="17.3826" valign="top">Nein, die Summe der Knotengrade mus gerade sein\\
-(Jede Kante erhöht den Grad von 2 Knoten um 1)</text>
+<text layer="beta" matrix="1 0 0 1 0 -64" transformations="translations" pos="16 304" stroke="black" type="minipage" width="512" height="28.4071" depth="17.3826" valign="top">Nein, die Summe der Knotengrade muss gerade sein.\\
+(Jede Kante erhöht den Grad von 2 Knoten um jeweils 1)</text>
 <path layer="alpha" matrix="1 0 0 1 80 -112" stroke="black" fill="white" pen="1.3">
 16 0 0 16 448 256 e
 </path>
@@ -4639,7 +4639,7 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="40.9102" depth="29.9034" valign="top">Zwei Graphen $G$ und $G&apos;$ heißen \emph{Isomorph} wenn sie durch umbennenung der Knoten ineinander überführt werden können, also die gleiche Struktur haben.\\
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="40.9102" depth="29.9034" valign="top">Zwei Graphen $G$ und $G&apos;$ heißen \emph{Isomorph} wenn sie durch Umbennenung der Knoten ineinander überführt werden können, also die gleiche Struktur haben.\\
 Man schreibt dann auch $G\cong G&apos;$</text>
 <path stroke="black" pen="1.3">
 16 0 0 16 64 192 e
@@ -4715,7 +4715,7 @@ Man schreibt dann auch $G\cong G&apos;$</text>
 <text matrix="1 0 0 1 -5.65656 -7.14396" transformations="translations" pos="576 64" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">d</text>
 <text matrix="1 0 0 1 41 0" transformations="translations" pos="256 144" stroke="black" type="minipage" width="48" height="23.5767" depth="13.146" valign="top" size="Huge">$\cong$</text>
 <text matrix="1 0 0 1 409 0" transformations="translations" pos="256 144" stroke="black" type="minipage" width="48" height="23.5767" depth="13.146" valign="top" size="Huge">$\cong$</text>
-<text matrix="1 0 0 1 505 8" transformations="translations" pos="256 144" stroke="black" type="minipage" width="48" height="28.2702" depth="17.829" valign="top" size="Huge">$K_4$</text>
+<text matrix="1 0 0 1 505 8" transformations="translations" pos="256 144" stroke="black" type="minipage" width="64" height="28.2702" depth="17.829" valign="top" size="Huge">$K_4$</text>
 </page>
 <page title="Isomorphie, etwas formaler">
 <layer name="alpha"/>
@@ -4747,10 +4747,10 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="0" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Isomorphie</text>
-<text transformations="translations" pos="16 336" stroke="0" type="minipage" width="560" height="29.3395" depth="18.315" valign="top">$G_1 = (V_1 , E_1 )$ ist isomorph zu $G_2 = (V_2, E_2)$, wenn eine
-Bijektion $f : V_1 \rightarrow V_2$ existiert mit der Eigenschaft</text>
+<text transformations="translations" pos="16 336" stroke="0" type="minipage" width="560" height="29.3395" depth="18.315" valign="top">$G_1 = (V_1 , E_1 )$ ist isomorph zu $G_2 = (V_2, E_2)$, wenn eine \\
+Bijektion $f : V_1 \rightarrow V_2$ existiert mit der Eigenschaft:</text>
 <text transformations="translations" pos="16 272" stroke="0" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x \in V_1: \forall y \in V_1 : (x,y) \in E_1 \Leftrightarrow (f(x),f(y)) \in E_2$</text>
-<text transformations="translations" pos="16 240" stroke="0" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top" style="item">f heißt dann auch ein (Graph-)Isomorphismus</text>
+<text transformations="translations" pos="16 240" stroke="0" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top" style="item">f heißt dann auch (Graph-)Isomorphismus</text>
 <text layer="beta" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 192" stroke="0" type="minipage" width="560" height="15.358" depth="4.2846" valign="top" style="item">Wenn $G_1$ isomorph zu $G_2$, dann auch $G_2$ isomorph zu $G_1$</text>
 <text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 160" stroke="0" type="minipage" width="576" height="15.1648" depth="4.0848" valign="top" style="subitem">f ist bijektiv, also können wir f umkehren </text>
 <text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 128" stroke="0" type="minipage" width="592" height="15.1648" depth="4.0848" valign="top" style="item">Jeder Graph ist isomorph zu sich selbst</text>
@@ -4790,8 +4790,8 @@ h
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">Sei $G = (V,E)$ ein Graph</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="16.6056" depth="5.55" valign="top">Einen Graphen $G&apos; = (V&apos;,E&apos;)$ für den gilt:</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="15.4778" depth="4.4178" valign="top" style="item">$V&apos;\subseteq V$ und $E&apos; \subseteq E \cap V&apos; \times V&apos;$</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="13.229" depth="2.1534" valign="top" style="item">Also der nur aus Knoten und Kanten von G besteht</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="16.6056" depth="5.55" valign="top" style="item">$V&apos;\subseteq V$ und $E&apos; \subseteq (E \cap (V&apos; \times V&apos;))$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="13.229" depth="2.1534" valign="top" style="item">Also nur aus Knoten und Kanten von G besteht</text>
 <text transformations="translations" pos="16 240" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top">nennen wir \emph{Teilgraph} von G</text>
 <path layer="beta" matrix="1 0 0 1 -203.733 24.4573" stroke="1 0 0" pen="3">
 609.37 56.4189 m
@@ -4809,7 +4809,7 @@ h
 748.439 244.436 m
 740.382 185.079 l
 </path>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 160" stroke="0" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$G = ( \set{ 0, 1, 2}, \set{ \set{0, 1}, \set{0, 2}, \set{1, 2}})$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 160" stroke="0" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$G = ( \set{ 0, 1, 2}, \set{ (0, 1), (0, 2), (1, 2)})$</text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 128" stroke="0" type="minipage" width="384" height="16.6056" depth="5.55" valign="top" style="item">$G&apos;(\{0,2\},\{(0,2)\})$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 32}</text>
 <group layer="beta">
@@ -4887,15 +4887,16 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 -1 -31" transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="29.8546" depth="18.8034" valign="top">Ein (n+1)-Tupel $p = (v_0,v_1,\dots,v_n)$ mit $v_i \in V$ paarweise Verschieden heißt \emph{Pfad} von $v_0$ nach $v_n$ gdw: $\forall i \in \set{0,\dots,n-1} : \set{v_i,v_{i+1}} \in E$</text>
+<text matrix="1 0 0 1 -1 -31" transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="29.8546" depth="18.8034" valign="top">Ein (n+1)-Tupel $p = (v_0,v_1,\dots,v_n)$ mit $v_i \in V$ paarweise verschieden, \\ heißt \emph{Pfad} von $v_0$ nach $v_n$  g.d.w.: $\forall i \in \set{0,\dots,n-1} : \set{v_i,v_{i+1}} \in E$</text>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="13.078" depth="2.0202" valign="top">\bfseries Pfad</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top">Dabei ist die Länge des Pfades die Anzahl der Kanten (Anzahl Knoten - 1)</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top">Dabei ist die Länge des Pfades die Anzahl der Kanten (=Anzahl Knoten - 1)</text>
 <text transformations="translations" pos="16 240" stroke="black" type="minipage" width="688" height="16.5901" depth="5.5278" valign="top">Pfade mit Länge 0 sind auch erlaubt $p=(v_0)$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="16 192" stroke="0" type="minipage" width="592" height="28.4848" depth="17.427" valign="top" style="item">Ein Knoten y ist von einem Knoten x \emph{erreichbar} wenn es einen Pfad zwischen x und y gibt</text>
+<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="16 192" stroke="0" type="minipage" width="592" height="28.4848" depth="17.427" valign="top" style="item">Ein Knoten y ist von einem Knoten x aus \emph{erreichbar}, \\
+wenn es einen Pfad zwischen x und y gibt</text>
 <text matrix="1 0 0 1 0 -64" transformations="translations" pos="16 176" stroke="0" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Erreichbarkeit</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
 <text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="320" height="15.0028" depth="3.9294" valign="top">\bfseries Weg</text>
-<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Falls die $v_i$ nicht mehr Paarweise verschieden sind sprechen wir von \emph{Wegen}</text>
+<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Falls die $v_i$ nicht mehr paarweise verschieden sind, sprechen wir von \emph{Wegen}</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -5279,19 +5280,19 @@ h
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="alpha">
+<group layer="gamma">
 <path stroke="gray1" fill="gray3">
-232 48 m
-8 0 0 8 224 48 224 56 a
+264 48 m
+8 0 0 8 256 48 256 56 a
 24 56 l
 24 32.2247 l
 8 0 0 8 32 32.2247 32 24.2247 a
-232 24.2247 l
+264 24.2247 l
 h
 </path>
 </group>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="48 352" stroke="0" type="minipage" width="96" height="13.2268" depth="2.1312" valign="top">$G$</text>
-<text transformations="translations" pos="32 48" stroke="0" type="minipage" width="192" height="13.4221" depth="2.3532" valign="top">Gebt alle Pfade auf $G$</text>
+<text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="48 352" stroke="0" type="minipage" width="96" height="13.2268" depth="2.1312" valign="top">$G$</text>
+<text transformations="translations" pos="32 48" stroke="0" type="minipage" width="224" height="13.4221" depth="2.3532" valign="top">Gebt alle Pfade auf $G$ an</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 <path layer="alpha" matrix="1 0 0 1 -432 0" stroke="black" fill="white" pen="1.3">
 512 256 m
@@ -5347,7 +5348,7 @@ h
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="0" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Zeichnet je einen gerichteten Graphen mit folgender Eigenschaft:</text>
-<text transformations="translations" pos="0 352" stroke="0" type="minipage" width="576" height="14.8807" depth="3.7962" valign="top" style="item">$G_1$, der Kreisfrei ist</text>
+<text transformations="translations" pos="0 352" stroke="0" type="minipage" width="576" height="14.8807" depth="3.7962" valign="top" style="item">$G_1$, der kreisfrei ist</text>
 <text transformations="translations" pos="0 320" stroke="0" type="minipage" width="672" height="14.8807" depth="3.7962" valign="top" style="item">$G_2,$ der einen Kreis enthält</text>
 <text transformations="translations" pos="0 288" stroke="0" type="minipage" width="656" height="15.358" depth="4.2846" valign="top" style="item">$G_3$, in dem jeder Knoten, von jedem Knoten erreichbar ist</text>
 <text layer="beta" transformations="translations" pos="0 240" stroke="black" type="minipage" width="80" height="14.8807" depth="3.7962" valign="top">$G_1:$</text>
@@ -5431,7 +5432,7 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="28.2939" depth="17.2716" valign="top">Alle Knoten die voneinander aus Erreichbar sind, sind in einer \emph{Zusammenhangskomponente}</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="28.2939" depth="17.2716" valign="top">Alle Knoten die voneinander aus erreichbar sind, \\ sind in einer \emph{Zusammenhangskomponente}</text>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="432" height="15.0028" depth="3.9294" valign="top">\bfseries Zusammenhangskomponente</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="480" height="15.2203" depth="4.1514" valign="top">\bfseries Zusammenhängender Graph</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 240" stroke="black" type="minipage" width="480" height="28.7335" depth="17.6934" valign="top">Besteht ein Graph $G$ nur aus einer Zusammenhangskomponente so heißt $G$ \emph{zusammenhängend}</text>
@@ -5614,7 +5615,7 @@ h
 224 160 m
 288 192 l
 </path>
-<text layer="delta" matrix="1 0 0 1 208 16" transformations="translations" pos="224 240" stroke="black" type="minipage" width="288" height="12.9115" depth="1.8204" valign="top">Auch kein Baum aber ein Wald</text>
+<text layer="delta" matrix="1 0 0 1 208 16" transformations="translations" pos="224 240" stroke="black" type="minipage" width="288" height="14.2901" depth="3.219" valign="top">Auch kein Baum, aber ein Wald</text>
 <use matrix="1 0 0 1 -16 -16" name="mark/disk(sx)" pos="512 192" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 -16 -16" name="mark/disk(sx)" pos="480 144" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 -16 -16" name="mark/disk(sx)" pos="544 144" size="normal" stroke="black"/>
@@ -5742,7 +5743,7 @@ h
 <use matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="448 192" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 256 48" name="mark/disk(sx)" pos="576 192" size="normal" stroke="black"/>
 <text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="448" height="13.229" depth="2.1534" valign="top" style="item">Knoten mit Grad $1$ heißen \emph{Blätter}</text>
-<text layer="gamma" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="448" height="14.6609" depth="3.5742" valign="top" style="item">Knoten mit Grad $\geq 2$ Heißen \emph{innere Knoten}</text>
+<text layer="gamma" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="448" height="14.6609" depth="3.5742" valign="top" style="item">Knoten mit Grad $\geq 2$ heißen \emph{innere Knoten}</text>
 <text layer="delta" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="624" height="15.1648" depth="4.0848" valign="top" style="item">Bäume haben eine \emph{Wurzel} (Jeder Knoten kann Wurzel sein)</text>
 <path layer="alpha" matrix="1 0 0 1 64 48" stroke="black" fill="cyan3" pen="1.3">
 704 320 m
@@ -5769,7 +5770,7 @@ h
 <text layer="gamma" matrix="1 0 0 1 144 -16" transformations="translations" pos="656 384" stroke="black" type="minipage" width="112" height="10.926" depth="0.96" valign="top" size="small">\emph{Innere Knoten}</text>
 <text layer="beta" matrix="1 0 0 1 192 7" transformations="translations" pos="656 224" stroke="black" type="minipage" width="52.594" height="11.102" depth="1.14" valign="top" size="small">\emph{Blätter}</text>
 <text layer="delta" matrix="1 0 0 1 10 6" transformations="translations" pos="592 384" stroke="black" type="minipage" width="54.812" height="10.926" depth="0.96" valign="top" size="small">\emph{Wurzel}</text>
-<text layer="epsilon" matrix="1 0 0 1 37 -1" transformations="translations" pos="704 304" stroke="black" type="label" width="10.446" height="7.97" depth="0" valign="baseline" size="small">$v$</text>
+<text layer="epsilon" matrix="1 0 0 1 37 -1" transformations="translations" pos="704 304" stroke="black" type="label" width="10.446" height="7.97" depth="0" valign="baseline" size="small" style="math">v</text>
 <text matrix="1 0 0 1 84 36" transformations="translations" pos="544 144" stroke="black" type="minipage" width="52.132" height="23.686" depth="13.74" valign="top" size="small">\emph{Kinder}\\
 (von v)</text>
 <path layer="zeta" stroke="black" pen="0.7" arrow="normal/normal">
@@ -5846,7 +5847,7 @@ h
 <text matrix="1 0 0 1 -1 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top">Formal: $G k$-färbbar $\Leftrightarrow \exists \phi: V \rightarrow \set{c_1, \dots c_k} (k\in \mathbb N_+) : \forall e = uv \in E(G): \phi(u) \neq \phi(v)$</text>
 <text layer="beta" matrix="1 0 0 1 0 28" transformations="translations" pos="16 240" stroke="black" type="minipage" width="624" height="15.3313" depth="4.2402" valign="top">Für $k = 2$ heißt $G$ auch \emph{bipartit}</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">$G$ bipartit $\Leftrightarrow \exists A,B \subseteq V : \forall e = uv \in E(G) : u \in A \wedge v \in B \vee u \in B \wedge v \in A$</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="880" height="28.5403" depth="17.4936" valign="top">Die Knoten eines \emph{bipartiten} Graph lassen sich in 2 disjunkte Teilmengen aufteillen, sodass keine Kanten zwischen Knoten in einer Teilmenge existieren</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="880" height="28.5403" depth="17.4936" valign="top">Die Knoten eines \emph{bipartiten} Graph lassen sich in 2 disjunkte Teilmengen aufteillen, sodass \\ keine Kanten zwischen Knoten in einer Teilmenge existieren</text>
 <use layer="gamma" matrix="1 0 0 1 0 16" name="mark/fdisk(sfx)" pos="48 64" size="normal" stroke="black" fill="green1"/>
 <use matrix="1 0 0 1 16 0" name="mark/fdisk(sfx)" pos="48 16" size="normal" stroke="black" fill="green1"/>
 <use name="mark/fdisk(sfx)" pos="80 48" size="normal" stroke="black" fill="green1"/>
@@ -5876,7 +5877,7 @@ h
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.1648" depth="4.0848" valign="top" style="item">Ein Graph der sich in der Ebene zeichnen lässt, sodass sich keine Kanten kreuzen, heißt Planar </text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.1648" depth="4.0848" valign="top" style="item">Ein Graph der sich in der Ebene zeichnen lässt, sodass sich keine Kanten kreuzen, heißt planar </text>
 <text matrix="1 0 0 1 -16 40.966" transformations="translations" pos="64 224" stroke="black" type="minipage" width="96" height="13.952" depth="3.98" valign="top" size="small" style="center">Planar $(K_4)$</text>
 <text matrix="1 0 0 1 -32 40.966" transformations="translations" pos="192 224" stroke="black" type="minipage" width="128" height="13.952" depth="3.98" valign="top" size="small">Nicht Planar $(K_5)$</text>
 <group matrix="1 0 0 1 0 32">
@@ -5964,7 +5965,7 @@ h
 </group>
 <text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Jeder Teilgraph eines planaren Graphen ist planar</text>
 <text transformations="translations" pos="0 192" stroke="black" type="minipage" width="848" height="16.5901" depth="5.5278" valign="top" style="item">Jeder planare Graph enthält einen Knoten mit höchstens 5 Nachbarn $(\delta(G) \leq 5)$</text>
-<text layer="gamma" matrix="1 0 0 1 48 0" transformations="translations" pos="64 128" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top">Zeigt mit Induktion das sich jeder planare Graph mit 6 Farben färben lässt</text>
+<text layer="gamma" matrix="1 0 0 1 48 0" transformations="translations" pos="64 128" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top">Zeigt mit Induktion, dass sich jeder planare Graph mit 6 Farben färben lässt</text>
 </page>
 <page title="Lösung">
 <layer name="alpha"/>
@@ -6003,13 +6004,13 @@ h
 h
 </path>
 </group>
-<text layer="alpha" matrix="1 0 0 1 0 32" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top">Wir machen Induktion über die anzahl Knoten in $G (n = \vert V \vert )$</text>
+<text layer="alpha" matrix="1 0 0 1 0 32" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top">Wir machen Induktion über die Anzahl von Knoten in $G (n = \vert V \vert )$</text>
 <text layer="beta" matrix="1 0 0 1 0 48" transformations="translations" pos="0 336" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">\emph{I.A.} $(n \leq 6)$</text>
 <text matrix="1 0 0 1 16 48" transformations="translations" pos="0 304" stroke="black" type="minipage" width="592" height="28.5403" depth="17.4936" valign="top">Jeder Graph mit weniger als 7 Knoten kann trivial gefärbt werden, indem jedem Knoten eine andere Farbe zugeordnet wird</text>
 <text layer="gamma" matrix="1 0 0 1 0 48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">\emph{I.S.} \quad Sei $G = (V,E)$ ein beliebiger planarer Graph mit $n = \vert V\vert \geq 7$ Knoten</text>
 <text matrix="1 0 0 1 0 64" transformations="translations" pos="32 192" stroke="black" type="minipage" width="768" height="15.1648" depth="4.0848" valign="top">\emph{I.V.} \textbf{Jeder} planare Graph mit n-1 Knoten lässt sich mit 6 Farben färben</text>
-<text matrix="1 0 0 1 0 48" transformations="translations" pos="32 176" stroke="black" type="minipage" width="768" height="15.2758" depth="4.218" valign="top">Wir Zeigen das G auch 6-Färbbar ist und benutzen dabei die I.V.</text>
-<text layer="delta" matrix="1 0 0 1 0 48" transformations="translations" pos="32 144" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top">Da G planar ist gibt es einen Knoten (o.B.d.A) v der maximal 5 Nachbarn hat</text>
+<text matrix="1 0 0 1 0 48" transformations="translations" pos="32 176" stroke="black" type="minipage" width="768" height="15.2758" depth="4.218" valign="top">Wir zeigen, dass G auch 6-färbbar ist und benutzen dabei die I.V.</text>
+<text layer="delta" matrix="1 0 0 1 0 48" transformations="translations" pos="32 144" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top">Da G planar ist, gibt es einen Knoten (o.B.d.A) v, der maximal 5 Nachbarn hat</text>
 <text matrix="1 0 0 1 0 48" transformations="translations" pos="32 112" stroke="black" type="minipage" width="864" height="16.115" depth="5.0394" valign="top">Sei $G&apos; = G-v, G&apos;$ hat $n-1$ Knoten. Nach I.V. gibt es also eine 6-Färbung $\phi$ von $G&apos;$</text>
 <text layer="epsilon" matrix="1 0 0 1 0 48" transformations="translations" pos="32 80" stroke="black" type="minipage" width="784" height="29.3573" depth="18.3372" valign="top">Ziel: Konstruiere aus $\phi$ eine Färbung $\phi &apos;$ für G. Betrachte dazu die Nachbarn von $v$ in $G$, diese sind mit bis zu 5 Farben gefärbt</text>
 <text layer="zeta" matrix="1 0 0 1 0 7" transformations="translations" pos="32 32" stroke="black" type="minipage" width="880" height="32.059" depth="21.0234" valign="top">Setze also $\phi&apos;: V(G) \rightarrow \set{c_1, \dots, c_6}, \quad u \mapsto \left\{\begin{array}{lcl}
