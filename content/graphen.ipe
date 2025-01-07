@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20250107095140" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20250107132421" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3786,7 +3786,7 @@ h
 <text layer="beta" matrix="1 0 0 1 0 6" transformations="translations" pos="16 304" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Einer Knotenmenge V</text>
 <text matrix="1 0 0 1 0 6" transformations="translations" pos="16 272" stroke="black" type="minipage" width="560" height="29.0309" depth="18.0042" valign="top" style="subitem">Knoten haben Bezeichner (entspricht Beschriftung), z.B.\\
 $V=\{a,b,c\}, V = \{1,2,3\}$ etc.</text>
-<text layer="gamma" matrix="1 0 0 1 0 6" transformations="translations" pos="16 208" stroke="black" type="minipage" width="640" height="19.7069" depth="8.658" valign="top" style="item">Einer Kantenmenge $E \subseteq \binom{V}{2}\subset V\times V$</text>
+<text layer="gamma" matrix="1 0 0 1 0 6" transformations="translations" pos="16 208" stroke="black" type="minipage" width="640" height="19.7069" depth="8.658" valign="top" style="item">Einer Kantenmenge $E \subseteq \binom{V}{2}$</text>
 <text matrix="1 0 0 1 0 6" transformations="translations" pos="16 176" stroke="black" type="minipage" width="688" height="16.5901" depth="5.5278" valign="top" style="subitem">Kanten sind also Mengen aus 2 Knoten in $V$ , z.B. $E = \{\{a, b\}, \{b, c\}\}$</text>
 <text matrix="1 0 0 1 0 6" transformations="translations" pos="16 144" stroke="black" type="minipage" width="672" height="16.5901" depth="5.5278" valign="top" style="subitem">$\{x, y\} \in E \Rightarrow$ Es gibt eine Kante zwischen Knoten x und Knoten y.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 3}</text>
@@ -4790,7 +4790,7 @@ h
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">Sei $G = (V,E)$ ein Graph</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="16.6056" depth="5.55" valign="top">Einen Graphen $G&apos; = (V&apos;,E&apos;)$ für den gilt:</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="16.6056" depth="5.55" valign="top" style="item">$V&apos;\subseteq V$ und $E&apos; \subseteq (E \cap (V&apos; \times V&apos;))$</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="20.7526" depth="9.6792" valign="top" style="item">$V&apos;\subseteq V$ und $E&apos; \subseteq (E \cap \binom{V&apos;}{2})$</text>
 <text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="13.229" depth="2.1534" valign="top" style="item">Also nur aus Knoten und Kanten von G besteht</text>
 <text transformations="translations" pos="16 240" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top">nennen wir \emph{Teilgraph} von G</text>
 <path layer="beta" matrix="1 0 0 1 -203.733 24.4573" stroke="1 0 0" pen="3">
@@ -4948,8 +4948,8 @@ wenn es einen Pfad zwischen x und y gibt</text>
 <text layer="eta" transformations="translations" pos="400 352" stroke="0" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">$p_1 = (0,1,3)$ ist ein Pfad von 0 nach 3</text>
 <text layer="theta" matrix="1 0 0 1 0 -32" transformations="translations" pos="400 352" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$p_2 = (3,4,0,1)$ ist ein Pfad von 3 nach 1</text>
 <text layer="iota" matrix="1 0 0 1 0 -64" transformations="translations" pos="400 352" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$p_3 = (3,0,1)$ auch</text>
-<text layer="kappa" matrix="1 0 0 1 0 -96" transformations="translations" pos="400 352" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$p_4 = (2,1,3,2)$ ist ein Pfad von 2 nach 2</text>
-<text layer="lambda" matrix="1 0 0 1 0 -128" transformations="translations" pos="400 352" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$p_5 = (2)$ auch</text>
+<text layer="kappa" matrix="1 0 0 1 0 -96" transformations="translations" pos="400 352" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$p_4 = (2,1,3,2)$ ist ein Weg von 2 nach 2</text>
+<text layer="lambda" matrix="1 0 0 1 0 -128" transformations="translations" pos="400 352" stroke="0" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$p_5 = (2)$ ein Pfad</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 <group layer="alpha">
 <path stroke="black" fill="white" pen="1.3">
@@ -5280,6 +5280,17 @@ wenn es einen Pfad zwischen x und y gibt</text>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+264 48 m
+8 0 0 8 256 48 256 56 a
+24 56 l
+24 32.2247 l
+8 0 0 8 32 32.2247 32 24.2247 a
+264 24.2247 l
+h
+</path>
+</group>
 <group layer="gamma">
 <path stroke="gray1" fill="gray3">
 264 48 m
@@ -5765,7 +5776,7 @@ h
 736 256 m
 768 192 l
 </path>
-<text layer="epsilon" transformations="translations" pos="0 288" stroke="black" type="minipage" width="512" height="26.398" depth="15.3624" valign="top" style="item">Die Knoten, die einen größeren Abstand zur Wurzel haben als ein Knoten $v$ heißen \emph{Kinder} von $v$</text>
+<text layer="epsilon" transformations="translations" pos="0 288" stroke="black" type="minipage" width="512" height="26.398" depth="15.3624" valign="top" style="item">Die Nachbarn von $v$, die einen größeren Abstand zur Wurzel haben als $v$ heißen \emph{Kinder} von $v$</text>
 <text layer="zeta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="592" height="13.1557" depth="2.0646" valign="top" style="item">$v$ heißt \emph{Elter} seiner Kinder</text>
 <text layer="gamma" matrix="1 0 0 1 144 -16" transformations="translations" pos="656 384" stroke="black" type="minipage" width="112" height="10.926" depth="0.96" valign="top" size="small">\emph{Innere Knoten}</text>
 <text layer="beta" matrix="1 0 0 1 192 7" transformations="translations" pos="656 224" stroke="black" type="minipage" width="52.594" height="11.102" depth="1.14" valign="top" size="small">\emph{Blätter}</text>
@@ -5964,7 +5975,7 @@ h
 </path>
 </group>
 <text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Jeder Teilgraph eines planaren Graphen ist planar</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="848" height="16.5901" depth="5.5278" valign="top" style="item">Jeder planare Graph enthält einen Knoten mit höchstens 5 Nachbarn $(\delta(G) \leq 5)$</text>
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="848" height="15.1648" depth="4.0848" valign="top" style="item">Jeder planare Graph enthält einen Knoten mit höchstens 5 Nachbarn</text>
 <text layer="gamma" matrix="1 0 0 1 48 0" transformations="translations" pos="64 128" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top">Zeigt mit Induktion, dass sich jeder planare Graph mit 6 Farben färben lässt</text>
 </page>
 <page title="Lösung">
