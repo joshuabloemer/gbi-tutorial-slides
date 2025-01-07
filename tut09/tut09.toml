@@ -1,0 +1,4 @@
+title = "09 Praedikatenlogik,Graphen"   # the file name of the output pdf
+description = "Praedikatenlogik Semantik und Graphen" # 
+content = ["plsemantik", "graphen"]
+xkcd = 1738
