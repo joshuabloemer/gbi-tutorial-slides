@@ -1,5 +1,5 @@
 
-title = "08 Praedikatenlogik Syntax"   # the file name of the output pdf
+title = "08 Praedikatenlogik Syntax"    # the file name of the output pdf
 description = "Praedikatenlogik Syntax" # 
 content = ["plsyntax"]
 xkcd = 988
