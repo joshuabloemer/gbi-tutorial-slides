@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250107132421" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250114115758" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4554,6 +4554,17 @@ Rekonstruiert die Kanten des Graphen</text>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <group layer="beta">
+<path stroke="black" fill="KITgreen15">
+8 168 m
+400 168 l
+8 0 0 -8 400 160 408 160 a
+408 127.456 l
+16 127.456 l
+8 0 0 -8 16 135.456 8 135.456 a
+h
+</path>
+</group>
+<group>
 <path stroke="black" fill="KITred15">
 8 248 m
 528 248 l
@@ -4612,6 +4623,7 @@ h
 16 0 0 16 448 256 e
 </path>
 <text matrix="1 0 0 1 74.3434 -119.248" transformations="translations" pos="448 256" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
+<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="384" height="17.7955" depth="6.7488" valign="top">Handshake Lemma: $\sum_{v \in V} \deg(u) = 2\vert E\vert$</text>
 </page>
 <page title="Isomorphie">
 <layer name="alpha"/>
@@ -5358,7 +5370,7 @@ h
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="0" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Zeichnet je einen gerichteten Graphen mit folgender Eigenschaft:</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="0" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Zeichnet je einen Graphen mit folgender Eigenschaft:</text>
 <text transformations="translations" pos="0 352" stroke="0" type="minipage" width="576" height="14.8807" depth="3.7962" valign="top" style="item">$G_1$, der kreisfrei ist</text>
 <text transformations="translations" pos="0 320" stroke="0" type="minipage" width="672" height="14.8807" depth="3.7962" valign="top" style="item">$G_2,$ der einen Kreis enthält</text>
 <text transformations="translations" pos="0 288" stroke="0" type="minipage" width="656" height="15.358" depth="4.2846" valign="top" style="item">$G_3$, in dem jeder Knoten, von jedem Knoten erreichbar ist</text>
@@ -5800,49 +5812,49 @@ h
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
-<path layer="gamma" matrix="1 0 0 1 0 18" stroke="black" fill="green3" dash="dashed" pen="1">
+<group layer="gamma">
+<path stroke="black" fill="KITgreen15">
+8 232 m
+896 232 l
+8 0 0 -8 896 224 904 224 a
+904 103.342 l
+16 103.342 l
+8 0 0 -8 16 111.342 8 111.342 a
+h
+</path>
+</group>
+<path matrix="1 0 0 1 0 2" stroke="black" fill="green3" dash="dashed" pen="1">
 32 96
 112 96
 80 -32
 32 0 u
 </path>
-<path matrix="1 0 0 1 -4 12" stroke="black" fill="red3" dash="dashed" pen="1">
+<path matrix="1 0 0 1 -4 -4" stroke="black" fill="red3" dash="dashed" pen="1">
 144 96
 256 112
 240 -16
 160 -16 u
 </path>
-<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
+<path stroke="black" fill="white" pen="1.3">
 208 64 m
 80 32 l
 </path>
-<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
+<path stroke="black" fill="white" pen="1.3">
 208 64 m
 48 64 l
 </path>
-<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
+<path stroke="black" fill="white" pen="1.3">
 64 0 m
 192 0 l
 </path>
-<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
+<path stroke="black" fill="white" pen="1.3">
 192 32 m
 80 32 l
 </path>
-<path matrix="1 0 0 1 0 16" stroke="black" fill="white" pen="1.3">
+<path stroke="black" fill="white" pen="1.3">
 192 80 m
 48 64 l
 </path>
-<group layer="beta" matrix="1 0 0 1 16 -16">
-<path stroke="black" fill="KITgreen15">
--8 248 m
-880 248 l
-8 0 0 -8 880 240 888 240 a
-888 145.882 l
-0 145.882 l
-8 0 0 -8 0 153.882 -8 153.882 a
-h
-</path>
-</group>
 <group layer="alpha" matrix="1 0 0 1 16 -16">
 <path stroke="black" fill="KITgreen15">
 -9 392 m
@@ -5857,18 +5869,19 @@ h
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="704" height="28.7335" depth="17.6934" valign="top">Ein Graph $G$ heißt \emph{$k$-färbbar} wenn es eine Zuteilung von $k$ Farben auf Knoten gibt, sodass benachbarte Knoten unterschiedliche Farben haben</text>
 <text matrix="1 0 0 1 -1 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top">Formal: $G k$-färbbar $\Leftrightarrow \exists \phi: V \rightarrow \set{c_1, \dots c_k} (k\in \mathbb N_+) : \forall e = uv \in E(G): \phi(u) \neq \phi(v)$</text>
 <text layer="beta" matrix="1 0 0 1 0 28" transformations="translations" pos="16 240" stroke="black" type="minipage" width="624" height="15.3313" depth="4.2402" valign="top">Für $k = 2$ heißt $G$ auch \emph{bipartit}</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">$G$ bipartit $\Leftrightarrow \exists A,B \subseteq V : \forall e = uv \in E(G) : u \in A \wedge v \in B \vee u \in B \wedge v \in A$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="736" height="29.8546" depth="18.8034" valign="top">$G$ bipartit $\Leftrightarrow \exists A,B \subseteq V : A \cap B = \emptyset \wedge A \cup B = V \\
+\wedge \forall e = uv \in E(G) : u \in A \wedge v \in B \vee u \in B \wedge v \in A$</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="880" height="28.5403" depth="17.4936" valign="top">Die Knoten eines \emph{bipartiten} Graph lassen sich in 2 disjunkte Teilmengen aufteillen, sodass \\ keine Kanten zwischen Knoten in einer Teilmenge existieren</text>
-<use layer="gamma" matrix="1 0 0 1 0 16" name="mark/fdisk(sfx)" pos="48 64" size="normal" stroke="black" fill="green1"/>
-<use matrix="1 0 0 1 16 0" name="mark/fdisk(sfx)" pos="48 16" size="normal" stroke="black" fill="green1"/>
-<use name="mark/fdisk(sfx)" pos="80 48" size="normal" stroke="black" fill="green1"/>
-<use matrix="1 0 0 1 -32 16" name="mark/fdisk(sfx)" pos="224 80" size="normal" stroke="black" fill="red1"/>
-<use matrix="1 0 0 1 0 16" name="mark/fdisk(sfx)" pos="192 0" size="normal" stroke="black" fill="red1"/>
-<use matrix="1 0 0 1 32 16" name="mark/fdisk(sfx)" pos="176 64" size="normal" stroke="black" fill="red1"/>
-<use matrix="1 0 0 1 -32 0" name="mark/fdisk(sfx)" pos="224 48" size="normal" stroke="black" fill="red1"/>
-<text matrix="1 0 0 1 -36 -105" transformations="translations" pos="64 112" stroke="black" type="label" width="19.2274" height="14.4966" depth="0" valign="baseline">A
+<use layer="gamma" name="mark/fdisk(sfx)" pos="48 64" size="normal" stroke="black" fill="green1"/>
+<use matrix="1 0 0 1 16 -16" name="mark/fdisk(sfx)" pos="48 16" size="normal" stroke="black" fill="green1"/>
+<use matrix="1 0 0 1 0 -16" name="mark/fdisk(sfx)" pos="80 48" size="normal" stroke="black" fill="green1"/>
+<use matrix="1 0 0 1 -32 0" name="mark/fdisk(sfx)" pos="224 80" size="normal" stroke="black" fill="red1"/>
+<use name="mark/fdisk(sfx)" pos="192 0" size="normal" stroke="black" fill="red1"/>
+<use matrix="1 0 0 1 32 0" name="mark/fdisk(sfx)" pos="176 64" size="normal" stroke="black" fill="red1"/>
+<use matrix="1 0 0 1 -32 -16" name="mark/fdisk(sfx)" pos="224 48" size="normal" stroke="black" fill="red1"/>
+<text matrix="1 0 0 1 -36 -121" transformations="translations" pos="64 112" stroke="black" type="label" width="19.2274" height="14.4966" depth="0" valign="baseline">A
 </text>
-<text matrix="1 0 0 1 25 -106" transformations="translations" pos="208 112" stroke="black" type="label" width="13.5709" height="14.4966" depth="0" valign="baseline">B</text>
+<text matrix="1 0 0 1 25 -122" transformations="translations" pos="208 112" stroke="black" type="label" width="13.5709" height="14.4966" depth="0" valign="baseline">B</text>
 </page>
 <page title="Induktion">
 <layer name="alpha"/>
@@ -6031,5 +6044,41 @@ c \in \set{c_1, \dots, c_6}\textbackslash \set{\phi(u&apos;) \given u&apos; \in 
 $</text>
 <text matrix="1 0 0 1 0 6" transformations="translations" pos="32 64" stroke="black" type="minipage" width="720" height="15.0516" depth="3.9738" valign="top">\impl Färbe v mit einer der übrigen Farben</text>
 <text layer="eta" matrix="1 0 0 1 48 -6" transformations="translations" pos="432 80" stroke="black" type="minipage" width="416" height="15.2758" depth="4.218" valign="top">So Formal braucht man das eigentlich nicht </text>
+</page>
+<page title="Lösung">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<group layer="alpha" matrix="1 0 0 1 48 0">
+<path stroke="gray1" fill="gray3">
+840 320 m
+8 0 0 8 832 320 832 328 a
+520 328 l
+520 297.844 l
+8 0 0 8 528 297.844 528 289.844 a
+840 289.844 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 368" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top">Jetzt müssen wir noch zeigen das die Färbung korrekt ist:</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="560 320" stroke="black" type="minipage" width="304" height="16.6056" depth="5.55" valign="top">$\forall e = uv \in E(G): \phi&apos;(u) \neq \phi&apos;(v)$</text>
+<text matrix="1 0 0 1 -32 0" transformations="translations" pos="32 336" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Sei $e = xy \in E(G)$ beliebig</text>
+<text layer="beta" matrix="1 0 0 1 -32 0" transformations="translations" pos="32 288" stroke="black" type="minipage" width="496" height="16.6056" depth="5.55" valign="top" style="item">Fall 1: $e = xy \in E(G&apos;)$</text>
+<text layer="delta" matrix="1 0 0 1 -32 64" transformations="translations" pos="32 144" stroke="black" type="minipage" width="384" height="16.6056" depth="5.55" valign="top" style="item">Fall 2: $e = xy \notin E(G&apos;)$</text>
+<text layer="gamma" transformations="translations" pos="32 256" stroke="black" type="minipage" width="784" height="16.6056" depth="5.55" valign="top">Dann ist $\phi&apos;(x) = \phi(x) \neq \phi(y) = \phi&apos;(y) $ (Weil $\phi$ Färbung von $G&apos;$ ist und $x,y \neq v$)\quad \cm</text>
+<text layer="epsilon" transformations="translations" pos="32 176" stroke="black" type="minipage" width="608" height="15.1582" depth="4.107" valign="top">Dann ist entweder $x$ oder $y$ $=v$ (O.B.d.A x = v)</text>
+<text layer="zeta" transformations="translations" pos="32 144" stroke="black" type="minipage" width="528" height="16.6056" depth="5.55" valign="top">Dann ist $\phi&apos;(y) = \phi(y)$</text>
+<text layer="eta" transformations="translations" pos="32 112" stroke="black" type="minipage" width="576" height="16.6056" depth="5.55" valign="top">und nach Konstruktion von $\phi&apos; \neq \phi&apos;(v)$ da $y\in N(v)$ \cm</text>
 </page>
 </ipe>
