@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250120200744" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250120205001" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4010,7 +4010,43 @@ h
 </page>
 <page title="Laufzeit BFS">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
+<layer name="kappa"/>
+<layer name="lambda"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta zeta eta" active="beta"/>
+<view layers="alpha beta gamma theta" active="gamma"/>
+<view layers="alpha beta gamma delta theta" active="delta"/>
+<view layers="alpha beta gamma epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma epsilon iota" active="iota"/>
+<path layer="theta" stroke="black" fill="cyan3">
+63.5079 257.069 m
+63.5079 237.242 l
+186.532 237.242 l
+186.532 257.069 l
+h
+</path>
+<path layer="eta" stroke="black" fill="cyan3">
+95.8159 237.49 m
+95.8159 172.619 l
+242.57 172.619 l
+242.57 237.49 l
+h
+</path>
+<path layer="zeta" stroke="black" fill="cyan3">
+27.2155 300.644 m
+27.2155 280.351 l
+198.028 280.351 l
+198.028 300.644 l
+h
+</path>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="320" height="116.266" depth="106.56" valign="top" size="small">\begin{algo}[\datatype{Graph} $G$, \datatype{Vertex} $s$]{bfs}
                 \datatype{Queue} $Q := \{s\}$\;
                 färbe $s$\;
@@ -4024,6 +4060,95 @@ h
                     }
                 }
             \end{algo}</text>
+<text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="352 352" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Jeder Knoten wird einmal in die Queue Eingefügt</text>
+<text layer="gamma" matrix="1 0 0 1 -16 16" transformations="translations" pos="352 320" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Für jeden Knoten werden alle Nachbarn angeschaut</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="352 288" stroke="black" type="minipage" width="544" height="13.1357" depth="2.0646" valign="top" style="item">Wie viele Nachbarn kann ein Knoten maximal haben?</text>
+<text layer="epsilon" matrix="1 0 0 1 -16 16" transformations="translations" pos="352 288" stroke="black" type="minipage" width="512" height="14.9184" depth="3.8628" valign="top" style="item">Maximal $n$ Nachbarn pro Knoten</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="336 256" stroke="black" type="minipage" width="384" height="17.3893" depth="6.327" valign="top">\impl Laufzeit von $\O{n^2}$</text>
+<text layer="iota" transformations="translations" pos="336 208" stroke="black" type="minipage" width="544" height="15.2758" depth="4.218" valign="top">Das ist etwas langsam, bekommen wir das besser hin?</text>
+<text layer="kappa" matrix="1 0 0 1 0 16" transformations="translations" pos="16 128" stroke="black" type="minipage" width="752" height="14.9184" depth="3.8628" valign="top" style="item">Das jeder Knoten n Nachbarn hat ist etwas pessimistisch</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 96" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top" style="item">Die meisten Graphen sind nicht Vollständig</text>
+<text layer="lambda" matrix="1 0 0 1 0 16" transformations="translations" pos="16 64" stroke="black" type="minipage" width="848" height="13.229" depth="2.1534" valign="top" style="item">Es wird nur Laufzeit für Knoten Gebraucht die auch wirklich in der Nachbarschaft sind</text>
+<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">\impl mache Abschätzungen für die Anzahl an Färbungstest anhand der Anzahl Kanten</text>
+<text transformations="translations" pos="16 16" stroke="black" type="minipage" width="848" height="14.9184" depth="3.8628" valign="top">jedes dequeue und wird durch ein enqueue verursacht und jedes Enqueue durch eine Kante</text>
+</page>
+<page title="Laufzeit BFS">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
+<layer name="kappa"/>
+<layer name="lambda"/>
+<layer name="mu"/>
+<layer name="nu"/>
+<layer name="xi"/>
+<layer name="omicron"/>
+<view layers="alpha beta gamma epsilon theta iota kappa" active="kappa"/>
+<view layers="alpha beta gamma epsilon eta iota kappa lambda" active="lambda"/>
+<view layers="alpha beta gamma epsilon eta iota kappa lambda mu" active="mu"/>
+<view layers="alpha beta gamma epsilon eta iota kappa lambda mu nu" active="nu"/>
+<view layers="alpha beta gamma epsilon eta iota kappa lambda mu nu xi" active="xi"/>
+<view layers="alpha beta gamma epsilon eta iota kappa lambda mu nu xi omicron" active="omicron"/>
+<group layer="omicron" matrix="1 0 0 1 352 32">
+<path stroke="black" fill="KITred15">
+56 24 m
+432 24 l
+8 0 0 -8 432 16 440 16 a
+440 -11.4938 l
+64 -11.4938 l
+8 0 0 -8 64 -3.49382 56 -3.49382 a
+h
+</path>
+</group>
+<path layer="theta" stroke="black" fill="cyan3">
+63.5079 257.069 m
+63.5079 237.242 l
+186.532 237.242 l
+186.532 257.069 l
+h
+</path>
+<path layer="eta" stroke="black" fill="cyan3">
+95.8159 237.49 m
+95.8159 172.619 l
+242.57 172.619 l
+242.57 237.49 l
+h
+</path>
+<path layer="zeta" stroke="black" fill="cyan3">
+27.2155 300.644 m
+27.2155 280.351 l
+198.028 280.351 l
+198.028 300.644 l
+h
+</path>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="320" height="116.266" depth="106.56" valign="top" size="small">\begin{algo}[\datatype{Graph} $G$, \datatype{Vertex} $s$]{bfs}
+                \datatype{Queue} $Q := \{s\}$\;
+                färbe $s$\;
+                \While{$\lnot$ $Q$.\ehmpty{}}{
+                    \datatype{Vertex} $u := Q$.\dequeue{}\;
+                    \For{$v \in$ \N{$u$}}{
+                        \If{$v$ ungefärbt}{
+                            $Q$.\enqueue{$v$}\\ %\; würde extra Zeile brauchen (warum auch immer...)
+                            färbe $v$\;
+                        }
+                    }
+                }
+            \end{algo}</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="352 288" stroke="black" type="minipage" width="544" height="13.1357" depth="2.0646" valign="top" style="item">Wie viele Nachbarn kann ein Knoten maximal haben?</text>
+<text layer="kappa" matrix="1 0 0 1 320 240" transformations="translations" pos="16 128" stroke="black" type="minipage" width="752" height="14.9184" depth="3.8628" valign="top" style="item">Das jeder Knoten n Nachbarn hat ist etwas pessimistisch</text>
+<text matrix="1 0 0 1 320 240" transformations="translations" pos="16 96" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top" style="item">Die meisten Graphen sind nicht Vollständig</text>
+<text layer="lambda" matrix="1 0 0 1 320 240" transformations="translations" pos="16 64" stroke="black" type="minipage" width="560" height="26.4002" depth="15.3402" valign="top" style="item">Es wird nur Laufzeit für Knoten Gebraucht die auch wirklich in der Nachbarschaft sind</text>
+<text layer="mu" matrix="1 0 0 1 320 192" transformations="translations" pos="16 48" stroke="black" type="minipage" width="528" height="26.4002" depth="15.3402" valign="top">\impl mache Abschätzungen für die Anzahl an Färbungstest anhand der Anzahl Kanten</text>
+<text layer="nu" transformations="translations" pos="0 144" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">Immernoch $\vert V \vert$ Iterationen der While schleife</text>
+<text layer="xi" transformations="translations" pos="0 112" stroke="black" type="minipage" width="848" height="16.5901" depth="5.5278" valign="top" style="item">In jeder Iteration wird die For Schleife $\vert N(u) \vert = \deg(u)$ mal ausgeführt</text>
+<text layer="omicron" transformations="translations" pos="0 80" stroke="black" type="minipage" width="656" height="29.2285" depth="18.1818" valign="top">\impl $\sum_{u\in V} deg(u)=2m$ Iterationen \\
+\impl BFS in \O m</text>
+<text matrix="1 0 0 1 384 16" transformations="translations" pos="32 32" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top">Wenn der Graph zusammenhängend ist</text>
 </page>
 <page title=" Einschub gewichtete Graphen">
 <layer name="alpha"/>
