@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250120205814" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20250120225714" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3738,56 +3738,13 @@ h
 <layer name="delta"/>
 <layer name="epsilon"/>
 <layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
-<layer name="kappa"/>
-<layer name="lambda"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha beta pagenumbers_page" active="beta"/>
-<view layers="alpha beta gamma pagenumbers_page" active="gamma"/>
-<view layers="alpha beta gamma delta pagenumbers_page" active="delta"/>
-<view layers="alpha beta gamma delta epsilon pagenumbers_page" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta pagenumbers_page" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta pagenumbers_page" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta pagenumbers_page" active="theta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota pagenumbers_page" active="iota"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa pagenumbers_page" active="kappa"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda pagenumbers_page" active="lambda"/>
-<text layer="alpha" pin="h" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Laufzeit im Allgemeinen nicht entscheidbar (siehe Halteproblem)</text>
-<text layer="beta" matrix="1 0 0 1 0 -10.9125" pin="h" transformations="translations" pos="0 362.812" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Addition/Multiplikation/usw. \textit{eigentlich} nicht in O(1)</text>
-<text layer="delta" matrix="1 0 0 1 0 -53.9042" pin="h" transformations="translations" pos="0 341.625" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top" style="subitem">in Algo 1 in O(1) (außer es steht dabei)</text>
-<text layer="gamma" matrix="1 0 0 1 0 -1.39889" pin="h" transformations="translations" pos="0 321.067" stroke="black" type="minipage" width="880" height="15.1648" depth="4.0848" valign="top" style="subitem">in der Realität meist 16/32/64bit Zahlen \impl{} O(1)</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -32.9476" pin="h" transformations="translations" pos="0 288.437" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="subitem">Algo aus der VL für Langzahlmultiplikation</text>
-<text layer="zeta" matrix="1 0 0 1 48 -43.86" transformations="translations" pos="0 267.249" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top"> siehe BigInteger/BigDecimal in java</text>
-<text layer="eta" matrix="1 0 0 1 0 -54.9035" pin="h" transformations="translations" pos="0 246.061" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Verzweigungen \impl{} Laufzeiten der Zweige aufsummieren</text>
-<text layer="theta" matrix="1 0 0 1 0 -65.8169" pin="h" transformations="translations" pos="0 224.874" stroke="black" type="minipage" width="880" height="13.1357" depth="2.0646" valign="top" style="item">Hintereinander ausführen \impl{} Laufzeiten aufsummieren</text>
-<text layer="iota" matrix="1 0 0 1 0 -77.204" pin="h" transformations="translations" pos="0 208.352" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">Schleifen in $O($Anzahl Durchläufe $\cdot$ Laufzeit Schleifenrumpf$)$</text>
-<text layer="kappa" matrix="1 0 0 1 0 -122.144" pin="h" transformations="translations" pos="0 186.234" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Summen/Produkte haben gleiche Laufzeit wie äquivalente Schleifen</text>
-<text layer="lambda" matrix="1 0 0 1 0 -133.188" pin="h" transformations="translations" pos="0 165.046" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Mastertheorem für einige rekursive Funktionen</text>
-<text layer="iota" matrix="1 0 0 1 0 0.463065" pin="h" transformations="translations" pos="0 95.8583" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">\impl es gibt z.T. schärfere obere Schranken</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
-</page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="192 224" stroke="black" type="minipage" width="416" height="12.9115" depth="1.8204" valign="top">Todo</text>
-</page>
-<page title="Analyse von Pseudocode">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<text layer="alpha" pin="h" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Laufzeit im Allgemeinen nicht entscheidbar (siehe Halteproblem)</text>
+<text layer="alpha" pin="h" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Laufzeit ist im Allgemeinen nicht entscheidbar (siehe Halteproblem)</text>
 <text layer="beta" matrix="1 0 0 1 0 -10.9125" pin="h" transformations="translations" pos="0 362.812" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top" style="item">Addition/Multiplikation/usw. \textit{eigentlich} nicht in \O 1 </text>
 <text matrix="1 0 0 1 0 -1.39889" pin="h" transformations="translations" pos="0 321.067" stroke="black" type="minipage" width="880" height="15.358" depth="4.2846" valign="top" style="subitem">in der Realität meist 16/32/64bit Zahlen \impl{} \O 1</text>
 <text layer="gamma" matrix="1 0 0 1 0 41.0965" pin="h" transformations="translations" pos="0 246.061" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Verzweigungen \impl{} Laufzeiten der Zweige aufsummieren</text>
@@ -3795,6 +3752,11 @@ h
 <text layer="epsilon" matrix="1 0 0 1 0 18.796" pin="h" transformations="translations" pos="0 208.352" stroke="black" type="minipage" width="880" height="15.358" depth="4.2846" valign="top" style="item">Schleifen in \O{Anzahl Durchläufe $\cdot$ Laufzeit Schleifenrumpf}</text>
 <text layer="zeta" matrix="1 0 0 1 0 -26.144" pin="h" transformations="translations" pos="0 186.234" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Summen/Produkte haben gleiche Laufzeit wie äquivalente Schleifen</text>
 <text layer="epsilon" matrix="1 0 0 1 0 96.4631" pin="h" transformations="translations" pos="0 95.8583" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">\impl es gibt z.T. schärfere obere Schranken</text>
+</page>
+<page title="Beispiel">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="192 224" stroke="black" type="minipage" width="416" height="12.9115" depth="1.8204" valign="top">Todo</text>
 </page>
 <page title="BFS">
 <layer name="alpha"/>
@@ -4087,7 +4049,7 @@ h
                     }
                 }
             \end{algo}</text>
-<text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="352 352" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Jeder Knoten wird einmal in die Queue Eingefügt</text>
+<text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="352 352" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Jeder Knoten wird einmal in die Queue eingefügt</text>
 <text layer="gamma" matrix="1 0 0 1 -16 16" transformations="translations" pos="352 320" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Für jeden Knoten werden alle Nachbarn angeschaut</text>
 <text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="352 288" stroke="black" type="minipage" width="544" height="13.1357" depth="2.0646" valign="top" style="item">Wie viele Nachbarn kann ein Knoten maximal haben?</text>
 <text layer="epsilon" matrix="1 0 0 1 -16 16" transformations="translations" pos="352 288" stroke="black" type="minipage" width="512" height="14.9184" depth="3.8628" valign="top" style="item">Maximal $n$ Nachbarn pro Knoten</text>
@@ -4169,8 +4131,8 @@ h
 <text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="352 288" stroke="black" type="minipage" width="544" height="13.1357" depth="2.0646" valign="top" style="item">Wie viele Nachbarn kann ein Knoten maximal haben?</text>
 <text layer="kappa" matrix="1 0 0 1 320 240" transformations="translations" pos="16 128" stroke="black" type="minipage" width="752" height="14.9184" depth="3.8628" valign="top" style="item">Das jeder Knoten n Nachbarn hat ist etwas pessimistisch</text>
 <text matrix="1 0 0 1 320 240" transformations="translations" pos="16 96" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top" style="item">Die meisten Graphen sind nicht Vollständig</text>
-<text layer="lambda" matrix="1 0 0 1 320 240" transformations="translations" pos="16 64" stroke="black" type="minipage" width="560" height="26.4002" depth="15.3402" valign="top" style="item">Es wird nur Laufzeit für Knoten Gebraucht die auch wirklich in der Nachbarschaft sind</text>
-<text layer="mu" matrix="1 0 0 1 320 192" transformations="translations" pos="16 48" stroke="black" type="minipage" width="528" height="26.4002" depth="15.3402" valign="top">\impl mache Abschätzungen für die Anzahl an Färbungstest anhand der Anzahl Kanten</text>
+<text layer="lambda" matrix="1 0 0 1 320 240" transformations="translations" pos="16 64" stroke="black" type="minipage" width="560" height="26.4002" depth="15.3402" valign="top" style="item">Es wird nur Laufzeit für Knoten gebraucht, die auch wirklich in der Nachbarschaft sind</text>
+<text layer="mu" matrix="1 0 0 1 320 192" transformations="translations" pos="16 48" stroke="black" type="minipage" width="528" height="26.4002" depth="15.3402" valign="top">\impl mache Abschätzungen für die Anzahl an Färbungstests anhand der Anzahl Kanten</text>
 <text layer="nu" transformations="translations" pos="0 144" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">Immernoch $\vert V \vert$ Iterationen der While schleife</text>
 <text layer="xi" transformations="translations" pos="0 112" stroke="black" type="minipage" width="848" height="16.5901" depth="5.5278" valign="top" style="item">In jeder Iteration wird die For Schleife $\vert N(u) \vert = \deg(u)$ mal ausgeführt</text>
 <text layer="omicron" transformations="translations" pos="0 80" stroke="black" type="minipage" width="656" height="29.2285" depth="18.1818" valign="top">\impl $\sum_{u\in V} deg(u)=2m$ Iterationen \\
@@ -4193,12 +4155,12 @@ h
 <layer name="eta"/>
 <layer name="theta"/>
 <layer name="iota"/>
-<view layers="alpha pagenumbers_page beta" active="delta"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
 <view layers="alpha pagenumbers_page gamma epsilon zeta eta" active="eta"/>
 <view layers="alpha pagenumbers_page gamma epsilon zeta theta" active="theta"/>
-<view layers="alpha pagenumbers_page gamma epsilon zeta theta iota" active="iota"/>
+<view layers="alpha pagenumbers_page gamma epsilon zeta theta iota" active="beta"/>
 <group layer="eta" matrix="1 0 0 1 32 11">
 <path stroke="gray1" fill="gray3">
 104 112 m
@@ -4244,12 +4206,12 @@ h
 </path>
 </group>
 <text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="608" height="15.2203" depth="4.1514" valign="top">\bfseries Idee (Ohne Negative Kreise):</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="14.9184" depth="3.8628" valign="top" style="item">Relaxiere jede Kante bis sich die Distanzen nicht mehr ändern</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="12.9115" depth="1.8204" valign="top" style="item">Relaxiere alle Kanten bis sich die Distanzen nicht mehr ändern</text>
 <text layer="epsilon" matrix="1 0 0 1 0 -10" transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="27.2261" depth="16.1838" valign="top" style="item">nach der iten Iteration haben wir alle kürzesten Pfade mit Länge $\leq i$ gefunden \impl{} wir finden mit $n-1$ Iterationen alle kürzesten Pfade</text>
 <text matrix="1 0 0 1 32 -29" transformations="translations" pos="0 288" stroke="black" type="minipage" width="576" height="15.1648" depth="4.0848" valign="top">(Beweis dafür in der VL)</text>
 <text layer="zeta" matrix="1 0 0 1 0 -14" transformations="translations" pos="0 240" stroke="black" type="minipage" width="704" height="15.2203" depth="4.1514" valign="top">\bfseries Mit Negativen Kreisen:</text>
 <text layer="iota" matrix="1 0 0 1 0 -126" transformations="translations" pos="0 208" stroke="black" type="minipage" width="800" height="15.2758" depth="4.218" valign="top" style="item">Es wird immer einen kürzeren Weg geben \impl{} Abbruchkriterium funktioniert nicht mehr</text>
-<text layer="zeta" matrix="1 0 0 1 0 18" transformations="translations" pos="0 176" stroke="black" type="minipage" width="752" height="28.2961" depth="17.2716" valign="top" style="item">Wenn sich nach $n-1$ Iterationen noch Distanzen ändern haben wir einen negativen Kreis gefunden</text>
+<text layer="zeta" matrix="1 0 0 1 0 18" transformations="translations" pos="0 176" stroke="black" type="minipage" width="704" height="28.2961" depth="17.2716" valign="top" style="item">Wenn sich nach $n-1$ Iterationen noch Distanzen ändern, haben wir einen negativen Kreis gefunden</text>
 <text layer="iota" matrix="1 0 0 1 0 -57" transformations="translations" pos="0 112" stroke="black" type="minipage" width="864" height="26.4002" depth="15.3402" valign="top" style="item">Also entweder Fehler zurückgeben oder Kreis finden und alle erreichbaren Knoten mit $-\infty$ markieren</text>
 <text matrix="1 0 0 1 16 -32" transformations="translations" pos="256 48" stroke="black" type="minipage" width="400" height="13.946" depth="2.8638" valign="top">Wie finden wir alle Knoten mit Distanz $-\infty$?</text>
 <text layer="beta" matrix="1 0 0 1 -500 -6" transformations="translations" pos="528 320" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top">Wie lange kann ein kürzester Pfad ohne negativen Kreis höchstens sein?</text>
@@ -4259,6 +4221,142 @@ h
 <text layer="theta" matrix="1 0 0 1 -512 74" transformations="translations" pos="512 64" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Aus der Verbesserung folgt, dass es einen Weg der Länge $n$ gibt, der kürzer ist, als alle Wege der Länge $n-1$, somit muss dieser einen negativen Kreis enthalten.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 2}</text>
 <text layer="iota" transformations="translations" pos="336 240" stroke="black" type="minipage" width="384" height="12.9115" depth="1.8204" valign="top">Todo relaxieren erklären</text>
+<text layer="delta" matrix="1 0 0 1 -468 -70" transformations="translations" pos="528 320" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top">Wie lange kann ein kürzester Pfad ohne negativen Kreis höchstens sein?</text>
+<text transformations="translations" pos="96 208" stroke="black" type="label" width="42.7905" height="14.5099" depth="0.222" valign="baseline">Test
+</text>
+<group layer="beta">
+<group matrix="1 0 0 1 16 -112">
+<path stroke="gray1" fill="gray3">
+832 360 m
+8 0 0 8 824 360 824 368 a
+568 368 l
+568 207.667 l
+8 0 0 8 576 207.667 576 199.667 a
+832 199.667 l
+h
+</path>
+</group>
+<path matrix="1.51415 0 0 1.52965 635.314 -246.975" fill="red3">
+84 252 m
+84 224 l
+128 224 l
+128 252 l
+h
+</path>
+<path matrix="0.761997 0 0 1.52965 643.618 -246.975" fill="green3">
+84 252 m
+84 224 l
+128 224 l
+128 252 l
+h
+</path>
+<path matrix="0.761997 0 0 1.52965 587.192 -246.975" fill="orange3">
+84 252 m
+84 224 l
+128 224 l
+128 252 l
+h
+</path>
+<text matrix="1 0 0 1 16 -144" transformations="translations" pos="576 280" stroke="black" type="minipage" width="248" height="24.89" depth="14.96" valign="top" size="small" style="center">wenn $d[v] &gt; d[u] + \len(u, v)$\\
+setze $d[v] = d[u] + \len(u, v)$
+</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="576 280" stroke="black" type="minipage" width="248" height="13.952" depth="3.98" valign="top" size="small" style="center">\textbf{Relaxierung der Kante $(u, v)$}</text>
+<path matrix="1 0 0 1 455.226 -68.734" stroke="red1" pen="heavier" arrow="normal/small">
+256 256 m
+316.255 233.404 l
+</path>
+<path matrix="1 0 0 1 308.226 -52.719" stroke="gray1">
+307 239.985 m
+310 214 l
+</path>
+<path matrix="1 0 0 1 455.226 -68.734" stroke="gray1">
+368 250 m
+320 232 l
+</path>
+<path matrix="1 0 0 1 455.226 -68.734" stroke="gray1">
+256 256 m
+242 282 l
+</path>
+<path matrix="1 0 0 1 455.226 -68.734" stroke="gray1">
+336 264 m
+320 232 l
+</path>
+<path matrix="1 0 0 1 455.226 -68.734" stroke="green1" pen="heavier" arrow="normal/small">
+160 256 m
+200 280
+208 256
+224 248
+252.119 255.03 c
+</path>
+<path matrix="1 0 0 1 455.226 -68.734" stroke="orange1" pen="heavier" arrow="normal/small">
+160 256 m
+200 280
+208 224
+256 208
+316.255 230.596 c
+</path>
+<use matrix="1 0 0 1 -88.774 -188.734" name="mark/fdisk(sfx)" pos="704 376" size="normal" stroke="black" fill="white"/>
+<text matrix="1 0 0 1 -72.774 -188.734" transformations="translations" pos="680 376" stroke="black" type="label" width="8.452" height="7.97" depth="0" halign="right" valign="center" size="small" style="math">s</text>
+<use matrix="1 0 0 1 71.226 -92.734" name="mark/fdisk(sfx)" pos="704 256" size="normal" stroke="black" fill="white"/>
+<text matrix="1 0 0 1 110.226 -220.734" transformations="translations" pos="680 376" stroke="black" type="label" width="10.446" height="7.97" depth="0" halign="right" valign="center" size="small" style="math">v</text>
+<use matrix="1 0 0 1 7.226 -68.734" name="mark/fdisk(sfx)" pos="704 256" size="normal" stroke="black" fill="white"/>
+<text matrix="1 0 0 1 33.226 -179.734" transformations="translations" pos="680 376" stroke="black" type="label" width="10.272" height="7.97" depth="0" valign="center" size="small" style="math">u</text>
+<group matrix="1 0 0 1 -38.774 177.266">
+<path stroke="gray1" fill="orange3">
+840 20 m
+8 0 0 8 832 20 832 28 a
+820 28 l
+820 16 l
+8 0 0 8 828 16 828 8 a
+840 8 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -4.774 163.266" transformations="translations" pos="796 32" stroke="black" type="label" width="9.216" height="11.734" depth="0" halign="center" valign="center" size="small" style="math">8</text>
+<text matrix="1 0 0 1 -17.774 -147.734" transformations="translations" pos="672 312" stroke="orange1" type="label" width="9.216" height="11.734" depth="0" valign="baseline" size="small" style="math">8</text>
+<text matrix="1 0 0 1 -22.99 -105.734" transformations="translations" pos="672 312" stroke="green1" type="label" width="9.216" height="11.734" depth="0" valign="baseline" size="small" style="math">3</text>
+<text matrix="1 0 0 1 71.01 -131.734" transformations="translations" pos="672 312" stroke="red1" type="label" width="9.216" height="11.734" depth="0" valign="baseline" size="small" style="math">2</text>
+<group matrix="1 0 0 1 -132.774 195.266">
+<path stroke="gray1" fill="green3">
+840 20 m
+8 0 0 8 832 20 832 28 a
+820 28 l
+820 16 l
+8 0 0 8 828 16 828 8 a
+840 8 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -98.774 181.266" transformations="translations" pos="796 32" stroke="black" type="label" width="9.216" height="11.734" depth="0" halign="center" valign="center" size="small" style="math">3</text>
+<group matrix="1 0 0 1 -6.774 163.266">
+<path stroke="gray1" fill="orange3">
+840 20 m
+8 0 0 8 832 20 832 28 a
+820 28 l
+820 16 l
+8 0 0 8 828 16 828 8 a
+840 8 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 27.226 149.266" transformations="translations" pos="796 32" stroke="black" type="label" width="9.216" height="11.734" depth="0" halign="center" valign="center" size="small" style="math">5</text>
+<path matrix="1 0 0 1 93.226 -26.734" stroke="red1">
+688 232 m
+708 212 l
+</path>
+<group matrix="1 0 0 1 -211.774 143.281">
+<path stroke="gray1" fill="white">
+840 20 m
+8 0 0 8 832 20 832 28 a
+820 28 l
+820 16 l
+8 0 0 8 828 16 828 8 a
+840 8 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -177.774 129.281" transformations="translations" pos="796 32" stroke="black" type="label" width="9.216" height="11.734" depth="0" halign="center" valign="center" size="small" style="math">0</text>
+</group>
 </page>
 <page title="Bellman-Ford">
 <layer name="alpha"/>
@@ -4733,7 +4831,7 @@ h
 h
 </path>
 </group>
-<group layer="gamma" matrix="1 0 0 1 0 112">
+<group layer="gamma" matrix="1 0 0 1 0 128">
 <path stroke="black" fill="KITred15">
 504 200 m
 896 200 l
@@ -4747,7 +4845,7 @@ h
 <text layer="beta" matrix="1 0 0 1 0 -96" transformations="translations" pos="0 384" stroke="black" type="minipage" width="128" height="12.8627" depth="1.7982" valign="top">\textbf{Idee:}</text>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="128" height="12.8627" depth="1.7982" valign="top">\textbf{Problem:}</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="480" height="28.1829" depth="17.1384" valign="top">Wir möchten \textit{schnell} nach einem Element in einem \textit{sortierten} Array suchen</text>
-<text layer="beta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="512" height="28.1829" depth="17.1384" valign="top">Wir beginnen in der Mitte des Arrays und halbieren unseren Suchraum. Wiederhole auf dem neuen Teilarray.</text>
+<text layer="beta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="656" height="28.4071" depth="17.3826" valign="top">Wir beginnen in der Mitte des Arrays und halbieren unseren Suchraum. \newline Wiederhole auf dem neuen Teilarray.</text>
 <text transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="90.4894" depth="79.587" valign="top">\quickAlgo{find}{A, x}{
 \If{x = Element in der Mitte von A}{
 \keyword{return} x
@@ -4759,7 +4857,7 @@ h
  \keyword{return} \func{find}(rechte Hälfte von A, x)
  }
 }</text>
-<text layer="gamma" matrix="1 0 0 1 -64 0" transformations="translations" pos="576 304" stroke="black" type="minipage" width="384" height="26.4002" depth="15.3402" valign="top">Binäre Suche funktioniert nur auf sortierten Datenstrukturen mit Random Access!!!</text>
+<text layer="gamma" matrix="1 0 0 1 -64 16" transformations="translations" pos="576 304" stroke="black" type="minipage" width="384" height="26.4002" depth="15.3402" valign="top">Binäre Suche funktioniert nur auf sortierten Datenstrukturen mit Random Access!!!</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 2}</text>
 <text layer="delta" matrix="1 0 0 1 464 0" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="100.317" depth="89.4438" valign="top">\quickAlgo{find}{A, x}{
 \If{x = A$\left[\floor{\frac{\vert A \vert}{2}} \right] $}{
