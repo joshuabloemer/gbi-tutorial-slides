@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250120153304" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250120232037" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -6031,14 +6031,6 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Thema">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 368" stroke="black" type="minipage" width="259.651" height="12.9115" depth="1.8204" valign="baseline" style="item">Text 1</text>
-<text matrix="1.38776 0 0 1 0 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="276.509" height="12.9115" depth="1.8204" valign="baseline" style="item">Text 2</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 1}</text>
-</page>
 <page title="O-Notation">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -6077,12 +6069,12 @@ h
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta" active="theta"/>
-<group layer="beta">
+<group layer="theta">
 <path stroke="black" fill="KITgreen15">
 8 264 m
-816 264 l
-8 0 0 -8 816 256 824 256 a
-824 193.092 l
+688 264 l
+8 0 0 -8 688 256 696 256 a
+696 193.092 l
 16 193.092 l
 8 0 0 -8 16 201.092 8 201.092 a
 h
@@ -6095,7 +6087,7 @@ h
 379.103 150.835 l
 h
 </path>
-<path matrix="1.15084 0 0 1 -41.7126 0" fill="orange1">
+<path matrix="1.22816 0 0 1 -76.6645 0" fill="orange1">
 413.237 224 m
 413.237 201.844 l
 626.711 201.844 l
@@ -6133,8 +6125,8 @@ h
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="15.116" depth="4.0626" valign="top" style="item">Wir betrachten in der O Notation das \emph{asymptotische} Wachstum</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="subitem">Also das Verhalten bei sehr sehr großen Eingaben</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="640" height="29.8546" depth="18.8034" valign="top" style="subitem">Dabei wollen wir konstante Faktoren ignorieren ($c \cdot f(n)$ wächst &apos;&apos;genau&apos;&apos; so schnell wie $f(n)$)</text>
-<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 256" stroke="black" type="minipage" width="736" height="13.3489" depth="2.2644" valign="top">\bfseries $\Theta$-Kalkül</text>
-<text matrix="1 0 0 1 16 -96" transformations="translations" pos="0 320" stroke="0" type="minipage" width="800" height="16.9808" depth="5.9274" valign="top">$\Theta(f) = \{g \vert \exists c,c&apos; \in \mathbb R^+ : \exists n_0 \in \mathbb N : \forall n \geq n_0: c \cdot f(n) \leq g(n) \leq c&apos; \cdot f(n)\} = \{g \vert f \asymp g\}$</text>
+<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 256" stroke="black" type="minipage" width="640" height="13.3489" depth="2.2644" valign="top">\bfseries $\Theta$-Kalkül</text>
+<text matrix="1.09872 0 0 1 16 -96" transformations="translations" pos="0 320" stroke="0" type="minipage" width="672" height="16.9808" depth="5.9274" valign="top">$\Theta(f) = \{g \vert \exists c,c&apos; \in \mathbb R^+ : \exists n_0 \in \mathbb N : \forall n \geq n_0: c \cdot f(n) \leq g(n) \leq c&apos; \cdot f(n)\} $</text>
 <text layer="eta" matrix="1 0 0 1 0 -59" transformations="translations" pos="0 176" stroke="black" type="minipage" width="592" height="29.3395" depth="18.315" valign="top" style="item">In $\Theta(f)$ sind alle Funktionen g enthalten die asymptotisch gleich schnell wachsen wie f </text>
 <text layer="gamma" transformations="translations" pos="0 176" stroke="black" type="minipage" width="640" height="28.5403" depth="17.4936" valign="top" style="item">Anschaulich: es gibt 2 Konstanten ($c_1, c_2$)sodass bei sehr großen $n$, $g$ immer zwischen $c_1 \cdot f$ und $c_2 \cdot f$ liegt</text>
 <image layer="theta" matrix="0.527541 0 0 0.527541 647.067 7.72472" rect="0 0 448 351" bitmap="2"/>
@@ -6144,7 +6136,20 @@ h
 <page title="Anmerkungen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITred15">
+8 168 m
+512 168 l
+8 0 0 -8 512 160 520 160 a
+520 97.8821 l
+16 97.8821 l
+8 0 0 -8 16 105.882 8 105.882 a
+h
+</path>
+</group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="0" type="minipage" width="896.129" height="16.5901" depth="5.5278" valign="top" style="item">Schreibe $g(n) \in \Theta(f (n))$, wenn $g(n)$ asymptotisch gleichschnell
 wächst wie $f (n)$.</text>
 <text transformations="translations" pos="0 352" stroke="0" type="minipage" width="640" height="15.1648" depth="4.0848" valign="top" style="item">Bei Polynomen ist nur der Grad relevant</text>
@@ -6152,6 +6157,8 @@ wächst wie $f (n)$.</text>
 <text transformations="translations" pos="0 256" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$\Theta(1)$ enthält alle Konstanten Funktionen $&gt; 0$</text>
 <text transformations="translations" pos="0 224" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$\Theta(0)$ enthält alle Funktionen die gegen 0 konvergieren</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
+<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">$\Theta, \Omega$ und $\O$ sind Mengen</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">Das heißt wir schreiben $f \in \O n$ und \textbf{nicht} $f = \O n$</text>
 </page>
 <page title="O/$\Omega$-Kalkül">
 <layer name="alpha"/>
@@ -6536,7 +6543,7 @@ h
 <text layer="alpha" matrix="1 0 0 1 304 0" transformations="translations" pos="304 0" stroke="black" type="minipage" width="288" height="10.6271" depth="1.8054" valign="top" size="footnote">Quelle: Thomas Bläsius, Algorithmen I Vorlesung</text>
 <text layer="zeta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 144" stroke="black" type="minipage" width="384" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
 <text transformations="translations" pos="16 96" stroke="black" type="minipage" width="608" height="17.3893" depth="6.327" valign="top">$f(n) = n^2, g(n) =(n^4 - n)$</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="720" height="28.5869" depth="17.5602" valign="top">$\lim_{n \to \infty} \frac{f(n)}{g(n)}= \lim_{n \to \infty} \frac{n^2}{n^4-n} \overset{(n\geq 2)}{\leq} \lim_{n \to \infty} \frac{n^2}{n^3} = \lim_{n \to \infty} \frac{1}{n} \Rightarrow f(n) \in O(g(n)$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="720" height="28.5869" depth="17.5602" valign="top">$\lim_{n \to \infty} \frac{f(n)}{g(n)}= \lim_{n \to \infty} \frac{n^2}{n^4-n} \overset{(n\geq 2)}{\leq} \lim_{n \to \infty} \frac{n^2}{n^3} = \lim_{n \to \infty} \frac{1}{n} \Rightarrow f(n) \in \O{g(n)}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
 <text layer="eta" matrix="1 0 0 1 464 64" transformations="translations" pos="0 256" stroke="black" type="minipage" width="384" height="28.5403" depth="17.4936" valign="top" style="item">Wer sich mit HM auskennt findet diese Definition wahrscheinlich angenehm</text>
 <text matrix="1 0 0 1 464 32" transformations="translations" pos="0 224" stroke="black" type="minipage" width="384" height="28.2939" depth="17.2716" valign="top" style="item">Hier können auch Regeln wie l&apos;Hospital angewandt werden</text>
@@ -6566,7 +6573,7 @@ h
 <view layers="alpha beta gamma delta epsilon eta zeta theta lambda pagenumbers_page" active="lambda"/>
 <view layers="alpha beta gamma delta epsilon eta zeta theta lambda mu pagenumbers_page" active="mu"/>
 <view layers="alpha beta gamma delta epsilon eta zeta theta iota lambda mu pagenumbers_page" active="iota"/>
-<view layers="alpha beta gamma delta epsilon eta zeta theta iota kappa lambda mu pagenumbers_page" active="iota"/>
+<view layers="alpha beta gamma delta epsilon eta zeta theta iota kappa lambda mu pagenumbers_page" active="zeta"/>
 <group layer="iota">
 <path stroke="gray1" fill="gray3">
 892.246 384 m
@@ -6578,35 +6585,28 @@ h
 h
 </path>
 </group>
-<path matrix="0.833333 0 0 1 240 0" fill="KITorange30">
+<path matrix="0.833333 0 0 1 176 0" fill="KITorange30">
 672 128 m
 672 0 l
 768 0 l
 768 128 l
 h
 </path>
-<path matrix="1.33333 0 0 1 -224 0" fill="KITorange15">
+<path matrix="1.33333 0 0 1 -288 0" fill="KITorange15">
 672 128 m
 672 0 l
 768 0 l
 768 128 l
 h
 </path>
-<path matrix="2 0 0 1 -192 0" fill="KITpalegreen30">
+<path matrix="2 0 0 1 -256 0" fill="KITpalegreen50">
 368 128 m
 368 0 l
 432 0 l
 432 128 l
 h
 </path>
-<path matrix="2 0 0 1 -320 0" fill="KITpalegreen50">
-368 128 m
-368 0 l
-432 0 l
-432 128 l
-h
-</path>
-<path matrix="1.25 0 0 1 -124 0" fill="KITpalegreen70">
+<path matrix="1.25 0 0 1 -60 0" fill="KITpalegreen70">
 368 128 m
 368 0 l
 432 0 l
@@ -6615,26 +6615,18 @@ h
 </path>
 <text layer="alpha" pin="h" transformations="translations" pos="0 384" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">$\O{f + k} = \O f, k \in \mathbb{R}$
 </text>
-<text layer="beta" pin="h" transformations="translations" pos="0 361.882" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">$\O{c\cdot f} = \O f , c \in \mathbb{R}_+$</text>
-<text layer="gamma" pin="h" transformations="translations" pos="0 339.764" stroke="black" type="minipage" width="320" height="16.5901" depth="5.5278" valign="top" style="item">$\O f , \O g \subseteq \O{f + g}$</text>
-<text layer="delta" pin="h" transformations="translations" pos="0 317.646" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top" style="item">$g \in \O f  \gdw \O g  \subseteq \O f $</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -1" pin="h" transformations="translations" pos="0 295.529" stroke="black" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top" style="item">$g \in \Omega(f) \gdw \Omega(g) \subseteq \Omega(f)$</text>
-<text layer="zeta" matrix="1 0 0 1 0 -34" pin="h" transformations="translations" pos="0 251.293" stroke="black" type="minipage" width="176" height="17.0429" depth="5.9718" valign="top">z.B. $n^{n^2} \in n^{\Omega(n)}$</text>
-<text layer="eta" matrix="1 0 0 1 0 -2" pin="h" transformations="translations" pos="0 273.411" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top" style="item">$g \in \Theta(f) \gdw \Theta(g) = \Theta(f)$</text>
-<text layer="theta" matrix="1 0 0 1 0 -7" pin="h" transformations="translations" pos="0 194.127" stroke="black" type="minipage" width="304" height="15.469" depth="4.4178" valign="top" style="item">analog für $\Omega$ und $\Theta$</text>
-<path matrix="1.05681 0 0 1.45285 0 8.73082" fill="KITorange" opacity="60%" stroke-opacity="opaque">
-0 160 m
-0 144 l
-288 144 l
-288 160 l
-h
-</path>
+<text layer="beta" matrix="1 0 0 1 0 -4" pin="h" transformations="translations" pos="0 361.882" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">$\O{c\cdot f} = \O f , c \in \mathbb{R}_+$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -8" pin="h" transformations="translations" pos="0 339.764" stroke="black" type="minipage" width="320" height="16.5901" depth="5.5278" valign="top" style="item">$\O f , \O g \subseteq \O{f + g}$</text>
+<text layer="delta" matrix="1 0 0 1 0 -12" pin="h" transformations="translations" pos="0 317.646" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top" style="item">$g \in \O f  \gdw \O g  \subseteq \O f $</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -17" pin="h" transformations="translations" pos="0 295.529" stroke="black" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top" style="item">$g \in \Omega(f) \gdw \Omega(g) \subseteq \Omega(f)$</text>
+<text layer="zeta" matrix="1 0 0 1 0 -58" pin="h" transformations="translations" pos="0 251.293" stroke="black" type="minipage" width="176" height="17.0429" depth="5.9718" valign="top">z.B. $n^{n^2} \in n^{\Omega(n)}$</text>
+<text layer="eta" matrix="1 0 0 1 0 -22" pin="h" transformations="translations" pos="0 273.411" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top" style="item">$g \in \Theta(f) \gdw \Theta(g) = \Theta(f)$</text>
+<text layer="theta" matrix="1 0 0 1 0 -33" pin="h" transformations="translations" pos="0 194.127" stroke="black" type="minipage" width="304" height="15.469" depth="4.4178" valign="top" style="item">analog für $\Omega$ und $\Theta$</text>
 <text layer="iota" matrix="12.096 0 0 0.333333 -4260.86 208" transformations="translations" pos="384 384" stroke="black" type="minipage" width="500.242" height="15.2758" depth="4.218" valign="top">Zu welcher Menge gehören folgende Funktionen:</text>
-<text matrix="1 0 0 1 -256 -3" transformations="translations" pos="608 128" stroke="KITblack50" type="label" width="47.0396" height="16.5901" depth="5.5278" valign="top" style="math">\O n</text>
-<text matrix="1 0 0 1 -32 -3" transformations="translations" pos="480 128" stroke="KITblack50" type="label" width="46.2248" height="16.5901" depth="5.5278" valign="top" style="math">\Theta(n)</text>
-<text matrix="1 0 0 1 0 -3" transformations="translations" pos="544 128" stroke="KITblack50" type="label" width="113.653" height="18.1885" depth="5.5278" valign="top" style="math">\O {n^2} \textbackslash \Theta(n)</text>
-<text matrix="1 0 0 1 64 -3" transformations="translations" pos="640 128" stroke="KITblack50" type="label" width="55.5555" height="18.1885" depth="5.5278" valign="top" style="math">\Theta(n^2)</text>
-<text matrix="1 0 0 1 96 -3" transformations="translations" pos="720 128" stroke="KITblack50" type="label" width="54.3278" height="18.1885" depth="5.5278" valign="top" style="math">\Omega(n^2)</text>
+<text matrix="1 0 0 1 -192 -3" transformations="translations" pos="608 128" stroke="KITblack50" type="label" width="47.0396" height="16.5901" depth="5.5278" valign="top" style="math">\O n</text>
+<text matrix="1 0 0 1 32 -3" transformations="translations" pos="480 128" stroke="KITblack50" type="label" width="46.2248" height="16.5901" depth="5.5278" valign="top" style="math">\Theta(n)</text>
+<text matrix="1 0 0 1 0 -3" transformations="translations" pos="640 128" stroke="KITblack50" type="label" width="55.5555" height="18.1885" depth="5.5278" valign="top" style="math">\Theta(n^2)</text>
+<text matrix="1 0 0 1 32 -3" transformations="translations" pos="720 128" stroke="KITblack50" type="label" width="54.3278" height="18.1885" depth="5.5278" valign="top" style="math">\Omega(n^2)</text>
 <path stroke="black" opacity="50%" stroke-opacity="opaque">
 432 304 m
 432 304 l
@@ -6649,23 +6641,22 @@ h
 <text matrix="1 0 0 1 -96 -32" transformations="translations" pos="512 240" stroke="black" type="label" width="117.7" height="16.5901" depth="5.5278" valign="top" style="math">2n + \log(3n)</text>
 <text matrix="1 0 0 1 16 -64" transformations="translations" pos="544 240" stroke="black" type="label" width="66.1516" height="16.5901" depth="5.5278" valign="top" style="math">\log (3^n)</text>
 <text matrix="1 0 0 1 16 -64" transformations="translations" pos="672 240" stroke="black" type="label" width="21.241" height="14.9073" depth="0" valign="top" style="math">2^n</text>
-<text layer="kappa" matrix="1 0 0 1 -48 -195" transformations="translations" pos="384 288" stroke="black" type="label" width="56.7299" height="16.5901" depth="5.5278" valign="top" style="math">\log(n)</text>
-<text matrix="1 0 0 1 -96 -147" transformations="translations" pos="512 240" stroke="black" type="label" width="117.7" height="16.5901" depth="5.5278" valign="top" style="math">2n + \log(3n)</text>
-<text matrix="1 0 0 1 0 -227" transformations="translations" pos="448 288" stroke="black" type="label" width="60.9701" height="14.4988" depth="1.8426" valign="top" style="math">5n+7</text>
-<text matrix="1 0 0 1 -96 -211" transformations="translations" pos="544 240" stroke="black" type="label" width="66.1516" height="16.5901" depth="5.5278" valign="top" style="math">\log (3^n)</text>
-<text matrix="1 0 0 1 0 -195" transformations="translations" pos="560 288" stroke="black" type="label" width="84.5243" height="16.5901" depth="5.5278" valign="top" style="math">n \cdot \log(n)</text>
-<text matrix="1 0 0 1 144 -163" transformations="translations" pos="672 240" stroke="black" type="label" width="21.241" height="14.9073" depth="0" valign="top" style="math">2^n</text>
+<text layer="kappa" matrix="1 0 0 1 16 -195" transformations="translations" pos="384 288" stroke="black" type="label" width="56.7299" height="16.5901" depth="5.5278" valign="top" style="math">\log(n)</text>
+<text matrix="1 0 0 1 -32 -147" transformations="translations" pos="512 240" stroke="black" type="label" width="117.7" height="16.5901" depth="5.5278" valign="top" style="math">2n + \log(3n)</text>
+<text matrix="1 0 0 1 64 -227" transformations="translations" pos="448 288" stroke="black" type="label" width="60.9701" height="14.4988" depth="1.8426" valign="top" style="math">5n+7</text>
+<text matrix="1 0 0 1 -32 -211" transformations="translations" pos="544 240" stroke="black" type="label" width="66.1516" height="16.5901" depth="5.5278" valign="top" style="math">\log (3^n)</text>
+<text matrix="1 0 0 1 80 -163" transformations="translations" pos="672 240" stroke="black" type="label" width="21.241" height="14.9073" depth="0" valign="top" style="math">2^n</text>
 <text layer="iota" transformations="translations" pos="672 224" stroke="black" type="label" width="66.0605" height="18.1885" depth="5.5278" valign="top" style="math">\log(n)^2</text>
-<text layer="kappa" matrix="1 0 0 1 -336 -163" transformations="translations" pos="672 224" stroke="black" type="label" width="66.0605" height="18.1885" depth="5.5278" valign="top" style="math">\log(n)^2</text>
+<text layer="kappa" matrix="1 0 0 1 -272 -163" transformations="translations" pos="672 224" stroke="black" type="label" width="66.0605" height="18.1885" depth="5.5278" valign="top" style="math">\log(n)^2</text>
 <text layer="iota" matrix="1 0 0 1 -32 0" transformations="translations" pos="768 256" stroke="black" type="label" width="121.709" height="18.1885" depth="5.5278" valign="top" style="math">n^2-n\cdot \ln(n)</text>
-<text layer="kappa" matrix="1 0 0 1 -96 -195" transformations="translations" pos="768 256" stroke="black" type="label" width="121.709" height="18.1885" depth="5.5278" valign="top" style="math">n^2-n\cdot \ln(n)</text>
-<text matrix="1 0 0 1 16 -195" transformations="translations" pos="672 288" stroke="black" type="label" width="87.5013" height="18.1885" depth="5.5278" valign="top" style="math">(4n+3)^2</text>
-<text layer="lambda" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 194.127" stroke="black" type="minipage" width="272" height="18.1063" depth="7.0596" valign="top" style="item">$p \in \Theta(n^{\mathit{deg}(p)}), p$ Polynom</text>
+<text layer="kappa" matrix="1 0 0 1 -160 -195" transformations="translations" pos="768 256" stroke="black" type="label" width="121.709" height="18.1885" depth="5.5278" valign="top" style="math">n^2-n\cdot \ln(n)</text>
+<text matrix="1 0 0 1 -48 -195" transformations="translations" pos="672 288" stroke="black" type="label" width="87.5013" height="18.1885" depth="5.5278" valign="top" style="math">(4n+3)^2</text>
+<text layer="lambda" matrix="1 0 0 1 0 -59" pin="h" transformations="translations" pos="0 194.127" stroke="black" type="minipage" width="272" height="18.1063" depth="7.0596" valign="top" style="item">$p \in \Theta(n^{\mathit{deg}(p)}), p$ Polynom</text>
 <text layer="iota" matrix="1 0 0 1 768 96" transformations="translations" pos="0 104.284" stroke="black" type="minipage" width="32" height="13.2268" depth="2.1312" valign="top">$n!$</text>
-<text layer="kappa" matrix="1 0 0 1 816 -51" transformations="translations" pos="0 104.284" stroke="black" type="minipage" width="32" height="13.2268" depth="2.1312" valign="top">$n!$</text>
-<text layer="mu" pin="h" transformations="translations" pos="0 136.961" stroke="black" type="minipage" width="304" height="17.6912" depth="6.6156" valign="top" style="item">$a &lt; b \gdw n^a \in \O{n^b}$</text>
+<text layer="kappa" matrix="1 0 0 1 752 -51" transformations="translations" pos="0 104.284" stroke="black" type="minipage" width="32" height="13.2268" depth="2.1312" valign="top">$n!$</text>
+<text layer="mu" matrix="1 0 0 1 0 -29" pin="h" transformations="translations" pos="0 136.961" stroke="black" type="minipage" width="304" height="17.6912" depth="6.6156" valign="top" style="item">$a &lt; b \gdw n^a \in \O{n^b}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-<text layer="iota" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 273.411" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">$g(\O f ) = \{g(h) \mid h \in \O f \}$</text>
+<text layer="zeta" matrix="1 0 0 1 0 -54" pin="h" transformations="translations" pos="0 273.411" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">$g(\O f ) = \{g(h) \mid h \in \O f \}$</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -6679,14 +6670,18 @@ h
 <view layers="alpha beta gamma pagenumbers_page" active="gamma"/>
 <view layers="alpha beta gamma delta pagenumbers_page" active="delta"/>
 <view layers="alpha beta gamma delta epsilon pagenumbers_page" active="alpha"/>
-<path layer="alpha" matrix="1.76923 0 0 1 -397.082 2.54256" fill="KITblack15">
-512 384 m
-512 320 l
-720 320 l
-720 384 l
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+872.014 384.59 m
+8 0 0 8 864.014 384.59 864.014 392.59 a
+440 392.59 l
+440 331.11 l
+8 0 0 8 448 331.11 448 323.11 a
+872.014 323.11 l
 h
 </path>
-<group>
+</group>
+<group layer="alpha">
 <path stroke="gray1" fill="gray3">
 228.246 368 m
 8 0 0 8 220.246 368 220.246 376 a
@@ -6726,24 +6721,24 @@ h
 h
 </path>
 <text layer="alpha" matrix="12.096 0 0 0.333333 -4628.86 208" transformations="translations" pos="384 384" stroke="black" type="minipage" width="204.242" height="15.0516" depth="3.9738" valign="top">Zeigt oder wiederlegt:</text>
-<text matrix="1 0 0 1 -368 -16" transformations="translations" pos="384 384" stroke="black" type="label" width="153.136" height="14.8429" depth="4.5288" valign="top">\bfseries Aufgabe (5 min)</text>
+<text matrix="1 0 0 1 -368 -16" transformations="translations" pos="384 384" stroke="black" type="label" width="80.7791" height="14.8429" depth="4.5288" valign="top">\bfseries Aufgabe</text>
 <text matrix="1 0 0 1 32 -44.9887" transformations="translations" pos="0 314.812" stroke="black" type="minipage" width="160" height="16.5901" depth="5.5278" valign="top">$(n+1)! \in \Theta(n!)$</text>
 <text matrix="1 0 0 1 32 32" transformations="translations" pos="0 260.694" stroke="black" type="minipage" width="128" height="16.5901" depth="5.5278" valign="top">$n+1 \in \Theta(n)$</text>
 <text matrix="1 0 0 1 32 2.25856" transformations="translations" pos="0 244.694" stroke="black" type="minipage" width="176" height="17.3893" depth="6.327" valign="top">$n^5+7\cdot n^4 \in \omega(n^5)$</text>
 <text matrix="1 0 0 1 32 1.50544" transformations="translations" pos="0 220.978" stroke="black" type="minipage" width="128" height="16.5901" depth="5.5278" valign="top">$1{,}5^n \in O(2^n)$</text>
 <text matrix="1 0 0 1 32 0.75272" transformations="translations" pos="0 198.86" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$ln(3) \in \Theta(\sin(n) + 3)$</text>
 <text layer="beta" matrix="1 0 0 1 256 144" transformations="translations" pos="0 146.888" stroke="black" type="minipage" width="272" height="27.9831" depth="16.9608" valign="top">$\olim \frac{n+1}{n} = 1+ \olim \frac{1}{n} = 1$</text>
-<text layer="alpha" matrix="1 0 0 1 224 -32" transformations="translations" pos="512 384" stroke="black" type="label" width="128.014" height="31.5329" depth="20.8902" valign="baseline"> $l = \olim \frac{g(n)}{f(n)}$</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="656 384" stroke="black" type="label" width="46.7776" height="16.5901" depth="5.5278" valign="baseline" style="math">\O f</text>
-<text matrix="1 0 0 1 -160 0" transformations="translations" pos="752 368" stroke="black" type="label" width="45.9629" height="16.5901" depth="5.5278" valign="baseline" style="math">\Theta(f)</text>
-<text matrix="1 0 0 1 -208 48" transformations="translations" pos="720 320" stroke="black" type="label" width="44.7352" height="16.5901" depth="5.5278" valign="baseline" style="math">\Omega(f)</text>
-<text matrix="1 0 0 1 -128 0" transformations="translations" pos="640 336" stroke="black" type="label" valign="baseline" style="math">\ell &lt; \infty</text>
-<text matrix="1 0 0 1 -160 0" transformations="translations" pos="832 336" stroke="black" type="label" width="47.9276" height="15.358" depth="0" valign="baseline" style="math">l = 0</text>
-<text matrix="1 0 0 1 -144 0" transformations="translations" pos="736 336" stroke="black" type="label" width="64.2868" height="15.3602" depth="4.9284" valign="baseline" style="math">l \in \mathbb{R}_+</text>
+<text layer="alpha" matrix="1 0 0 1 224 -32" transformations="translations" pos="512 384" stroke="black" type="label" width="129.388" height="31.5329" depth="20.8902" valign="baseline"> $\ell = \olim \frac{f(n)}{g(n)}$</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="656 384" stroke="black" type="label" width="87.2638" height="16.5901" depth="5.5278" valign="baseline" style="math">f \in \O g</text>
+<text matrix="1 0 0 1 -208 0" transformations="translations" pos="752 368" stroke="black" type="label" width="85.2214" height="16.5901" depth="5.5278" valign="baseline" style="math">f \in \Omega(g)</text>
+<text matrix="1 0 0 1 -272 48" transformations="translations" pos="720 320" stroke="black" type="label" width="85.2214" height="16.5901" depth="5.5278" valign="baseline" style="math">f \in \Omega(g)</text>
+<text matrix="1 0 0 1 -368 5" transformations="translations" pos="832 336" stroke="black" type="label" width="49.304" height="15.3757" depth="4.2846" valign="baseline" style="math">0 \neq \ell</text>
+<text matrix="1 0 0 1 -185 6.94805" transformations="translations" pos="736 336" stroke="black" type="label" width="65.6609" height="15.3602" depth="4.9284" valign="baseline" style="math">\ell \in \mathbb{R}_+</text>
 <text layer="gamma" matrix="1 0 0 1 256 80" transformations="translations" pos="0 146.888" stroke="black" type="minipage" width="306.533" height="29.0287" depth="18.0042" valign="top">$\olim \frac{(n+1)!}{n!} = \olim n+1 = \infty$</text>
 <text layer="delta" matrix="1 0 0 1 256 16" transformations="translations" pos="0 146.888" stroke="black" type="minipage" width="352" height="29.8279" depth="18.8034" valign="top">$\olim \frac{n^5+7\cdot n^4}{n^5} = 1+ \olim \frac{7 \cdot n^4}{n^5} = 1$</text>
 <text layer="epsilon" matrix="0.981818 0 0 0.848841 256 -32.652" transformations="translations" pos="0 146.888" stroke="black" type="minipage" width="256" height="28.1896" depth="17.1606" valign="top">$\olim \frac{1{,}5^n}{2^n} = \olim (\frac{3}{4})^n = 0$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+<text layer="beta" matrix="1 0 0 1 624 69" transformations="translations" pos="48 272" stroke="black" type="label" width="60.3618" height="15.3757" depth="4.2846" halign="center" valign="baseline" style="math">\ell \neq \infty</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -6939,13 +6934,6 @@ h
 125.312 292.256 l
 h
 </path>
-<path layer="alpha" matrix="1.76923 0 0 1 -397.082 2.54256" fill="KITblack15">
-512 384 m
-512 320 l
-720 320 l
-720 384 l
-h
-</path>
 <path layer="gamma" matrix="1.23606 0 0 1.06212 32.1974 -39.9819" fill="KITred70">
 -0.159717 292.256 m
 -0.159717 270.029 l
@@ -6967,13 +6955,6 @@ h
 <text matrix="1 0 0 1 32 2.25856" transformations="translations" pos="0 244.694" stroke="black" type="minipage" width="176" height="17.3893" depth="6.327" valign="top">$n^5+7\cdot n^4 \in \omega(n^5)$</text>
 <text matrix="1 0 0 1 32 1.50544" transformations="translations" pos="0 220.978" stroke="black" type="minipage" width="128" height="16.5901" depth="5.5278" valign="top">$1{,}5^n \in O(2^n)$</text>
 <text matrix="1 0 0 1 32 0.75272" transformations="translations" pos="0 198.86" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$ln(3) \in \Theta(\sin(n) + 3)$</text>
-<text matrix="1 0 0 1 224 -32" transformations="translations" pos="512 384" stroke="black" type="label" width="128.014" height="31.5329" depth="20.8902" valign="baseline"> $l = \olim \frac{g(n)}{f(n)}$</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="656 384" stroke="black" type="label" width="41.2809" height="16.5901" depth="5.5278" valign="baseline" style="math">o(f)</text>
-<text matrix="1 0 0 1 -160 0" transformations="translations" pos="752 368" stroke="black" type="label" width="45.9629" height="16.5901" depth="5.5278" valign="baseline" style="math">\Theta(f)</text>
-<text matrix="1 0 0 1 -208 48" transformations="translations" pos="720 320" stroke="black" type="label" width="43.3344" height="16.5901" depth="5.5278" valign="baseline" style="math">\omega(f)</text>
-<text matrix="1 0 0 1 -128 0" transformations="translations" pos="640 336" stroke="black" type="label" width="58.9876" height="15.358" depth="0" valign="baseline" style="math">l = \infty</text>
-<text matrix="1 0 0 1 -160 0" transformations="translations" pos="832 336" stroke="black" type="label" width="47.9276" height="15.358" depth="0" valign="baseline" style="math">l = 0</text>
-<text matrix="1 0 0 1 -144 0" transformations="translations" pos="736 336" stroke="black" type="label" width="64.2868" height="15.3602" depth="4.9284" valign="baseline" style="math">l \in \mathbb{R}_+</text>
 <text layer="eta" matrix="1 0 0 1 256 64" transformations="translations" pos="0 146.888" stroke="black" type="minipage" width="639.533" height="18.8744" depth="7.7922" valign="top">Wähle $c_1=1, c_2=\frac{1}{4}, n_0=1$</text>
 <path layer="theta" matrix="1.11087 0 0 1.22746 243.37 109.536" fill="white">
 112 80 m
@@ -7002,5 +6983,23 @@ h
 <text layer="lambda" matrix="1 0 0 1 0 32" transformations="translations" pos="256 144" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top">$c_1\cdot(\sin(n)+3) \geq c_1 \cdot 2  \geq ln(3) \geq  c_2 \cdot 4 \geq c_2 \cdot (\sin(n) + 3)$</text>
 <text layer="mu" matrix="1 0 0 1 0 32" transformations="translations" pos="256 112" stroke="black" type="minipage" width="608" height="16.5901" depth="5.5278" valign="top">$c_1\cdot(\sin(n)+3) \geq c_1 \cdot 2  \geq 2 \geq ln(3) \geq  1 \geq c_2 \cdot 4 \geq c_2 \cdot (\sin(n) + 3)$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+872.014 384.59 m
+8 0 0 8 864.014 384.59 864.014 392.59 a
+440 392.59 l
+440 331.11 l
+8 0 0 8 448 331.11 448 323.11 a
+872.014 323.11 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 224 -32" transformations="translations" pos="512 384" stroke="black" type="label" width="129.388" height="31.5329" depth="20.8902" valign="baseline"> $\ell = \olim \frac{f(n)}{g(n)}$</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="656 384" stroke="black" type="label" width="87.2638" height="16.5901" depth="5.5278" valign="baseline" style="math">f \in \O g</text>
+<text matrix="1 0 0 1 -208 0" transformations="translations" pos="752 368" stroke="black" type="label" width="85.2214" height="16.5901" depth="5.5278" valign="baseline" style="math">f \in \Omega(g)</text>
+<text matrix="1 0 0 1 -272 48" transformations="translations" pos="720 320" stroke="black" type="label" width="85.2214" height="16.5901" depth="5.5278" valign="baseline" style="math">f \in \Omega(g)</text>
+<text matrix="1 0 0 1 -368 5" transformations="translations" pos="832 336" stroke="black" type="label" width="49.304" height="15.3757" depth="4.2846" valign="baseline" style="math">0 \neq \ell</text>
+<text matrix="1 0 0 1 -185 6.94805" transformations="translations" pos="736 336" stroke="black" type="label" width="65.6609" height="15.3602" depth="4.9284" valign="baseline" style="math">\ell \in \mathbb{R}_+</text>
+<text matrix="1 0 0 1 624 69" transformations="translations" pos="48 272" stroke="black" type="label" width="60.3618" height="15.3757" depth="4.2846" halign="center" valign="baseline" style="math">\ell \neq \infty</text>
 </page>
 </ipe>
