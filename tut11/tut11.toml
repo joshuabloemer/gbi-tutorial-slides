@@ -1,0 +1,4 @@
+title = "11 Graphen Algorithmen, Landau Notation"   # the file name of the output pdf
+description = "Graphenalgorithmen und Landau/O-Notation" # 
+content = ["algorithms", "onotation"]
+xkcd = 1738
