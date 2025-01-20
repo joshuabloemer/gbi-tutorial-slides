@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250120171621" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250120200744" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3791,8 +3791,6 @@ h
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta" active="alpha"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota lambda" active="lambda"/>
 <path layer="alpha" matrix="1 0 0 1 144 32" stroke="black" pen="2.5">
 448 256 m
 512 256 l
@@ -4008,12 +4006,24 @@ h
 <text layer="iota" matrix="1 0 0 1 195.414 37.42" transformations="translations" pos="544 64" stroke="KITblack30" type="label" width="9.172" height="8.82" depth="3.66" valign="baseline" size="small">g</text>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="528" height="15.1648" depth="4.0848" valign="top" style="item">Erkunde den Graphen Schicht für Schicht</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="624" height="15.1648" depth="4.0848" valign="top" style="item">Startknoten erste Schicht, adjazente Knoten zweite usw.</text>
-<text layer="kappa" matrix="1 0 0 1 0 16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="592" height="13.229" depth="2.1534" valign="top" style="item">Welche Laufzeit hat BFS?</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 48" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">Wir können wir Distanzen und kürzeste Wege berechnen?</text>
-<text layer="lambda" matrix="1 0 0 1 0 16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">Laufzeit in $\Th{m}$</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 48" stroke="black" type="minipage" width="768" height="41.7826" depth="30.7914" valign="top" style="item">Wenn wir uns in jedem Schritt merken von welchem Knoten wir einen anderen entdecken bekommen wir den sog. BFS Baum.\\
-Der BFS Baum enthält die kürzesten Wege zwischen s und allen anderen Knoten</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+</page>
+<page title="Laufzeit BFS">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="320" height="116.266" depth="106.56" valign="top" size="small">\begin{algo}[\datatype{Graph} $G$, \datatype{Vertex} $s$]{bfs}
+                \datatype{Queue} $Q := \{s\}$\;
+                färbe $s$\;
+                \While{$\lnot$ $Q$.\ehmpty{}}{
+                    \datatype{Vertex} $u := Q$.\dequeue{}\;
+                    \For{$v \in$ \N{$u$}}{
+                        \If{$v$ ungefärbt}{
+                            $Q$.\enqueue{$v$}\\ %\; würde extra Zeile brauchen (warum auch immer...)
+                            färbe $v$\;
+                        }
+                    }
+                }
+            \end{algo}</text>
 </page>
 <page title=" Einschub gewichtete Graphen">
 <layer name="alpha"/>
@@ -4591,10 +4601,10 @@ h
 \keyword{return} x
 }
 \ElseIf{x &lt; Element in der Mitte von A}{
- \func{find}(linke Hälfte von A, x)
+ \keyword{return} \func{find}(linke Hälfte von A, x)
  }
 \Else{
- \func{find}(rechte Hälfte von A, x)
+ \keyword{return} \func{find}(rechte Hälfte von A, x)
  }
 }</text>
 <text layer="gamma" matrix="1 0 0 1 -64 0" transformations="translations" pos="576 304" stroke="black" type="minipage" width="384" height="26.4002" depth="15.3402" valign="top">Binäre Suche funktioniert nur auf sortierten Datenstrukturen mit Random Access!!!</text>
@@ -4604,34 +4614,17 @@ h
 \keyword{return} x
 }
 \ElseIf{x &lt; A$\left[\floor{\frac{\vert A \vert}{2}} \right] $}{
- \func{find}(linke Hälfte von A, x)
+ \keyword{return} \func{find}(linke Hälfte von A, x)
  }
 \Else{
- \func{find}(rechte Hälfte von A, x)
+\keyword{return}  \func{find}(rechte Hälfte von A, x)
  }
 }</text>
 <text layer="alpha" transformations="translations" pos="544 368" stroke="black" type="minipage" width="336" height="14.9184" depth="3.8628" valign="top">Annahme: x ist auch wirklich im Array</text>
 <text layer="epsilon" transformations="translations" pos="528 128" stroke="gray2" type="minipage" width="320" height="41.5584" depth="30.5472" valign="top">Wenn das Array nur Zahlen enthält macht return x keinen sinn.
 In der Praxis wird das anders umgesetzt</text>
 </page>
-<page title="Binäre Suche">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 0 192" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="90.4894" depth="79.587" valign="top">\quickAlgo{find}{A, x}{
-\If{x = Element in der Mitte von A}{
-\keyword{return} x
-}
-\ElseIf{x &lt; Element in der Mitte von A}{
- \func{find}(linke Hälfte von A, x)
- }
-\Else{
- \func{find}(rechte Hälfte von A, x)
- }
-}</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 224" stroke="black" type="minipage" width="256" height="15.469" depth="4.4178" valign="top">Jeder Vergleich in \O n</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="624" height="13.1557" depth="2.0646" valign="top">\impl Laufzeit ist die Anzahl an \func{find} Aufrufen</text>
-</page>
-<page>
+<page title="Beispiel">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -5118,7 +5111,7 @@ h
 544 240 m
 544 208 l
 </path>
-<path matrix="1 0 0 1 80 0" stroke="gray2" fill="gray3" pen="1">
+<path matrix="1 0 0 1 64 0" stroke="gray2" fill="gray3" pen="1">
 496 208 m
 496 176 l
 528 176 l
@@ -5139,7 +5132,7 @@ h
 528 208 l
 h
 </path>
-<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+<path matrix="1 0 0 1 32 0" stroke="gray2" fill="gray3" pen="1">
 560 208 m
 560 176 l
 592 176 l
@@ -5176,8 +5169,8 @@ h
 </path>
 <text matrix="1 0 0 1 288 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">36</text>
 <text matrix="1 0 0 1 320 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">42</text>
-<text matrix="1 0 0 1 384 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">46</text>
-<text matrix="1 0 0 1 416 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">56</text>
+<text matrix="1 0 0 1 368 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">46</text>
+<text matrix="1 0 0 1 400 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">56</text>
 <text matrix="1 0 0 1 448 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">60</text>
 <text matrix="1 0 0 1 480 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">69</text>
 <text matrix="1 0 0 1 512 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">73</text>
@@ -5264,5 +5257,31 @@ h
 <text matrix="1 0 0 1 0 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">14</text>
 <text matrix="1 0 0 1 -32 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">12</text>
 <text matrix="1 0 0 1 -64 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.6473" depth="1.5762" valign="top" style="center">5</text>
+</page>
+<page title="Binäre Suche Laufzeit">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<text layer="alpha" matrix="1 0 0 1 0 192" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="90.4894" depth="79.587" valign="top">\quickAlgo{find}{A, x}{
+\If{x = Element in der Mitte von A}{
+\keyword{return} x
+}
+\ElseIf{x &lt; Element in der Mitte von A}{
+ \keyword{return} \func{find}(linke Hälfte von A, x)
+ }
+\Else{
+ \keyword{return} \func{find}(rechte Hälfte von A, x)
+ }
+}</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 224" stroke="black" type="minipage" width="256" height="15.469" depth="4.4178" valign="top">Jeder Vergleich in \O n</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="624" height="13.1557" depth="2.0646" valign="top">\impl Laufzeit ist die Anzahl an \func{find} Aufrufen</text>
+<text layer="gamma" transformations="translations" pos="16 128" stroke="black" type="minipage" width="624" height="15.1648" depth="4.0848" valign="top">Bei jedem find Aufruf wird die Anzahl der Elemente halbiert</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="784" height="16.5901" depth="5.5278" valign="top">\impl nach $\log_2(\vert A \vert )$ Aufrufen haben wir nur noch ein Element</text>
+<text layer="delta" transformations="translations" pos="16 64" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">\impl Laufzeit in $\O {\vert A \vert}$</text>
 </page>
 </ipe>
