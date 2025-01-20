@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250120144003" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250120171621" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3731,6 +3731,44 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
+<page title="Analyse von Pseudocode">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
+<layer name="kappa"/>
+<layer name="lambda"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha beta pagenumbers_page" active="beta"/>
+<view layers="alpha beta gamma pagenumbers_page" active="gamma"/>
+<view layers="alpha beta gamma delta pagenumbers_page" active="delta"/>
+<view layers="alpha beta gamma delta epsilon pagenumbers_page" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta pagenumbers_page" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta pagenumbers_page" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta pagenumbers_page" active="theta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota pagenumbers_page" active="iota"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa pagenumbers_page" active="kappa"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda pagenumbers_page" active="lambda"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Laufzeit im Allgemeinen nicht entscheidbar (siehe Halteproblem)</text>
+<text layer="beta" matrix="1 0 0 1 0 -10.9125" pin="h" transformations="translations" pos="0 362.812" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Addition/Multiplikation/usw. \textit{eigentlich} nicht in O(1)</text>
+<text layer="delta" matrix="1 0 0 1 0 -53.9042" pin="h" transformations="translations" pos="0 341.625" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top" style="subitem">in Algo 1 in O(1) (außer es steht dabei)</text>
+<text layer="gamma" matrix="1 0 0 1 0 -1.39889" pin="h" transformations="translations" pos="0 321.067" stroke="black" type="minipage" width="880" height="15.1648" depth="4.0848" valign="top" style="subitem">in der Realität meist 16/32/64bit Zahlen \impl{} O(1)</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -32.9476" pin="h" transformations="translations" pos="0 288.437" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="subitem">Algo aus der VL für Langzahlmultiplikation</text>
+<text layer="zeta" matrix="1 0 0 1 48 -43.86" transformations="translations" pos="0 267.249" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top"> siehe BigInteger/BigDecimal in java</text>
+<text layer="eta" matrix="1 0 0 1 0 -54.9035" pin="h" transformations="translations" pos="0 246.061" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Verzweigungen \impl{} Laufzeiten der Zweige aufsummieren</text>
+<text layer="theta" matrix="1 0 0 1 0 -65.8169" pin="h" transformations="translations" pos="0 224.874" stroke="black" type="minipage" width="880" height="13.1357" depth="2.0646" valign="top" style="item">Hintereinander ausführen \impl{} Laufzeiten aufsummieren</text>
+<text layer="iota" matrix="1 0 0 1 0 -77.204" pin="h" transformations="translations" pos="0 208.352" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">Schleifen in $O($Anzahl Durchläufe $\cdot$ Laufzeit Schleifenrumpf$)$</text>
+<text layer="kappa" matrix="1 0 0 1 0 -122.144" pin="h" transformations="translations" pos="0 186.234" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Summen/Produkte haben gleiche Laufzeit wie äquivalente Schleifen</text>
+<text layer="lambda" matrix="1 0 0 1 0 -133.188" pin="h" transformations="translations" pos="0 165.046" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Mastertheorem für einige rekursive Funktionen</text>
+<text layer="iota" matrix="1 0 0 1 0 0.463065" pin="h" transformations="translations" pos="0 95.8583" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">\impl es gibt z.T. schärfere obere Schranken</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
+</page>
 <page title="BFS">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -4515,10 +4553,25 @@ h
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="gamma">
+<view layers="alpha pagenumbers_page beta gamma" active="alpha"/>
+<view layers="alpha pagenumbers_page beta gamma epsilon" active="epsilon"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITred15">
+536 376 m
+880 376 l
+8 0 0 -8 880 368 888 368 a
+888 341.219 l
+544 341.219 l
+8 0 0 -8 544 349.219 536 349.219 a
+h
+</path>
+</group>
+<group layer="gamma" matrix="1 0 0 1 0 112">
 <path stroke="black" fill="KITred15">
 504 200 m
 896 200 l
@@ -4533,15 +4586,683 @@ h
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="128" height="12.8627" depth="1.7982" valign="top">\textbf{Problem:}</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="480" height="28.1829" depth="17.1384" valign="top">Wir möchten \textit{schnell} nach einem Element in einem \textit{sortierten} Array suchen</text>
 <text layer="beta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="512" height="28.1829" depth="17.1384" valign="top">Wir beginnen in der Mitte des Arrays und halbieren unseren Suchraum. Wiederhole auf dem neuen Teilarray.</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="66.3647" depth="55.4334" valign="top">\quickAlgo{find}{A, x}{
-\If{x &lt; Element in der Mitte von A}{
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="90.4894" depth="79.587" valign="top">\quickAlgo{find}{A, x}{
+\If{x = Element in der Mitte von A}{
+\keyword{return} x
+}
+\ElseIf{x &lt; Element in der Mitte von A}{
  \func{find}(linke Hälfte von A, x)
  }
 \Else{
  \func{find}(rechte Hälfte von A, x)
  }
 }</text>
-<text layer="gamma" matrix="1 0 0 1 -64 -112" transformations="translations" pos="576 304" stroke="black" type="minipage" width="384" height="26.4002" depth="15.3402" valign="top">Binäre Suche funktioniert nur auf sortierten Datenstrukturen mit Random Access!!!</text>
+<text layer="gamma" matrix="1 0 0 1 -64 0" transformations="translations" pos="576 304" stroke="black" type="minipage" width="384" height="26.4002" depth="15.3402" valign="top">Binäre Suche funktioniert nur auf sortierten Datenstrukturen mit Random Access!!!</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 2}</text>
+<text layer="delta" matrix="1 0 0 1 464 0" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="100.317" depth="89.4438" valign="top">\quickAlgo{find}{A, x}{
+\If{x = A$\left[\floor{\frac{\vert A \vert}{2}} \right] $}{
+\keyword{return} x
+}
+\ElseIf{x &lt; A$\left[\floor{\frac{\vert A \vert}{2}} \right] $}{
+ \func{find}(linke Hälfte von A, x)
+ }
+\Else{
+ \func{find}(rechte Hälfte von A, x)
+ }
+}</text>
+<text layer="alpha" transformations="translations" pos="544 368" stroke="black" type="minipage" width="336" height="14.9184" depth="3.8628" valign="top">Annahme: x ist auch wirklich im Array</text>
+<text layer="epsilon" transformations="translations" pos="528 128" stroke="gray2" type="minipage" width="320" height="41.5584" depth="30.5472" valign="top">Wenn das Array nur Zahlen enthält macht return x keinen sinn.
+In der Praxis wird das anders umgesetzt</text>
+</page>
+<page title="Binäre Suche">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" matrix="1 0 0 1 0 192" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="90.4894" depth="79.587" valign="top">\quickAlgo{find}{A, x}{
+\If{x = Element in der Mitte von A}{
+\keyword{return} x
+}
+\ElseIf{x &lt; Element in der Mitte von A}{
+ \func{find}(linke Hälfte von A, x)
+ }
+\Else{
+ \func{find}(rechte Hälfte von A, x)
+ }
+}</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 224" stroke="black" type="minipage" width="256" height="15.469" depth="4.4178" valign="top">Jeder Vergleich in \O n</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="624" height="13.1557" depth="2.0646" valign="top">\impl Laufzeit ist die Anzahl an \func{find} Aufrufen</text>
+</page>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha" active="beta"/>
+<view layers="beta" active="beta"/>
+<view layers="gamma" active="delta"/>
+<view layers="delta" active="delta"/>
+<path layer="alpha" matrix="1 0 0 1 48 0" stroke="black" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+144 208 m
+144 176 l
+176 176 l
+176 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+176 208 m
+176 176 l
+208 176 l
+208 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+208 208 m
+208 176 l
+240 176 l
+240 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+240 208 m
+240 176 l
+272 176 l
+272 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+272 208 m
+272 176 l
+304 176 l
+304 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+304 208 m
+304 176 l
+336 176 l
+336 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+336 208 m
+336 176 l
+368 176 l
+368 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+368 208 m
+368 176 l
+400 176 l
+400 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+400 208 m
+400 176 l
+432 176 l
+432 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+432 208 m
+432 176 l
+464 176 l
+464 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+464 208 m
+464 176 l
+496 176 l
+496 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+560 208 m
+560 176 l
+592 176 l
+592 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+592 208 m
+592 176 l
+624 176 l
+624 208 l
+h
+</path>
+<text matrix="1 0 0 1 224 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">33</text>
+<text matrix="1 0 0 1 256 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">35</text>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+624 208 m
+624 176 l
+656 176 l
+656 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+656 208 m
+656 176 l
+688 176 l
+688 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+688 208 m
+688 176 l
+720 176 l
+720 208 l
+h
+</path>
+<text matrix="1 0 0 1 288 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">36</text>
+<text matrix="1 0 0 1 320 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">42</text>
+<text matrix="1 0 0 1 352 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">46</text>
+<text matrix="1 0 0 1 384 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">56</text>
+<path matrix="1 0 0 1 -80 4" stroke="black" fill="KITred50" pen="1" arrow="normal/normal">
+544 240 m
+544 208 l
+</path>
+<text matrix="1 0 0 1 192 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">28</text>
+<text matrix="1 0 0 1 160 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">24</text>
+<text matrix="1 0 0 1 128 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">21</text>
+<text matrix="1 0 0 1 96 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">19</text>
+<text matrix="1 0 0 1 64 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">15</text>
+<text matrix="1 0 0 1 32 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">14</text>
+<text matrix="1 0 0 1 0 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">12</text>
+<text matrix="1 0 0 1 -32 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.6473" depth="1.5762" valign="top" style="center">5</text>
+<text matrix="1 0 0 1 416 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">60</text>
+<text matrix="1 0 0 1 448 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">69</text>
+<text matrix="1 0 0 1 480 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">73</text>
+<text matrix="1 0 0 1 512 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">99</text>
+<text matrix="1 0 0 1 -32 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">0</text>
+<text matrix="1 0 0 1 0 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">1</text>
+<text matrix="1 0 0 1 32 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">2</text>
+<text matrix="1 0 0 1 64 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">3</text>
+<text matrix="1 0 0 1 96 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">4</text>
+<text matrix="1 0 0 1 128 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.752" depth="0.78" valign="top" size="small" style="center">5</text>
+<text matrix="1 0 0 1 160 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">6</text>
+<text matrix="1 0 0 1 192 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.594" depth="0.6" valign="top" size="small" style="center">7</text>
+<text matrix="1 0 0 1 224 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">8</text>
+<text matrix="1 0 0 1 256 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">9</text>
+<text matrix="1 0 0 1 288 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">10</text>
+<text matrix="1 0 0 1 320 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">11</text>
+<text matrix="1 0 0 1 352 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">12</text>
+<text matrix="1 0 0 1 384 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">13</text>
+<text matrix="1 0 0 1 416 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">14</text>
+<text matrix="1 0 0 1 448 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">15</text>
+<text matrix="1 0 0 1 480 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">16</text>
+<text matrix="1 0 0 1 512 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">17</text>
+<path layer="beta" matrix="1 0 0 1 80 4" stroke="black" fill="KITred50" pen="1" arrow="normal/normal">
+544 240 m
+544 208 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+464 208 m
+464 176 l
+496 176 l
+496 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+560 208 m
+560 176 l
+592 176 l
+592 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+592 208 m
+592 176 l
+624 176 l
+624 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+624 208 m
+624 176 l
+656 176 l
+656 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+656 208 m
+656 176 l
+688 176 l
+688 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+688 208 m
+688 176 l
+720 176 l
+720 208 l
+h
+</path>
+<text matrix="1 0 0 1 288 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">36</text>
+<text matrix="1 0 0 1 320 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">42</text>
+<text matrix="1 0 0 1 352 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">46</text>
+<text matrix="1 0 0 1 384 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">56</text>
+<text matrix="1 0 0 1 416 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">60</text>
+<text matrix="1 0 0 1 448 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">69</text>
+<text matrix="1 0 0 1 480 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">73</text>
+<text matrix="1 0 0 1 512 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">99</text>
+<text matrix="1 0 0 1 288 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">0</text>
+<text matrix="1 0 0 1 320 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">1</text>
+<text matrix="1 0 0 1 352 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">2</text>
+<text matrix="1 0 0 1 384 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">3</text>
+<text matrix="1 0 0 1 416 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">4</text>
+<text matrix="1 0 0 1 448 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.752" depth="0.78" valign="top" size="small" style="center">5</text>
+<text matrix="1 0 0 1 480 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">6</text>
+<text matrix="1 0 0 1 512 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.594" depth="0.6" valign="top" size="small" style="center">7</text>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+144 208 m
+144 176 l
+176 176 l
+176 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+176 208 m
+176 176 l
+208 176 l
+208 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+208 208 m
+208 176 l
+240 176 l
+240 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+240 208 m
+240 176 l
+272 176 l
+272 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+272 208 m
+272 176 l
+304 176 l
+304 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+304 208 m
+304 176 l
+336 176 l
+336 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+336 208 m
+336 176 l
+368 176 l
+368 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+368 208 m
+368 176 l
+400 176 l
+400 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+400 208 m
+400 176 l
+432 176 l
+432 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+432 208 m
+432 176 l
+464 176 l
+464 208 l
+h
+</path>
+<text matrix="1 0 0 1 192 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">33</text>
+<text matrix="1 0 0 1 224 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">35</text>
+<text matrix="1 0 0 1 160 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">28</text>
+<text matrix="1 0 0 1 128 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">24</text>
+<text matrix="1 0 0 1 96 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">21</text>
+<text matrix="1 0 0 1 64 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">19</text>
+<text matrix="1 0 0 1 32 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">15</text>
+<text matrix="1 0 0 1 0 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">14</text>
+<text matrix="1 0 0 1 -32 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">12</text>
+<text matrix="1 0 0 1 -64 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.6473" depth="1.5762" valign="top" style="center">5</text>
+<path layer="gamma" matrix="1 0 0 1 16 4" stroke="black" fill="KITred50" pen="1" arrow="normal/normal">
+544 240 m
+544 208 l
+</path>
+<path matrix="1 0 0 1 48 0" stroke="black" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+464 208 m
+464 176 l
+496 176 l
+496 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+560 208 m
+560 176 l
+592 176 l
+592 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+592 208 m
+592 176 l
+624 176 l
+624 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+624 208 m
+624 176 l
+656 176 l
+656 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+656 208 m
+656 176 l
+688 176 l
+688 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+688 208 m
+688 176 l
+720 176 l
+720 208 l
+h
+</path>
+<text matrix="1 0 0 1 288 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">36</text>
+<text matrix="1 0 0 1 320 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">42</text>
+<text matrix="1 0 0 1 352 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">46</text>
+<text matrix="1 0 0 1 384 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">56</text>
+<text matrix="1 0 0 1 448 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">60</text>
+<text matrix="1 0 0 1 480 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">69</text>
+<text matrix="1 0 0 1 512 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">73</text>
+<text matrix="1 0 0 1 544 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">99</text>
+<text matrix="1 0 0 1 288 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">0</text>
+<text matrix="1 0 0 1 320 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">1</text>
+<text matrix="1 0 0 1 352 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">2</text>
+<text matrix="1 0 0 1 384 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">3</text>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+144 208 m
+144 176 l
+176 176 l
+176 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+176 208 m
+176 176 l
+208 176 l
+208 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+208 208 m
+208 176 l
+240 176 l
+240 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+240 208 m
+240 176 l
+272 176 l
+272 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+272 208 m
+272 176 l
+304 176 l
+304 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+304 208 m
+304 176 l
+336 176 l
+336 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+336 208 m
+336 176 l
+368 176 l
+368 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+368 208 m
+368 176 l
+400 176 l
+400 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+400 208 m
+400 176 l
+432 176 l
+432 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+432 208 m
+432 176 l
+464 176 l
+464 208 l
+h
+</path>
+<text matrix="1 0 0 1 192 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">33</text>
+<text matrix="1 0 0 1 224 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">35</text>
+<text matrix="1 0 0 1 160 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">28</text>
+<text matrix="1 0 0 1 128 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">24</text>
+<text matrix="1 0 0 1 96 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">21</text>
+<text matrix="1 0 0 1 64 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">19</text>
+<text matrix="1 0 0 1 32 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">15</text>
+<text matrix="1 0 0 1 0 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">14</text>
+<text matrix="1 0 0 1 -32 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">12</text>
+<text matrix="1 0 0 1 -64 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.6473" depth="1.5762" valign="top" style="center">5</text>
+<path layer="delta" matrix="1 0 0 1 -16 4" stroke="black" fill="KITred50" pen="1" arrow="normal/normal">
+544 240 m
+544 208 l
+</path>
+<path matrix="1 0 0 1 80 0" stroke="gray2" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+464 208 m
+464 176 l
+496 176 l
+496 208 l
+h
+</path>
+<path matrix="1 0 0 1 16 0" stroke="black" fill="gray3" pen="1">
+496 208 m
+496 176 l
+528 176 l
+528 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+560 208 m
+560 176 l
+592 176 l
+592 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+592 208 m
+592 176 l
+624 176 l
+624 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+624 208 m
+624 176 l
+656 176 l
+656 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+656 208 m
+656 176 l
+688 176 l
+688 208 l
+h
+</path>
+<path matrix="1 0 0 1 48 0" stroke="gray2" fill="gray3" pen="1">
+688 208 m
+688 176 l
+720 176 l
+720 208 l
+h
+</path>
+<text matrix="1 0 0 1 288 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">36</text>
+<text matrix="1 0 0 1 320 -88" transformations="translations" pos="192 288" stroke="black" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">42</text>
+<text matrix="1 0 0 1 384 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">46</text>
+<text matrix="1 0 0 1 416 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">56</text>
+<text matrix="1 0 0 1 448 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">60</text>
+<text matrix="1 0 0 1 480 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">69</text>
+<text matrix="1 0 0 1 512 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">73</text>
+<text matrix="1 0 0 1 544 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">99</text>
+<text matrix="1 0 0 1 288 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="11.032" depth="1.06" valign="top" size="small" style="center">0</text>
+<text matrix="1 0 0 1 320 -120" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="10.874" depth="0.88" valign="top" size="small" style="center">1</text>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+144 208 m
+144 176 l
+176 176 l
+176 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+176 208 m
+176 176 l
+208 176 l
+208 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+208 208 m
+208 176 l
+240 176 l
+240 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+240 208 m
+240 176 l
+272 176 l
+272 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+272 208 m
+272 176 l
+304 176 l
+304 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+304 208 m
+304 176 l
+336 176 l
+336 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+336 208 m
+336 176 l
+368 176 l
+368 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+368 208 m
+368 176 l
+400 176 l
+400 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+400 208 m
+400 176 l
+432 176 l
+432 208 l
+h
+</path>
+<path matrix="1 0 0 1 -16 0" stroke="gray2" fill="gray3" pen="1">
+432 208 m
+432 176 l
+464 176 l
+464 208 l
+h
+</path>
+<text matrix="1 0 0 1 192 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">33</text>
+<text matrix="1 0 0 1 224 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">35</text>
+<text matrix="1 0 0 1 160 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">28</text>
+<text matrix="1 0 0 1 128 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">24</text>
+<text matrix="1 0 0 1 96 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">21</text>
+<text matrix="1 0 0 1 64 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">19</text>
+<text matrix="1 0 0 1 32 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="13.0048" depth="1.9092" valign="top" style="center">15</text>
+<text matrix="1 0 0 1 0 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">14</text>
+<text matrix="1 0 0 1 -32 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.7872" depth="1.7094" valign="top" style="center">12</text>
+<text matrix="1 0 0 1 -64 -88" transformations="translations" pos="192 288" stroke="gray2" type="minipage" width="32" height="12.6473" depth="1.5762" valign="top" style="center">5</text>
 </page>
 </ipe>

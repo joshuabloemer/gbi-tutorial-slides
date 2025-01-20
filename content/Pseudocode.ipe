@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250120143748" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250120161119" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3871,12 +3871,12 @@ Internet!</text>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu pagenumbers_page" active="mu"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu pagenumbers_page" active="nu"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi pagenumbers_page" active="xi"/>
-<text layer="alpha" pin="h" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Fünf wichtige Einzelteile:</text>
-<text layer="beta" matrix="1 0 0 1 0 -11.3" pin="h" transformations="translations" pos="0 363.321" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="subitem">Zuweisungen ($\gets$ oder $\coloneqq$)</text>
-<text layer="gamma" matrix="1 0 0 1 0 -22" pin="h" transformations="translations" pos="0 342.133" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="subitem">Schleifen/Bedingungen</text>
-<text layer="delta" matrix="1 0 0 1 0 -32.8" pin="h" transformations="translations" pos="0 320.945" stroke="black" type="minipage" width="880" height="15.2203" depth="4.1514" valign="top" style="subitem">\textbf{beliebige} mathematische Ausdrücke</text>
-<text layer="zeta" matrix="1 0 0 1 0 -75.8182" pin="h" transformations="translations" pos="0 299.891" stroke="black" type="minipage" width="880" height="12.9115" depth="1.8204" valign="top" style="subitem">Kommentare!</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -27.8819" pin="h" transformations="translations" pos="0 283.878" stroke="black" type="minipage" width="880" height="15.1648" depth="4.0848" valign="top" style="subitem">Variablen/Typen/Datenstrukturen/Funktionen</text>
+<text layer="alpha" pin="h" transformations="translations" pos="0 384" stroke="black" type="minipage" width="336" height="15.2758" depth="4.218" valign="top" style="item">Sechs wichtige Einzelteile:</text>
+<text layer="beta" matrix="1 0 0 1 0 -11.3" pin="h" transformations="translations" pos="0 363.321" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="subitem">Zuweisungen ($\gets$ oder $\coloneqq$)</text>
+<text layer="gamma" matrix="1 0 0 1 0 -22" pin="h" transformations="translations" pos="0 342.133" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="subitem">Schleifen/Bedingungen</text>
+<text layer="delta" matrix="1 0 0 1 0 -32.8" pin="h" transformations="translations" pos="0 320.945" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top" style="subitem">beliebige* mathematische Ausdrücke</text>
+<text layer="zeta" matrix="1 0 0 1 0 -75.8182" pin="h" transformations="translations" pos="0 299.891" stroke="black" type="minipage" width="480" height="12.9115" depth="1.8204" valign="top" style="subitem">Kommentare!</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -27.8819" pin="h" transformations="translations" pos="0 283.878" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top" style="subitem">Variablen/Typen/Datenstrukturen/Funktionen</text>
 <text layer="eta" matrix="1 0 0 1 32 -100" transformations="translations" pos="0 262.96" stroke="black" type="minipage" width="480" height="52.9781" depth="42.0024" valign="top">$b \assign 5$\\
 $c  \coloneqq 3$\\
 $a \assign b$\\
@@ -3913,6 +3913,7 @@ h
 <text layer="nu" matrix="0.0243426 0 0 1.10915 193.354 -35.2228" transformations="translations" pos="0 51.7007" stroke="black" type="label" width="238.894" height="14.9783" depth="2.7528" valign="top">Welchen Wert haben $a, c$?</text>
 <text layer="xi" matrix="1.00639 0 0 -0.33144 142.308 38.234" transformations="translations" pos="320 96.6687" stroke="black" type="label" width="128.189" height="14.4988" depth="0" valign="baseline" style="math">a = 5\land c = 6</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
+<text layer="delta" matrix="1 0 0 1 -128 -48" transformations="translations" pos="592 352" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top">*solannge sie klar definiert/einfach sind</text>
 </page>
 <page title="Schleifen/Bedingungen">
 <layer name="alpha"/>
@@ -3948,7 +3949,7 @@ h
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Ziel: Algorithmus der die Summe eines Arrays aus ganzzahlen berechnet</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Ziel: Algorithmus, der die Summe eines Arrays aus ganzzahlen berechnet</text>
 <text matrix="1 0 0 1 -448 0" transformations="translations" pos="448 352" stroke="black" type="minipage" width="384" height="63.8849" depth="52.947" valign="top">\quickAlgo{sum}{A : \datatype{array[1\dots n] of $\mathbb N_0$}}{
 s $\coloneqq$ 0\\
 \For{i $\coloneqq$ 1 \KwTo $\vert A \vert$}{
@@ -3957,5 +3958,34 @@ s $\coloneqq$ s + A[i]
 \Return{s}
 }</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="alpha" matrix="1 0 0 1 16 0">
+<path stroke="gray1" fill="gray3">
+296 368 m
+8 0 0 8 288 368 288 376 a
+-8 376 l
+-8 348.506 l
+8 0 0 8 0 348.506 0 340.506 a
+296 340.506 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 368" stroke="black" type="minipage" width="288" height="15.2758" depth="4.218" valign="top">Was macht dieser Algorithmus?</text>
+<text matrix="1 0 0 1 -448 -32" transformations="translations" pos="448 368" stroke="black" type="minipage" width="448" height="114.71" depth="103.896" valign="top">\quickAlgo{Algo}{$A$}{
+B = \kwfont{new} List\\
+C = \kwfont{new} List\\
+\For{s $\in$ A}{
+  \If{s \% 2 = 0} {B.\append{s}}
+  \Else{C.\append{s}}
+ }
+\Return{(B, C)}
+}
+</text>
+<text layer="beta" transformations="translations" pos="16 80" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top">Unterteilt A in zwei Listen die jeweils die geraden/ungeraden Zahlen enthalten</text>
 </page>
 </ipe>
