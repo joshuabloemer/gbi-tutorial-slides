@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20250120225714" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20250121004617" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3753,11 +3753,6 @@ h
 <text layer="zeta" matrix="1 0 0 1 0 -26.144" pin="h" transformations="translations" pos="0 186.234" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Summen/Produkte haben gleiche Laufzeit wie äquivalente Schleifen</text>
 <text layer="epsilon" matrix="1 0 0 1 0 96.4631" pin="h" transformations="translations" pos="0 95.8583" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">\impl es gibt z.T. schärfere obere Schranken</text>
 </page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="192 224" stroke="black" type="minipage" width="416" height="12.9115" depth="1.8204" valign="top">Todo</text>
-</page>
 <page title="BFS">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -4183,7 +4178,7 @@ h
 h
 </path>
 </group>
-<group layer="beta" matrix="1 0 0 1 12 -6">
+<group layer="beta" matrix="1 0 0 1 12 10">
 <path stroke="gray1" fill="gray3">
 680 320 m
 8 0 0 8 672 320 672 328 a
@@ -4214,16 +4209,12 @@ h
 <text layer="zeta" matrix="1 0 0 1 0 18" transformations="translations" pos="0 176" stroke="black" type="minipage" width="704" height="28.2961" depth="17.2716" valign="top" style="item">Wenn sich nach $n-1$ Iterationen noch Distanzen ändern, haben wir einen negativen Kreis gefunden</text>
 <text layer="iota" matrix="1 0 0 1 0 -57" transformations="translations" pos="0 112" stroke="black" type="minipage" width="864" height="26.4002" depth="15.3402" valign="top" style="item">Also entweder Fehler zurückgeben oder Kreis finden und alle erreichbaren Knoten mit $-\infty$ markieren</text>
 <text matrix="1 0 0 1 16 -32" transformations="translations" pos="256 48" stroke="black" type="minipage" width="400" height="13.946" depth="2.8638" valign="top">Wie finden wir alle Knoten mit Distanz $-\infty$?</text>
-<text layer="beta" matrix="1 0 0 1 -500 -6" transformations="translations" pos="528 320" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top">Wie lange kann ein kürzester Pfad ohne negativen Kreis höchstens sein?</text>
+<text layer="beta" matrix="1 0 0 1 -500 10" transformations="translations" pos="528 320" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top">Wie lange kann ein kürzester Pfad ohne negativen Kreis höchstens sein?</text>
 <text layer="delta" matrix="1 0 0 1 -464 13" transformations="translations" pos="496 272" stroke="black" type="minipage" width="304" height="13.946" depth="2.8638" valign="top">Warum reichen $n-1$ Iterationen?</text>
 <text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="656" height="13.946" depth="2.8638" valign="top" style="item">kürzeste Pfade haben maximal $n-1$ Kanten</text>
 <text layer="eta" matrix="1 0 0 1 32 11" transformations="translations" pos="16 112" stroke="black" type="minipage" width="80" height="13.1357" depth="2.0646" valign="top">Wieso?</text>
 <text layer="theta" matrix="1 0 0 1 -512 74" transformations="translations" pos="512 64" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Aus der Verbesserung folgt, dass es einen Weg der Länge $n$ gibt, der kürzer ist, als alle Wege der Länge $n-1$, somit muss dieser einen negativen Kreis enthalten.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 2}</text>
-<text layer="iota" transformations="translations" pos="336 240" stroke="black" type="minipage" width="384" height="12.9115" depth="1.8204" valign="top">Todo relaxieren erklären</text>
-<text layer="delta" matrix="1 0 0 1 -468 -70" transformations="translations" pos="528 320" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top">Wie lange kann ein kürzester Pfad ohne negativen Kreis höchstens sein?</text>
-<text transformations="translations" pos="96 208" stroke="black" type="label" width="42.7905" height="14.5099" depth="0.222" valign="baseline">Test
-</text>
 <group layer="beta">
 <group matrix="1 0 0 1 16 -112">
 <path stroke="gray1" fill="gray3">
@@ -5533,5 +5524,85 @@ h
 <text layer="gamma" transformations="translations" pos="16 128" stroke="black" type="minipage" width="624" height="15.1648" depth="4.0848" valign="top">Bei jedem find Aufruf wird die Anzahl der Elemente halbiert</text>
 <text transformations="translations" pos="16 96" stroke="black" type="minipage" width="784" height="16.5901" depth="5.5278" valign="top">\impl nach $\log_2(\vert A \vert )$ Aufrufen haben wir nur noch ein Element</text>
 <text layer="delta" transformations="translations" pos="16 64" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">\impl Laufzeit in $\O {\vert A \vert}$</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
+<text layer="alpha" matrix="1 0 0 1 0 80" transformations="translations" pos="0 320" stroke="black" type="minipage" width="512" height="216.776" depth="207.32" valign="top" size="small">\begin{algo}[\datatype{wort} $w \in \set{a,b,c,d,e,f}^*$]{Algo}
+        \datatype{Graph} $G \coloneqq$ leerer Graph (V,E)\;
+        \datatype{Map&lt;Symbol, Int&gt;} $M$ of zeroes\;
+        w = edge weight function\;
+        \For{$i \in \{1,\dots \vert w \vert\}$}{
+            $M[w_i] \coloneqq M[w_i] + 1$\; 
+         }
+\While{ $M\neq \emptyset $}{
+(Symbol1, i) $\coloneqq$ \func{removeMinimum}(M)\;
+(Symbol2, j) = \func{removeMinimum}(M)\;
+$v \coloneqq$ V.\append{(Symbol1, i)}\;
+$u \coloneqq$ V.\append{(Symbol2,j)}\;
+$w \coloneqq $ V.\append{(Symbol1$\cdot$ Symbol2, i+k)}\;
+$e1 \coloneqq $ E.\append(vw)\;
+$e2 \coloneqq $ E.\append(uw)\;
+w(e1) = 0\;
+w(e1) = 1\;
+M.\func{insert}((Symbol1$\cdot$ Symbol2, i+k));\
+}
+  \keyword{return} G\;
+    \end{algo}</text>
+<group layer="gamma" matrix="1 0 0 1 0 48">
+<path stroke="gray1" fill="gray3">
+920 256 m
+8 0 0 8 912 256 912 264 a
+504 264 l
+504 217.464 l
+8 0 0 8 512 217.464 512 209.464 a
+920 209.464 l
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+872 368 m
+8 0 0 8 864 368 864 376 a
+504 376 l
+504 352.194 l
+8 0 0 8 512 352.194 512 344.194 a
+872 344.194 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="528 368" stroke="black" type="minipage" width="352" height="12.886" depth="2.92" valign="top" size="small">Was macht der Algorithmus?</text>
+<text layer="gamma" matrix="1 0 0 1 -16 -16" transformations="translations" pos="528 320" stroke="black" type="minipage" width="400" height="24.236" depth="14.3" valign="top" size="small">Welche Laufzeit hat der Algorithmus?\\
+(ihr dürft annehmen das $\func{removeMinimum} \in \O{\vert w \vert}$)</text>
+<text layer="epsilon" matrix="1 0 0 1 48 -146" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text matrix="1 0 0 1 48 -235" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text matrix="1 0 0 1 48 -213" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text matrix="1 0 0 1 48 -190" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text matrix="1 0 0 1 48 -168" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text matrix="1 0 0 1 48 -124" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text matrix="1 0 0 1 48 -102" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text layer="delta" matrix="1 0 0 1 48 -14" transformations="translations" pos="336 272" stroke="red2" type="label" width="26.1116" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{1}</text>
+<text layer="epsilon" matrix="1 0 0 1 48 -58" transformations="translations" pos="336 272" stroke="red2" type="label" width="38.5836" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{\vert w \vert }</text>
+<text matrix="1 0 0 1 48 -81" transformations="translations" pos="336 272" stroke="red2" type="label" width="38.5836" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{\vert w \vert }</text>
+<text layer="delta" matrix="1 0 0 1 48 7" transformations="translations" pos="336 272" stroke="red2" type="label" width="38.5836" height="8.30502" depth="2.7528" valign="baseline" size="tiny" style="math">\O{\vert w \vert }</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="512 256" stroke="black" type="minipage" width="384" height="13.952" depth="3.98" valign="top" size="small">Die erste Schleife ist in $\O{ \vert w \vert}$</text>
+<text layer="zeta" matrix="1 0 0 1 0 16" transformations="translations" pos="512 192" stroke="black" type="minipage" width="336" height="23.842" depth="13.88" valign="top" size="small">In jeder Iteration der While Schleife werden 2 Elemente aus M gelöscht und 1 hinzugefügt</text>
+<text layer="eta" matrix="1 0 0 1 0 16" transformations="translations" pos="512 144" stroke="black" type="minipage" width="352" height="12.608" depth="2.62" valign="top" size="small">\impl In jeder Iteration wird M um 1 Kleiner</text>
+<text layer="theta" matrix="1 0 0 1 0 16" transformations="translations" pos="512 112" stroke="black" type="minipage" width="336" height="24.89" depth="14.96" valign="top" size="small">\impl $\O n$ Iterationen\\ \impl Gesamtlaufzeit von $ \O{n + n^2} = \O{n^2}$</text>
+<text layer="beta" transformations="translations" pos="512 336" stroke="black" type="minipage" width="368" height="11.144" depth="1.18" valign="top" size="small">Berechnet einen Huffman Baum zu w</text>
 </page>
 </ipe>
