@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250121004945" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250121125651" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -5667,23 +5667,23 @@ h
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<text layer="alpha" matrix="1 0 0 1 0 80" transformations="translations" pos="0 320" stroke="black" type="minipage" width="512" height="216.776" depth="207.32" valign="top" size="small">\begin{algo}[\datatype{wort} $w \in \set{a,b,c,d,e,f}^*$]{Algo}
+<text layer="alpha" matrix="1 0 0 1 0 80" transformations="translations" pos="0 320" stroke="black" type="minipage" width="512" height="216.776" depth="207.32" valign="top" size="small">\begin{algo}[\datatype{wort} $x \in \set{a,b,c,d,e,f}^*$]{Algo}
         \datatype{Graph} $G \coloneqq$ leerer Graph (V,E)\;
         \datatype{Map&lt;Symbol, Int&gt;} $M$ of zeroes\;
-        w = edge weight function\;
-        \For{$i \in \{1,\dots \vert w \vert\}$}{
-            $M[w_i] \coloneqq M[w_i] + 1$\; 
+        $w \coloneqq$ edge weight function\;
+        \For{$i \in \{1,\dots \vert x \vert\}$}{
+            $M[x_i] \coloneqq M[x_i] + 1$\; 
          }
 \While{ $M\neq \emptyset $}{
 (Symbol1, i) $\coloneqq$ \func{removeMinimum}(M)\;
 (Symbol2, j) = \func{removeMinimum}(M)\;
 $v \coloneqq$ V.\append{(Symbol1, i)}\;
-$u \coloneqq$ V.\append{(Symbol2,j)}\;
-$w \coloneqq $ V.\append{(Symbol1$\cdot$ Symbol2, i+k)}\;
-$e1 \coloneqq $ E.\append(vw)\;
-$e2 \coloneqq $ E.\append(uw)\;
-w(e1) = 0\;
-w(e1) = 1\;
+$u \coloneqq$ V.\append{(Symbol2, j)}\;
+$h \coloneqq $ V.\append{(Symbol1$\cdot$ Symbol2, i+k)}\;
+$e1 \coloneqq $ E.\append(vh)\;
+$e2 \coloneqq $ E.\append(uh)\;
+$w(e1) \coloneqq 0$\;
+$w(e2) \coloneqq 1$\;
 M.\func{insert}((Symbol1$\cdot$ Symbol2, i+k));\
 }
   \keyword{return} G\;
