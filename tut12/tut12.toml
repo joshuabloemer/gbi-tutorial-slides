@@ -1,0 +1,4 @@
+title = "12 Kontextfreie Grammatiken"   # the file name of the output pdf
+description = "Kontextfreie Grammatiken" # 
+content = ["grammatiken"]
+xkcd = 1090

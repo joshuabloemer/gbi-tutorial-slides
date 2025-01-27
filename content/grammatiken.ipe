@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250127232746" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250127234350" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -8216,10 +8216,23 @@ Grammatik.</text>
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page epsilon" active="epsilon"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<group layer="epsilon">
+<path stroke="black" fill="KITred15">
+104 152 m
+720 152 l
+8 0 0 -8 720 144 728 144 a
+728 106.042 l
+112 106.042 l
+8 0 0 -8 112 114.042 104 114.042 a
+h
+</path>
+</group>
 <group layer="alpha">
 <path stroke="gray1" fill="gray3">
 824 368 m
@@ -8243,6 +8256,7 @@ Tipp: Was für eine Struktur haben Wörter der Länge 2, 4, . . . ?</text>
 <text layer="gamma" transformations="translations" pos="16 128" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (T, \set{X , Y }, X , P)$ mit $P = \{X \rightarrow bX \vert YabY \vert \epsilon, Y \rightarrow aY \vert bY \vert \epsilon \}$</text>
 <text layer="delta" transformations="translations" pos="16 96" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (T, \set{X} , X , P)$ mit $P = \{X \rightarrow abX \vert baX \vert a\vert b\vert \epsilon\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
+<text layer="epsilon" transformations="translations" pos="112 144" stroke="black" type="minipage" width="608" height="20.3261" depth="9.632" valign="top" size="huge" style="center">Hier JFLAP benutzen</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
