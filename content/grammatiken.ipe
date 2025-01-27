@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250127130709" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250127232746" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -7758,30 +7758,31 @@ von Wörtern die uns helfen, sogenannte Grammatiken.</text>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota kappa" active="kappa"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota kappa lambda" active="lambda"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota kappa lambda mu" active="mu"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="784" height="28.5403" depth="17.4936" valign="top" style="item">Eine Grammatik G erzeugt die Sprache L(G), also liegen
-alle Worte die durch G gebildet werden können in L(G)</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$G = (\Sigma, V, S, R)$</text>
-<text layer="gamma" transformations="translations" pos="0 288" stroke="black" type="minipage" width="448" height="15.469" depth="4.4178" valign="top" style="subitem">$\Sigma$: Die Menge an Terminalsymbolen</text>
-<text layer="delta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="subitem">
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="28.4071" depth="17.3826" valign="top" style="item">Eine Grammatik G erzeugt die Sprache L(G), also liegen
+alle Worte die durch G gebildet werden können in L(G).</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$G = (\Sigma, V, S, R)$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="448" height="15.469" depth="4.4178" valign="top" style="subitem">$\Sigma$: Die Menge an Terminalsymbolen</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="subitem">
 V: Die Menge an Nichtterminalsymbolen
 </text>
-<text layer="epsilon" transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top" style="subitem">S: Das Startsymbol (S $\in$ V)
+<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top" style="subitem">S: Das Startsymbol (S $\in$ V)
 </text>
-<text layer="zeta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="subitem">R: Die Menge der Produktionen</text>
-<path layer="eta" stroke="black" pen="3">
+<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="subitem">R: Die Menge der Produktionen</text>
+<path layer="eta" matrix="1 0 0 1 -32 0" stroke="black" pen="3">
 464 288 m
 464 208 l
 </path>
-<text transformations="translations" pos="496 256" stroke="black" type="minipage" width="336" height="15.2758" depth="4.218" valign="top">Dieser Teil ist Definition,
+<text matrix="1 0 0 1 -32 0" transformations="translations" pos="496 256" stroke="black" type="minipage" width="336" height="15.2758" depth="4.218" valign="top">Dieser Teil ist Definition,
 Vorbereitung</text>
-<text layer="theta" transformations="translations" pos="464 192" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top">$\Rightarrow $ Hier passiert das
+<text layer="theta" matrix="1 0 0 1 -32 0" transformations="translations" pos="464 192" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top">$\Rightarrow $ Hier passiert das
 eigentlich Spannende</text>
-<text layer="iota" transformations="translations" pos="0 160" stroke="black" type="minipage" width="544" height="28.4071" depth="17.3826" valign="top" style="item">Die Elemente in V werden groß geschrieben (S, A, …) und
+<text layer="iota" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 160" stroke="black" type="minipage" width="544" height="28.4071" depth="17.3826" valign="top" style="item">Die Elemente in V werden groß geschrieben (S, A, …) und
 sind wie Variablen (eben nicht terminal)</text>
-<text layer="kappa" transformations="translations" pos="0 96" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top" style="item">$\Sigma$ ist das Alphabet zu L(G) ($L(G) \subseteq T^*$)</text>
-<text layer="lambda" transformations="translations" pos="0 64" stroke="black" type="minipage" width="576" height="13.229" depth="2.1534" valign="top" style="item">Aus S entwickeln wir unsere Worte</text>
-<text layer="mu" transformations="translations" pos="0 32" stroke="black" type="minipage" width="640" height="14.2901" depth="3.219" valign="top" style="item">R beschreibt, wie wir das machen</text>
+<text layer="kappa" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 96" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top" style="item">$\Sigma$ ist das Alphabet zu L(G) ($L(G) \subseteq T^*$)</text>
+<text layer="lambda" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 64" stroke="black" type="minipage" width="576" height="13.229" depth="2.1534" valign="top" style="item">Aus S entwickeln wir unsere Worte</text>
+<text layer="mu" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 32" stroke="black" type="minipage" width="640" height="14.2901" depth="3.219" valign="top" style="item">R beschreibt, wie wir das machen</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
+<text layer="mu" matrix="1 0 0 1 0 -20" transformations="translations" pos="0 352" stroke="gray2" type="minipage" width="896" height="12.886" depth="2.92" valign="top" size="small">(Eine Sprache heißt Kontextfrei, wenn es eine kontextfreie Grammatik gibt, die sie erzeugt)</text>
 </page>
 <page title="Produktionen">
 <layer name="alpha"/>
@@ -7802,7 +7803,7 @@ sind wie Variablen (eben nicht terminal)</text>
 h
 </path>
 </group>
-<group layer="gamma" matrix="1 0 0 1 0 -128">
+<group layer="gamma" matrix="1 0 0 1 0 -144">
 <path stroke="black" fill="KITred15">
 8 296 m
 640 296 l
@@ -7816,18 +7817,21 @@ h
 <text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="480" height="15.0516" depth="3.9738" valign="top">Eine Produktion ist eine Ersetzungsregel</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="624" height="28.8067" depth="17.76" valign="top">Nichtterminal $\rightarrow$ [beliebiges Wort aus Terminalen und Nichterminalen]\\
 Formal:  $X \rightarrow \alpha \quad (X \in V,  \alpha \in (V\cup \Sigma)^*)$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -128" transformations="translations" pos="16 288" stroke="black" type="minipage" width="624" height="28.4071" depth="17.3826" valign="top">Es kann mehrere Ableitungsregeln geben die das Gleiche Nichtterminalsymbol ersetzen!</text>
-<text matrix="1 0 0 1 0 -128" transformations="translations" pos="16 224" stroke="black" type="minipage" width="384" height="15.0516" depth="3.9738" valign="top">$\Rightarrow$ man hat Wahlmöglichkeiten</text>
-<text layer="beta" matrix="1 0 0 1 0 -80" transformations="translations" pos="16 288" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top">In jedem Schritt darf nur eine Produktionsregel angewendet werden</text>
+<text layer="gamma" matrix="1 0 0 1 0 -144" transformations="translations" pos="16 288" stroke="black" type="minipage" width="624" height="28.4071" depth="17.3826" valign="top">Es kann mehrere Ableitungsregeln geben die das Gleiche Nichtterminalsymbol ersetzen!</text>
+<text matrix="1 0 0 1 0 -144" transformations="translations" pos="16 224" stroke="black" type="minipage" width="384" height="15.0516" depth="3.9738" valign="top">$\Rightarrow$ man hat Wahlmöglichkeiten</text>
+<text layer="beta" matrix="1 0 0 1 0 -96" transformations="translations" pos="16 288" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top">In jedem Schritt darf nur eine Produktionsregel angewendet werden</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
+<text layer="alpha" transformations="translations" pos="16 272" stroke="black" type="minipage" width="592" height="26.4002" depth="15.3402" valign="top">Produktionen dieser Form heißen kontextfrei. Eine Grammatik ist kontextfrei wenn alle ihre Produktionen kontextfrei sind.</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma" active="beta"/>
+<layer name="delta"/>
+<view layers="alpha pagenumbers_page" active="beta"/>
+<view layers="alpha pagenumbers_page beta delta" active="beta"/>
+<view layers="alpha pagenumbers_page gamma delta" active="beta"/>
 <group layer="beta" matrix="1 0 0 1 0 -16">
 <path stroke="gray1" fill="gray3">
 168 80 m
@@ -7849,7 +7853,7 @@ h
 \\
 \}
 \end{align*}</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 160" stroke="black" type="minipage" width="464" height="13.2268" depth="2.1312" valign="top" style="item">$S \rightarrow aSb \rightarrow aaSb \rightarrow aaSbb \rightarrow aabb$</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 160" stroke="black" type="minipage" width="464" height="13.2268" depth="2.1312" valign="top" style="item">$S \rightarrow aSb \rightarrow aaSb \rightarrow aaSbb \rightarrow aabb$</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 128" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top" style="item">Also ist aabb in L(G)</text>
 <text layer="beta" matrix="1 0 0 1 32 -16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="128" height="15.1648" depth="4.0848" valign="top">Gebt L(G) an</text>
 <text layer="gamma" transformations="translations" pos="0 80" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="item">$L(G) = \{a\}^* \cdot \{b^*\}$</text>
@@ -8108,6 +8112,13 @@ Grammatik.</text>
 <text layer="kappa" transformations="translations" pos="480 272" stroke="black" type="minipage" width="416" height="13.0048" depth="1.9092" valign="top" style="item">Jeder innere Knoten enthält eine Variable.</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="480 272" stroke="black" type="minipage" width="432" height="15.358" depth="4.2846" valign="top" style="item">Die Blätter sind Symbole aus $\Sigma$ oder $\epsilon$</text>
 </page>
+<page title="Anmerkungen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Ableitungsbäume, Ableitungen und Grammatiken sind meistens nicht eindeutig</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Kann man durch Linksableitungen etc (immer das linke Nichtterminal wird ersetzt) verbessern</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.1648" depth="4.0848" valign="top" style="item">Mehr dazu in ProPa (5tes Semester)</text>
+</page>
 <page title="Aufgabe">
 <layer name="alpha"/>
 <layer name="beta"/>
@@ -8228,10 +8239,40 @@ Sprache erzeugt:</text>
 von w gilt:\\
  $\vert N_a(v) - N_b(v) \vert \leq 1$
 Tipp: Was für eine Struktur haben Wörter der Länge 2, 4, . . . ?</text>
-<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (\{X , Y \}, T , X , P) $ mit $P = \{X \rightarrow YbaaY , Y \rightarrow aY \vert bY \vert\epsilon\}$</text>
-<text layer="gamma" transformations="translations" pos="16 128" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (\{X , Y \}, \{a, b\}, X , P)$ mit $P = \{X \rightarrow bX \vert YabY \vert \epsilon, Y \rightarrow aY \vert bY \vert \epsilon \}$</text>
-<text layer="delta" transformations="translations" pos="16 96" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (\{X \}, T , X , P)$ mit $P = \{X \rightarrow abX \vert baX \vert a\vert b\vert \epsilon\}$</text>
+<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (T,\set{X , Y } , X , P) $ mit $P = \{X \rightarrow YbaaY , Y \rightarrow aY \vert bY \vert\epsilon\}$</text>
+<text layer="gamma" transformations="translations" pos="16 128" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (T, \set{X , Y }, X , P)$ mit $P = \{X \rightarrow bX \vert YabY \vert \epsilon, Y \rightarrow aY \vert bY \vert \epsilon \}$</text>
+<text layer="delta" transformations="translations" pos="16 96" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">$G = (T, \set{X} , X , P)$ mit $P = \{X \rightarrow abX \vert baX \vert a\vert b\vert \epsilon\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITred15">
+360 216 m
+768 216 l
+8 0 0 -8 768 208 776 208 a
+776 130.097 l
+368 130.097 l
+8 0 0 -8 368 138.097 360 138.097 a
+h
+</path>
+</group>
+<text layer="alpha" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 368" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top">Welche Sprache wird von dieser Grammatik erzeugt?</text>
+<text matrix="1 0 0 1 16 -64" transformations="translations" pos="0 384" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$G = (\set{a,b}, \set{S,X,Y}, S , R)$</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="112" height="133.218" depth="122.455" valign="top">\begin{align*}
+ R &amp;=\{\\
+&amp;S \rightarrow XY\\
+&amp;S \rightarrow aS\\
+&amp;S \rightarrow Sb\\
+&amp;Y\rightarrow XaS\\
+&amp;X\rightarrow YYb
+\\
+\}
+\end{align*}</text>
+<text layer="beta" matrix="1 0 0 1 -48 0" transformations="translations" pos="416 208" stroke="black" type="minipage" width="400" height="40.4662" depth="29.4372" valign="top">$L(G) =  \emptyset$ keine Regel hat nur Terminale \impl Es gibt keine Ableitung die in einem Wort aus Terminalen endet</text>
 </page>
 <page title="Beweise">
 <layer name="alpha"/>
@@ -8259,24 +8300,113 @@ h
 <text layer="gamma" transformations="translations" pos="16 304" stroke="black" type="minipage" width="784" height="16.5901" depth="5.5278" valign="top">$L(G) \subseteq L$: \quad alle Wörter, die sich aus $G$ ableiten lassen, sind auch in L </text>
 <text matrix="1 0 0 1 0 -80" transformations="translations" pos="16 256" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top">$L \subseteq L(G)$: \quad jedes Wort, das in $L$ ist kann auch mit $G$ abgeleitet werden</text>
 <text layer="delta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="768" height="20.5261" depth="9.4794" valign="top">Induktion über die Anzahl der Ableitungsschritte $\overset{i}{\rightarrow}$</text>
-<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top">Induktion über Wortlänge $n = \vert w\vert$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 128" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top">Induktion über Wortlänge $n = \vert w\vert$</text>
 </page>
-<page title="Beispiel">
+<page title="Palindrome">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha" active="alpha"/>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="32 352" stroke="black" type="minipage" width="640" height="29.8546" depth="18.8034" valign="top">
-Gebt eine Kontextfreie Grammatik $G = (\set{a,b}, V, S, R)$ an, für die $L(G)$ die Menge aller Palindrome über dem Alpabet $ \set{a,b}$ ist</text>
-<text transformations="translations" pos="16 288" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Gebt eine Ableitung der Wörter \texttt{baaab} und \texttt{abaaaba} aus dem Startsymbol eurer Grammatik an.</text>
-<text transformations="translations" pos="16 240" stroke="black" type="minipage" width="784" height="16.5901" depth="5.5278" valign="top">Beweist, das eure Grammatik jedes Palindrom über dem Alphabet $\set{a,b}$ erzeugt</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 192" stroke="black" type="minipage" width="816" height="15.0516" depth="3.9738" valign="top">Tipp: Induktion: Wenn $n-1$ und $n-2$ gelten, dann gilt auch n</text>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="alpha" matrix="1 0 0 1 0 -32">
+<path stroke="gray1" fill="gray3">
+904 240 m
+8 0 0 8 896 240 896 248 a
+8 248 l
+8 220.506 l
+8 0 0 8 16 220.506 16 212.506 a
+904 212.506 l
+h
+</path>
+</group>
+<group>
+<path stroke="gray1" fill="gray3">
+744 368 m
+8 0 0 8 736 368 736 376 a
+8 376 l
+8 319.342 l
+8 0 0 8 16 319.342 16 311.342 a
+744 311.342 l
+h
+</path>
+</group>
+<group matrix="1 0 0 1 0 -32">
+<path stroke="gray1" fill="gray3">
+840 96 m
+8 0 0 8 832 96 832 104 a
+8 104 l
+8 44.9746 l
+8 0 0 8 16 44.9746 16 36.9746 a
+840 36.9746 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="32 352" stroke="black" type="minipage" width="720" height="29.8546" depth="18.8034" valign="top">
+Gebt eine kontextfreie Grammatik $G = (\set{a,b}, V, S, R)$ an, für die $L(G)$ die Menge aller Palindrome über dem Alpabet $ \set{a,b}$ ist ($\epsilon$ ist auch ein Palindrom)</text>
+<text matrix="1 0 0 1 0 -80" transformations="translations" pos="16 288" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Gebt eine Ableitung der Wörter \texttt{baaab} und \texttt{abaaaba} aus dem Startsymbol eurer Grammatik an.</text>
+<text matrix="1 0 0 1 0 -176" transformations="translations" pos="16 240" stroke="black" type="minipage" width="784" height="16.5901" depth="5.5278" valign="top">Beweist, das eure Grammatik jedes Palindrom über dem Alphabet $\set{a,b}$ erzeugt</text>
+<text matrix="1 0 0 1 0 -160" transformations="translations" pos="16 192" stroke="black" type="minipage" width="816" height="15.0516" depth="3.9738" valign="top">Tipp: Induktion: Wenn $n-1$ und $n-2$ gelten, dann gilt auch n</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">$G = (\set{a,b}, \set{S}, S, R =\set{S\rightarrow aSa \vert bSb \vert a \vert b \vert \epsilon})$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="32 224" stroke="black" type="minipage" width="608" height="13.2268" depth="2.1312" valign="top">$S \rightarrow bSb \rightarrow baSab \rightarrow baaab$</text>
+<text matrix="1 0 0 1 0 -64" transformations="translations" pos="32 192" stroke="black" type="minipage" width="736" height="13.2268" depth="2.1312" valign="top">$S \rightarrow aSa \rightarrow abSba \rightarrow abaSaba \rightarrow abaaaba$</text>
 </page>
 <page title="Lösung">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top">Wir machen Induktion über $\vert w \vert = n $ der Palindrome</text>
+<text layer="beta" transformations="translations" pos="0 336" stroke="black" type="minipage" width="784" height="12.7872" depth="1.7094" valign="top">I.A.</text>
+<text transformations="translations" pos="32 304" stroke="black" type="minipage" width="864" height="15.469" depth="4.4178" valign="top">n = 0: Das einzige Palindrom ist das leere Wort. $\epsilon$ kann in einem Schritt aus $S$ abgeleitet werden</text>
+<text transformations="translations" pos="32 272" stroke="black" type="minipage" width="864" height="15.469" depth="4.4178" valign="top">n = 1: Die einzigen Palindrome sind $a$ und $b$. Diese können auch aus S abgeleitet werden</text>
+<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="640" height="12.7872" depth="1.7094" valign="top">I.V.</text>
+<text transformations="translations" pos="32 208" stroke="black" type="minipage" width="864" height="26.4002" depth="15.3402" valign="top">Für ein festes aber beliebiges $n &gt; 2$ können alle Palindrome der Länge $n-2$ aus S abgeleitet werden</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="32 144" stroke="black" type="minipage" width="864" height="42.2954" depth="31.2798" valign="top">Sei $w$ ein beliebiges Palindrom der Länge $n$ das erste und letzte Zeichen sind gleich (O.B.d.A a). Also gibt es ein $w&apos;$ sodass $w = aw&apos;a$. Da $w$ ein Palindrom ist, ist auch $w&apos;$ ein Palindrom und es gilt $\vert w&apos; \vert = n-2$</text>
+<text layer="epsilon" transformations="translations" pos="32 48" stroke="black" type="minipage" width="896" height="18.8633" depth="7.7922" valign="top">Nach I.V. gibt es die Ableitung $S \overset{*}{\rightarrow}w&apos;$, also gibt es auch die Ableitung $S\rightarrow aSa \overset{*}{\rightarrow}aw&apos;a = w $</text>
+<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="32 32" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">\impl $w \in L(G)$ für alle Palindrome</text>
+<text layer="delta" matrix="1 0 0 1 16 0" transformations="translations" pos="-16 160" stroke="black" type="minipage" width="208" height="13.229" depth="2.1534" valign="top">I.S.</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<group layer="alpha" matrix="1 0 0 1 0 272">
+<path stroke="gray1" fill="gray3">
+840 96 m
+8 0 0 8 832 96 832 104 a
+8 104 l
+8 44.9746 l
+8 0 0 8 16 44.9746 16 36.9746 a
+840 36.9746 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 128" transformations="translations" pos="16 240" stroke="black" type="minipage" width="784" height="29.0309" depth="18.0042" valign="top">Beweist, dass jedes Wort, das durch die Grammatik erzeugt wird ein Palindrom über dem Alphabet $\set{a,b}$ ist</text>
+<text layer="beta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="608" height="20.5261" depth="9.4794" valign="top">Wir machen Induktikon über die Anzahl an Ableitungsschritten $\overset{i}{\rightarrow}$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 336" stroke="black" type="minipage" width="784" height="12.7872" depth="1.7094" valign="top">I.A.</text>
+<text matrix="1 0 0 1 0 -64" transformations="translations" pos="32 304" stroke="black" type="minipage" width="864" height="28.2939" depth="17.2716" valign="top">i = 1: Damit in einem Ableitungsschritt ein Wort aus Terminalen abegeleitet wird muss die Regel $S \rightarrow \epsilon$ genommen werden. $\epsilon$ ist ein Palindrom \cm</text>
+<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="640" height="12.7872" depth="1.7094" valign="top">I.V.</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="32 208" stroke="black" type="minipage" width="864" height="26.4158" depth="15.3846" valign="top">Für ein festes aber beliebiges $i &gt; 1$ sind alle Wörter die in $i-1$ schritten abgeleitet werden ein Palindrom</text>
+<text layer="epsilon" matrix="1 0 0 1 16 -48" transformations="translations" pos="-16 160" stroke="black" type="minipage" width="208" height="13.229" depth="2.1534" valign="top">I.S.</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="32 96" stroke="black" type="minipage" width="672" height="15.3136" depth="4.2402" valign="top">Sei $w$ ein wort, dass in $i$ Schritten abgeleitet wurde</text>
+<text matrix="1 0 0 1 0 -23" transformations="translations" pos="32 80" stroke="black" type="minipage" width="864" height="20.5261" depth="9.4794" valign="top">Dann gilt $S\rightarrow aSa \overset{i-1}{\rightarrow} w $ \quad wobei $S \overset{i-1}{\rightarrow} w&apos;$ nach I.V ein Palindrom ist</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="32 48" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top">Also ist w = aw&apos;a auch ein Palindrom (analog für b)</text>
 </page>
 <page title="Abschlusseigenschaften">
 <layer name="alpha"/>
@@ -8300,37 +8430,89 @@ Gebt eine Kontextfreie Grammatik $G = (\set{a,b}, V, S, R)$ an, für die $L(G)$ 
 </page>
 <page title="Abschlusseigenschaften">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">Seien $L_1$ und $L_2$ kontextfreie Sprachen mit $G_1 = (\Sigma_1, V_1, S_1, R_1)$ und $G_2 = (\Sigma_2, V_2, S_2, R_2)$</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="29.2285" depth="18.1818" valign="top">O.B.d.A. $V_1 \cap V_2 = \emptyset$ \\(Macht den Beweis übersichtlicher und kann durch umbennen der Nichtterminale erreicht werden)</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">Wir Konstruieren daraus eine neue Grammatik $G = (\Sigma, V, S,R) (S \notin V_1 \cup V_2)$</text>
-<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="14.8807" depth="3.7962" valign="top" style="item">$\Sigma = \Sigma_1 \cup \Sigma_2$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">$V = V_1 \cup V_2 \cup \set{S}$</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">$R = R_1 \cup R_2 \cup \set{S \rightarrow S_1 \vert S_2}$</text>
-<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top">Behauptung $L(G) = L(G_1) \cup L(G_2)$</text>
+<text layer="beta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">Wir Konstruieren daraus eine neue Grammatik $G = (\Sigma, V, S,R) (S \notin V_1 \cup V_2)$</text>
+<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="14.8807" depth="3.7962" valign="top" style="item">$\Sigma = \Sigma_1 \cup \Sigma_2$</text>
+<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">$V = V_1 \cup V_2 \cup \set{S}$</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top" style="item">$R = R_1 \cup R_2 \cup \set{S \rightarrow S_1 \vert S_2}$</text>
+<text layer="zeta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top">Behauptung $L(G) = L(G_1) \cup L(G_2)$</text>
 </page>
 <page title="Abschlusseigenschaften">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 0 256" transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top">Behauptung $L(G) = L(G_1) \cup L(G_2)$</text>
-<text transformations="translations" pos="0 336" stroke="black" type="minipage" width="432" height="12.9115" depth="1.8204" valign="top">Beweis:</text>
-<text transformations="translations" pos="0 304" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$L(G) \subseteq L(G_1) \cup L(G_2)$</text>
-<text transformations="translations" pos="0 272" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Sei $w \in L(G)$ beliebig \quad z.z. w in $L(G_1)$ oder $w \in L(G_2)$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="608" height="29.102" depth="18.0486" valign="top">Es gibt also eine Ableitungsfolge\\
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<group layer="alpha" matrix="1 0 0 1 16 -16">
+<path stroke="black" fill="KITblue15">
+-8 344 m
+736 344 l
+8 0 0 -8 736 336 744 336 a
+744 68.1132 l
+0 68.1132 l
+8 0 0 -8 0 76.1132 -8 76.1132 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 256" transformations="translations" pos="0 128" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top">Behauptung $L(G) = L(G_1) \cup L(G_2)$</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 336" stroke="black" type="minipage" width="432" height="12.9115" depth="1.8204" valign="top">Beweis:</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$L(G) \subseteq L(G_1) \cup L(G_2)$</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 272" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Sei $w \in L(G)$ beliebig \quad z.z. w in $L(G_1)$ oder $w \in L(G_2)$</text>
+<text layer="delta" matrix="1 0 0 1 16 -32" transformations="translations" pos="0 224" stroke="black" type="minipage" width="608" height="29.102" depth="18.0486" valign="top">Es gibt also eine Ableitungsfolge\\
 $S \rightarrow S_1 \overset{*}{\rightarrow} w$</text>
-<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="848" height="15.469" depth="4.4178" valign="top">Die erste Ableitung muss entweder $S \rightarrow S_1$ oder $S \rightarrow S_2$ sein (O.B.d.A $S \rightarrow S_1$)</text>
-<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="736" height="19.3562" depth="8.3028" valign="top">Da $V_1 \cap V_2 = \emptyset$ sind alle Ableitungen in $\overset{*}{\rightarrow}$ aus $R_1 \Rightarrow w \in L(G_1)$</text>
-<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="15.469" depth="4.4178" valign="top">Analog für $S \rightarrow S_2$</text>
+<text layer="gamma" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="736" height="15.469" depth="4.4178" valign="top">Die erste Ableitung muss entweder $S \rightarrow S_1$ oder $S \rightarrow S_2$ sein (O.B.d.A $S \rightarrow S_1$)</text>
+<text layer="epsilon" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 144" stroke="black" type="minipage" width="640" height="19.3562" depth="8.3028" valign="top">Da $V_1 \cap V_2 = \emptyset$ sind alle Ableitungen in $\overset{*}{\rightarrow}$ aus $R_1 \Rightarrow w \in L(G_1)$</text>
+<text layer="zeta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="15.469" depth="4.4178" valign="top">Analog für $S \rightarrow S_2$</text>
 </page>
-<page title="Abschusseigenschaften">
+<page title="Abschlusseigenschaften">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 0 64" transformations="translations" pos="0 304" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$L(G_1) \cup L(G_2)\subseteq L(G) $</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">O.B.d.A sei $w \in L(G_1)$ belieibig</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="18.8633" depth="7.7922" valign="top">Es gibt also eine Ableitungsfolge $S_1 \overset{*}{\rightarrow} w$ in $V_1$ (und damit auch in $V$)</text>
-<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="752" height="18.8633" depth="7.7922" valign="top">Damit gibt es auch eine Ableitungsfolge $S \rightarrow S_1 \overset{*}{\rightarrow} w$</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">\impl wir können also $w$ aus $S$ ableiten $\impl w \in L(G)$</text>
-<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="832" height="16.5901" depth="5.5278" valign="top">Analog für $w \in L(G_2)$ und damit für alle $w  \in L(G_1) \cup L(G_2)$</text>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<group layer="alpha" matrix="1 0 0 1 16 0">
+<path stroke="black" fill="KITblue15">
+-8 376 m
+624 376 l
+8 0 0 -8 624 368 632 368 a
+632 113.882 l
+0 113.882 l
+8 0 0 -8 0 121.882 -8 121.882 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 16 64" transformations="translations" pos="0 304" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$L(G_1) \cup L(G_2)\subseteq L(G) $</text>
+<text layer="beta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 320" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">O.B.d.A sei $w \in L(G_1)$ belieibig</text>
+<text layer="gamma" matrix="1 0 0 1 16 0" transformations="translations" pos="0 288" stroke="black" type="minipage" width="624" height="18.8633" depth="7.7922" valign="top">Es gibt also eine Ableitungsfolge $S_1 \overset{*}{\rightarrow} w$ in $V_1$ (und damit auch in $V$)</text>
+<text layer="delta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 240" stroke="black" type="minipage" width="512" height="18.8633" depth="7.7922" valign="top">Damit gibt es auch eine Ableitungsfolge $S \rightarrow S_1 \overset{*}{\rightarrow} w$</text>
+<text layer="epsilon" matrix="1 0 0 1 16 0" transformations="translations" pos="0 192" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">\impl wir können also $w$ aus $S$ ableiten $\impl w \in L(G)$</text>
+<text layer="zeta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 144" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">Analog für $w \in L(G_2)$ und damit für alle $w  \in L(G_1) \cup L(G_2)$</text>
 </page>
 <page title="Änderungen">
 <layer name="alpha"/>
@@ -8373,5 +8555,13 @@ Genauso $\Rightarrow$ statt $\rightarrow$</text>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <image layer="alpha" matrix="0.712619 0 0 0.712619 167.536 -15.5481" rect="0 0 750 614" bitmap="3"/>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
+</page>
+<page title="Ausblick">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Wieso heißen die Grammatiken eigentlich \emph{Kontextfrei}?</text>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="864" height="15.469" depth="4.4178" valign="top" style="item">Die Regel $X \rightarrow \alpha$ kann immer angewandt werden egal was vor und hinter dem X steht</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top" style="item">Es gibt Grammatiken die das nicht fordern (z.B. kontextsensitive oder Typ 0) (TGI)</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top" style="item">Und auch welche die noch mehr Einschränkungen haben (Kommt nächste woche)</text>
 </page>
 </ipe>
