@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250121125651" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250128114945" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -5678,7 +5678,7 @@ h
 (Symbol1, i) $\coloneqq$ \func{removeMinimum}(M)\;
 (Symbol2, j) = \func{removeMinimum}(M)\;
 $v \coloneqq$ V.\append{(Symbol1, i)}\;
-$u \coloneqq$ V.\append{(Symbol2, j)}\;
+$u \coloneqq$ V.\append{(Symbol2, k)}\;
 $h \coloneqq $ V.\append{(Symbol1$\cdot$ Symbol2, i+k)}\;
 $e1 \coloneqq $ E.\append(vh)\;
 $e2 \coloneqq $ E.\append(uh)\;
