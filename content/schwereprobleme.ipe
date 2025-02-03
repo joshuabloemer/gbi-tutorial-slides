@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250203224023" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20250204001124" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3747,7 +3747,7 @@ h
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
-<group layer="delta">
+<group layer="delta" matrix="1 0 0 1 0 16">
 <path stroke="gray1" fill="gray3">
 744 80 m
 8 0 0 8 736 80 736 88 a
@@ -3760,15 +3760,15 @@ h
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Es gibt verschiedene Problemarten</text>
 <text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Optimierungsproblem:</text>
-<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Optimalwertproblem</text>
-<text layer="delta" matrix="1 0 0 1 0 -176" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Entscheidungsproblem</text>
+<text layer="gamma" matrix="1 0 0 1 0 -96" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Optimalwertproblem</text>
+<text layer="delta" matrix="1 0 0 1 0 -160" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Entscheidungsproblem</text>
 <text layer="alpha" transformations="translations" pos="0 352" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top">Gegeben sei ein Graph G</text>
 <text layer="beta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item">Gesucht ist eine Färbung mit möglichst wenig Farben</text>
-<text layer="gamma" matrix="1 0 0 1 0 -80" transformations="translations" pos="0 288" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item">Gesucht ist die Anzahl Farben einer minimalen Färbung </text>
-<text layer="delta" transformations="translations" pos="0 144" stroke="black" type="minipage" width="672" height="28.7335" depth="17.6934" valign="top" style="item">Gegeben sei zusätzlich auch ein Parameter $k \in \mathbb N_+$ Die Frage ist nun: Gibt
-es eine Färbung mit höchstens k Farben</text>
-<text matrix="1 0 0 1 128 0" transformations="translations" pos="0 80" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Entscheidungsprobleme kann man leicht als Sprachen formulieren</text>
-<text matrix="1 0 0 1 128 0" transformations="translations" pos="0 48" stroke="black" type="minipage" width="592" height="29.8546" depth="18.8034" valign="top">Sei $L = \set{c(G) \given \mbox{G ist Graph der sich mit k Farben färben lässt }}$ wobei c eine Codierngsfunktion ist. Gilt $c(G&apos;) \in L$?</text>
+<text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 288" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item">Gesucht ist die Anzahl der Farben einer minimalen Färbung </text>
+<text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 144" stroke="black" type="minipage" width="672" height="28.7335" depth="17.6934" valign="top" style="item">Gegeben sei zusätzlich auch ein Parameter $k \in \mathbb N_+$. Die Frage ist nun: Gibt
+es eine Färbung mit höchstens k Farben ?</text>
+<text matrix="1 0 0 1 128 16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Entscheidungsprobleme kann man leicht als Sprachen formulieren</text>
+<text matrix="1 0 0 1 128 16" transformations="translations" pos="0 48" stroke="black" type="minipage" width="592" height="29.8546" depth="18.8034" valign="top">Sei $L = \set{c(G) \given \mbox{G ist Graph, der sich mit k Farben färben lässt }}$ wobei c eine Codierungsfunktion ist. Gilt $c(G&apos;) \in L$?</text>
 </page>
 <page title="Komplexitätstheorie">
 <layer name="alpha"/>
@@ -3778,13 +3778,13 @@ es eine Färbung mit höchstens k Farben</text>
 <text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 384" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top" style="item">Enthält alle Probleme deren Laufzeiten durch ein Polynom begrenzt sind</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="item">z.B. das Entscheidungsproblem für reguläre Sprachen (Ausführung von Automaten in $\O{\vert w \vert }$)</text>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="12.9115" depth="1.8204" valign="top">Die Klasse \emph{P}</text>
-<text layer="beta" matrix="1 0 0 1 0 -288" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top" style="item">Enthält alle Probleme deren Lösung in Polynomialzeit verifiziert werden kann</text>
+<text layer="beta" matrix="1 0 0 1 0 -288" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top" style="item">Enthält alle Probleme, deren Lösung in Polynomialzeit verifiziert werden kann</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 256" stroke="black" type="minipage" width="432" height="12.9115" depth="1.8204" valign="top">Die Klasse \emph{NP}</text>
 <text layer="alpha" transformations="translations" pos="0 288" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="item">2-SAT, 2-Color</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="17.6912" depth="6.6156" valign="top" style="item">Beweis das ein Problem in P ist: Algorithmus angegben der das Problem in $\O{n^k}$ löst</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="17.6912" depth="6.6156" valign="top" style="item">Beweist, dass ein Problem in P ist: Algorithmus angegben, der das Problem in $\O{n^k}$ löst</text>
 <text layer="beta" matrix="1 0 0 1 0 -224" transformations="translations" pos="0 288" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="item">z.B. 3-SAT, 3-Color</text>
-<text matrix="1 0 0 1 0 -224" transformations="translations" pos="0 256" stroke="black" type="minipage" width="736" height="28.8067" depth="17.76" valign="top" style="item">Beweis das ein Problem in NP ist: Algorithmus angegben, der eine gegebene Lösung in $\O{n^k}$ überprüft</text>
-<text transformations="translations" pos="0 176" stroke="black" type="minipage" width="896" height="41.7826" depth="30.7914" valign="top" style="item">Das N steht für Nichtdeterministisch. Wenn wir ein Problem nicht schnell lösen können aber uns die Lösung vom himmel fällt (z.B. weil wir gut raten können) müssen wir noch prüfen ob die Lösung auch richtig ist</text>
+<text matrix="1 0 0 1 0 -224" transformations="translations" pos="0 256" stroke="black" type="minipage" width="736" height="28.8067" depth="17.76" valign="top" style="item">Beweist, dass ein Problem in NP ist: Algorithmus angegben, der eine gegebene Lösung in $\O{n^k}$ überprüft</text>
+<text transformations="translations" pos="0 176" stroke="black" type="minipage" width="896" height="41.7826" depth="30.7914" valign="top" style="item">Das N steht für nicht-deterministisch. Wenn wir ein Problem nicht schnell lösen können, aber uns die Lösung vom Himmel fällt (z.B. weil wir gut raten können) müssen wir noch prüfen, ob die Lösung auch richtig ist</text>
 </page>
 <page title="Halteproblem">
 <layer name="alpha"/>
@@ -3795,6 +3795,17 @@ es eine Färbung mit höchstens k Farben</text>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+696 368 m
+8 0 0 8 688 368 688 376 a
+8 376 l
+8 323.089 l
+8 0 0 8 16 323.089 16 315.089 a
+696 315.089 l
+h
+</path>
+</group>
 <path layer="delta" matrix="1 0 0 1 -48 -48" stroke="black" fill="red3" pen="1">
 128 176 m
 128 112 l
@@ -3802,20 +3813,9 @@ es eine Färbung mit höchstens k Farben</text>
 224 176 l
 h
 </path>
-<group layer="alpha">
-<path stroke="gray1" fill="gray3">
-680 368 m
-8 0 0 8 672 368 672 376 a
-8 376 l
-8 325.847 l
-8 0 0 8 16 325.847 16 317.847 a
-680 317.847 l
-h
-</path>
-</group>
-<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 320" stroke="black" type="minipage" width="656" height="26.5912" depth="15.5622" valign="top">\textbf{Frage:} gibt es ein Programm, das für jedes Programm $\mathcal P$ und eine Eingabe $\mathcal I$ \emph{entscheiden} kann ob $\mathcal P$ terminiert wenn man es auf $\mathcal I$ ausführt?</text>
-<text layer="beta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="768" height="15.469" depth="4.4178" valign="top">Wir tun einfach mal so als würde das Programm existieren und nennen es $\mathcal P_\mathrm{halt}$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 256" stroke="black" type="minipage" width="704" height="16.5901" depth="5.5278" valign="top" style="item">Da $\mathcal P_\mathrm{halt}$ das Problem $(\mathcal P, \mathcal I)$ entscheidet hält $\mathcal P_\mathrm{halt}$ auch immer</text>
+<text layer="alpha" matrix="1 0 0 1 16 48" transformations="translations" pos="0 320" stroke="black" type="minipage" width="672" height="27.972" depth="16.9386" valign="top">\textbf{Frage:} gibt es ein Programm, das für jedes Programm $\mathcal P$ und eine Eingabe $\mathcal I$ \emph{entscheiden} kann, ob $\mathcal P$ terminiert, wenn man es auf $\mathcal I$ ausführt?</text>
+<text layer="beta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="768" height="15.469" depth="4.4178" valign="top">Wir tun einfach mal so, als würde das Programm existieren und nennen es $\mathcal P_\mathrm{halt}$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 256" stroke="black" type="minipage" width="704" height="16.5901" depth="5.5278" valign="top" style="item">Da $\mathcal P_\mathrm{halt}$ das Problem $(\mathcal P, \mathcal I)$ entscheidet, hält $\mathcal P_\mathrm{halt}$ auch immer</text>
 <text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="688" height="15.469" depth="4.4178" valign="top" style="item">$\mathcal P_\mathrm{halt}$ entscheidet ob $\mathcal P$ bei Eingabe $\mathcal I$ hält</text>
 <text layer="delta" matrix="1 0 0 1 -48 -38.6616" transformations="translations" pos="128 144" stroke="black" type="minipage" width="96" height="14.8807" depth="3.7962" valign="top" style="center">$\mathcal P_\mathrm{halt}$</text>
 <path matrix="1 0 0 1 -48 -48" stroke="black" fill="red3" pen="1" arrow="normal/normal">
@@ -3886,7 +3886,7 @@ h
 <text matrix="1 0 0 1 -53.1 217" transformations="translations" pos="304 160" stroke="black" type="minipage" width="352" height="13.044" depth="3.08" valign="top" size="small">wahr, wenn $\mathcal P$ auf Eingabe $\mathcal I$ hält</text>
 <text matrix="1 0 0 1 -61 184" transformations="translations" pos="304 160" stroke="black" type="minipage" width="352" height="13.044" depth="3.08" valign="top" size="small">falsch, wenn $\mathcal P$ auf Eingabe $\mathcal I$ nicht hält</text>
 <text matrix="1 0 0 1 -48 213" transformations="translations" pos="64 160" stroke="black" type="minipage" width="80" height="13.952" depth="3.98" valign="top" size="small">$(\mathcal P, \mathcal I)$</text>
-<text layer="beta" matrix="1 0 0 1 0 48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top">Wir Konstruieren ein neues Programm $\mathcal P_\mathrm{test}$ das nur noch eine Eingabe $\mathcal P$ bekommt</text>
+<text layer="beta" matrix="1 0 0 1 0 48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top">Wir konstruieren ein neues Programm $\mathcal P_\mathrm{test}$, das nur noch eine Eingabe $\mathcal P$ bekommt</text>
 <path matrix="1 0 0 1 32 48" stroke="black" fill="red3" pen="1">
 128 176 m
 128 112 l
@@ -3916,9 +3916,9 @@ h
 <text matrix="1 0 0 1 32 53" transformations="translations" pos="64 160" stroke="black" type="minipage" width="80" height="13.952" depth="3.98" valign="top" size="small">$(\mathcal P, \mathcal P)$</text>
 <text matrix="1 0 0 1 -36 27" transformations="translations" pos="320 192" stroke="maygreen1" type="label" width="38.506" height="11.686" depth="0.2" valign="baseline" size="small">\bfseries wahr</text>
 <text matrix="1 0 0 1 -40 43" transformations="translations" pos="320 112" stroke="red1" type="label" width="47.514" height="12.042" depth="0.2" valign="baseline" size="small">\bfseries  falsch</text>
-<text layer="gamma" matrix="1 0 0 1 -16 48" transformations="translations" pos="16 80" stroke="black" type="minipage" width="864" height="15.469" depth="4.4178" valign="top" style="item">Wenn $\mathcal P$ mit seinem eigenen Programmcode als Eingabe hält geht  $\mathcal P_\mathrm{test}$  in eine Endlosschleife</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="864" height="15.469" depth="4.4178" valign="top" style="item">Wenn $\mathcal P$ mit seinem eigenen Programmcode als Eingabe in eine Endlosschleife geht  hält  $\mathcal P_\mathrm{test}$  </text>
-<text layer="delta" matrix="1 0 0 1 -16 48" transformations="translations" pos="16 16" stroke="black" type="minipage" width="880" height="15.358" depth="4.2846" valign="top">Was davon passieren soll kann mit $\mathcal P_\mathrm{halt}$ entschieden werden</text>
+<text layer="gamma" matrix="1 0 0 1 -16 48" transformations="translations" pos="16 80" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top" style="item">Wenn $\mathcal P$ mit seinem eigenen Programmcode als Eingabe hält, geht  $\mathcal P_\mathrm{test}$  in eine Endlosschleife</text>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Wenn $\mathcal P$ mit seinem eigenen Programmcode als Eingabe in eine Endlosschleife geht, hält  $\mathcal P_\mathrm{test}$  </text>
+<text layer="delta" matrix="1 0 0 1 -16 48" transformations="translations" pos="16 16" stroke="black" type="minipage" width="880" height="15.358" depth="4.2846" valign="top">Was davon passieren soll, kann mit $\mathcal P_\mathrm{halt}$ entschieden werden</text>
 <text layer="beta" matrix="1 0 0 1 -37 22" transformations="translations" pos="368 192" stroke="black" type="minipage" width="112" height="11.144" depth="1.18" valign="top" size="small">Endlosschleife</text>
 <text matrix="1 0 0 1 -37 22" transformations="translations" pos="368 160" stroke="black" type="minipage" width="96" height="12.788" depth="2.82" valign="top" size="small">Stop</text>
 <path matrix="1 0 0 1 -48 48" stroke="black" fill="red3" pen="1" arrow="normal/normal">
@@ -3988,7 +3988,7 @@ h
 </path>
 <text matrix="1 0 0 1 -24 181" transformations="translations" pos="64 160" stroke="black" type="minipage" width="32" height="11.214" depth="1.24" valign="top" size="small">$\mathcal P$</text>
 <text matrix="1 0 0 1 32 233.338" transformations="translations" pos="128 144" stroke="black" type="minipage" width="96" height="14.8807" depth="3.7962" valign="top" style="center">$\mathcal P_\mathrm{test}$</text>
-<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="544" height="15.469" depth="4.4178" valign="top">Was passiert wenn wir $\mathcal P_\mathrm{test}$ mit Eingabe $\mathcal P_\mathrm{test}$ aufrufen?</text>
+<text matrix="1 0 0 1 0 96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="544" height="15.469" depth="4.4178" valign="top">Was passiert, wenn wir $\mathcal P_\mathrm{test}$ mit der Eingabe $\mathcal P_\mathrm{test}$ aufrufen?</text>
 <path layer="gamma" matrix="1 0 0 1 16 -80" stroke="black" fill="red3" pen="1">
 128 176 m
 128 112 l
@@ -4102,7 +4102,7 @@ h
 <text matrix="1 0 0 1 0 160" transformations="translations" pos="64 160" stroke="black" type="minipage" width="384" height="14.8807" depth="3.7962" valign="top">\dots hält $\mathcal P_\mathrm{test}$ nicht</text>
 <text matrix="1 0 0 1 0 160" transformations="translations" pos="528 160" stroke="black" type="minipage" width="352" height="14.8807" depth="3.7962" valign="top">\dots hält $\mathcal P_\mathrm{test}$</text>
 <text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="656" height="14.9184" depth="3.8628" valign="top">\impl das ist ein Widerspruch</text>
-<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="512" height="28.7335" depth="17.6934" valign="top">\impl Wenn wir bei der Konstruktion von $\mathcal P_\mathrm{test}$ nichts falsch gemacht haben heißt das das $\mathcal P_\mathrm{halt}$ nicht existieren kann</text>
-<text layer="delta" matrix="1 0 0 1 112 16" transformations="translations" pos="96 128" stroke="black" type="minipage" width="432" height="28.4848" depth="17.427" valign="top">\bfseries Es gibt also Probleme die nicht allgemein durch einen Algorithmus lösbar sind</text>
+<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="528" height="28.7335" depth="17.6934" valign="top">\impl Wenn wir bei der Konstruktion von $\mathcal P_\mathrm{test}$ nichts falsch \\ gemacht haben, heißt das, dass $\mathcal P_\mathrm{halt}$ nicht existieren kann</text>
+<text layer="delta" matrix="1 0 0 1 112 16" transformations="translations" pos="96 128" stroke="black" type="minipage" width="432" height="28.4848" depth="17.427" valign="top">\bfseries Es gibt also Probleme, die nicht allgemein durch einen Algorithmus lösbar sind</text>
 </page>
 </ipe>
