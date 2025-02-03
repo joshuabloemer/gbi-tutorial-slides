@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250203215029" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250203224023" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3740,20 +3740,49 @@ h
 </page>
 <page title="(Entscheidungs) Probleme">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="704" height="15.2758" depth="4.218" valign="top">Was ist eigentlich ein Problem?</text>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<group layer="delta">
+<path stroke="gray1" fill="gray3">
+744 80 m
+8 0 0 8 736 80 736 88 a
+120 88 l
+120 -0.657961 l
+8 0 0 8 128 -0.657961 128 -8.65796 a
+744 -8.65796 l
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Es gibt verschiedene Problemarten</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Optimierungsproblem:</text>
+<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Optimalwertproblem</text>
+<text layer="delta" matrix="1 0 0 1 0 -176" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Entscheidungsproblem</text>
+<text layer="alpha" transformations="translations" pos="0 352" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top">Gegeben sei ein Graph G</text>
+<text layer="beta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item">Gesucht ist eine Färbung mit möglichst wenig Farben</text>
+<text layer="gamma" matrix="1 0 0 1 0 -80" transformations="translations" pos="0 288" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item">Gesucht ist die Anzahl Farben einer minimalen Färbung </text>
+<text layer="delta" transformations="translations" pos="0 144" stroke="black" type="minipage" width="672" height="28.7335" depth="17.6934" valign="top" style="item">Gegeben sei zusätzlich auch ein Parameter $k \in \mathbb N_+$ Die Frage ist nun: Gibt
+es eine Färbung mit höchstens k Farben</text>
+<text matrix="1 0 0 1 128 0" transformations="translations" pos="0 80" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Entscheidungsprobleme kann man leicht als Sprachen formulieren</text>
+<text matrix="1 0 0 1 128 0" transformations="translations" pos="0 48" stroke="black" type="minipage" width="592" height="29.8546" depth="18.8034" valign="top">Sei $L = \set{c(G) \given \mbox{G ist Graph der sich mit k Farben färben lässt }}$ wobei c eine Codierngsfunktion ist. Gilt $c(G&apos;) \in L$?</text>
 </page>
 <page title="Komplexitätstheorie">
 <layer name="alpha"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
 <text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 384" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top" style="item">Enthält alle Probleme deren Laufzeiten durch ein Polynom begrenzt sind</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="item">z.B. das Entscheidungsproblem für reguläre Sprachen (Ausführung von Automaten in $\O{\vert w \vert }$)</text>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="12.9115" depth="1.8204" valign="top">Die Klasse \emph{P}</text>
-<text matrix="1 0 0 1 0 -288" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top" style="item">Enthält alle Probleme deren Lösung in Polynomialzeit verifiziert werden kann</text>
+<text layer="beta" matrix="1 0 0 1 0 -288" transformations="translations" pos="0 384" stroke="black" type="minipage" width="816" height="15.2758" depth="4.218" valign="top" style="item">Enthält alle Probleme deren Lösung in Polynomialzeit verifiziert werden kann</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 256" stroke="black" type="minipage" width="432" height="12.9115" depth="1.8204" valign="top">Die Klasse \emph{NP}</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="item">2-SAT, 2-Color</text>
+<text layer="alpha" transformations="translations" pos="0 288" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="item">2-SAT, 2-Color</text>
 <text transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="17.6912" depth="6.6156" valign="top" style="item">Beweis das ein Problem in P ist: Algorithmus angegben der das Problem in $\O{n^k}$ löst</text>
-<text matrix="1 0 0 1 0 -224" transformations="translations" pos="0 288" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="item">3-SAT, 3-Color</text>
+<text layer="beta" matrix="1 0 0 1 0 -224" transformations="translations" pos="0 288" stroke="black" type="minipage" width="736" height="14.5144" depth="3.4632" valign="top" style="item">z.B. 3-SAT, 3-Color</text>
 <text matrix="1 0 0 1 0 -224" transformations="translations" pos="0 256" stroke="black" type="minipage" width="736" height="28.8067" depth="17.76" valign="top" style="item">Beweis das ein Problem in NP ist: Algorithmus angegben, der eine gegebene Lösung in $\O{n^k}$ überprüft</text>
 <text transformations="translations" pos="0 176" stroke="black" type="minipage" width="896" height="41.7826" depth="30.7914" valign="top" style="item">Das N steht für Nichtdeterministisch. Wenn wir ein Problem nicht schnell lösen können aber uns die Lösung vom himmel fällt (z.B. weil wir gut raten können) müssen wir noch prüfen ob die Lösung auch richtig ist</text>
 </page>

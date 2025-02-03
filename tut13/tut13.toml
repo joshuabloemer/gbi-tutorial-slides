@@ -1,0 +1,4 @@
+title = "13 Automaten und schwere Probleme"   # the file name of the output pdf
+description = "Automaten und schwere Probleme" # 
+content = ["automaten", "schwereprobleme"]
+xkcd = 287
