@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250203190903" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20250203235630" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3775,7 +3775,7 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 -16 304" transformations="translations" pos="16 80" stroke="0" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">Wir geben Automaten meißtens grafisch an</text>
+<text matrix="1 0 0 1 -16 304" transformations="translations" pos="16 80" stroke="0" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">Wir geben Automaten meistens grafisch an</text>
 <text matrix="1 0 0 1 0 6" transformations="translations" pos="0 352" stroke="0" type="minipage" width="848" height="17.0518" depth="5.9718" valign="top" style="item">Zustände sind Knoten und Übergänge sind gerichtete Kanten in einem
 Graphen</text>
 <text matrix="1 0 0 1 0 7" transformations="translations" pos="0 320" stroke="0" type="minipage" width="640" height="15.2758" depth="4.218" valign="top" style="item">Knotenbeschriftung: Zustand</text>
@@ -3783,7 +3783,7 @@ Graphen</text>
 <text matrix="1 0 0 1 0 -11" transformations="translations" pos="0 256" stroke="0" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top" style="item">\bfseries Der Startzustand wird mit einem Pfeil gekennzeichnet</text>
 <text matrix="1 0 0 1 16 -27" transformations="translations" pos="0 224" stroke="0" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Das wird leider oft vergessen und gibt immer Abzug</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
-<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="800" height="14.9184" depth="3.8628" valign="top" style="item">Endzustände werden Doppelt umkreist</text>
+<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="800" height="14.9184" depth="3.8628" valign="top" style="item">Endzustände werden doppelt umkreist</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -3795,12 +3795,12 @@ Graphen</text>
 <view layers="alpha pagenumbers_page beta delta" active="beta"/>
 <group layer="beta">
 <path stroke="gray1" fill="gray3">
-824 144 m
-8 0 0 8 816 144 816 152 a
+888 144 m
+8 0 0 8 880 144 880 152 a
 312 152 l
 312 100.197 l
 8 0 0 8 320 100.197 320 92.1972 a
-824 92.1972 l
+888 92.1972 l
 h
 </path>
 </group>
@@ -3854,7 +3854,7 @@ h
 <text matrix="1 0 0 1 -32.7697 -15.3948" transformations="translations" pos="288 272" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
 <text matrix="1 0 0 1 -24.3026 -21.5527" transformations="translations" pos="128 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
 <text matrix="1 0 0 1 -36.6184 -13.6908" transformations="translations" pos="416 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="336 128" stroke="0" type="minipage" width="496" height="27.4192" depth="16.3836" valign="top">In welchen Zuständen endet der Automat bei Eingaben\\
+<text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="336 128" stroke="0" type="minipage" width="560" height="27.4192" depth="16.3836" valign="top">In welchen Zuständen endet der Automat bei den Eingaben:\\
 $\epsilon, aab, a, aba$?</text>
 <text layer="delta" matrix="1 0 0 1 -240 -222" transformations="translations" pos="560 304" stroke="0" type="minipage" width="64" height="13.9105" depth="2.8416" valign="top" style="item">$q_\epsilon$</text>
 <text matrix="1 0 0 1 -160 -190" transformations="translations" pos="560 272" stroke="0" type="minipage" width="64" height="13.9105" depth="2.8416" valign="top" style="item">$q_f$</text>
@@ -4025,11 +4025,11 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="0" type="minipage" width="864" height="29.2285" depth="18.1818" valign="top">Ein Automat $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$ \emph{akzeptiert} ein Wort w wenn er nach abarbeiten des Worts in einem akzeptierenden Zustand landet</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="0" type="minipage" width="864" height="29.2285" depth="18.1818" valign="top">Ein Automat $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$ \emph{akzeptiert} ein Wort w, wenn er nach dem Abarbeiten des Worts in einem akzeptierenden Zustand landet</text>
 <text transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top">Formal: $\mathpzc A ~\mathrm{ akzeptiert }~ w \Leftrightarrow \delta_*(q_0, w) \in F$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="720" height="15.1648" depth="4.0848" valign="top">Die Sprache eines Automaten $\mathpzc A$ ist definiert als alle Wörter die $\mathpzc A$ akzeptiert</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top">Die Sprache eines Automaten $\mathpzc A$ ist definiert als die Menge aller Wörter, die $\mathpzc A$ akzeptiert</text>
 <text transformations="translations" pos="16 272" stroke="black" type="minipage" width="544" height="15.2758" depth="4.218" valign="top">Analog für $\mathpzc A$ lehnt w ab</text>
-<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Eine Sprache $L$ heißt regulär  wenn es einen Automaten $\mathpzc A $gibt sodass $L(\mathpzc A) = L
+<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Eine Sprache $L$ heißt regulär,  wenn es einen Automaten $\mathpzc A $ gibt, sodass $L(\mathpzc A) = L
 $</text>
 <text transformations="translations" pos="16 160" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top">Es gibt Sprachen die nicht von einem Automaten erkannt werden können (z.B. $\set{a^n b^n  \given n \in \mathbb N_0}$)</text>
 </page>
@@ -4141,8 +4141,8 @@ $(\{a\}^+\cdot\{b\} ) \cup (\{b\}^+\cdot\{a\}) $</text>
 h
 </path>
 </group>
-<text layer="alpha" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="17.0518" depth="5.9718" valign="top" style="item">Automaten sind immer \textbf{Vollständig} d.h. es sind immer alle Übergänge definiert</text>
-<text matrix="1 0 0 1 -16 48" transformations="translations" pos="16 288" stroke="black" type="minipage" width="816" height="41.4185" depth="30.3918" valign="top" style="item">Wenn ein Wort während der Bearbeitung abgelehnt werden soll muss es einen Übergang in einen \emph{Müllzustand/Fehlerzustand} geben aus dem man nicht wieder rauskommt</text>
+<text layer="alpha" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="17.0518" depth="5.9718" valign="top" style="item">Automaten sind immer \textbf{vollständig} d.h. es sind immer alle Übergänge definiert</text>
+<text matrix="1 0 0 1 -16 48" transformations="translations" pos="16 288" stroke="black" type="minipage" width="864" height="30.2941" depth="19.2696" valign="top" style="item">Wenn ein Wort während der Bearbeitung abgelehnt werden soll, muss es einen Übergang in einen \emph{Müllzustand/Fehlerzustand} geben, aus dem man nicht wieder rauskommt</text>
 <path layer="beta" matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
 111.583 209.744 m
 197.118 284.221 l
@@ -4253,7 +4253,7 @@ h
 h
 </path>
 </group>
-<text layer="alpha" matrix="1 0 0 1 0 288" transformations="translations" pos="16 96" stroke="black" type="minipage" width="656" height="17.6423" depth="6.5712" valign="top">Gebt einen Automaten an der alle Wörter in $\set{a^i b^j \given i,j \in  \mathbb N_0}$ akzeptiert</text>
+<text layer="alpha" matrix="1 0 0 1 0 288" transformations="translations" pos="16 96" stroke="black" type="minipage" width="656" height="17.6423" depth="6.5712" valign="top">Gebt einen Automaten an, der alle Wörter in $\set{a^i b^j \given i,j \in  \mathbb N_0}$ akzeptiert</text>
 <path layer="beta" matrix="1 0 0 1 16 -48" stroke="black" pen="1">
 22.6274 0 0 22.6274 64 320 e
 </path>
@@ -4265,9 +4265,11 @@ h
 <path matrix="1 0 0 1 16 -48" stroke="black" pen="1">
 19.8116 -0.125944 0.125944 19.8116 64 320 e
 </path>
-<text transformations="translations" pos="128 304" stroke="black" type="minipage" width="416" height="28.4071" depth="17.3826" valign="top">(Es war nicht gefordert das nur die Wörter in der Sprache akzeptiert werden)</text>
-<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 240" stroke="black" type="minipage" width="672" height="28.5403" depth="17.4936" valign="top">Gebt im O Kalkül an wie lange ein Automat braucht um für ein Wort $w$ und eine reguläre Sprache $L$ zu entscheiden ob $w\in L$</text>
-<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 160" stroke="black" type="minipage" width="704" height="30.2941" depth="19.2696" valign="top">$\O{\vert w\vert}$ Ein Übergang braucht konstante Zeit, für jedes Zeichen wird genau ein Übergang gemacht und danach geprüft ob $q \in F$</text>
+<text transformations="translations" pos="128 304" stroke="black" type="minipage" width="416" height="28.4071" depth="17.3826" valign="top">(Es war nicht gefordert, dass nur die Wörter in der Sprache akzeptiert werden)</text>
+<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 240" stroke="black" type="minipage" width="672" height="28.5403" depth="17.4936" valign="top">Gebt im O Kalkül an, wie lange ein Automat braucht, um für ein Wort $w$ und eine reguläre Sprache $L$ zu entscheiden, ob $w\in L$</text>
+<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 160" stroke="black" type="minipage" width="704" height="42.6062" depth="31.5906" valign="top">$\O{\vert w\vert}$. \\
+Ein Übergang braucht konstante Zeit, für jedes Zeichen wird genau \\
+ein Übergang gemacht und am Ende wird geprüft, ob $q \in F$</text>
 <path layer="beta" matrix="1 0 0 1 16 16" stroke="black" pen="1" arrow="normal/normal">
 80 272 m
 112 336
@@ -4422,7 +4424,7 @@ h
 63.0774 233.391 m
 63.0654 150.608 l
 </path>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Zeichnet jeweil einen Automaten für die folgenden Sprachen:</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Zeichnet jeweils einen Automaten für die folgenden Sprachen:</text>
 <text matrix="1 0 0 1 32 32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="48" height="16.5901" depth="5.5278" valign="top">$\set{a}^*$</text>
 <text matrix="1 0 0 1 304 32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="48" height="16.9808" depth="5.9274" valign="top">$\set{a}^+$</text>
 <text matrix="1 0 0 1 656 32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="128" height="16.9808" depth="5.9274" valign="top">$\set{a}^+ \cup \set{b}^+$</text>
@@ -4442,18 +4444,18 @@ h
 <page title="Tipps zum Automaten konstruieren">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="28.2939" depth="17.2716" valign="top" style="item">Macht euch Klar, was ihr in jedem Zustand über das bereits eingelesene Wort wisst und wie ihr von dort aus weiter gehen müsst</text>
-<text matrix="1 0 0 1 0 -12" transformations="translations" pos="0 304" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Wenn ihr einen Automaten konstruiert habt führt in auf Beispieleingaben aus </text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="800" height="28.2939" depth="17.2716" valign="top" style="item">Macht euch klar, was ihr in jedem Zustand über das bereits eingelesene Wort wisst und wie ihr von dort aus weiter gehen müsst</text>
+<text matrix="1 0 0 1 0 -12" transformations="translations" pos="0 304" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Wenn ihr einen Automaten konstruiert habt, führt ihn auf Beispieleingaben aus </text>
 <text matrix="1 0 0 1 0 20" transformations="translations" pos="0 304" stroke="black" type="minipage" width="704" height="15.2758" depth="4.218" valign="top" style="item">Achtet auf edge cases (leeres Wort etc.)</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="720" height="13.229" depth="2.1534" valign="top" style="subitem">Dafür könnt ihr z.B. JFLAP benutzen</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="720" height="15.1648" depth="4.0848" valign="top" style="subitem">Dafür könnt ihr Bspw. JFLAP benutzen</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="0" type="minipage" width="736" height="27.2949" depth="16.2504" valign="top" style="item">Zeichnet einen Automaten mit $\Sigma=\{a,b\}$, der alle Wörter akzeptiert, bei denen die Anzahl der a durch 5 Teilbar ist.</text>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="0" type="minipage" width="736" height="27.2949" depth="16.2504" valign="top" style="item">Zeichne einen Automaten mit $\Sigma=\{a,b\}$, der alle Wörter akzeptiert, bei denen die Anzahl der a durch 5 teilbar ist.</text>
 <text transformations="translations" pos="16 304" stroke="0" type="minipage" width="736" height="29.3395" depth="18.315" valign="top" style="item">Zeichne einen Automaten mit $\Sigma = \{a, b\}$, der alle Wörter akzeptiert, in
-denen nirgends hintereinander zwei b vorkommen</text>
+denen nirgends zwei b hintereinander vorkommen</text>
 <text transformations="translations" pos="16 240" stroke="0" type="minipage" width="736" height="29.3395" depth="18.315" valign="top" style="item">Zeichne einen Automaten mit $\Sigma = \{a, b\}$, der alle Wörter akzeptiert, in
 denen irgendwo das Teilwort abab vorkommt.</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 192" stroke="0" type="minipage" width="736" height="29.3395" depth="18.315" valign="top" style="item">Zeichne einen Automaten mit $\Sigma = \{a, b\}$, der alle Wörter akzeptiert, in
@@ -4783,10 +4785,7 @@ denen nirgends das Teilwort abab vorkommt.</text>
 <text matrix="1 0 0 1 0.702108 -9.12741" transformations="translations" pos="311.828 323.127" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
 <text matrix="1 0 0 1 -2.10632 -4.21265" transformations="translations" pos="450.143 319.968" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
 <text transformations="translations" pos="16 352" stroke="black" type="minipage" width="48" height="15.1648" depth="4.0848" valign="top">c)</text>
-<text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="608" height="28.5403" depth="17.4936" valign="top">d) Wie c) nur dass alle vorher
-nicht akzeptierten Zustände
-akzeptiert werden und
-umgekehrt</text>
+<text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">d) Wie c), nur dass alle vorher nicht akzeptierten Zustände nun akzeptiert werden und umgekehrt</text>
 <group layer="gamma" matrix="1 0 0 1 148.736 52.5315">
 <text matrix="0.731436 0 0 0.731436 365.64 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_3</text>
 <path matrix="0.651972 0 0 0.651972 374.979 -93.8579" stroke="0" pen="1">
@@ -4850,8 +4849,8 @@ umgekehrt</text>
 </path>
 <text transformations="translations" pos="16 144" stroke="black" type="minipage" width="48" height="15.1648" depth="4.0848" valign="top">e)</text>
 <text matrix="1 0 0 1 -32 0" transformations="translations" pos="48 64" stroke="black" type="minipage" width="896" height="29.0309" depth="18.0042" valign="top">Der Automat erkennt die Sprache \\
-$L(\mathpzc A) = \{w \in \{a, b\}^* \vert \vert w\vert mod 2 = 1\}
-= \{w \in \{a, b\}^* \vert \text{w hat ungerade Länge} \}$</text>
+$L(\mathpzc A) = \{w \in \{a, b\}^* \vert \text{ } \vert w\vert mod 2 = 1\}
+= \{w \in \{a, b\}^* \vert \text{ w hat ungerade Länge} \}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 26}</text>
 </page>
 <page title="Aufgabe">
@@ -4875,8 +4874,8 @@ $L(\mathpzc A) = \{w \in \{a, b\}^* \vert \vert w\vert mod 2 = 1\}
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">Sei $G = (\{X , Y , Z \} , \{a, b\} , X, P)$ mit\\
-$P = \{X \rightarrow aX \vert bY \vert\epsilon, Y \rightarrow aX \vert bZ \vert \epsilon, Z \rightarrow aZ \vert bZ \}$</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">Sei $G = (\{a, b\}, \{X , Y , Z \} , X, R)$ mit\\
+$R = \{X \rightarrow aX \vert bY \vert\epsilon, Y \rightarrow aX \vert bZ \vert \epsilon, Z \rightarrow aZ \vert bZ \}$</text>
 <text transformations="translations" pos="16 304" stroke="black" type="minipage" width="464" height="26.4713" depth="15.4512" valign="top">Zeichne den Automat, der L(G) akzeptiert.\\
 Wie kann man die Grammatik vereinfachen?</text>
 <group layer="beta" matrix="1 0 0 1 0 32">
@@ -4938,10 +4937,10 @@ Wie kann man die Grammatik vereinfachen?</text>
 <path matrix="1 0 0 1 0 32" stroke="black" pen="1">
 23.8801 0 0 23.8801 234.653 172.018 e
 </path>
-<text layer="gamma" matrix="1 0 0 1 -496 -112" transformations="translations" pos="496 208" stroke="black" type="minipage" width="768" height="29.8546" depth="18.8034" valign="top" style="item">Vereinfachte Grammatik: $G = (\{X , Y \} , \{a, b\} , X, P)$ mit\\
-$P = \{X \rightarrow aX \vert bY \vert\epsilon, Y \rightarrow aX \vert \epsilon\}$</text>
-<text layer="delta" matrix="1 0 0 1 -496 -176" transformations="translations" pos="496 208" stroke="black" type="minipage" width="768" height="29.8546" depth="18.8034" valign="top" style="item">Noch einfacher: $G = (\{X \} , \{a, b\} , X, P)$ mit\\
-$P = \{X \rightarrow aX \vert baX \vert b\vert\epsilon\}$</text>
+<text layer="gamma" matrix="1 0 0 1 -496 -112" transformations="translations" pos="496 208" stroke="black" type="minipage" width="768" height="29.8546" depth="18.8034" valign="top" style="item">Vereinfachte Grammatik: $G = (\{a, b\} , \{X , Y \} , X, R)$ mit\\
+$R = \{X \rightarrow aX \vert bY \vert\epsilon, Y \rightarrow aX \vert \epsilon\}$</text>
+<text layer="delta" matrix="1 0 0 1 -496 -176" transformations="translations" pos="496 208" stroke="black" type="minipage" width="768" height="29.8546" depth="18.8034" valign="top" style="item">Noch einfacher: $G = (\{a, b\}, \{X \} , X, R)$ mit\\
+$R = \{X \rightarrow aX \vert baX \vert b\vert\epsilon\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 29}</text>
 </page>
 <page title="Aufgabe">
@@ -4977,7 +4976,7 @@ h
 297.373 256 l
 </path>
 <text matrix="1 0 0 1 -336 64" transformations="translations" pos="400 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text transformations="translations" pos="16 160" stroke="0" type="minipage" width="576" height="41.5584" depth="30.5472" valign="top">Dieser Automat hat keinen akzeptierenden Zustand \\
+<text transformations="translations" pos="16 160" stroke="0" type="minipage" width="576" height="41.5584" depth="30.5472" valign="top">Dieser Automat hat keinen akzeptierenden Zustand. \\
 \impl Akzeptiert kein Wort \\\impl Akzeptiert genau $\emptyset$</text>
 </page>
 <page title="Aufgabe">
@@ -5004,17 +5003,17 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 288" stroke="black" type="minipage" width="512" height="42.6062" depth="31.5906" valign="top">Zeigt, dass alle $L \subset \set{a,b}^*$ mit $\vert L \vert = 1$ regulär sind\\
-Zeichnet dafür nicht einen Auomaten sondern gebt die Menge $Q$ und Funktion $\delta$ direkt an</text>
+<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 288" stroke="black" type="minipage" width="512" height="42.6062" depth="31.5906" valign="top">Zeigt, dass alle $L \subset \set{a,b}^*$ mit $\vert L \vert = 1$ regulär sind.\\
+Zeichnet dafür keinen Automaten, sondern gebt die \\ Mengen $Q$ , $F$ und die Funktion $\delta$ direkt an</text>
 <text matrix="1 0 0 1 64 48" transformations="translations" pos="512 288" stroke="KITblack70" type="minipage" width="320" height="23.842" depth="13.88" valign="top" size="small">(Tipp benutzt $w_i$, also das i-te Zeichen des Wortes um eure Übergänge zu definieren)</text>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $\Sigma = \set{a,b}$</text>
 <text layer="beta" transformations="translations" pos="16 224" stroke="0" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Sei $L \subset \set{a,b}^* $ mit $\vert L \vert = 1 $ beliebig und $w$ das Wort in $L$</text>
-<text layer="gamma" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="0" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Wir konstruieren einen Automat $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$ der genau $w$ akzeptiert</text>
+<text layer="gamma" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="0" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Wir konstruieren einen Automaten $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$, der genau $w$ akzeptiert</text>
 <text layer="delta" transformations="translations" pos="16 160" stroke="0" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$Q = [\vert w \vert] \cup \set{-1}$ \quad wobei $-1$ unser Müllzustand ist</text>
 <text transformations="translations" pos="16 128" stroke="0" type="minipage" width="384" height="14.9362" depth="3.8628" valign="top" style="item">$q_0 = 1$</text>
-<text layer="epsilon" transformations="translations" pos="16 96" stroke="0" type="minipage" width="528" height="32.059" depth="21.0234" valign="top" style="item">$\delta(i,x) = \left \{ 
+<text layer="epsilon" transformations="translations" pos="16 96" stroke="0" type="minipage" width="544" height="32.059" depth="21.0234" valign="top" style="item">$\delta(i,x) = \left \{ 
 \begin{array}{lcl}
-i+1 &amp; \vert &amp; i \neq -1 \wedge  i \neq \vert w \vert \wedge x = w_i\\
+i+1 &amp; \vert &amp; (i \neq -1) \wedge ( i \neq \vert w \vert) \wedge (x = w_i)\\
 -1 &amp;\vert &amp; \mathrm{sonst}
 \end{array}
  \right .$</text>
@@ -5120,6 +5119,9 @@ i+1 &amp; \vert &amp; i \neq -1 \wedge  i \neq \vert w \vert \wedge x = w_i\\
 <text transformations="translations" pos="640 160" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
 <text matrix="1 0 0 1 -15 -3" transformations="translations" pos="448 0" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
 <text transformations="translations" pos="16 368" stroke="0" type="minipage" width="352" height="15.358" depth="4.2846" valign="top">Beispiel $w = abaab$</text>
+<path matrix="0.892315 0 0 0.892315 368.261 -0.46724" stroke="black" pen="1">
+22.6274 0 0 22.6274 448 288 e
+</path>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -5146,8 +5148,8 @@ h
 <text matrix="1 0 0 1 16 112" transformations="translations" pos="0 224" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top">Zeigt, dass alle endlich großen Sprachen regulär sind</text>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $\Sigma = \set{a,b}$</text>
 <text layer="beta" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 288" stroke="0" type="minipage" width="576" height="15.469" depth="4.4178" valign="top">Sei $L$ eine beliebige endliche Sprache</text>
-<text layer="gamma" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 256" stroke="0" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">Da $L$ endlich ist enthält $L$ genau $i= \vert L \vert$ Wörter</text>
-<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 224" stroke="0" type="minipage" width="768" height="28.5559" depth="17.538" valign="top" style="item">Die Vereinigung der $i$ paarweise verschiedenen Sprachen, die jeweils ein Wort aus $L$ enthalten ist genau $L$</text>
+<text layer="gamma" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 256" stroke="0" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">Da $L$ endlich ist, enthält $L$ genau $i= \vert L \vert$ Wörter</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 224" stroke="0" type="minipage" width="768" height="28.5559" depth="17.538" valign="top" style="item">Die Vereinigung der $i$, paarweise verschiedenen Sprachen, die jeweils ein Wort aus $L$ enthalten ist genau $L$</text>
 <text layer="epsilon" matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 192" stroke="0" type="minipage" width="544" height="30.2941" depth="19.2696" valign="top" style="item">In der Übung wurde schon gezeigt, dass die regulären Sprachen unter Vereinigung abgeschlossen sind</text>
 </page>
 <page title="Aufgabe">
@@ -5164,11 +5166,11 @@ h
 <group layer="epsilon">
 <path stroke="black" fill="KITred15">
 520 328 m
-864 328 l
-8 0 0 -8 864 320 872 320 a
-872 266.434 l
-528 266.434 l
-8 0 0 -8 528 274.434 520 274.434 a
+884 328 l
+8 0 0 -8 884 320 892 320 a
+892 266.21 l
+528 266.21 l
+8 0 0 -8 528 274.21 520 274.21 a
 h
 </path>
 </group>
@@ -5416,9 +5418,9 @@ h
 <text matrix="1 0 0 1 0 -64" transformations="translations" pos="608 240" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
 <text matrix="1 0 0 1 0 -64" transformations="translations" pos="720 240" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
 <text matrix="1 0 0 1 0 -64" transformations="translations" pos="544 304" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Der Vollständige Binärbaum der Höhe $h$ enthält alle Wörter der länge $\leq h-1$ als  Pfade</text>
+<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Der vollständige Binärbaum der Höhe $h$ enthält alle Wörter der Länge $\leq h-1$ als  Pfade</text>
 <text layer="gamma" transformations="translations" pos="0 336" stroke="black" type="minipage" width="416" height="22.8149" depth="11.7438" valign="top" style="item">Erstelle Binärbaum der Höhe $\underset{w\in L}{max} \vert w \vert$</text>
-<text layer="delta" matrix="1 0 0 1 0 9" transformations="translations" pos="0 288" stroke="black" type="minipage" width="416" height="28.1829" depth="17.1384" valign="top" style="item">Markiere alle Zustände die zu den Wörtern in L korrespondieren als Endzustand</text>
-<text layer="epsilon" matrix="1 0 0 1 -64 16" transformations="translations" pos="592 304" stroke="black" type="minipage" width="336" height="28.2939" depth="17.2716" valign="top">Das das alles Funktioniert muss noch bewiesen werden (geht mit induktion)</text>
+<text layer="delta" matrix="1 0 0 1 0 9" transformations="translations" pos="0 288" stroke="black" type="minipage" width="416" height="28.1829" depth="17.1384" valign="top" style="item">Markiere alle Zustände, die zu Wörtern in L korrespondieren als Endzustand</text>
+<text layer="epsilon" matrix="1 0 0 1 -64 16" transformations="translations" pos="592 304" stroke="black" type="minipage" width="356" height="28.4071" depth="17.3826" valign="top">Dass das alles funktioniert, muss noch bewiesen werden (zB. via Induktion)</text>
 </page>
 </ipe>
