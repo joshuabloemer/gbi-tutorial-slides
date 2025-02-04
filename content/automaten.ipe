@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250204091342" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20250204122600" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3985,8 +3985,8 @@ h
 <text matrix="1 0 0 1 -36.6184 -13.6908" transformations="translations" pos="416 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
 <text layer="beta" transformations="translations" pos="640 384" stroke="0" type="minipage" width="240" height="16.5901" depth="5.5278" valign="top" style="item">$f_*(q_\epsilon,aab)=$</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="640 384" stroke="0" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top" style="item">$f_{**}(q_\epsilon,aab)=$</text>
-<text layer="gamma" transformations="translations" pos="640 384" stroke="0" type="minipage" width="240" height="16.5901" depth="5.5278" valign="top" style="item">$f_*(q_\epsilon,aab)=q_f$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="640 384" stroke="0" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">$f_{**}(q_\epsilon,aab)=q_\epsilon q_a q_a q_f$</text>
+<text layer="gamma" transformations="translations" pos="640 384" stroke="0" type="minipage" width="240" height="16.5901" depth="5.5278" valign="top" style="item">$\delta_*(q_\epsilon,aab)=q_f$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="640 384" stroke="0" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">$\delta_{**}(q_\epsilon,aab)=q_\epsilon q_a q_a q_f$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
 <text layer="alpha" matrix="1 0 0 1 50.0873 73.7429" transformations="translations" pos="128 224" stroke="0" type="label" width="20.8724" height="9.8457" depth="4.2846" valign="baseline" style="math">q_a</text>
 <path matrix="0.891359 0 0 0.891359 60.1678 100.859" stroke="0" pen="1">
@@ -4529,7 +4529,7 @@ denen nirgends das Teilwort abab vorkommt.</text>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta" active="alpha"/>
 <group layer="alpha" matrix="1 0 0 1 12 -16">
 <text matrix="0.731436 0 0 0.731436 135.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_1</text>
 <path matrix="0.651972 0 0 0.651972 145.059 179.284" stroke="0" pen="1">
@@ -4686,6 +4686,10 @@ denen nirgends das Teilwort abab vorkommt.</text>
 <text layer="alpha" transformations="translations" pos="16 336" stroke="black" type="minipage" width="32" height="15.1648" depth="4.0848" valign="top">a)</text>
 <text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="32" height="15.1648" depth="4.0848" valign="top">b)</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
+<path layer="alpha" matrix="1 0 0 1 47.4639 141.282" stroke="black" pen="1" arrow="normal/normal">
+19.3821 167.117 m
+42.2173 167.715 l
+</path>
 </page>
 <page title="Lösung">
 <layer name="alpha"/>
@@ -4861,16 +4865,16 @@ $L(\mathpzc A) = \{w \in \{a, b\}^* \vert \text{ } \vert w\vert mod 2 = 1\}
 <layer name="delta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma" active="alpha"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <group layer="alpha">
-<path stroke="gray1" fill="gray3" pen="1">
+<path stroke="gray1" fill="gray3">
 488 368 m
 8 0 0 8 480 368 480 376 a
 8 376 l
-8 262.129 l
-8 0 0 8 16 262.129 16 254.129 a
-488 254.129 l
+8 262.078 l
+8 0 0 8 16 262.078 16 254.078 a
+488 254.078 l
 h
 </path>
 </group>
@@ -5009,7 +5013,7 @@ Zeichnet dafür keinen Automaten, sondern gebt die \\ Mengen $Q$ , $F$ und die F
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $\Sigma = \set{a,b}$</text>
 <text layer="beta" transformations="translations" pos="16 224" stroke="0" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Sei $L \subset \set{a,b}^* $ mit $\vert L \vert = 1 $ beliebig und $w$ das Wort in $L$</text>
 <text layer="gamma" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="0" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Wir konstruieren einen Automaten $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$, der genau $w$ akzeptiert</text>
-<text layer="delta" transformations="translations" pos="16 160" stroke="0" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$Q = [\vert w \vert] \cup \set{-1}$ \quad wobei $-1$ unser Müllzustand ist</text>
+<text layer="delta" transformations="translations" pos="16 160" stroke="0" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$Q = [\vert w \vert + 1] \cup \set{-1}$ \quad wobei $-1$ unser Müllzustand ist</text>
 <text transformations="translations" pos="16 128" stroke="0" type="minipage" width="384" height="14.9362" depth="3.8628" valign="top" style="item">$q_0 = 1$</text>
 <text layer="epsilon" transformations="translations" pos="16 96" stroke="0" type="minipage" width="544" height="32.059" depth="21.0234" valign="top" style="item">$\delta(i,x) = \left \{ 
 \begin{array}{lcl}
@@ -5017,7 +5021,7 @@ i+1 &amp; \vert &amp; (i \neq -1) \wedge ( i \neq \vert w \vert) \wedge (x = w_i
 -1 &amp;\vert &amp; \mathrm{sonst}
 \end{array}
  \right .$</text>
-<text layer="zeta" transformations="translations" pos="16 32" stroke="0" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$F = \set{\vert w \vert}$</text>
+<text layer="zeta" transformations="translations" pos="16 32" stroke="0" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$F = \set{\vert w \vert + 1}$</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -5422,5 +5426,9 @@ h
 <text layer="gamma" transformations="translations" pos="0 336" stroke="black" type="minipage" width="416" height="22.8149" depth="11.7438" valign="top" style="item">Erstelle Binärbaum der Höhe $\underset{w\in L}{max} \vert w \vert$</text>
 <text layer="delta" matrix="1 0 0 1 0 9" transformations="translations" pos="0 288" stroke="black" type="minipage" width="416" height="28.1829" depth="17.1384" valign="top" style="item">Markiere alle Zustände, die zu Wörtern in L korrespondieren als Endzustand</text>
 <text layer="epsilon" matrix="1 0 0 1 -64 16" transformations="translations" pos="592 304" stroke="black" type="minipage" width="356" height="28.4071" depth="17.3826" valign="top">Dass das alles funktioniert, muss noch bewiesen werden (zB. via Induktion)</text>
+<path layer="delta" stroke="black" pen="1" arrow="normal/normal">
+448 304 m
+448 272 l
+</path>
 </page>
 </ipe>
