@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20250203235630" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20250204091342" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -5119,7 +5119,7 @@ i+1 &amp; \vert &amp; (i \neq -1) \wedge ( i \neq \vert w \vert) \wedge (x = w_i
 <text transformations="translations" pos="640 160" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
 <text matrix="1 0 0 1 -15 -3" transformations="translations" pos="448 0" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
 <text transformations="translations" pos="16 368" stroke="0" type="minipage" width="352" height="15.358" depth="4.2846" valign="top">Beispiel $w = abaab$</text>
-<path matrix="0.892315 0 0 0.892315 368.261 -0.46724" stroke="black" pen="1">
+<path matrix="0.892315 0 0 0.892315 368.579 -0.78512" stroke="black" pen="1">
 22.6274 0 0 22.6274 448 288 e
 </path>
 </page>

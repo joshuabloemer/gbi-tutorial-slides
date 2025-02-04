@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20250204001124" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20250204091428" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3743,11 +3743,13 @@ h
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
-<group layer="delta" matrix="1 0 0 1 0 16">
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<group layer="epsilon" matrix="1 0 0 1 0 16">
 <path stroke="gray1" fill="gray3">
 744 80 m
 8 0 0 8 736 80 736 88 a
@@ -3767,7 +3769,7 @@ h
 <text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 288" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item">Gesucht ist die Anzahl der Farben einer minimalen Färbung </text>
 <text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 144" stroke="black" type="minipage" width="672" height="28.7335" depth="17.6934" valign="top" style="item">Gegeben sei zusätzlich auch ein Parameter $k \in \mathbb N_+$. Die Frage ist nun: Gibt
 es eine Färbung mit höchstens k Farben ?</text>
-<text matrix="1 0 0 1 128 16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Entscheidungsprobleme kann man leicht als Sprachen formulieren</text>
+<text layer="epsilon" matrix="1 0 0 1 128 16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Entscheidungsprobleme kann man leicht als Sprachen formulieren</text>
 <text matrix="1 0 0 1 128 16" transformations="translations" pos="0 48" stroke="black" type="minipage" width="592" height="29.8546" depth="18.8034" valign="top">Sei $L = \set{c(G) \given \mbox{G ist Graph, der sich mit k Farben färben lässt }}$ wobei c eine Codierungsfunktion ist. Gilt $c(G&apos;) \in L$?</text>
 </page>
 <page title="Komplexitätstheorie">
