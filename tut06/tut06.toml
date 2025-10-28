@@ -1,5 +1,5 @@
 
 title = "06 Formale Sprachen und Codierungen"                  # the file name of the output pdf
 description = "06 Formale Sprachen und Codierungen"            # 
-content = ["werbung", "beweisbarkeit", "formalesprachen", "codierungen", "homomorphismen"]
+content = [ "beweisbarkeit", "formalesprachen", "codierungen", "homomorphismen"]
 xkcd = 153
