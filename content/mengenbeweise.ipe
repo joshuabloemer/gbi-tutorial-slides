@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241029124326" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20251028131221" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3733,6 +3733,152 @@ h
 </ipestyle>
 <page title="Mengengleichheit">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<group layer="delta">
+<path stroke="gray1" fill="gray3">
+664 128 m
+8 0 0 8 656 128 656 136 a
+232 136 l
+232 104.608 l
+8 0 0 8 240 104.608 240 96.6079 a
+664 96.6079 l
+h
+</path>
+</group>
+<group layer="beta" matrix="1 0 0 1 112 32">
+<path stroke="gray1" fill="gray3">
+776 336 m
+8 0 0 8 768 336 768 344 a
+520 344 l
+520 291.693 l
+8 0 0 8 528 291.693 528 283.693 a
+776 283.693 l
+h
+</path>
+</group>
+<group layer="alpha">
+<path fill="KITgreen">
+-6.4 357.877 m
+-6.4 384 l
+431.6 384 l
+436.6 384
+441.6 379
+441.6 374 c
+441.6 357.877 l
+h
+</path>
+<path fill="KITgreen15">
+441.6 357.877 m
+441.6 253.908 l
+3.6 253.908 l
+-1.4 253.908
+-6.4 258.908
+-6.4 263.908 c
+-6.4 357.877 l
+h
+</path>
+<text transformations="translations" pos="-1.02982 378.63" stroke="white" type="minipage" width="437.26" height="13.078" depth="2.0202" valign="top">\textbf{Gleichheit}</text>
+<text transformations="translations" pos="-1.02982 352.507" stroke="black" type="minipage" width="437.26" height="52.634" depth="41.6694" valign="top">Zwei Mengen A,B sind genau dann gleich wenn, sie die gleichen Elemente enthalten. Also wenn:  \vspace{-2 mm} $$A\subseteq B \text{ und } B \subseteq A$$ \vspace{-5mm}</text>
+</group>
+<text layer="beta" matrix="1 0 0 1 112 32" transformations="translations" pos="528 336" stroke="black" type="minipage" width="240" height="27.679" depth="16.6278" valign="top">
+Erinnerung:\\
+$A \subseteq B \Leftrightarrow \forall a \in A : a\in B $</text>
+<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="816" height="13.7507" depth="2.664" valign="top" style="item">In anderen Worten: $A = B \Leftrightarrow \forall a \in A  : a \in B$ und $\forall b \in B  : b \in A$</text>
+<text layer="gamma" transformations="translations" pos="0 208" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top" style="item">Die beiden Teilmengenbeziehungen zeigt man Separat</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="256 128" stroke="black" type="minipage" width="416" height="17.2205" depth="6.1716" valign="top" size="large">Aber wie genau macht man das jetzt?</text>
+</page>
+<page title="Teilmengenbeziehungen Zeigen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITblue15">
+-8 392 m
+304 392 l
+8 0 0 -8 304 384 312 384 a
+312 290.784 l
+0 290.784 l
+8 0 0 -8 0 298.784 -8 298.784 a
+h
+</path>
+</group>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="15.0516" depth="3.9738" valign="top">Beispiel: wir wollen zeigen, dass:</text>
+<text matrix="1 0 0 1 -80 32" transformations="translations" pos="80 320" stroke="black" type="minipage" width="272" height="32.1256" depth="21.09" valign="top">$\underbrace{C \backslash (A \cup B)}_{M} \subseteq \underbrace{(C\backslash A) \cap (C\backslash B)}_N$</text>
+<group matrix="1 0 0 1 112 32">
+<path stroke="gray1" fill="gray3">
+776 336 m
+8 0 0 8 768 336 768 344 a
+520 344 l
+520 291.693 l
+8 0 0 8 528 291.693 528 283.693 a
+776 283.693 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 112 32" transformations="translations" pos="528 336" stroke="black" type="minipage" width="240" height="27.679" depth="16.6278" valign="top">
+Erinnerung:\\
+$A \subseteq B \Leftrightarrow \forall a \in A : a\in B $</text>
+<text transformations="translations" pos="0 272" stroke="black" type="minipage" width="512" height="28.1829" depth="17.1384" valign="top" style="item">Wenn wir alle Elemente aus M und N kennen können wir das einfach für jede Element nachprüfen</text>
+<text transformations="translations" pos="0 208" stroke="black" type="minipage" width="512" height="15.2758" depth="4.218" valign="top" style="item">Die Aussage soll aber für beliebige Mengen gelten</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="512" height="28.5403" depth="17.4936" valign="top">Idee: wir nehmen einen Platzhalter $x$ für ein Element aus M und zeigen damit die Aussage</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 112" stroke="black" type="minipage" width="544" height="39.6425" depth="28.638" valign="top" style="item">$x$ hat alle Eigenschaften die alle Elemente aus M gemeinsam haben, dann funktioniert der Beweis auch für jedes einzelne Element aus M</text>
+</page>
+<page>
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITblue15">
+-8 392 m
+304 392 l
+8 0 0 -8 304 384 312 384 a
+312 290.784 l
+0 290.784 l
+8 0 0 -8 0 298.784 -8 298.784 a
+h
+</path>
+</group>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="15.0516" depth="3.9738" valign="top">Beispiel: wir wollen zeigen, dass:</text>
+<text matrix="1 0 0 1 -80 32" transformations="translations" pos="80 320" stroke="black" type="minipage" width="272" height="32.1256" depth="21.09" valign="top">$\underbrace{C \backslash (A \cup B)}_{M} \subseteq \underbrace{(C\backslash A) \cap (C\backslash B)}_N$</text>
+<text transformations="translations" pos="0 272" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top">Sei $x \in C \backslash (A \cup B)$ beliebig</text>
+<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">Zeige, dass dann auch $x\in (C\backslash A) \cap (C\backslash B)$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="512" height="13.3289" depth="2.2644" valign="top" style="item">$x$ ist in $C$ </text>
+<text matrix="1 0 0 1 0 -64" transformations="translations" pos="0 208" stroke="black" type="minipage" width="512" height="15.358" depth="4.2846" valign="top" style="item">$x$ ist nicht in $A$ (sonst wäre $x$ in $A\cup B$ )</text>
+<text matrix="1 0 0 1 0 -96" transformations="translations" pos="0 208" stroke="black" type="minipage" width="512" height="13.3289" depth="2.2644" valign="top" style="item">$x$ ist nicht in $B$ </text>
+<text transformations="translations" pos="0 208" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top">Da $x$ in $C \backslash (A \cup B)$ wissen wir:</text>
+<group matrix="1 0 0 1 480 -16">
+<path stroke="gray1" fill="gray3">
+408 384 m
+8 0 0 8 400 384 400 392 a
+-8 392 l
+-8 332.75 l
+8 0 0 8 0 332.75 0 324.75 a
+408 324.75 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 496 48" transformations="translations" pos="0 288" stroke="KITblack70" type="minipage" width="384" height="14.5144" depth="3.4632" valign="top">\enquote{Alle x die in A aber nicht in B sind}</text>
+<text matrix="1 0 0 1 480 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">\emph{Differenz:} $A \backslash B = \{x \vert x \in A \wedge x\not \in B\}$</text>
+<group matrix="1 0 0 1 480 -96">
+<path stroke="gray1" fill="gray3">
+408 384 m
+8 0 0 8 400 384 400 392 a
+-8 392 l
+-8 332.75 l
+8 0 0 8 0 332.75 0 324.75 a
+408 324.75 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 496 -32" transformations="translations" pos="0 288" stroke="KITblack70" type="minipage" width="384" height="15.1648" depth="4.0848" valign="top">\enquote{Alle x die in A oder B sind (oder beides)}</text>
+<text matrix="1 0 0 1 480 -64" transformations="translations" pos="0 352" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">\emph{Vereinigung:} $A \cup B = \{x \vert x \in A \vee x\in B\}$</text>
+</page>
+<page title="Mengengleichheit">
+<layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -3960,6 +4106,7 @@ Tipp, falls ihr ein gegenbeispiel finden wollt probiert immer zuerst aus die lee
 <text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="720" height="13.7507" depth="2.664" valign="top" style="item">$\exists a \in A : 1 = 1$ ist falsch</text>
 <text layer="epsilon" matrix="1 0 0 1 0 32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top" style="item">$\{\} \neq \{\{\}\}$ wird oft falsch gemacht</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
+<text layer="epsilon" transformations="translations" pos="0 256" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top" style="item">$\vert\{\{\}\}\vert = 1$ wird oft falsch gemacht</text>
 </page>
 <page title="Aussagen Wiederlegen">
 <layer name="alpha"/>

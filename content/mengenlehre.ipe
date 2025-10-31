@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241028224334" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20251028140729" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3743,19 +3743,6 @@ h
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<group layer="alpha" matrix="1 0 0 1 -208 32">
-<path stroke="black" fill="KITgreen15">
-216 344 m
-832 344 l
-8 0 0 -8 832 336 840 336 a
-840 276.477 l
-224 276.477 l
-8 0 0 -8 224 284.477 216 284.477 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -64 16" transformations="translations" pos="80 352" stroke="black" type="minipage" width="64" height="15.0028" depth="3.9294" valign="top">\bf Menge</text>
-<text matrix="1.64286 0 0 1.33333 -352 -69.3333" transformations="translations" pos="224 304" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top">Ansamlung von unterscheidbaren Objekten (Elemente der Menge)</text>
 <text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="256" height="13.078" depth="2.0202" valign="top">\bf Schreibweisen</text>
 <text layer="gamma" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">M = $\{x\in \mathbb N_+ \vert x \leq 4\}$</text>
 <text matrix="1 0 0 1 32 0" transformations="translations" pos="240 224" stroke="black" type="minipage" width="592" height="15.2758" depth="4.218" valign="top">Definition über logische Bedingungen (set comprehension)</text>
@@ -3771,8 +3758,32 @@ h
 \item $\mathbb Z, \mathbb Q,\mathbb R$
 \item Leere Menge $  = \emptyset$ bzw. $\{\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
+<group layer="alpha" matrix="1 0 0 1 -80 176">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 136.717 l
+99.6 136.717 l
+94.6 136.717
+89.6 141.717
+89.6 146.717 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="15.0028" depth="3.9294" valign="top">\textbf{Menge}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="15.2758" depth="4.218" valign="top">Ansamlung von unterscheidbaren Objekten (Elemente der Menge)</text>
+</group>
 </page>
-<page title="Mengenoperationen I">
+<page title="Mengenoperationen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
@@ -3790,84 +3801,578 @@ h
 </path>
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="15.0605" depth="3.996" valign="top">\bf Was können wir jetzt damit machen?</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">\textbf{Kardinalität $\vert M \vert$:} Anzahl der Elemente einer endlichen Menge</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">\textbf{Kardinalität $\vert M \vert$:} Anzahl der Elemente einer Menge</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="880" height="17.7223" depth="6.6378" valign="top" style="item">\textbf{Überprüfen ob ein Element in der Menge ist $\in / \notin$}:</text>
 <text layer="beta" matrix="1 0 0 1 96 -32" transformations="translations" pos="128 224" stroke="black" type="minipage" width="112" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
-<text matrix="1 0 0 1 96 -32" transformations="translations" pos="128 192" stroke="black" type="minipage" width="448" height="48.9976" depth="38.0064" valign="top" style="itemize">\item $\vert \{$Rot, Grün, Rot$\} \vert = 2$
-\item $4 \in \mathbb N$
-\item $0 \notin \mathbb N$
+<text matrix="1 0 0 1 96 -32" transformations="translations" pos="128 192" stroke="black" type="minipage" width="448" height="50.9401" depth="39.9378" valign="top" style="itemize">\item $\vert \{$Rot, Grün, Rot$\} \vert = 2$
+\item $4 \in \mathbb N_+$
+\item $0 \notin \mathbb N_+$
 </text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
-<page title="Mengenoperationen II">
+<page title="Mengenoperationen">
 <layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
 <path stroke="black" fill="KITblue15">
-216 200 m
-672 200 l
-8 0 0 -8 672 192 680 192 a
-680 60.5249 l
-224 60.5249 l
-8 0 0 -8 224 68.5249 216 68.5249 a
+472 376 m
+816 376 l
+8 0 0 -8 816 368 824 368 a
+824 305.882 l
+480 305.882 l
+8 0 0 -8 480 313.882 472 313.882 a
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">\textbf{(Durch)schnitt:} $A \cap B = \{x \vert x \in A \wedge x \in B\} $</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">\textbf {Vereinigung:} $A \cup B = \{x \vert x \in A \vee x\in B\}$</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top" style="item">\textbf{Differenz:} $A\backslash B = \{x \vert x \in A \wedge x\notin B\}$</text>
-<text layer="beta" matrix="1 0 0 1 0 -64" transformations="translations" pos="224 256" stroke="black" type="minipage" width="256" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
-<text transformations="translations" pos="224 160" stroke="black" type="minipage" width="448" height="51.2265" depth="40.2486" valign="top" style="itemize">\item $\{1, 2, 3\} \cap \{2, 3, 4\} = \{2, 3\}$
-\item $\{1, 2, 3\} \cup \{2, 3, 4\} = \{1, 2, 3, 4\}$
-\item $\{1, 2, 3\} \backslash\{2, 3, 4\} = \{1\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
+<text transformations="translations" pos="176 80" stroke="green2" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$A$</text>
+<text matrix="1 0 0 1 -1 0" transformations="translations" pos="624 48" stroke="blue1" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$B$</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="320 272" stroke="orange1" type="minipage" width="112" height="18.623" depth="7.678" valign="top" size="LARGE">$A\cup B$</text>
+<group matrix="1 0 0 1 16 -16">
+<path stroke="gray1" fill="gray3">
+408 384 m
+8 0 0 8 400 384 400 392 a
+-8 392 l
+-8 332.75 l
+8 0 0 8 0 332.75 0 324.75 a
+408 324.75 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 32 48" transformations="translations" pos="0 288" stroke="KITblack70" type="minipage" width="384" height="15.1648" depth="4.0848" valign="top">\enquote{Alle x die in A oder B sind (oder beides)}</text>
+<use matrix="1 0 0 1 272 -128" name="mark/disk(sx)" pos="128 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -40" name="mark/disk(sx)" pos="176 96" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="272 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="192 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -64" name="mark/disk(sx)" pos="512 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="464 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 104 -96" name="mark/disk(sx)" pos="352 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -80 -112" name="mark/disk(sx)" pos="656 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="384 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="560 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -64" name="mark/disk(sx)" pos="528 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="464 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="544 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="496 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="432 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="400 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="368 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="384 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="432 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="224 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="208 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="272 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="304 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="336 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -48" name="mark/disk(sx)" pos="304 64" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -48" name="mark/disk(sx)" pos="240 80" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="208 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 88 -120" name="mark/disk(sx)" pos="208 304" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 88 -112" name="mark/disk(sx)" pos="160 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="224 224" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="192 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="176 288" size="normal" stroke="black"/>
+<path stroke="blue1" pen="2">
+416 32
+304 208
+720 272
+624 32 u
+</path>
+<path stroke="green2" pen="2">
+208 256
+208 32
+528 -32
+576 144 u
+</path>
+<text matrix="1 0 0 1 16 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">\emph{Vereinigung:} $A \cup B = \{x \vert x \in A \vee x\in B\}$</text>
+<path stroke="orange1" pen="2">
+536 32
+688 96
+704 248
+504 264
+403.2 206.4
+392 192
+272 232
+200 168
+216 64
+368 -16
+488 -8
+520 8 u
+</path>
+<text matrix="1 0 0 1 256 112" transformations="translations" pos="224 256" stroke="black" type="minipage" width="256" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel:</text>
+<text matrix="1 0 0 1 256 176" transformations="translations" pos="224 160" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top" style="item"> $\{1, 2, 3\} \cup \{2, 3, 4\} = \{1, 2, 3, 4\}$
+</text>
+</page>
+<page title="Mengenoperationen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha" matrix="1 0 0 1 16 -16">
+<path stroke="gray1" fill="gray3">
+408 384 m
+8 0 0 8 400 384 400 392 a
+-8 392 l
+-8 332.75 l
+8 0 0 8 0 332.75 0 324.75 a
+408 324.75 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 32 48" transformations="translations" pos="0 288" stroke="KITblack70" type="minipage" width="384" height="14.5144" depth="3.4632" valign="top">\enquote{Alle x die sowohl in A als auch in B sind}</text>
+<use matrix="1 0 0 1 272 -128" name="mark/disk(sx)" pos="128 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -40" name="mark/disk(sx)" pos="176 96" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="272 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="192 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -64" name="mark/disk(sx)" pos="512 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="464 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 104 -96" name="mark/disk(sx)" pos="352 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -80 -112" name="mark/disk(sx)" pos="656 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="384 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="560 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -64" name="mark/disk(sx)" pos="528 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="464 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="544 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="496 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="432 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="400 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="368 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="384 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="432 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="224 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="208 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="272 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="304 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="336 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -48" name="mark/disk(sx)" pos="304 64" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -48" name="mark/disk(sx)" pos="240 80" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="208 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 88 -120" name="mark/disk(sx)" pos="208 304" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 88 -112" name="mark/disk(sx)" pos="160 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="224 224" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="192 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="176 288" size="normal" stroke="black"/>
+<path stroke="blue1" pen="2">
+416 32
+304 208
+720 272
+624 32 u
+</path>
+<path stroke="green2" pen="2">
+208 256
+208 32
+528 -32
+576 144 u
+</path>
+<text matrix="1 0 0 1 16 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">\emph{Schnitt:} $A \cap B = \{x \vert x \in A \wedge x\in B\}$</text>
+<path stroke="orange1" pen="2">
+384 208
+368 144
+400 80
+496 40
+528 48
+544 112 u
+</path>
+<text transformations="translations" pos="176 80" stroke="green2" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$A$</text>
+<text matrix="1 0 0 1 -1 0" transformations="translations" pos="624 48" stroke="blue1" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$B$</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="320 272" stroke="orange1" type="minipage" width="112" height="18.623" depth="7.678" valign="top" size="LARGE">$A\cap B$</text>
+<group>
+<path stroke="black" fill="KITblue15">
+472 376 m
+816 376 l
+8 0 0 -8 816 368 824 368 a
+824 305.882 l
+480 305.882 l
+8 0 0 -8 480 313.882 472 313.882 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 256 112" transformations="translations" pos="224 256" stroke="black" type="minipage" width="256" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel:</text>
+<text matrix="1 0 0 1 256 176" transformations="translations" pos="224 160" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top" style="item"> $\{1, 2, 3\} \cap \{2, 3, 4\} = \{ 2, 3\}$
+</text>
+</page>
+<page title="Mengenoperationen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha" matrix="1 0 0 1 16 -16">
+<path stroke="gray1" fill="gray3">
+408 384 m
+8 0 0 8 400 384 400 392 a
+-8 392 l
+-8 332.75 l
+8 0 0 8 0 332.75 0 324.75 a
+408 324.75 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 32 48" transformations="translations" pos="0 288" stroke="KITblack70" type="minipage" width="384" height="14.5144" depth="3.4632" valign="top">\enquote{Alle x die in A aber nicht in B sind}</text>
+<use matrix="1 0 0 1 272 -128" name="mark/disk(sx)" pos="128 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -40" name="mark/disk(sx)" pos="176 96" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="272 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="192 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -64" name="mark/disk(sx)" pos="512 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="464 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 104 -96" name="mark/disk(sx)" pos="352 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -80 -112" name="mark/disk(sx)" pos="656 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="384 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="560 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -64" name="mark/disk(sx)" pos="528 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="464 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="544 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="496 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="432 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="400 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="368 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="384 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="432 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="224 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="208 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="272 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -80" name="mark/disk(sx)" pos="304 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="336 144" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -48" name="mark/disk(sx)" pos="304 64" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -48" name="mark/disk(sx)" pos="240 80" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="208 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 88 -120" name="mark/disk(sx)" pos="208 304" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 88 -112" name="mark/disk(sx)" pos="160 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="224 224" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -112" name="mark/disk(sx)" pos="192 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="176 288" size="normal" stroke="black"/>
+<path stroke="blue1" pen="2">
+416 32
+304 208
+720 272
+624 32 u
+</path>
+<path stroke="green2" pen="2">
+208 256
+208 32
+528 -32
+576 144 u
+</path>
+<text matrix="1 0 0 1 16 16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">\emph{Differenz:} $A \backslash B = \{x \vert x \in A \wedge x\not \in B\}$</text>
+<path stroke="orange1" pen="2">
+384 192
+312 200
+248 184
+224 152
+240 80
+312 32
+360 16
+432 0
+496 16
+512 32
+440 48
+400 72
+368 112
+352 152 u
+</path>
+<text transformations="translations" pos="176 80" stroke="green2" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$A$</text>
+<text matrix="1 0 0 1 -1 0" transformations="translations" pos="624 48" stroke="blue1" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$B$</text>
+<text matrix="1 0 0 1 -16.1 -14.5" transformations="translations" pos="320 272" stroke="orange1" type="minipage" width="112" height="24.409" depth="13.464" valign="top" size="LARGE">$A\backslash B$</text>
+<group>
+<path stroke="black" fill="KITblue15">
+472 376 m
+816 376 l
+8 0 0 -8 816 368 824 368 a
+824 305.882 l
+480 305.882 l
+8 0 0 -8 480 313.882 472 313.882 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 256 112" transformations="translations" pos="224 256" stroke="black" type="minipage" width="256" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel:</text>
+<text matrix="1 0 0 1 256 176" transformations="translations" pos="224 160" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top" style="item"> $\{1, 2, 3\} \backslash \{2, 3, 4\} = \{1\}$
+</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha gamma" active="gamma"/>
+<group layer="alpha" matrix="1 0 0 1 0 -32">
+<path stroke="gray1" fill="gray3">
+152 368 m
+8 0 0 8 144 368 144 376 a
+8 376 l
+8 352.8 l
+8 0 0 8 16 352.8 16 344.8 a
+152 344.8 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 384" stroke="black" type="minipage" width="128" height="13.1357" depth="2.0646" valign="top">Füllt die ? ein</text>
+<text layer="beta" matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="336" height="50.6204" depth="39.627" valign="top" style="itemize">\item $A \cap B =~ ?$
+\item $A \cup B = ~?$
+\item $A \backslash B =~ ?$
+</text>
+<text layer="alpha" matrix="1 0 0 1 0 80" transformations="translations" pos="0 304" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top">$A = \set{5,7,9,2}$ und  $B = \set{2,8,9}$</text>
+<text layer="gamma" matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="336" height="51.2265" depth="40.2486" valign="top" style="itemize">\item $A \cap B = \set{2,9}$
+\item $A \cup B = \set{2,5,7,8,9}$
+\item $A \backslash B = \set{5,7}$
+</text>
 </page>
 <page title="Beziehungen zwischen Mengen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<layer name="delta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="15.469" depth="4.4178" valign="top" style="item">\textbf{Teilmenge:} $\forall a \in A : a\in B \Leftrightarrow A \subseteq B$ </text>
-<text layer="gamma" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 352" stroke="black" type="minipage" width="880" height="15.2203" depth="4.1514" valign="top" style="item">\textbf{Disjunktheit:} Zwei Mengen sind disjunkt, wenn sie keine gemeinsamen Elemente haben also:</text>
-<text matrix="1 0 0 1 0 -112" transformations="translations" pos="0 320" stroke="black" type="minipage" width="592" height="15.964" depth="4.9062" valign="top" style="subitem">A und B sind Disjunkt  $\Leftrightarrow A\cap B = \emptyset $</text>
-<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="15.0516" depth="3.9738" valign="top" style="subitem">$\subseteq$: Teilmenge oder gleich</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top" style="subitem">$\subsetneq$: Echte Teilmenge</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="464" height="14.9184" depth="3.8628" valign="top" style="subitem">$\subset$: Je nach Kontext, hier äquivalent zu $\subsetneq$</text>
-<group layer="delta">
-<text matrix="1 0 0 1 0 -112" transformations="translations" pos="0 288" stroke="black" type="minipage" width="704" height="14.854" depth="3.774" valign="top" style="item">\textbf{Gleichheit:} $A = B \Leftrightarrow A \subseteq B \wedge B\subseteq A$</text>
-</group>
-<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="672" height="28.5403" depth="17.4936" valign="top" style="subitem">Für die Gleichheit muss immer überprüft werden, ob beide Richtungen der Teilmengenbeziehung gelten</text>
+<text layer="beta" matrix="1 0 0 1 512 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="304" height="15.2758" depth="4.218" valign="top" style="item">$\subseteq$: Teilmenge (oder gleich)</text>
+<text matrix="1 0 0 1 512 -32" transformations="translations" pos="0 320" stroke="black" type="minipage" width="240" height="15.0516" depth="3.9738" valign="top" style="item">$\subsetneq$: Echte Teilmenge</text>
+<text matrix="1 0 0 1 512 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="400" height="14.9184" depth="3.8628" valign="top" style="item">$\subset$: Je nach Kontext, hier äquivalent zu $\subsetneq$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
+<text layer="gamma" matrix="1 0 0 1 -48 32" transformations="translations" pos="176 80" stroke="green2" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$A$</text>
+<text matrix="1 0 0 1 -177 0" transformations="translations" pos="624 48" stroke="blue1" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$B$</text>
+<group matrix="1 0 0 1 -192 -32">
+<use matrix="1 0 0 1 272 -144" name="mark/disk(sx)" pos="128 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -96" name="mark/disk(sx)" pos="272 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -80" name="mark/disk(sx)" pos="512 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="464 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -80 -128" name="mark/disk(sx)" pos="656 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="384 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="560 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -80" name="mark/disk(sx)" pos="528 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="464 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="544 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="496 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="432 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="400 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="368 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="384 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 80 -128" name="mark/disk(sx)" pos="432 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 128 -96" name="mark/disk(sx)" pos="304 208" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 0 -16" stroke="blue1" pen="2">
+416 32
+304 208
+720 272
+624 32 u
+</path>
+<path matrix="1 0 0 1 0 -16" stroke="green2" pen="2">
+384 208
+368 144
+400 80
+496 40
+528 48
+544 112 u
+</path>
+</group>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 192" stroke="black" type="minipage" width="96" height="67.3104" depth="56.388" valign="top" style="itemize">\item $A \subseteq B$
+\item $A\subset B$
+\item $B\subseteq B$
+\item $B \not \subset B$</text>
+<group layer="alpha">
+<path fill="KITgreen">
+-6.4 357.877 m
+-6.4 384 l
+431.6 384 l
+436.6 384
+441.6 379
+441.6 374 c
+441.6 357.877 l
+h
+</path>
+<path fill="KITgreen15">
+441.6 357.877 m
+441.6 214.436 l
+3.6 214.436 l
+-1.4 214.436
+-6.4 219.436
+-6.4 224.436 c
+-6.4 357.877 l
+h
+</path>
+<text transformations="translations" pos="-1.02982 378.63" stroke="white" type="minipage" width="437.26" height="15.2203" depth="4.1514" valign="top">\textbf{Teilmenge}</text>
+<text transformations="translations" pos="-1.02982 352.507" stroke="black" type="minipage" width="437.26" height="72.3476" depth="61.4274" valign="top">Eine Menge B ist  \emph{Teilmenge} einer Menge A, wenn alle Elemente aus B auch in A enthalten sind. Also wenn:  \vspace{-2 mm} $$\forall a \in A : a\in B $$ \vspace{-3mm}</text>
+</group>
+<text layer="beta" transformations="translations" pos="512 352" stroke="black" type="minipage" width="304" height="13.078" depth="2.0202" valign="top">\textbf{Schreibweisen:}</text>
+</page>
+<page title="Beziehungen zwischen Mengen">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="alpha">
+<path fill="KITgreen">
+-6.4 357.877 m
+-6.4 384 l
+431.6 384 l
+436.6 384
+441.6 379
+441.6 374 c
+441.6 357.877 l
+h
+</path>
+<path fill="KITgreen15">
+441.6 357.877 m
+441.6 240.976 l
+3.6 240.976 l
+-1.4 240.976
+-6.4 245.976
+-6.4 250.976 c
+-6.4 357.877 l
+h
+</path>
+<text transformations="translations" pos="-1.02982 378.63" stroke="white" type="minipage" width="437.26" height="15.0605" depth="3.996" valign="top">\textbf{Disjunktheit}</text>
+<text transformations="translations" pos="-1.02982 352.507" stroke="black" type="minipage" width="437.26" height="59.1053" depth="48.1296" valign="top">Zwei Mengen sind \emph{disjunkt}, wenn sie keine gemeinsamen Elemente haben. Also wenn:  \vspace{-2 mm} $$A\cap B = \emptyset$$ \vspace{-3mm}</text>
+</group>
+<text layer="beta" matrix="1 0 0 1 -176 -48" transformations="translations" pos="176 80" stroke="green2" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$A$</text>
+<text matrix="1 0 0 1 -177 0" transformations="translations" pos="624 48" stroke="blue1" type="minipage" width="32" height="18.623" depth="7.678" valign="top" size="LARGE">$B$</text>
+<group matrix="1 0 0 1 0 -80">
+<use matrix="1 0 0 1 -112 -80" name="mark/disk(sx)" pos="128 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -256 -32" name="mark/disk(sx)" pos="272 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -304 -64" name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -304 -64" name="mark/disk(sx)" pos="400 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -304 -64" name="mark/disk(sx)" pos="368 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -304 -64" name="mark/disk(sx)" pos="384 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -304 -64" name="mark/disk(sx)" pos="432 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -256 -32" name="mark/disk(sx)" pos="304 208" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 -384 48" stroke="green2" pen="2">
+384 208
+368 144
+400 80
+496 40
+528 48
+544 112 u
+</path>
+</group>
+<group>
+<use matrix="1 0 0 1 80 -176" name="mark/disk(sx)" pos="128 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -64 -128" name="mark/disk(sx)" pos="272 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -128 -112" name="mark/disk(sx)" pos="512 128" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="464 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -272 -160" name="mark/disk(sx)" pos="656 240" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="384 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="560 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -128 -112" name="mark/disk(sx)" pos="528 160" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="464 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="544 272" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="496 320" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="432 288" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="400 192" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="368 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="384 256" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -112 -160" name="mark/disk(sx)" pos="432 208" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 -64 -128" name="mark/disk(sx)" pos="304 208" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 -192 -48" stroke="blue1" pen="2">
+416 32
+304 208
+720 272
+624 32 u
+</path>
+</group>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha gamma" active="gamma"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+152 368 m
+8 0 0 8 144 368 144 376 a
+8 376 l
+8 352.8 l
+8 0 0 8 16 352.8 16 344.8 a
+152 344.8 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="128" height="13.1357" depth="2.0646" valign="top">Füllt die ? ein</text>
+<text layer="beta" matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="336" height="51.2265" depth="40.2486" valign="top" style="itemize">\item $\set{0,1,2} ~?~ \set{0,1,2,3}$
+\item $\set{0,1,1} ~?~ \set{0,1,1}$
+\item $\set{0,1,0} ~?~ \set{\text{rot},\text{blau},\text{grün}}$</text>
+<text layer="gamma" matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="336" height="51.2265" depth="40.2486" valign="top" style="itemize">\item $\set{0,1,2} \subset \set{0,1,2,3}$
+\item $\set{0,1,1} = \set{0,1,1}$
+\item $\set{0,1,0} \not \subset \set{\text{rot},\text{blau},\text{grün}}$</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha beta" active="gamma"/>
+<view layers="alpha gamma" active="beta"/>
+<text layer="alpha" matrix="1 0 0 1 32 -24" transformations="translations" pos="176 80" stroke="green2" type="minipage" width="32" height="16.5901" depth="5.5278" valign="top" size="Large">$A$</text>
+<text matrix="1 0 0 1 -1 8" transformations="translations" pos="624 48" stroke="blue1" type="minipage" width="32" height="16.5901" depth="5.5278" valign="top" size="Large">$B$</text>
+<path stroke="blue1" pen="2">
+416 32
+304 208
+720 272
+624 32 u
+</path>
+<path stroke="green2" pen="2">
+208 256
+208 32
+528 -32
+576 144 u
+</path>
+<path stroke="orange1" pen="2">
+392 200
+368 144
+400 80
+496 48
+528 48
+536 104 u
+</path>
+<path stroke="orange1" pen="2">
+384 192
+312 200
+248 184
+224 152
+240 80
+312 32
+360 16
+432 8
+496 16
+512 32
+440 48
+400 72
+368 112
+352 152 u
+</path>
+<path stroke="orange1" pen="2">
+400 192
+480 224
+560 232
+640 224
+664 160
+624 96
+568 56
+544 56
+552 80
+544 112
+496 160
+432 192 u
+</path>
+<text matrix="1 0 0 1 88 80" transformations="translations" pos="176 80" stroke="orange1" type="minipage" width="80" height="21.4585" depth="10.3896" valign="top" size="Large">$A\backslash B$</text>
+<text matrix="1 0 0 1 360 136" transformations="translations" pos="176 80" stroke="orange1" type="minipage" width="88" height="21.4585" depth="10.3896" valign="top" size="Large">$B\backslash A$</text>
+<text matrix="1 0 0 1 232 40" transformations="translations" pos="176 80" stroke="orange1" type="minipage" width="96" height="16.5901" depth="5.5278" valign="top" size="Large">$A \cap B$</text>
+<text layer="beta" matrix="1 0 0 1 272 48" transformations="translations" pos="0 256" stroke="black" type="minipage" width="320" height="18.7923" depth="7.7478" valign="top" size="large">$\vert A \cup B \vert =~?$</text>
+<text layer="gamma" matrix="1 0 0 1 272 48" transformations="translations" pos="0 256" stroke="black" type="minipage" width="360" height="18.7923" depth="7.7478" valign="top" size="large">$\vert A \cup B \vert = \vert A \vert + \vert B \vert - \vert A \cap B \vert$</text>
 </page>
 <page title="Potenzmengen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 -16 16">
-<path stroke="black" fill="KITgreen15">
-24 360 m
-464 360 l
-8 0 0 -8 464 352 472 352 a
-472 239.965 l
-32 239.965 l
-8 0 0 -8 32 247.965 24 247.965 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="32 352" stroke="black" type="minipage" width="304" height="15.0028" depth="3.9294" valign="top">\bfseries Potenzmenge</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="32 320" stroke="black" type="minipage" width="432" height="42.049" depth="31.0578" valign="top">Die Menge die alle möglichen Teilmengen einer Menge M enthält wird Potenzmenge gennant\\
-Geschrieben : $2^M$ oder $\mathscr P (M)$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 240" stroke="black" type="minipage" width="496" height="17.6912" depth="6.6156" valign="top" style="item">Beispiel: $M=\{a,b\} \Rightarrow 2^M = \{\emptyset, \{a\},\{b\},\{a,b\}\}$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="384" height="18.1063" depth="7.0596" valign="top" style="item">$\vert\mathscr P (M)\vert = \vert 2^M\vert = 2^{\vert M\vert}$</text>
-<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="448" height="15.5444" depth="4.4622" valign="top" style="item">$\emptyset$ und M selber sind immer in $2^M$</text>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="432" height="18.1063" depth="7.0596" valign="top" style="item">Beispiel: $2^{\set{a,b}}= \{\emptyset, \{a\},\{b\},\{a,b\}\}$</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 208" stroke="black" type="minipage" width="384" height="18.1063" depth="7.0596" valign="top" style="item">$\vert\mathscr P (M)\vert = \vert 2^M\vert = 2^{\vert M\vert}$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="448" height="15.5444" depth="4.4622" valign="top" style="item">$\emptyset$ und M selber sind immer in $2^M$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
 <path layer="alpha" stroke="black">
 0 176 m
@@ -3876,28 +4381,49 @@ Geschrieben : $2^M$ oder $\mathscr P (M)$</text>
 0 176 l
 h
 </path>
-</page>
-<page title="Aufgabe">
-<notes>Am besten kardinalität der vereinigung durch die anderen beiden ausdrücken</notes>
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page gamma epsilon zeta" active="zeta"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta" active="eta"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta theta" active="theta"/>
-<view layers="alpha pagenumbers_page gamma epsilon eta iota" active="iota"/>
-<group layer="theta">
+<group matrix="1 0 0 1 -16 0">
+<path fill="KITgreen">
+9.6 357.877 m
+9.6 384 l
+447.6 384 l
+452.6 384
+457.6 379
+457.6 374 c
+457.6 357.877 l
+h
+</path>
+<path fill="KITgreen15">
+457.6 357.877 m
+457.6 275.104 l
+19.6 275.104 l
+14.6 275.104
+9.6 280.104
+9.6 285.104 c
+9.6 357.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 378.63" stroke="white" type="minipage" width="437.26" height="15.0028" depth="3.9294" valign="top">\textbf{Potenzmenge}</text>
+<text transformations="translations" pos="14.9702 352.507" stroke="black" type="minipage" width="437.26" height="42.049" depth="31.0578" valign="top">Die Menge, die alle möglichen Teilmengen einer Menge M enthält wird Potenzmenge gennant\\
+Geschrieben: $2^M$ oder $\mathscr P (M)$</text>
+</group>
+<text layer="zeta" matrix="1 0 0 1 160 -144" transformations="translations" pos="0 224" stroke="black" type="minipage" width="816" height="22.0202" depth="10.9668" valign="top">$2^{2^{2^{\{\}}}} = \{\{\},\{\{\}\},\{\{\{\}\}\},\{\{\},\{\{\}\}\}\} = \{\emptyset, \{\emptyset\}, \{\{\emptyset\}\}, \{\emptyset, \{\emptyset\}\}\}$ </text>
+<text layer="delta" matrix="1 0 0 1 144 -80" transformations="translations" pos="16 208" stroke="black" type="minipage" width="128" height="18.1063" depth="7.0596" valign="top">$2^{\{\}} = \set{\emptyset}$</text>
+<group layer="gamma">
+<group matrix="1 0 0 1 0 16">
+<path stroke="gray1" fill="gray3">
+152 112 m
+8 0 0 8 144 112 144 120 a
+8 120 l
+8 92.1288 l
+8 0 0 8 16 92.1288 16 84.1288 a
+152 84.1288 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 -80" transformations="translations" pos="16 208" stroke="black" type="minipage" width="128" height="15.4756" depth="4.3956" valign="top">Was ist $2^{\{\}}$?</text>
+</group>
+<group layer="epsilon">
+<group matrix="1 0 0 1 0 -128">
 <path stroke="gray1" fill="gray3">
 152 208 m
 8 0 0 8 144 208 144 216 a
@@ -3908,49 +4434,7 @@ h
 h
 </path>
 </group>
-<group layer="zeta" matrix="1 0 0 1 0 -16">
-<path stroke="gray1" fill="gray3">
-424 256 m
-8 0 0 8 416 256 416 264 a
-8 264 l
-8 187.873 l
-8 0 0 8 16 187.873 16 179.873 a
-424 179.873 l
-h
-</path>
+<text matrix="1 0 0 1 0 -128" transformations="translations" pos="16 208" stroke="black" type="minipage" width="128" height="19.3651" depth="8.325" valign="top">Was ist $2^{2^{2^{\{\}}}}$?</text>
 </group>
-<group layer="delta" matrix="1 0 0 1 0 -16">
-<path stroke="gray1" fill="gray3">
-200 288 m
-8 0 0 8 192 288 192 296 a
-8 296 l
-8 268.608 l
-8 0 0 8 16 268.608 16 260.608 a
-200 260.608 l
-h
-</path>
-</group>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-264 320 m
-8 0 0 8 256 320 256 328 a
-8 328 l
-8 274.23 l
-8 0 0 8 16 274.23 16 266.23 a
-264 266.23 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="29.8546" depth="18.8034" valign="top" style="item">Sei $M = \{Apfel, Birne, Erdbeere\}$ und \\$N = \{Birne, Erdbeere, Orange,Kokosnuss\}$</text>
-<text layer="beta" transformations="translations" pos="16 320" stroke="black" type="minipage" width="240" height="28.7335" depth="17.6934" valign="top">Was ist $M \cup N$ und die dazugehörige Kardinalität?</text>
-<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$\vert \{Apfel,Birne,Erdbeere,Orange,Kokosnuss\}\vert = 5$</text>
-<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="176" height="15.469" depth="4.4178" valign="top">Was gilt für $M \cap N$?</text>
-<text layer="epsilon" transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="item">$\vert \{Birne, Erdbeere\} \vert = 2$ </text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="400" height="39.4183" depth="28.3938" valign="top">Könnt ihr einen Zusammenhang zwischen den Kardinalitäten von $M,N, M\cup N$ und $M\cap N$ erkennen?</text>
-<text layer="eta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top" style="item">$\vert M \cup N \vert = \vert M \vert + \vert N \vert - \vert M \cap N \vert$</text>
-<text layer="theta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="128" height="19.3651" depth="8.325" valign="top">Was ist $2^{2^{2^{\{\}}}}$?</text>
-<text layer="iota" transformations="translations" pos="0 224" stroke="black" type="minipage" width="816" height="22.0202" depth="10.9668" valign="top" style="item">$2^{2^{2^{\{\}}}} = \{\{\},\{\{\}\},\{\{\{\}\}\},\{\{\},\{\{\}\}\}\} = \{\emptyset, \{\emptyset\}, \{\{\emptyset\}\}, \{\emptyset, \{\emptyset\}\}\}$ </text>
-<text transformations="translations" pos="0 176" stroke="black" type="minipage" width="256" height="22.0202" depth="10.9668" valign="top" style="item">$\vert2^{2^{2^{\{\}}}} \vert = 4$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
 </page>
 </ipe>
