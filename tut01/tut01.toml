@@ -1,5 +1,5 @@
 
-title = "01 Orga, Mengenlehre"       # the file name of the output pdf
-description = "Orga und Mengenlehre" # 
-content = ["orga", "mengenlehre" , "mengenbeweise", "kartesischesprodukt"]
+title = "01 Orga, Mengenlehre, Relationen"                             # the file name of the output pdf
+description = "Orga, Mengenlehre und Relationen"                       # 
+content = ["orga", "mengenlehre", "kartesischesprodukt", "relationen"]
 xkcd = 934

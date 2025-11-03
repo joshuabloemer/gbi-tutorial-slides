@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241105113454" title="Relationen" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251102194538" title="Relationen" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3737,7 +3737,7 @@ h
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
+<group layer="beta" matrix="1 0 0 1 0 16">
 <path stroke="black" fill="KITblue15">
 8 152 m
 672 152 l
@@ -3748,26 +3748,40 @@ h
 h
 </path>
 </group>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 144" stroke="black" type="minipage" width="656" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 112" stroke="black" type="minipage" width="464" height="15.6355" depth="4.551" valign="top">Sei A,B = $\mathbb{N}_+ $ und $\leq$ die Kleiner Gleich Relation also</text>
+<text matrix="1 0 0 1 -496 -176" transformations="translations" pos="560 272" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$\leq ~ \subseteq \mathbb N_+ \times \mathbb N_+  = \{(a,b) \vert a \mbox{ ist kleiner gleich } b\}$</text>
+<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">Also gilt z.B. $(1,2) \in ~ \leq ~ \Rightarrow 1 \leq 2$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 <group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-448 376 l
-8 0 0 -8 448 368 456 368 a
-456 174.26 l
-16 174.26 l
-8 0 0 -8 16 182.26 8 182.26 a
+<path fill="KITgreen">
+9.6 357.877 m
+9.6 384 l
+447.6 384 l
+452.6 384
+457.6 379
+457.6 374 c
+457.6 357.877 l
 h
 </path>
+<path fill="KITgreen15">
+457.6 357.877 m
+457.6 196.199 l
+19.6 196.199 l
+14.6 196.199
+9.6 201.199
+9.6 206.199 c
+9.6 357.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 378.63" stroke="white" type="minipage" width="437.26" height="13.078" depth="2.0202" valign="top">\textbf{Relation}</text>
+<text transformations="translations" pos="14.9702 352.507" stroke="black" type="minipage" width="437.26" height="81.4607" depth="70.5516" valign="top">Für Mengen A, B ist eine \emph{binäre Relation} R eine Teilmenge des kartesischen Produkts $A \times B$
+\vspace{-2 mm}
+$$\text{Also: } R \subseteq A \times B$$
+\vspace{-5 mm}
+
+Erfüllt $(a,b) \in A \times B$ die Relation R $((a,b)\in R)$ schreibt man kurz $a~R~b$ (infix Schreibweise)</text>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="13.078" depth="2.0202" valign="top">\bfseries Relation</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="432" height="28.4848" depth="17.427" valign="top">Für Mengen A, B ist eine \textbf{binäre Relation} R eine Teilmenge des kartesischen Produkts $A \times B$</text>
-<text matrix="1 0 0 1 80 0" transformations="translations" pos="64 272" stroke="black" type="minipage" width="160" height="14.854" depth="3.774" valign="top">Also: $R \subseteq A \times B$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="29.2285" depth="18.1818" valign="top">Erfüllt $(a,b) \in A \times B$ die Relation R $((a,b)\in R)$ schreibt man kurz $a~R~b$ (infix Schreibweise)</text>
-<text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="656" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 112" stroke="black" type="minipage" width="464" height="15.6355" depth="4.551" valign="top">Sei A,B = $\mathbb{N}_+ $ und $\leq$ die Kleiner Gleich Relation also</text>
-<text matrix="1 0 0 1 -496 -192" transformations="translations" pos="560 272" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$\leq ~ \subseteq \mathbb N_+ \times \mathbb N_+  = \{(a,b) \vert a \mbox{ ist kleiner gleich } b\}$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">Also gilt z.B. $(1,2) \in ~ \leq ~ \Rightarrow 1 \leq 2$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -3868,79 +3882,127 @@ h
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 16 -32">
-<path stroke="black" fill="KITgreen15">
--8 216 m
-640 216 l
-8 0 0 -8 640 208 648 208 a
-648 77.7526 l
-0 77.7526 l
-8 0 0 -8 0 85.7526 -8 85.7526 a
-h
-</path>
-</group>
-<group matrix="1 0 0 1 16 -16">
-<path stroke="black" fill="KITgreen15">
--8 360 m
-640 360 l
-8 0 0 -8 640 352 648 352 a
-648 221.753 l
-0 221.753 l
-8 0 0 -8 0 229.753 -8 229.753 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 352" stroke="black" type="minipage" width="128" height="13.078" depth="2.0202" valign="top">\bfseries Linkstotal</text>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352" stroke="black" type="minipage" width="640" height="51.2265" depth="40.2486" valign="top" style="itemize">\item R heißt linkstotal, wenn gilt $\forall a \in A~ \exists b \in B: (a,b) \in R$
-\item Auf deutsch: für jedes a aus A gibt es mindestens ein b aus B
-\item Beispiel: $R = \{(1,1), (1,2), (2,1), (3,2)\}$
-</text>
-<text matrix="1 0 0 1 16 -80" transformations="translations" pos="0 256" stroke="black" type="minipage" width="272" height="12.8627" depth="1.7982" valign="top">\bfseries Rechtstoal</text>
-<text matrix="1 0 0 1 16 -80" transformations="translations" pos="0 224" stroke="black" type="minipage" width="640" height="51.2265" depth="40.2486" valign="top" style="itemize">\item R heißt rechtstotal, wenn gilt $\forall b \in B~ \exists a \in A: (a,b) \in R$
-\item Auf deutsch: für jedes b aus B gibt es mindestens ein a aus A
-\item Beispiel: $R = \{(1,1), (1,2), (1,3), (3,1), (3,2)\}$
-</text>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">Hier immer $R \subseteq A\times B,\quad A = B = \{1,2,3\}$</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">Hier immer $R \subseteq A\times B,\quad A = B = \{1,2,3\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
+<group layer="alpha">
+<path fill="KITgreen">
+9.6 325.877 m
+9.6 352 l
+626.8 352 l
+631.8 352
+636.8 347
+636.8 342 c
+636.8 325.877 l
+h
+</path>
+<path fill="KITgreen15">
+636.8 325.877 m
+636.8 260.416 l
+19.6 260.416 l
+14.6 260.416
+9.6 265.416
+9.6 270.416 c
+9.6 325.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 346.63" stroke="white" type="minipage" width="616.46" height="13.078" depth="2.0202" valign="top">\textbf{Linkstotal}</text>
+<text transformations="translations" pos="14.9702 320.507" stroke="black" type="minipage" width="616.46" height="33.4177" depth="22.3776" valign="top">\begin{itemize}
+\item R heißt linkstotal, wenn gilt $\forall a \in A~ \exists b \in B: (a,b) \in R$
+\item Auf deutsch: für jedes a aus A gibt es mindestens ein b aus B
+\end{itemize}</text>
+</group>
+<group>
+<path fill="KITgreen">
+9.6 149.877 m
+9.6 176 l
+626.8 176 l
+631.8 176
+636.8 171
+636.8 166 c
+636.8 149.877 l
+h
+</path>
+<path fill="KITgreen15">
+636.8 149.877 m
+636.8 84.4157 l
+19.6 84.4157 l
+14.6 84.4157
+9.6 89.4157
+9.6 94.4157 c
+9.6 149.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 170.63" stroke="white" type="minipage" width="616.46" height="12.8627" depth="1.7982" valign="top">\textbf{Rechtstotal}</text>
+<text transformations="translations" pos="14.9702 144.507" stroke="black" type="minipage" width="616.46" height="33.4177" depth="22.3776" valign="top">\begin{itemize}
+\item R heißt rechtstotal, wenn gilt $\forall b \in B~ \exists a \in A: (a,b) \in R$
+\item Auf deutsch: für jedes b aus B gibt es mindestens ein a aus A
+\end{itemize}</text>
+</group>
+<text matrix="1 0 0 1 0 20" transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">Beispiel: $R = \{(1,1), (1,2), (2,1), (3,2)\}$</text>
+<text transformations="translations" pos="16 64" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">Beispiel: $R = \{(1,1), (1,2), (1,3), (3,1), (3,2)\}$</text>
 </page>
 <page title="Eigenschaften von Relationen II">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">Hier wieder $R \subseteq A\times B,\quad A = B = \{1,2,3\}$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
 <group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 168 m
-656 168 l
-8 0 0 -8 656 160 664 160 a
-664 3.70752 l
-16 3.70752 l
-8 0 0 -8 16 11.7075 8 11.7075 a
+<path fill="KITgreen">
+9.6 325.877 m
+9.6 352 l
+626.8 352 l
+631.8 352
+636.8 347
+636.8 342 c
+636.8 325.877 l
 h
 </path>
+<path fill="KITgreen15">
+636.8 325.877 m
+636.8 235.498 l
+19.6 235.498 l
+14.6 235.498
+9.6 240.498
+9.6 245.498 c
+9.6 325.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 346.63" stroke="white" type="minipage" width="616.46" height="15.2203" depth="4.1514" valign="top">\textbf{Linkseindeutig}</text>
+<text transformations="translations" pos="14.9702 320.507" stroke="black" type="minipage" width="616.46" height="45.8585" depth="34.854" valign="top">\begin{itemize}
+\item R heißt linkseindeutig, wenn gilt:\\ $\forall b \in B, a_1,a_2 \in A ~:  (a_1,b) \in R \wedge (a_2,b) \in R \Rightarrow a_1 = a_2$
+\item Auf deutsch: für jedes b aus B gibt es höchstens ein a aus A
+\end{itemize}</text>
 </group>
 <group>
-<path stroke="black" fill="KITgreen15">
-8 344 m
-656 344 l
-8 0 0 -8 656 336 664 336 a
-664 179.708 l
-16 179.708 l
-8 0 0 -8 16 187.708 8 187.708 a
+<path fill="KITgreen">
+9.6 149.877 m
+9.6 176 l
+716.4 176 l
+721.4 176
+726.4 171
+726.4 166 c
+726.4 149.877 l
 h
 </path>
-</group>
-<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 352" stroke="black" type="minipage" width="160" height="15.2203" depth="4.1514" valign="top">\bfseries Linkseindeutig</text>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352" stroke="black" type="minipage" width="640" height="63.6696" depth="52.725" valign="top" style="itemize">\item R heißt linkseindeutig, wenn gilt:\\ $\forall b \in B, a_1,a_2 \in A ~:  (a_1,b) \in R \wedge (a_2,b) \in R \Rightarrow a_1 = a_2$
-\item Auf deutsch: für jedes b aus B gibt es höchstens ein a aus A
-\item Beispiel: $R = \{(1,1), (1,2)\}$
-</text>
-<text matrix="1 0 0 1 16 -96" transformations="translations" pos="0 256" stroke="black" type="minipage" width="272" height="15.2203" depth="4.1514" valign="top">\bfseries Rechtseindeutig</text>
-<text matrix="1 0 0 1 16 -96" transformations="translations" pos="0 224" stroke="black" type="minipage" width="640" height="63.6696" depth="52.725" valign="top" style="itemize">\item R heißt rechtseindeutig wenn gilt:\\ $\forall a \in A, b_1,b_2 \in B ~:  (a,b_1) \in R \wedge (a,b_2) \in R \Rightarrow b_1 = b_2$
+<path fill="KITgreen15">
+726.4 149.877 m
+726.4 59.4984 l
+19.6 59.4984 l
+14.6 59.4984
+9.6 64.4984
+9.6 69.4984 c
+9.6 149.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 170.63" stroke="white" type="minipage" width="706.06" height="15.2203" depth="4.1514" valign="top">\textbf{Rechtseindeutig}</text>
+<text transformations="translations" pos="14.9702 144.507" stroke="black" type="minipage" width="706.06" height="45.8585" depth="34.854" valign="top">\begin{itemize}
+\item R heißt rechtseindeutig wenn gilt:\\ $\forall a \in A, b_1,b_2 \in B ~:  (a,b_1) \in R \wedge (a,b_2) \in R \Rightarrow b_1 = b_2$
 \item Auf deutsch: für jedes a aus A gibt es höchstens ein b aus B
-\item Beispiel: $R = \{(1,1), (2,1),(3,3)\}$
-</text>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">Hier wieder $R \subseteq A\times B,\quad A = B = \{1,2,3\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
+\end{itemize}</text>
+</group>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top">Beispiel: $R = \{(1,1), (1,2)\}$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">Beispiel: $R = \{(1,1), (2,1),(3,3)\}$</text>
 </page>
 <page title="Quiz">
 <layer name="alpha"/>
@@ -4112,7 +4174,7 @@ h
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top" style="item">Seien $A =\{a, b, c\}$ und $B = \{1, 2, 3\}$</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top">Seien $A =\{a, b, c\}$ und $B = \{1, 2, 3\}$</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top" style="item">$R = \{(a,1), (a,2), (b,2)\}$
 </text>
 <text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top">Welche Eigenschaften haben diese Relationen?</text>

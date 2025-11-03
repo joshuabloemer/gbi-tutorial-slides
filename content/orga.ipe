@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241028231300" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251101195321" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3754,7 +3754,7 @@ h
 <text matrix="1 0 0 1 32 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="256" height="12.9115" depth="1.8204" valign="top" style="subitem">Hier im Tut
 </text>
 <text matrix="1 0 0 1 32 16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="384" height="12.9115" depth="1.8204" valign="top" style="subitem">Per Email</text>
-<text matrix="1 0 0 1 32 -48" transformations="translations" pos="0 336" stroke="black" type="minipage" width="416" height="14.5144" depth="3.4632" valign="top" style="item">3. Semester, Informatik Bachelor
+<text matrix="1 0 0 1 32 -48" transformations="translations" pos="0 336" stroke="black" type="minipage" width="416" height="14.5144" depth="3.4632" valign="top" style="item">7. Semester, Informatik Bachelor
 </text>
 </page>
 <page title="Wer seid ihr?">
@@ -3825,13 +3825,11 @@ h
 </path>
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.2203" depth="4.1514" valign="top">\bf Was machen wir hier eigentlich?</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="116.803" depth="106.005" valign="top" style="itemize">\item Mengen, Relationen, Abbildungen
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="84.3267" depth="73.4154" valign="top" style="itemize">\item Mengen, Relationen, Abbildungen
 \item Wörter, Sprachen, Grammatiken
 \item Graphen
 \item Algorithmen
-\item Turingmaschinen
-\item Logik
-\item Prozessoren</text>
+\item Logik</text>
 <text layer="beta" matrix="1 0 0 1 -6.7 -9.9" transformations="translations" pos="336 48" stroke="black" type="label" width="214.197" height="14.965" depth="4.5288" valign="baseline">$\Rightarrow$ Grundgbegriffe eben</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 4}</text>
 </page>
@@ -3842,7 +3840,7 @@ h
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha beta pagenumbers_page" active="beta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="864" height="114.889" depth="104.074" valign="top" style="itemize">\item Mi, 9:45 - 11:15, Vorlesung
-\item Fr, 9:45 - 11:15, 3/4 Vorlesung und 1/4 Übung
+\item Fr, 9:45 - 11:15, 1/2 Vorlesung und 1/2 Übung
 \item Aktuelle Materialien im ILIAS (Beitreten!)  https://s.kit.edu/gbi
 \item Lösungen zu Altklausuren und alten Übungsblättern: https://formal.kastel.kit.edu/teaching/gbi/
 \item Klausurtermin: \examdate
@@ -3925,7 +3923,7 @@ Wenn ihr knapp an der Grenze seid kommt es schonmal vor das man sich in ner exce
 <text matrix="1 0 0 1 0 96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">50\% der Punkte insgesamt</text>
 <text matrix="1 0 0 1 0 96" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="subitem">Auf jedem Blatt mindestens 20\% der Punkte</text>
 <text layer="delta" matrix="1 0 0 1 0 64" transformations="translations" pos="0 96" stroke="black" type="minipage" width="512" height="17.2094" depth="6.1494" valign="top">\bf Brauche ich den Übungsschein?</text>
-<text matrix="1 0 0 1 0 64" transformations="translations" pos="0 64" stroke="black" type="minipage" width="840" height="15.1648" depth="4.0848" valign="top" style="item">Ja, braucht ihr um das Modul zu bestehen (Infos, WInfos, Info Lehramt)</text>
+<text matrix="1 0 0 1 0 64" transformations="translations" pos="0 64" stroke="black" type="minipage" width="840" height="15.1648" depth="4.0848" valign="top" style="item">Ja, braucht ihr um das Modul zu bestehen (Infos, WInfos, CDS, Info Lehramt)</text>
 <text layer="gamma" transformations="translations" pos="0 192" stroke="black" type="minipage" width="368" height="13.1357" depth="2.0646" valign="top" style="subitem">Bis auf 2 Blätter</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
 <text layer="delta" transformations="translations" pos="0 96" stroke="black" type="minipage" width="816" height="12.9115" depth="1.8204" valign="top" style="item">Alle Anderen sollten in ihrem Modulhandbuch schauen</text>
@@ -3936,7 +3934,7 @@ Wenn ihr knapp an der Grenze seid kommt es schonmal vor das man sich in ner exce
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<text layer="alpha" matrix="1 0 0 1 0 64" transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="item">Ausgabe \textasciitilde Mittwoch im Ilias</text>
+<text layer="alpha" matrix="1 0 0 1 0 64" transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top" style="item">Ausgabe Freitags im Ilias</text>
 <text matrix="1 0 0 1 0 64" transformations="translations" pos="0 288" stroke="black" type="minipage" width="832" height="15.2758" depth="4.218" valign="top" style="item">Abgabe bis Freitag der Woche darauf um 9:30 Uhr online im Ilias</text>
 <text layer="beta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">Handschriftlich (Eingescannt oder Foto), Getippt</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Nicht abschreiben (Obviously)</text>
@@ -3947,11 +3945,12 @@ Wenn ihr knapp an der Grenze seid kommt es schonmal vor das man sich in ner exce
 <page title="Abgabe">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="13.229" depth="2.1534" valign="top" style="item">Ihr könnt in ILIAS Teams erstellen</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="848" height="15.0516" depth="3.9738" valign="top" style="item">Nur einer aus dem Team muss abgeben</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="800" height="15.2203" depth="4.1514" valign="top" style="item">Alles in \textbf{genau einer} PDF Datei</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="640" height="15.0516" depth="3.9738" valign="top" style="item">Beide Teammitglieder bekommen das Feedback</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Abgaben mit Leuten aus anderen Tutorien gehen \impl Einfach gleich zu mir kommen</text>
+<text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="13.229" depth="2.1534" valign="top" style="item">Ihr könnt in ILIAS Teams erstellen</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="848" height="15.0516" depth="3.9738" valign="top" style="item">Nur einer aus dem Team muss abgeben</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 320" stroke="black" type="minipage" width="800" height="15.2203" depth="4.1514" valign="top" style="item">Alles in \textbf{genau einer} PDF Datei</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="640" height="15.0516" depth="3.9738" valign="top" style="item">Beide Teammitglieder bekommen das Feedback</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Abgaben nur mit Leuten aus dem gleichen Tutorium</text>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="688" height="15.2203" depth="4.1514" valign="top" style="item">Abgabe \textbf{zu zweit}</text>
 </page>
 <page title="ChatGPT">
 <layer name="alpha"/>

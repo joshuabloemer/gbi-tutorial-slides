@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20251028140729" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251102194553" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3783,6 +3783,36 @@ h
 <text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="15.2758" depth="4.218" valign="top">Ansamlung von unterscheidbaren Objekten (Elemente der Menge)</text>
 </group>
 </page>
+<page title="Mengen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha" matrix="1 0 0 1 -80 176">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 136.717 l
+99.6 136.717 l
+94.6 136.717
+89.6 141.717
+89.6 146.717 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="15.0028" depth="3.9294" valign="top">\textbf{Menge}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="15.2758" depth="4.218" valign="top">Ansamlung von unterscheidbaren Objekten (Elemente der Menge)</text>
+</group>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 288" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top">In Mengen können \textbf{beliebige} Objekte sein, auch andere Mengen</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$\set{1, \set{3,4}, 6, \emptyset}$ ist eine valide Menge</text>
+</page>
 <page title="Mengenoperationen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -4085,6 +4115,16 @@ h
 <text matrix="1 0 0 1 256 176" transformations="translations" pos="224 160" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top" style="item"> $\{1, 2, 3\} \backslash \{2, 3, 4\} = \{1\}$
 </text>
 </page>
+<page title="Mengenoperationen">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="528" height="15.2203" depth="4.1514" valign="top">\emph{\enquote{Große} Vereinigung/Schnitt}</text>
+<text matrix="1 0 0 1 0 -144" transformations="translations" pos="0 336" stroke="black" type="minipage" width="928" height="17.7955" depth="6.7488" valign="top">$\bigcup_{i \in I} M_i = \set{x \given x \text{ ist in mindestens einer Menge $M_i$} } = M_1 \cup M_2 \cup \dots \cup M_n$</text>
+<text matrix="1 0 0 1 0 -128" transformations="translations" pos="0 272" stroke="black" type="minipage" width="880" height="17.7955" depth="6.7488" valign="top">$\bigcap_{i \in I} M_i = \set{x \given x \text{ ist in allen Mengen $M_i$} } = M_1 \cap M_2 \cap \dots \cap M_n$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Wir wollen mehrere Mengen gleichzeitig vereinigen/schneiden</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="640" height="15.469" depth="4.4178" valign="top">Seien $n$ Mengen $M_1, M_2, \dots , M_n$ gegeben</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="512" height="29.3395" depth="18.315" valign="top">Wir nenen $I = \set{1,2,\dots, n}$ die \emph{Indexmenge} und sagen \enquote{Für alle $i \in I$ gibt es eine Menge $M_i$}</text>
+</page>
 <page title="Aufgabe">
 <layer name="alpha"/>
 <layer name="beta"/>
@@ -4187,7 +4227,7 @@ h
 h
 </path>
 <text transformations="translations" pos="-1.02982 378.63" stroke="white" type="minipage" width="437.26" height="15.2203" depth="4.1514" valign="top">\textbf{Teilmenge}</text>
-<text transformations="translations" pos="-1.02982 352.507" stroke="black" type="minipage" width="437.26" height="72.3476" depth="61.4274" valign="top">Eine Menge B ist  \emph{Teilmenge} einer Menge A, wenn alle Elemente aus B auch in A enthalten sind. Also wenn:  \vspace{-2 mm} $$\forall a \in A : a\in B $$ \vspace{-3mm}</text>
+<text transformations="translations" pos="-1.02982 352.507" stroke="black" type="minipage" width="437.26" height="72.3476" depth="61.4274" valign="top">Eine Menge A ist  \emph{Teilmenge} einer Menge B, wenn alle Elemente aus A auch in B enthalten sind. Also wenn:  \vspace{-2 mm} $$\forall a \in A : a\in B $$ \vspace{-3mm}</text>
 </group>
 <text layer="beta" transformations="translations" pos="512 352" stroke="black" type="minipage" width="304" height="13.078" depth="2.0202" valign="top">\textbf{Schreibweisen:}</text>
 </page>
@@ -4436,5 +4476,85 @@ h
 </group>
 <text matrix="1 0 0 1 0 -128" transformations="translations" pos="16 208" stroke="black" type="minipage" width="128" height="19.3651" depth="8.325" valign="top">Was ist $2^{2^{2^{\{\}}}}$?</text>
 </group>
+</page>
+<page title="Teilmengen fester Größe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<text layer="alpha" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="656" height="32.059" depth="21.0234" valign="top">$\displaystyle \binom{M}{k} = \set{A \subseteq M \given \vert A \vert = k} = \set{A \in \mathscr P(M) \given \vert A \vert = k}$</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="15.469" depth="4.4178" valign="top">Wir wollen alle Teilmengen von $M$ die genau $k$ Elemente haben</text>
+<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="816" height="14.5144" depth="3.4632" valign="top" style="item">Deutsch: \enquote{M über k}</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="0 176" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">Auf Englisch deutlich deskriptiver: \enquote{From M choose k}</text>
+<text layer="gamma" matrix="1 0 0 1 0 48" transformations="translations" pos="0 128" stroke="black" type="minipage" width="608" height="32.059" depth="21.0234" valign="top" style="item">Wenn $M$ endlich und $k \leq \vert M\vert$ gilt auch 
+$\displaystyle  \left \vert \binom{M}{k} \right \vert = \binom{\vert M \vert}{k}$</text>
+</page>
+<page title="Lustiges über die leere Menge">
+<notes>allquantor ist wahr solange bis ein element gefunden wird für das die aussage nicht gilt
+
+Analog ist der existenzquantor per default falsch
+
+Tipp, falls ihr ein gegenbeispiel finden wollt probiert immer zuerst aus die leere menge reinzuwerfen</notes>
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="14.4411" depth="3.3744" valign="top">Sei $A = \emptyset$</text>
+<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="13.7507" depth="2.664" valign="top" style="item">$\forall a \in A : 1=2$ ist wahr</text>
+<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="720" height="13.7507" depth="2.664" valign="top" style="item">$\exists a \in A : 1 = 1$ ist falsch</text>
+<text layer="epsilon" matrix="1 0 0 1 0 32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top" style="item">$\{\} \neq \{\{\}\}$ wird oft falsch gemacht</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
+<text layer="epsilon" transformations="translations" pos="0 256" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top" style="item">$\vert\{\{\}\}\vert = 1$ wird oft falsch gemacht</text>
+</page>
+<page title="Aussagen Wiederlegen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<group layer="gamma" matrix="1 0 0 1 0 -16">
+<path stroke="black" fill="KITblue15">
+136 168 m
+768 168 l
+8 0 0 -8 768 160 776 160 a
+776 33.8821 l
+144 33.8821 l
+8 0 0 -8 144 41.8821 136 41.8821 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="656" height="15.0516" depth="3.9738" valign="top">Aussagen werden meistens in allgemeiner Form gemacht</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top" style="item">z.B. Seien A, B und C Mengen, es gilt ...</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top">Solche Aussagen können wiederlegt werden indem man ein Gegenbeispiel angibt</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Oft die leere Menge, Mengen mit nur einem Element oder Mengen die gleich sind</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="784" height="28.5403" depth="17.4936" valign="top">Falls die Aussage in der Form &apos;&apos;Seien A,B Mengen mit Bedingung x, dann gilt ...&apos;&apos; ist muss das Gegenbeispiel immer noch die Bedingung erfüllen</text>
+<text layer="gamma" matrix="1 0 0 1 80 -48" transformations="translations" pos="64 192" stroke="black" type="minipage" width="416" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text matrix="1 0 0 1 80 -32" transformations="translations" pos="64 144" stroke="black" type="minipage" width="560" height="15.469" depth="4.4178" valign="top" style="item">Für beliebige Mengen A, B gilt: Wenn $A \not \subset B$, dann $B \subseteq A$</text>
+<text matrix="1 0 0 1 80 -64" transformations="translations" pos="64 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$A = \{0\}, B = \{1\}$ ist \textbf{ein} Gegenbeispiel </text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
+<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="144 64" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$A = \{0\}, B = \{0,1\}$ ist \textbf{kein} Gegenbeispiel (Weil $\{0\} \subset \{0,1\}$)</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<text layer="alpha" matrix="1 0 0 1 0 32" transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="item">Seien A, B, C, D beliebige Mengen. Dann folgt aus $A \cup B= C\cup D$, dass auch $\set{A,B} = \set{C,D}$</text>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="560" height="15.2758" depth="4.218" valign="top">Widerlegt die folgenden Aussagen:</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top" style="item">Für jede beliebige Menge $A$ und jede beliebige Teilmenge $B \subset A$ gilt $B \not \in A$</text>
+<text layer="beta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top">Lösung: $A = \set{1}, B = \set{2}, C = \set{1,2}, D = \emptyset$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 304" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top">Lösung: $A = \set{1,\set{1}}, B = \set{1}$</text>
 </page>
 </ipe>
