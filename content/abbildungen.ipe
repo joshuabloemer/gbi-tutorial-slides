@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241105001656" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251110225727" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3754,33 +3754,44 @@ h
 h
 </path>
 </group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-320 376 l
-8 0 0 -8 320 368 328 368 a
-328 282.23 l
-16 282.23 l
-8 0 0 -8 16 290.23 8 290.23 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="176" height="13.078" depth="2.0202" valign="top">\bfseries Funktion</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="304" height="28.2939" depth="17.2716" valign="top">Eine Funktion ist eine Linkstotale und Rechtseindeutige Relation</text>
-<text transformations="translations" pos="16 256" stroke="black" type="minipage" width="480" height="14.854" depth="3.774" valign="top" style="item">Statt $f \subseteq A \times B$ schreibt man meistens
+<text layer="alpha" matrix="1 0 0 1 -16 32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="480" height="14.854" depth="3.774" valign="top">Statt $f \subseteq A \times B$ schreibt man meistens
 </text>
-<text matrix="1 0 0 1 -112 0" transformations="translations" pos="16 224" stroke="black" type="minipage" width="480" height="36.4635" depth="25.4634" valign="top">$$
+<text matrix="1 0 0 1 -128 32" transformations="translations" pos="16 224" stroke="black" type="minipage" width="480" height="36.4635" depth="25.4634" valign="top">$$
 \begin{aligned}
 f : A &amp;\rightarrow B \\
 a &amp;\mapsto b \mbox{ oder } f(a) = b
 \end{aligned}
 $$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Eine rechtstotale Surjektiv</text>
-<text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
-<text layer="delta" transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
+<text layer="gamma" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 112" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Eine rechtstotale Surjektiv</text>
+<text layer="beta" matrix="1 0 0 1 -16 32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
+<text layer="delta" matrix="1 0 0 1 -16 32" transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
 <text layer="epsilon" matrix="1 0 0 1 -32 16" transformations="translations" pos="576 320" stroke="black" type="minipage" width="272" height="28.4848" depth="17.427" valign="top">\bfseries Definitions und Zielbereich immer mit angeben</text>
+<group layer="alpha" matrix="1 0 0 1 -272 192">
+<path fill="KITgreen">
+268.8 165.877 m
+268.8 192 l
+617.2 192 l
+622.2 192
+627.2 187
+627.2 182 c
+627.2 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+627.2 165.877 m
+627.2 110.645 l
+278.8 110.645 l
+273.8 110.645
+268.8 115.645
+268.8 120.645 c
+268.8 165.877 l
+h
+</path>
+<text transformations="translations" pos="274.17 186.63" stroke="white" type="minipage" width="347.66" height="13.078" depth="2.0202" valign="top">\textbf{Funktion}</text>
+<text transformations="translations" pos="274.17 160.507" stroke="black" type="minipage" width="347.66" height="28.2939" depth="17.2716" valign="top">Eine Funktion ist eine linkstotale und rechtseindeutige Relation</text>
+</group>
 </page>
 <page title="Abbildungen und Funktionen II">
 <layer name="alpha"/>
@@ -3839,19 +3850,19 @@ x \mapsto \left\{\begin{array}{rcl}
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotalität</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="816" height="15.1648" depth="4.0848" valign="top" style="subitem">Jedes x hat min. einen Funktionswert f(x) (keine Definitionslücken)</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutigkeit</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein x-Wert hat mehrere y-Werte</text>
-<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="384" height="15.2758" depth="4.218" valign="top" style="item">Linkseindeutigkeit (Injektivität)</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="416" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein y-Wert hat mehrere x-Werte</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="subitem">Also: Aus f(a) = f(b) folgt a = b</text>
-<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="784" height="15.469" depth="4.4178" valign="top" style="subitem">Oder: Es gibt keine zwei Relationen (a, y), (b, y) und $a \neq b$
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="12.9115" depth="1.8204" valign="top">Linkstotalität</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="816" height="15.1648" depth="4.0848" valign="top" style="item">Jedes x hat min. einen Funktionswert f(x) (keine Definitionslücken)</text>
+<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top">Rechtseindeutigkeit</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="14.9184" depth="3.8628" valign="top" style="item">Kein x-Wert hat mehrere y-Werte</text>
+<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="384" height="15.2758" depth="4.218" valign="top">Linkseindeutigkeit (Injektivität)</text>
+<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="416" height="14.9184" depth="3.8628" valign="top" style="item">Kein y-Wert hat mehrere x-Werte</text>
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="item">Also: Aus f(a) = f(b) folgt a = b</text>
+<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="784" height="15.469" depth="4.4178" valign="top" style="item">Oder: Es gibt keine zwei Relationen (a, y), (b, y) und $a \neq b$
 </text>
-<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="592" height="15.1648" depth="4.0848" valign="top" style="item">Rechtstotalität (Surjektivität)</text>
-<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="subitem">Jeder y-Wert hat mindestens einen x-Wert</text>
-<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="656" height="15.1582" depth="4.107" valign="top" style="subitem">Also: Für jedes $y\in$ Zielbereich existiert ein x mit f(x) = y</text>
-<text transformations="translations" pos="0 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="subitem">Oder: Es gibt kein y, zu dem kein x in Relation steht</text>
+<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="592" height="15.1648" depth="4.0848" valign="top">Rechtstotalität (Surjektivität)</text>
+<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="item">Jeder y-Wert hat mindestens einen x-Wert</text>
+<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="656" height="15.1582" depth="4.107" valign="top" style="item">Also: Für jedes $y\in$ Zielbereich existiert ein x mit f(x) = y</text>
+<text transformations="translations" pos="0 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Oder: Es gibt kein y, das nicht von f erreicht wird</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
 <page title="Beispiel">
@@ -3910,6 +3921,27 @@ Die Abbildung f ordnet Studenten ihren Sitzplätzen zu</text>
 <text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="272" height="26.4002" depth="15.3402" valign="top">Welche Eigenschaften würdet ihr euch von f wünschen?</text>
 <text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Injektiv, sonst hätten mehrere Studenten den gleichen Platz</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="41.9758" depth="30.9912" valign="top">Eine Gruppe Studierende $S$ geht im [pizzaw]werk Pizzen P essen. \\Wir betrachten die Relation $E \subseteq S \times P$. $(s,p) \in E$ wenn s von p gegessen hat. \\Formuliere für die folgenden Eigenschaften jeweils als Satz:</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="12.9115" depth="1.8204" valign="top" style="item">linkstotal</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top" style="item">rechtseindeutig</text>
+<text matrix="1 0 0 1 0 -64" transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="13.3289" depth="2.2644" valign="top" style="item">$E$ ist ein Funktion</text>
+<text matrix="1 0 0 1 0 -96" transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="14.9184" depth="3.8628" valign="top" style="item">injektiv</text>
+<text matrix="1 0 0 1 0 -128" transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="14.9184" depth="3.8628" valign="top" style="item">surjektiv</text>
+<text matrix="1 0 0 1 0 -160" transformations="translations" pos="0 288" stroke="black" type="minipage" width="528" height="14.9184" depth="3.8628" valign="top" style="item">bijektiv</text>
+<text layer="gamma" transformations="translations" pos="240 288" stroke="black" type="minipage" width="448" height="11.232" depth="1.24" valign="top" size="small">Alle Studierenden essen Pizza</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="240 288" stroke="black" type="minipage" width="448" height="10.964" depth="0.98" valign="top" size="small">Niemand isst von mehr als einer Pizza</text>
+<text matrix="1 0 0 1 0 -64" transformations="translations" pos="240 288" stroke="black" type="minipage" width="448" height="12.706" depth="2.72" valign="top" size="small">Jeder isst von genau einer Pizza</text>
+<text matrix="1 0 0 1 0 -96" transformations="translations" pos="240 288" stroke="black" type="minipage" width="656" height="12.706" depth="2.72" valign="top" size="small">Jeder isst von genau einer Pizza und niemand teilt sich eine Pizza mit jemand anderem</text>
+<text matrix="1 0 0 1 0 -128" transformations="translations" pos="240 288" stroke="black" type="minipage" width="656" height="12.706" depth="2.72" valign="top" size="small">Jeder isst von genau einer Pizza und keine Pizza bleibt unangerührt</text>
+<text matrix="1 0 0 1 0 -160" transformations="translations" pos="240 288" stroke="black" type="minipage" width="656" height="12.706" depth="2.72" valign="top" size="small">Jeder hat eine eigene Pizza und isst von dieser. Keine Pizza bleibt übrig</text>
 </page>
 <page title="Binäre Operation">
 <layer name="alpha"/>
