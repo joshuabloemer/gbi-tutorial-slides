@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241126123416" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251117180252" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3763,21 +3763,6 @@ h
 h
 </path>
 </group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 392 m
-656 392 l
-8 0 0 -8 656 384 664 384 a
-664 243.507 l
-16 243.507 l
-8 0 0 -8 16 251.507 8 251.507 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="12.8627" depth="1.7982" valign="top">\bfseries Modell</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="640" height="55.7375" depth="44.7552" valign="top">Eine Interpretation $I$ heißt Modell einer Formel G, wenn $val_I(G) = w$.\\
-\\
-Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn $I$ Modell jeder Formel $G \in  \Gamma$ ist</text>
 <text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="640" height="13.078" depth="2.0202" valign="top">\bfseries Schreibweise</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="640" height="12.9115" depth="1.8204" valign="top">Wir schreiben:</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 128" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$\Gamma \models G$ Falls jedes Modell von $\Gamma$ auch ein Model von $G$ ist</text>
@@ -3786,8 +3771,34 @@ Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn $I$ Mo
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 32" stroke="black" type="minipage" width="624" height="29.2241" depth="18.204" valign="top">Eine Formel $F$ heißt erfüllbar wenn es mindestens eine Interpretation $I$ gibt, für die $val_I(F) = w$ gilt</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 22}</text>
 <text layer="gamma" transformations="translations" pos="672 224" stroke="black" type="minipage" width="224" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
-<text transformations="translations" pos="672 192" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$\{P, P\rightarrow Q\} \models Q$</text>
+<text transformations="translations" pos="672 192" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$\{P, P\Rightarrow Q\} \models Q$</text>
 <text transformations="translations" pos="672 160" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$P \models P\vee Q$</text>
+<group layer="alpha" matrix="1 0 0 1 -80 192">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 55.7182 l
+99.6 55.7182 l
+94.6 55.7182
+89.6 60.7182
+89.6 65.7182 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="12.8627" depth="1.7982" valign="top">\textbf{Modell}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="55.7375" depth="44.7552" valign="top">Eine Interpretation $I$ heißt Modell einer Formel G, wenn $val_I(G) = w$.\\
+\\
+Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn $I$ Modell jeder Formel $G \in  \Gamma$ ist</text>
+</group>
 </page>
 <page title="Tautologien">
 <notes>Wahrheitstabelle zum durchrechnen</notes>
@@ -3796,6 +3807,31 @@ Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn $I$ Mo
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="alpha" matrix="1 0 0 1 -80 192">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 43.4327 l
+99.6 43.4327 l
+94.6 43.4327
+89.6 48.4327
+89.6 53.4327 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="15.2203" depth="4.1514" valign="top">\textbf{Tautologien}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="61.8736" depth="50.9046" valign="top">Eine Formel $G$ heißt Tautologie, wenn jede Interpretation $I$ ein Modell ist. Das heißt, für jede Belegung der Aussagenvariablen ist die Formel wahr:
+\vspace{30pt}</text>
+</group>
 <group layer="beta">
 <path stroke="black" fill="KITblue15">
 8 184 m
@@ -3807,20 +3843,7 @@ Eine Interpretation $I$ heißt Modell einer Formelmenge $\Gamma$, \\ wenn $I$ Mo
 h
 </path>
 </group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-592 376 l
-8 0 0 -8 592 368 600 368 a
-600 209.882 l
-16 209.882 l
-8 0 0 -8 16 217.882 8 217.882 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="400" height="15.2203" depth="4.1514" valign="top">\bfseries Tautologie</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="39.8357" depth="28.8378" valign="top">Eine Formel $G$ heißt Tautologie, wenn jede Interpretation $I$ ein Modell ist. Das heißt, für jede Belegung der Aussagenvariablen ist die Formel wahr:</text>
-<text transformations="translations" pos="96 240" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">$val_I(G) = w$ für alle $I\quad\quad$ bzw. $\models G$</text>
+<text layer="alpha" matrix="1 0 0 1 96 48" transformations="translations" pos="96 240" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">$val_I(G) = w$ für alle $I\quad\quad$ bzw. $\models G$</text>
 <text layer="beta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="576" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
 <text transformations="translations" pos="16 144" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$\models \neg P \vee P$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
@@ -3845,11 +3868,11 @@ h
 </path>
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="66.3447" depth="55.4112" valign="top">Es sei $Var_{AL}$ eine Menge von Aussagevariablen und $For_{AL}$ die Menge aller \\ aussagenlogischen Formeln über $Var_{AL}$. \\ Beweise, dass für alle
-$G, H \in For_{AL}$ $G \rightarrow (H \rightarrow G)$ eine Tautologie ist.\\
+$G, H \in For_{AL}$ $G \Rightarrow (H \Rightarrow G)$ eine Tautologie ist.\\
 Verwendet dabei die formellen Definitionen der Auswertung von Aussagenlogischen Formeln und boolschen Funktionen</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 288" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Behauptung: $\models G \rightarrow (H \rightarrow G)$</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top">Beweis: Seien $G, H \in For_{AL}$ und $I : Var \rightarrow \mathbb B$ eine \textbf{beliebige} Interpretation. Dann gilt:</text>
-<text layer="beta" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \rightarrow (H \rightarrow G)) = \neg val_I(G) \vee val_I(H \rightarrow G)$</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 288" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Behauptung: $\models G \Rightarrow (H \Rightarrow G)$</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top">Beweis: Seien $G, H \in For_{AL}$ und $I : Var \Rightarrow \mathbb B$ eine \textbf{beliebige} Interpretation. Dann gilt:</text>
+<text layer="beta" matrix="1 0 0 1 0 -112" transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \Rightarrow (H \Rightarrow G)) = \neg val_I(G) \vee val_I(H \Rightarrow G)$</text>
 <text layer="gamma" matrix="1 0 0 1 0 -96" transformations="translations" pos="0 160" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">$= \neg val_I(G) \vee (\neg val_I(H)\vee val_I(G))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 24}</text>
 <text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 160" stroke="black" type="minipage" width="672" height="15.469" depth="4.4178" valign="top">Achtung: Zeichen außerhalb von $val_I$ sind die Konnektive auf \emph{ Metaebene}</text>
@@ -3882,7 +3905,7 @@ Verwendet dabei die formellen Definitionen der Auswertung von Aussagenlogischen 
 <text layer="theta" transformations="translations" pos="0 160" stroke="black" type="minipage" width="528" height="11.7616" depth="0.6882" valign="top" style="item">$= w$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
 </page>
-<page title="Umformungen">
+<page title="(Beispiel)Umformungen">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <group layer="alpha">
@@ -3897,111 +3920,12 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="13.2268" depth="2.1312" valign="top" style="item">$\neg \neg G \equiv G$</text>
-<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$(G \rightarrow H) \equiv (\neg G \vee H)$</text>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">$(G \rightarrow H) \equiv (\neg H \rightarrow \neg G)$</text>
+<text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$(G \Rightarrow H) \equiv (\neg G \vee H)$</text>
+<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 288" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">$(G \Rightarrow H) \equiv (\neg H \Rightarrow \neg G)$</text>
 <text matrix="1 0 0 1 16 -48" transformations="translations" pos="0 256" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$\neg (G \wedge H) \equiv (\neg G \vee \neg H)$ \quad  bzw. \quad  $\neg (G \vee H) \equiv (\neg G \wedge \neg H)$</text>
 <text matrix="1 0 0 1 16 -96" transformations="translations" pos="0 256" stroke="black" type="minipage" width="576" height="13.3289" depth="2.2644" valign="top" style="item">$G \wedge G \equiv G$ \quad und \quad  $G \vee G \equiv G$</text>
 <text matrix="1 0 0 1 16 -112" transformations="translations" pos="0 224" stroke="black" type="minipage" width="576" height="29.8546" depth="18.8034" valign="top" style="item">$G \wedge (H \vee Q) \equiv  (G \wedge H)\vee (G \wedge Q)$ \\ \quad bzw. \quad $G \vee (H \wedge Q) \equiv  (G \vee H)\wedge (G \vee Q)$ </text>
 <text matrix="1 0 0 1 -112 -32" transformations="translations" pos="768 240" stroke="black" type="minipage" width="160" height="15.0028" depth="3.9294" valign="top">\emph{De Morgan}</text>
 <text matrix="1 0 0 1 -112 -32" transformations="translations" pos="768 144" stroke="black" type="minipage" width="144" height="13.078" depth="2.0202" valign="top">\emph{Distributivität}</text>
-</page>
-<page title="Beweisbarkeit">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Um überhaupt \textbf{irgendetwas} beweisen zu können, benötigt man immer Grundannahmen</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top" style="item">Diese Grundannahmen müssen \textbf{immer} gelten</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="784" height="13.229" depth="2.1534" valign="top" style="item">Solche \emph{Axiome} können/müssen nicht selbst bewiesen werden</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="672" height="15.1648" depth="4.0848" valign="top" style="subitem">Beispiel: Das erste Peano Axiom: \enquote{0 ist eine natürliche Zahl}</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="768" height="28.5403" depth="17.4936" valign="top" style="item">Ein System von \emph{Schlussregeln}, mit denen sich aus gegebenen
-Axiomen weitere Aussagen ableiten/errechnen lassen
-nennt man \emph{Kalkül}</text>
-</page>
-<page title="Aussagenkalkül">
-<layer name="alpha"/>
-<layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="66.9596" depth="56.0106" valign="top">
-\begin{align*}
- Ax_{AL} &amp;= \{(G\rightarrow (H \rightarrow G))  ~\vert G,H ~ \in For_{AL}\}\\
-&amp; \cup \{(G\rightarrow (H \rightarrow K))  \rightarrow ((G\rightarrow H) \rightarrow (G \rightarrow K)) ~\vert ~G,H,K \in For_{AL} \}\\
-&amp; \cup \{(\neg H \rightarrow \neg G) \rightarrow ((\neg H \rightarrow G) \rightarrow H)    ~\vert ~G,H \in For_{AL} \}
-\end{align*}</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 208" stroke="black" type="minipage" width="416" height="15.2203" depth="4.1514" valign="top">\bfseries Schlussregeln:</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="752" height="17.7667" depth="6.6822" valign="top">Modus Ponens: $MP = \{(G \rightarrow H, G ,H) \quad \vert \quad G,H \in For_{AL}\} \subseteq For_{AL}^3$</text>
-<text matrix="1 0 0 1 16 -112" transformations="translations" pos="0 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Aus \enquote{Es regnet.} und \enquote{Wenn es regnet wird die Straße nass.} folgt \enquote{Die Straße wird nass.}</text>
-<text matrix="1 0 0 1 208 -16" transformations="translations" pos="32 128" stroke="black" type="minipage" width="160" height="29.6303" depth="18.5814" valign="top">\begin{prooftree}
-\AxiomC{$G\rightarrow H$}
-\AxiomC{$G$}
-\BinaryInfC{H}
-
-\end{prooftree}</text>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Axiome:</text>
-<text transformations="translations" pos="16 240" stroke="black" type="minipage" width="736" height="15.469" depth="4.4178" valign="top">Die Teilmengen werden auch mit $Ax_{AL1}, Ax_{AL3}, Ax_{AL3}$ bezeichnet</text>
-</page>
-<page title="Prämissen und Ableitungen">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<group layer="eta">
-<path stroke="black" fill="KITblue15">
-8 72 m
-640 72 l
-8 0 0 -8 640 64 648 64 a
-648 34.8856 l
-16 34.8856 l
-8 0 0 -8 16 42.8856 8 42.8856 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.469" depth="4.4178" valign="top">Wir haben: Formelsammlung $\Gamma \subseteq For_{AL}$ (\enquote{Hypothesen} / \emph{\enquote{Prämissen}})</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="13.3289" depth="2.2644" valign="top">Wir wollen: eine Formel $G$ daraus ableiten</text>
-<text layer="beta" transformations="translations" pos="0 304" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">\emph{Ableitung} von $G$ aus $\Gamma $:</text>
-<text transformations="translations" pos="0 272" stroke="black" type="minipage" width="752" height="15.469" depth="4.4178" valign="top">Eine \enquote{Abfolge} von Formeln die mit $G$ endet (Schreibweise $\Gamma \vdash G$)</text>
-<text layer="gamma" transformations="translations" pos="0 240" stroke="black" type="minipage" width="576" height="13.1357" depth="2.0646" valign="top">Was dürfen wir machen?</text>
-<text transformations="translations" pos="0 208" stroke="black" type="minipage" width="720" height="15.1093" depth="4.0182" valign="top" style="item">aus syntaktisch korrekten Formeln \emph{Axiome} bilden und hinschreiben</text>
-<text layer="delta" transformations="translations" pos="0 176" stroke="black" type="minipage" width="768" height="13.3489" depth="2.2644" valign="top" style="item">\emph{Prämissen} aus $\Gamma$ hinschreiben</text>
-<text layer="epsilon" transformations="translations" pos="0 144" stroke="black" type="minipage" width="720" height="15.0516" depth="3.9738" valign="top" style="item">aus zwei vorherigen Formeln mit \emph{Modus Ponens} eine neue konstruieren</text>
-<text layer="zeta" transformations="translations" pos="0 112" stroke="black" type="minipage" width="512" height="15.469" depth="4.4178" valign="top">\impl das machen wir solange, bis wir $G$ konstruiert haben</text>
-<text layer="eta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 64" stroke="black" type="minipage" width="624" height="16.0972" depth="5.0172" valign="top">Formeln die mit $\Gamma = \emptyset$ bewiesen werden können sind Allgemeingültig</text>
-</page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top">Gegeben seid die Prämissenmenge $\Gamma = \{A \rightarrow B, A \rightarrow \neg B\}$ und die Formel $F = \neg A$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="752" height="15.469" depth="4.4178" valign="top">Ableitung $\Gamma  \vdash F$:</text>
-<text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="0 320" stroke="black" type="minipage" width="320" height="13.2268" depth="2.1312" valign="top">$A \rightarrow B$</text>
-<text matrix="1 0 0 1 32 0" transformations="translations" pos="0 288" stroke="black" type="minipage" width="320" height="13.2268" depth="2.1312" valign="top">$A \rightarrow \neg B$</text>
-<text layer="gamma" matrix="1 0 0 1 32 0" transformations="translations" pos="0 256" stroke="black" type="minipage" width="320" height="16.5901" depth="5.5278" valign="top">$(A\rightarrow B) \rightarrow ((A \rightarrow \neg B) \rightarrow \neg A)$</text>
-<text layer="delta" matrix="1 0 0 1 32 -1" transformations="translations" pos="0 208" stroke="black" type="minipage" width="320" height="16.5901" depth="5.5278" valign="top">$(A \rightarrow \neg B) \rightarrow \neg A$</text>
-<text matrix="1 0 0 1 32 15" transformations="translations" pos="0 160" stroke="black" type="minipage" width="320" height="13.2268" depth="2.1312" valign="top">$\neg A$</text>
-<text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="336 320" stroke="black" type="minipage" width="416" height="14.7297" depth="3.6408" valign="top">Prämisse 1; ist $\in \Gamma$</text>
-<text matrix="1 0 0 1 32 0" transformations="translations" pos="336 288" stroke="black" type="minipage" width="400" height="14.7297" depth="3.6408" valign="top">Prämisse 2; ist $\in \Gamma$</text>
-<text layer="gamma" matrix="1 0 0 1 32 0" transformations="translations" pos="336 256" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top">Anwedung von $Ax_{AL3} (H = \neg A, G = \neg B)$</text>
-<text layer="delta" matrix="1 0 0 1 32 -17" transformations="translations" pos="336 224" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top">MP(3,1) (Modus Ponens mit Formeln 3 und 1)</text>
-<text matrix="1 0 0 1 32 -17" transformations="translations" pos="336 192" stroke="black" type="minipage" width="464" height="15.1648" depth="4.0848" valign="top">MP(4,2) (Modus Ponens mit Formeln 4 und 2)</text>
-<text layer="gamma" matrix="1 0 0 1 32 9" transformations="translations" pos="336 224" stroke="KITblack70" type="minipage" width="576" height="13.952" depth="3.98" valign="top" size="small">Schema $AX_{AL3}: (\neg H \rightarrow \neg G) \rightarrow ((\neg H \rightarrow G) \rightarrow H)$</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="KITblack70" type="minipage" width="16" height="12.7872" depth="1.7094" valign="top">1.</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 320" stroke="KITblack70" type="minipage" width="16" height="12.7872" depth="1.7094" valign="top">2.</text>
-<text layer="gamma" matrix="1 0 0 1 0 -64" transformations="translations" pos="0 320" stroke="KITblack70" type="minipage" width="16" height="13.0048" depth="1.9092" valign="top">3.</text>
-<text layer="delta" matrix="1 0 0 1 0 -1" transformations="translations" pos="0 208" stroke="black" type="minipage" width="320" height="12.7872" depth="1.7094" valign="top">4.</text>
-<text matrix="1 0 0 1 0 15" transformations="translations" pos="0 160" stroke="black" type="minipage" width="320" height="12.6473" depth="1.5762" valign="top">5.</text>
 </page>
 </ipe>

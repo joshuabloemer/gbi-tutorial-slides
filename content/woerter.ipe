@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241112001603" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251117182710" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Wörter}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -7682,46 +7682,79 @@ h
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="gamma" matrix="1 0 0 1 0 -32">
-<path stroke="black" fill="KITgreen15">
-8 216 m
-640 216 l
-8 0 0 -8 640 208 648 208 a
-648 122.23 l
-16 122.23 l
-8 0 0 -8 16 130.23 8 130.23 a
-h
-</path>
-</group>
-<group layer="beta" matrix="1 0 0 1 0 -16">
-<path stroke="black" fill="KITgreen15">
-8 296 m
-640 296 l
-8 0 0 -8 640 288 648 288 a
-648 228.628 l
-16 228.628 l
-8 0 0 -8 16 236.628 8 236.628 a
-h
-</path>
-</group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-640 376 l
-8 0 0 -8 640 368 648 368 a
-648 308.773 l
-16 308.773 l
-8 0 0 -8 16 316.773 8 316.773 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="240" height="14.8429" depth="3.774" valign="top">\bfseries Alphabet</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="624" height="15.0516" depth="3.9738" valign="top">Ein \textbf{Alphabet } A ist eine endliche, nicht leere Menge von Zeichen</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="160" height="12.8627" depth="1.7982" valign="top">\bfseries Wort</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="624" height="15.2203" depth="4.1514" valign="top">Ein \textbf{Wort über einem Alphabet} A ist eine Folge von Zeichen aus A</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 208" stroke="black" type="minipage" width="624" height="12.8627" depth="1.7982" valign="top">\bfseries Leeres Wort</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 176" stroke="black" type="minipage" width="624" height="28.2939" depth="17.2716" valign="top">Das \textbf{leere Wort} $\epsilon$ ist das Wort, dass aus 0 Zeichen besteht, d.h. es hat die Länge 0</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 22}</text>
+<group layer="alpha">
+<path fill="KITgreen">
+9.6 341.877 m
+9.6 368 l
+716.4 368 l
+721.4 368
+726.4 363
+726.4 358 c
+726.4 341.877 l
+h
+</path>
+<path fill="KITgreen15">
+726.4 341.877 m
+726.4 313.186 l
+19.6 313.186 l
+14.6 313.186
+9.6 318.186
+9.6 323.186 c
+9.6 341.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 362.63" stroke="white" type="minipage" width="706.06" height="14.8429" depth="3.774" valign="top">\textbf{Alphabet}</text>
+<text transformations="translations" pos="14.9702 336.507" stroke="black" type="minipage" width="706.06" height="15.0516" depth="3.9738" valign="top">Ein \emph{Alphabet } A ist eine endliche, nicht leere Menge von Zeichen</text>
+</group>
+<group layer="beta" matrix="1 0 0 1 -80 80">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 136.839 l
+99.6 136.839 l
+94.6 136.839
+89.6 141.839
+89.6 146.839 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="12.8627" depth="1.7982" valign="top">\textbf{Wort}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="15.2203" depth="4.1514" valign="top">Ein \emph{Wort über einem Alphabet} A ist eine Folge von Zeichen aus A</text>
+</group>
+<group layer="gamma" matrix="1 0 0 1 -80 0">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 110.645 l
+99.6 110.645 l
+94.6 110.645
+89.6 115.645
+89.6 120.645 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="12.8627" depth="1.7982" valign="top">\textbf{Leeres Wort}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="28.2939" depth="17.2716" valign="top">Das \emph{leere Wort} $\epsilon$ ist das Wort, dass aus 0 Zeichen besteht, d.h. es hat die Länge 0</text>
+</group>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -7730,7 +7763,7 @@ h
 <layer name="gamma"/>
 <view layers="alpha pagenumbers_page beta" active="alpha"/>
 <view layers="alpha pagenumbers_page gamma" active="gamma"/>
-<group layer="beta">
+<group layer="beta" matrix="1 0 0 1 0 -48">
 <path stroke="gray1" fill="gray3">
 232 240 m
 8 0 0 8 224 240 224 248 a
@@ -7745,12 +7778,14 @@ h
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="13.169" depth="2.0868" valign="top" style="item">$\mathbb Z$</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="14.4411" depth="3.3744" valign="top" style="item">$\emptyset$</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="112" height="16.5901" depth="5.5278" valign="top" style="item">$\{g,b,i\}$</text>
-<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="208" height="28.1829" depth="17.1384" valign="top">Welche dieser Mengen sind Alphabete?</text>
+<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 240" stroke="black" type="minipage" width="208" height="28.1829" depth="17.1384" valign="top">Welche dieser Mengen sind Alphabete?</text>
 <text layer="gamma" transformations="translations" pos="128 384" stroke="green1" type="minipage" width="128" height="13.0048" depth="1.9092" valign="top">Ja</text>
 <text transformations="translations" pos="128 352" stroke="red1" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Nein (nicht endlich)</text>
 <text transformations="translations" pos="128 320" stroke="red1" type="minipage" width="320" height="15.1648" depth="4.0848" valign="top">Nein (leer)</text>
 <text transformations="translations" pos="128 288" stroke="green1" type="minipage" width="320" height="13.0048" depth="1.9092" valign="top">Ja</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
+<text layer="alpha" transformations="translations" pos="0 256" stroke="black" type="minipage" width="272" height="27.6656" depth="16.6056" valign="top" style="item">Alle Spannungen zwischen $1$ und $3,5$ Volt</text>
+<text layer="gamma" matrix="1 0 0 1 160 -96" transformations="translations" pos="128 352" stroke="red1" type="minipage" width="256" height="15.1648" depth="4.0848" valign="top">Nein (nicht endlich)</text>
 </page>
 <page title="Wörter">
 <layer name="alpha"/>
@@ -7786,51 +7821,84 @@ h
 h
 </path>
 </group>
-<group layer="gamma">
-<path stroke="black" fill="KITgreen15">
-8 168 m
-640 168 l
-8 0 0 -8 640 160 648 160 a
-648 97.8821 l
-16 97.8821 l
-8 0 0 -8 16 105.882 8 105.882 a
-h
-</path>
-</group>
-<group layer="beta">
-<path stroke="black" fill="KITgreen15">
-8 264 m
-640 264 l
-8 0 0 -8 640 256 648 256 a
-648 193.882 l
-16 193.882 l
-8 0 0 -8 16 201.882 8 201.882 a
-h
-</path>
-</group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-640 376 l
-8 0 0 -8 640 368 648 368 a
-648 281.229 l
-16 281.229 l
-8 0 0 -8 16 289.229 8 289.229 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="368" height="15.0605" depth="3.996" valign="top">\bfseries Wort (formell)</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="624" height="28.8067" depth="17.76" valign="top">Ein \textbf{Wort} w über einem Alphabet A ist eine Abbildung\\
-$w: [n] \rightarrow A$ mit $\mathbb [n] \coloneqq \{i\in \mathbb N_+ \vert  1 \leq i \leq n\}$</text>
-<text layer="beta" transformations="translations" pos="16 256" stroke="black" type="minipage" width="624" height="15.0605" depth="3.996" valign="top">\bfseries Leeres Wort (formell)</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">Das \textbf{leere Wort} $\epsilon$ ist die Abbildung $\epsilon : [0] \rightarrow A$ \quad(also $\epsilon : \emptyset \rightarrow A$)</text>
-<text layer="gamma" transformations="translations" pos="16 160" stroke="black" type="minipage" width="624" height="15.2203" depth="4.1514" valign="top">\bfseries Länge eines Wortes</text>
-<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">Sei w ein Wort. Dann bezeichen wir mit $\vert w \vert = n$ die Länge von w</text>
-<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="160" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="160" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$\{\epsilon\} \neq \{\} \neq \{\emptyset \}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
 <text layer="epsilon" matrix="1 0 0 1 272 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="160" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
 <text transformations="translations" pos="288 32" stroke="black" type="minipage" width="160" height="16.5901" depth="5.5278" valign="top">$\vert \epsilon \vert = 0$</text>
+<group layer="alpha" matrix="1 0 0 1 -80 192">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 109.644 l
+99.6 109.644 l
+94.6 109.644
+89.6 114.644
+89.6 119.644 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="15.0605" depth="3.996" valign="top">\textbf{Wort (formell)}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="28.8067" depth="17.76" valign="top">Ein \textbf{Wort} w über einem Alphabet A ist eine Abbildung\\
+$w: [n] \rightarrow A$ mit $\mathbb [n] \coloneqq \{i\in \mathbb N_+ \vert  1 \leq i \leq n\}$</text>
+</group>
+<group layer="beta" matrix="1 0 0 1 -80 80">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 134.093 l
+99.6 134.093 l
+94.6 134.093
+89.6 139.093
+89.6 144.093 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="15.0605" depth="3.996" valign="top">\textbf{Leeres Wort (formell)}</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="16.5901" depth="5.5278" valign="top">Das \textbf{leere Wort} $\epsilon$ ist die Abbildung $\epsilon : [0] \rightarrow A$ \quad(also $\epsilon : \emptyset \rightarrow A$)</text>
+</group>
+<group layer="gamma" matrix="1 0 0 1 -80 0">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 134.093 l
+99.6 134.093 l
+94.6 134.093
+89.6 139.093
+89.6 144.093 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="15.2203" depth="4.1514" valign="top">\textbf{Länge eines Wortes }</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="16.5901" depth="5.5278" valign="top">Sei w ein Wort. Dann bezeichen wir mit $\vert w \vert = n$ die Länge von w</text>
+</group>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
@@ -7910,6 +7978,31 @@ a &amp;\vert&amp; i = 8 \\
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<group layer="beta" matrix="1 0 0 1 -272 16">
+<path fill="KITgreen">
+281.6 277.877 m
+281.6 304 l
+988.4 304 l
+993.4 304
+998.4 299
+998.4 294 c
+998.4 277.877 l
+h
+</path>
+<path fill="KITgreen15">
+998.4 277.877 m
+998.4 159.857 l
+291.6 159.857 l
+286.6 159.857
+281.6 164.857
+281.6 169.857 c
+281.6 277.877 l
+h
+</path>
+<text transformations="translations" pos="286.97 298.63" stroke="white" type="minipage" width="706.06" height="13.2268" depth="2.1312" valign="top">\textbf{$A^*$}</text>
+<text transformations="translations" pos="286.97 272.507" stroke="black" type="minipage" width="706.06" height="59.647" depth="48.7068" valign="top">$A^*$ ist die Menge aller Wörter beliebiger Länge über A
+\vspace{40pt}</text>
+</group>
 <group layer="gamma" matrix="1 0 0 1 0 14">
 <path stroke="black" fill="KITblue15">
 8 120 m
@@ -7921,76 +8014,99 @@ a &amp;\vert&amp; i = 8 \\
 h
 </path>
 </group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-512 376 l
-8 0 0 -8 512 368 520 368 a
-520 307.734 l
-16 307.734 l
-8 0 0 -8 16 315.734 8 315.734 a
-h
-</path>
-</group>
-<group layer="beta">
-<path stroke="black" fill="KITgreen15">
-8 296 m
-512 296 l
-8 0 0 -8 512 288 520 288 a
-520 142.558 l
-16 142.558 l
-8 0 0 -8 16 150.558 8 150.558 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="368" height="13.2268" depth="2.1312" valign="top">\bfseries $A^n$</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">$A^n$ ist die Menge aller Wörter der länge n über A</text>
-<text layer="beta" transformations="translations" pos="16 288" stroke="black" type="minipage" width="368" height="13.2268" depth="2.1312" valign="top">$A^*$</text>
-<text transformations="translations" pos="16 256" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top">$A^*$ ist die Menge aller Wörter beliebiger Länge über A</text>
-<text matrix="1 0 0 1 80 32" transformations="translations" pos="64 208" stroke="black" type="minipage" width="144" height="50.3851" depth="39.405" valign="top">$$A^* = \bigcup_{i=0}^\infty A^i$$</text>
+<text layer="beta" matrix="1 0 0 1 192 74" transformations="translations" pos="64 208" stroke="black" type="minipage" width="144" height="50.3851" depth="39.405" valign="top">$$A^* = \bigcup_{i=0}^\infty A^i$$</text>
 <text layer="gamma" matrix="1 0 0 1 0 14" transformations="translations" pos="16 112" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
 <text matrix="1 0 0 1 0 14" transformations="translations" pos="16 80" stroke="black" type="minipage" width="496" height="17.3893" depth="6.327" valign="top">$anna \in \{a, n\}^4, \quad ana \notin \{a, n\}^4$</text>
 <text matrix="1 0 0 1 0 14" transformations="translations" pos="16 48" stroke="black" type="minipage" width="512" height="17.3893" depth="6.327" valign="top">$A^0 = \{\epsilon\}, \quad \{a,b\}^* = \{\epsilon, a, b, aa, ab, ba, bb, aaa, \dots\}$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
+<group layer="alpha" matrix="1 0 0 1 -80 192">
+<path fill="KITgreen">
+89.6 165.877 m
+89.6 192 l
+796.4 192 l
+801.4 192
+806.4 187
+806.4 182 c
+806.4 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+806.4 165.877 m
+806.4 136.324 l
+99.6 136.324 l
+94.6 136.324
+89.6 141.324
+89.6 146.324 c
+89.6 165.877 l
+h
+</path>
+<text transformations="translations" pos="94.9702 186.63" stroke="white" type="minipage" width="706.06" height="13.2268" depth="2.1312" valign="top">\textbf{$A^n$ }</text>
+<text transformations="translations" pos="94.9702 160.507" stroke="black" type="minipage" width="706.06" height="15.469" depth="4.4178" valign="top">$A^n$ ist die Menge aller Wörter der länge n über A</text>
+</group>
 </page>
 <page title="Konkatenation">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-608 376 l
-8 0 0 -8 608 368 616 368 a
-616 218.591 l
-16 218.591 l
-8 0 0 -8 16 226.591 8 226.591 a
+<path fill="KITgreen">
+9.6 341.877 m
+9.6 368 l
+716.4 368 l
+721.4 368
+726.4 363
+726.4 358 c
+726.4 341.877 l
 h
 </path>
-</group>
-<group matrix="1 0 0 1 0 15">
-<path stroke="black" fill="KITgreen15">
-8 200 m
-576 200 l
-8 0 0 -8 576 192 584 192 a
-584 66.3861 l
-16 66.3861 l
-8 0 0 -8 16 74.3861 8 74.3861 a
+<path fill="KITgreen15">
+726.4 341.877 m
+726.4 224.25 l
+19.6 224.25 l
+14.6 224.25
+9.6 229.25
+9.6 234.25 c
+9.6 341.877 l
 h
 </path>
+<text transformations="translations" pos="14.9702 362.63" stroke="white" type="minipage" width="706.06" height="13.078" depth="2.0202" valign="top">\textbf{Konkatenation}</text>
+<text transformations="translations" pos="14.9702 336.507" stroke="black" type="minipage" width="706.06" height="59.4538" depth="48.507" valign="top">Seien $w_1, w_2$ zwei Wörter, ihre \textbf{Konkatenation} $w_1 \cdot w_2$ ist gegeben durch:
+\vspace{40pt}</text>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="13.078" depth="2.0202" valign="top">\bfseries Konkatenation</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="28.5403" depth="17.4936" valign="top">Seien $w_1, w_2$ zwei Wörter, ihre \textbf{Konkatenation} $w_1 \cdot w_2$ ist gegeben durch:</text>
-<text matrix="1 0 0 1 -112 48" transformations="translations" pos="128 256" stroke="black" type="minipage" width="592" height="44.198" depth="33.2112" valign="top">$$w_1 \cdot w_2 : [m+n] \rightarrow A, \quad
+<text matrix="1 0 0 1 -112 52" transformations="translations" pos="128 256" stroke="black" type="minipage" width="592" height="44.198" depth="33.2112" valign="top">$$w_1 \cdot w_2 : [m+n] \rightarrow A, \quad
 i \mapsto \left\{\begin{array}{rcl}
 w_1(i) &amp;\vert &amp; 1 \leq  i \leq m\\
 w_2(i - m) &amp;\vert &amp; m &lt;  i \leq n+m
 \end{array}\right.$$</text>
-<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 192" stroke="black" type="minipage" width="432" height="13.078" depth="2.0202" valign="top">\bfseries Potenz von Wörtern</text>
-<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 160" stroke="black" type="minipage" width="560" height="13.1357" depth="2.0646" valign="top">Die n-te Potenz eines Wortes w ist Induktiv definiert durch:</text>
-<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 128" stroke="black" type="minipage" width="560" height="14.6342" depth="3.552" valign="top" style="item">$w^0 = \epsilon$</text>
-<text matrix="1 0 0 1 0 15" transformations="translations" pos="16 96" stroke="black" type="minipage" width="560" height="16.2859" depth="5.217" valign="top" style="item">Für alle $n\in N_0: w^{n+1} = w^n \cdot w$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 26}</text>
+<group layer="alpha">
+<path fill="KITgreen">
+9.6 181.877 m
+9.6 208 l
+716.4 208 l
+721.4 208
+726.4 203
+726.4 198 c
+726.4 181.877 l
+h
+</path>
+<path fill="KITgreen15">
+726.4 181.877 m
+726.4 88.639 l
+19.6 88.639 l
+14.6 88.639
+9.6 93.639
+9.6 98.639 c
+9.6 181.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 202.63" stroke="white" type="minipage" width="706.06" height="13.078" depth="2.0202" valign="top">\textbf{Potenz von Wörtern}</text>
+<text transformations="translations" pos="14.9702 176.507" stroke="black" type="minipage" width="706.06" height="47.2749" depth="36.297" valign="top">Die n-te Potenz eines Wortes w ist Induktiv definiert durch:
+\begin{itemize}
+\item $w^0 = \epsilon$
+\item Für alle $n\in N_0: w^{n+1} = w^n \cdot w$
+\end{itemize}</text>
+</group>
 </page>
 <page title="Anmerkungen">
 <layer name="alpha"/>

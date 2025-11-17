@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20251110232754" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20251117175753" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3731,29 +3731,13 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Aussagenlogik">
+<page>
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-328 240 m
-8 0 0 8 320 240 320 248 a
-24 248 l
-24 220.975 l
-8 0 0 8 32 220.975 32 212.975 a
-328 212.975 l
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="496" height="13.078" depth="2.0202" valign="top">\bfseries Motivation</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="656" height="15.1648" depth="4.0848" valign="top">Beweise bis jetzt in natürlicher Sprache</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top" style="item">Sehr ungenau</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="656" height="15.2758" depth="4.218" valign="top">Leicht Fehler zu machen/ Dinge zu vergessen</text>
-<text layer="beta" transformations="translations" pos="32 240" stroke="black" type="minipage" width="288" height="15.0516" depth="3.9738" valign="top">$\Rightarrow$ Wir brauchen Formalisierung</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
+<text layer="alpha" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="27.5982" depth="17.178" valign="top" size="Huge" style="center">Aussagenlogik</text>
 </page>
 <page title="Grundlagen">
 <layer name="alpha"/>
@@ -3809,26 +3793,37 @@ h
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
-<path stroke="black" fill="KITgreen15">
-8 248 m
-480 248 l
-8 0 0 -8 480 240 488 240 a
-488 154.068 l
-16 154.068 l
-8 0 0 -8 16 162.068 8 162.068 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top">Vergesst das! Wir sind Informatiker:</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top">Vergesst das (erstmal)! Wir sind Informatiker:</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Aussagen in der Informatik brauchen keine Bedeutung oder Sinn</text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="672" height="13.1357" depth="2.0646" valign="top" style="item">Es wird ausschließlich der Wahrheitswert betrachtet.</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="832" height="15.2758" depth="4.218" valign="top" style="item">\textbf{Also:} Eine Aussage A ist wahr (oder falsch). Um welche Aussage es sich
 handelt ist egal.</text>
-<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="464" height="15.2203" depth="4.1514" valign="top">\bfseries Aussagenvariable</text>
-<text transformations="translations" pos="16 208" stroke="black" type="minipage" width="464" height="28.5403" depth="17.4936" valign="top">Eine Aussagenvariable steht für eine (elementare) Aussage. Sie kann
-entweder wahr oder falsch sein.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
+<group layer="beta" matrix="1 0 0 1 -224 48">
+<path fill="KITgreen">
+224 165.877 m
+224 192 l
+697.84 192 l
+702.84 192
+707.84 187
+707.84 182 c
+707.84 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+707.84 165.877 m
+707.84 110.177 l
+234 110.177 l
+229 110.177
+224 115.177
+224 120.177 c
+224 165.877 l
+h
+</path>
+<text transformations="translations" pos="229.37 186.63" stroke="white" type="minipage" width="473.1" height="15.2203" depth="4.1514" valign="top">\textbf{Aussagenvariable}</text>
+<text transformations="translations" pos="229.37 160.507" stroke="black" type="minipage" width="473.1" height="28.5403" depth="17.4936" valign="top">Eine Aussagenvariable steht für eine (elementare) Aussage. Sie kann
+entweder wahr oder falsch sein.</text>
+</group>
 </page>
 <page title="Aussagenlogische Konnektive">
 <layer name="alpha"/>
@@ -3836,7 +3831,18 @@ entweder wahr oder falsch sein.</text>
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+592 376 l
+8 0 0 -8 592 368 600 368 a
+600 112.165 l
+16 112.165 l
+8 0 0 -8 16 120.165 8 120.165 a
+h
+</path>
+</group>
+<group layer="beta" matrix="1 0 0 1 0 -16">
 <path stroke="black" fill="KITred15">
 8 120 m
 448 120 l
@@ -3847,27 +3853,16 @@ entweder wahr oder falsch sein.</text>
 h
 </path>
 </group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-816 376 l
-8 0 0 -8 816 368 824 368 a
-824 138.045 l
-16 138.045 l
-8 0 0 -8 16 146.045 8 146.045 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.2203" depth="4.1514" valign="top">\bfseries Aussagenlogische Konnektive</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="800" height="15.2758" depth="4.218" valign="top">Seien G und H Aussagevariablen. Dann kann man wie folgt größere
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.2203" depth="4.1514" valign="top">\bfseries Aussagenlogische Konnektive</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Seien G und H Aussagevariablen oder Formeln. Dann kann man wie folgt größere
 Formeln konstruieren:</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="624" height="85.8652" depth="74.9694" valign="top" style="itemize">\item$(\neg G)$ heißt \enquote{nicht G}
+<text matrix="1 0 0 1 0 -23" transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="85.8652" depth="74.9694" valign="top" style="itemize">\item$(\neg G)$ heißt \enquote{nicht G}
 \item $(G \wedge H)$ heißt \enquote{G und H}
 \item $(G \vee H)$ heißt \enquote{G oder H}
-\item $(G\rightarrow H)$ heißt \enquote{G impliziert H}
-\item $(G \leftrightarrow H) \coloneqq (G \rightarrow H)\wedge(H \rightarrow G)$</text>
-<text layer="beta" transformations="translations" pos="16 112" stroke="black" type="minipage" width="304" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
-<text transformations="translations" pos="16 80" stroke="black" type="minipage" width="432" height="29.2285" depth="18.1818" valign="top">$(G \leftrightarrow H)$ ist nur eine Abkürzung und bedeutet \enquote{G impliziert H und H impliziert G}</text>
+\item $(G\Rightarrow H)$ heißt \enquote{G impliziert H}
+\item $(G \Leftrightarrow H) \coloneqq (G \Rightarrow H)\wedge(H \Rightarrow G)$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 112" stroke="black" type="minipage" width="304" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="432" height="29.2285" depth="18.1818" valign="top">$(G \Leftrightarrow H)$ ist nur eine Abkürzung und bedeutet \enquote{G impliziert H und H impliziert G}</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
 <page title="Semantik">
@@ -3876,7 +3871,7 @@ Formeln konstruieren:</text>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta" active="alpha"/>
 <group layer="beta">
 <path stroke="black" fill="KITblue15">
 8 264 m
@@ -3900,12 +3895,12 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="544" height="13.078" depth="2.0202" valign="top">\bfseries Boolsche Funktion</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="27.1994" depth="16.1616" valign="top">Für Wahrheitswerte $\mathbb B = \{w,f\}$ ist eine boolsche Funktion eine Funktion $f: \mathbb B^n \rightarrow \mathbb B$</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="27.1994" depth="16.1616" valign="top">Für Wahrheitswerte $\mathbb B = \{w,f\}$ ist eine boolsche Funktion eine Funktion $f: \mathbb B^n \Rightarrow \mathbb B$</text>
 <text layer="beta" matrix="1 0 0 1 16 -32" transformations="translations" pos="32 256" stroke="black" type="minipage" width="512" height="73.1512" depth="62.2044" valign="top">
 \begin{center}
 \begin{tabular}{|c c | c c c c|} 
  \hline
- A &amp; B &amp; $\neg A$ &amp; $A \wedge  B $ &amp;$ A \vee B$ &amp; $A \rightarrow  B$ \\
+ A &amp; B &amp; $\neg A$ &amp; $A \wedge  B $ &amp;$ A \vee B$ &amp; $A \Rightarrow  B$ \\
  \hline
  f &amp; f &amp; w &amp; f &amp; f &amp; w\\ 
 
@@ -3921,6 +3916,30 @@ h
 </text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
+<group layer="alpha">
+<path fill="KITgreen">
+9.6 341.877 m
+9.6 368 l
+582 368 l
+587 368
+592 363
+592 358 c
+592 341.877 l
+h
+</path>
+<path fill="KITgreen15">
+592 341.877 m
+592 288.85 l
+19.6 288.85 l
+14.6 288.85
+9.6 293.85
+9.6 298.85 c
+9.6 341.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 362.63" stroke="white" type="minipage" width="571.66" height="13.078" depth="2.0202" valign="top">\textbf{Boolsche Funktion}</text>
+<text transformations="translations" pos="14.9702 336.507" stroke="black" type="minipage" width="571.66" height="27.1994" depth="16.1616" valign="top">Für Wahrheitswerte $\mathbb B = \{w,f\}$ ist eine boolsche Funktion eine Funktion $f: \mathbb B^n \rightarrow \mathbb B$</text>
+</group>
 </page>
 <page title="Einschub Implikation">
 <layer name="alpha"/>
@@ -3952,14 +3971,14 @@ h
 </path>
 </group>
 <text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Die Implikation trifft keine Aussagen über Kausalitäten</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top">Sie ist wie jede andere Aussagenlogische Formel einfach nur wahr oder falsch</text>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top">Sie ist wie jede andere aussagenlogische Formel einfach nur wahr oder falsch</text>
 <text layer="beta" matrix="1 0 0 1 -16 48" transformations="translations" pos="32 256" stroke="black" type="minipage" width="432" height="14.9184" depth="3.8628" valign="top">Beispiel:</text>
-<text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 224" stroke="black" type="minipage" width="432" height="12.5985" depth="1.5318" valign="top">$p \rightarrow q$</text>
+<text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 224" stroke="black" type="minipage" width="432" height="12.5985" depth="1.5318" valign="top">$p \Rightarrow q$</text>
 <text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 192" stroke="black" type="minipage" width="432" height="15.1648" depth="4.0848" valign="top">Wenn p falsch ist ist die Implikation wahr</text>
 <text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 160" stroke="black" type="minipage" width="480" height="15.1648" depth="4.0848" valign="top">Erst wenn p wahr ist wird q überprüft</text>
 <text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 128" stroke="black" type="minipage" width="512" height="14.9184" depth="3.8628" valign="top" style="item">Wenn q dann auch wahr ist, ist die Implikation wahr</text>
 <text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 96" stroke="black" type="minipage" width="512" height="15.1648" depth="4.0848" valign="top" style="item">Wenn q dann falsch ist, ist die Implikation falsch</text>
-<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="352" height="14.9362" depth="3.8628" valign="top">Wenn ihr wisst, dass $p\rightarrow q$ wahr ist \dots</text>
+<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="352" height="14.9362" depth="3.8628" valign="top">Wenn ihr wisst, dass $p\Rightarrow q$ wahr ist \dots</text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="384" height="14.9184" depth="3.8628" valign="top">Und dann auch noch p wahr ist \dots
 </text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="16 16" stroke="black" type="minipage" width="400" height="15.2758" depth="4.218" valign="top">könnt ihr folgern, das q auch wahr sein muss</text>
@@ -4028,20 +4047,20 @@ h
 </path>
 </group>
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="400" height="15.2203" depth="4.1514" valign="top">\bfseries Auswertung Aussagenlogische Formeln</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="592" height="29.2241" depth="18.204" valign="top">Sei $I_ V \rightarrow \mathbb B$ eine Interpretation\\
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="592" height="29.2241" depth="18.204" valign="top">Sei $I: V \rightarrow \mathbb B$ eine Interpretation\\
 Für jede Aussagenlogische Formel $F$ definiere $val_I (F )$ wie folgt:
 
 </text>
 <text transformations="translations" pos="16 272" stroke="black" type="minipage" width="560" height="15.469" depth="4.4178" valign="top">Für jedes $X \in V \quad \text{und } G,H$ Aussagenlogische Formeln sei:</text>
-<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(X) \coloneqq I(X)$</text>
+<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(X) \coloneqq I(X)$ \quad \quad  \quad (Also der Wahrheitswert von X)</text>
 <text layer="gamma" transformations="translations" pos="16 208" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(\neg G)\coloneqq \neg(val_I(G))$</text>
 <text layer="delta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \wedge H) \coloneqq val_I(G) \wedge val_I(H)$
 </text>
 <text layer="epsilon" transformations="translations" pos="16 144" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\vee H) \coloneqq val_I(G) \vee val_I(H)$</text>
-<text layer="zeta" transformations="translations" pos="16 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\rightarrow H ) \coloneqq val_I(G) \rightarrow val_I(H)$</text>
+<text layer="zeta" transformations="translations" pos="16 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\Rightarrow H ) \coloneqq val_I(G) \Rightarrow val_I(H)$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
 <text layer="theta" transformations="translations" pos="16 64" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top">Anschaulich: erst kleine Teilformeln ausrechnen, dann zusammengesetzte</text>
-<text matrix="1 0 0 1 -32 16" transformations="translations" pos="704 320" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top" style="center">$(A\vee B) \rightarrow  \neg C$</text>
+<text matrix="1 0 0 1 -32 16" transformations="translations" pos="704 320" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top" style="center">$(A\vee B) \Rightarrow  \neg C$</text>
 <path stroke="black" pen="1">
 736 304 m
 704 256 l
@@ -4096,13 +4115,13 @@ h
 </path>
 </group>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $I$ eine Interpretation mit $I(P) = \textbf w, I(Q) = \textbf  f, I(S) =  \textbf  w$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">$G = (Q \rightarrow S) \vee P$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">$G = (Q \Rightarrow S) \vee P$</text>
 <text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="528" height="116.648" depth="105.85" valign="top">
 \begin{align*}
-val_I( (Q \rightarrow S) \vee P) &amp;= (val_I(Q \rightarrow S) \vee val_I(P))\\
-&amp;= ((val_I(Q) \rightarrow val_I(S)) \vee  val_I(P))\\
-&amp;= ((I(Q) \rightarrow I(S)) \vee  I(P))\\
-&amp;= ( (\textbf f \rightarrow  \textbf w) \vee \textbf w)\\
+val_I( (Q \Rightarrow S) \vee P) &amp;= (val_I(Q \Rightarrow S) \vee val_I(P))\\
+&amp;= ((val_I(Q) \Rightarrow val_I(S)) \vee  val_I(P))\\
+&amp;= ((I(Q) \Rightarrow I(S)) \vee  I(P))\\
+&amp;= ( (\textbf f \Rightarrow  \textbf w) \vee \textbf w)\\
 &amp;= ( \textbf w \vee  \textbf w)\\
 &amp;= \textbf w
 \end{align*}
@@ -4113,7 +4132,7 @@ val_I( (Q \rightarrow S) \vee P) &amp;= (val_I(Q \rightarrow S) \vee val_I(P))\\
 <text matrix="1 0 0 1 560 128" transformations="translations" pos="16 176" stroke="black" type="minipage" width="320" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(G \wedge H) \coloneqq val_I(G) \wedge val_I(H)$
 </text>
 <text matrix="1 0 0 1 560 128" transformations="translations" pos="16 144" stroke="black" type="minipage" width="320" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(G\vee H) \coloneqq val_I(G) \vee val_I(H)$</text>
-<text matrix="1 0 0 1 560 128" transformations="translations" pos="16 112" stroke="black" type="minipage" width="336" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(G\rightarrow H ) \coloneqq val_I(G) \rightarrow val_I(H)$</text>
+<text matrix="1 0 0 1 560 128" transformations="translations" pos="16 112" stroke="black" type="minipage" width="336" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(G\Rightarrow H ) \coloneqq val_I(G) \Rightarrow val_I(H)$</text>
 </page>
 <page title="Bindungstärken">
 <layer name="alpha"/>
@@ -4136,9 +4155,9 @@ h
 <text layer="alpha" matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">$\neg$ Bindet am stärksten</text>
 <text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="12.9115" depth="1.8204" valign="top" style="item">$\wedge$ bindet am zweitstärksten</text>
 <text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="592" height="12.9115" depth="1.8204" valign="top" style="item">$\vee$ bindet am drittstärksten</text>
-<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">$\rightarrow$ bindet am viertstärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">$\Rightarrow$ bindet am viertstärksten</text>
 <text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="624" height="12.9115" depth="1.8204" valign="top" style="item">$
-\leftrightarrow$ bindet am schwächsten</text>
+\Leftrightarrow$ bindet am schwächsten</text>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.0516" depth="3.9738" valign="top">Wenn sich dadurch die Bedeutung der Formel nicht ändert könnt ihr Klammern auch weglassen</text>
 </page>
 <page title="Wahrheitstabellen">
@@ -4210,17 +4229,13 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="416" height="26.2471" depth="15.207" valign="top">Wie viele Zeilen hätte eine Wahrheitstabelle mit 1500 Variablen?</text>
-<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="80.8924" depth="69.9966" valign="top" style="item">$2^{1500} = 3507466211043403874762758796028085799352401588033082882407579802479096\\
-3850563322203657080886584969261653150406795437517399294548941469959754171038\\
-9180047008478899564853290972644868027115834629465366821843401386294513554582\\
-6494634252538361938931496064466505255175144233550924917336113035579610970988\\
-5580674313954210217657847432626760733004753275317192133674703563372783297041\\
-993227052663333668509952000175053355529058880434182538386715523683713208549376$</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="416" height="26.2471" depth="15.207" valign="top">Wie viele Zeilen hätte eine Wahrheitstabelle mit 500 Variablen?</text>
+<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="27.8765" depth="16.8498" valign="top" style="item">$2^{500} = 3273390607896141870013189696827599152216642046043064789483291368096133
+\\796404674554883270092325904157150886684127560071009217256545885393053328527589376$</text>
 <text layer="gamma" transformations="translations" pos="16 208" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top">Wie viele Atome gibt es im Universum?</text>
-<text layer="delta" transformations="translations" pos="0 208" stroke="black" type="minipage" width="896" height="27.8765" depth="16.8498" valign="top" style="item">ca. $10^{88}= 10000000000000000000000000000000000000000000000000000000000000000000\\
+<text layer="delta" matrix="1 0 0 1 0 112" transformations="translations" pos="0 208" stroke="black" type="minipage" width="896" height="27.8765" depth="16.8498" valign="top" style="item">ca. $10^{88}= 10000000000000000000000000000000000000000000000000000000000000000000\\
 000000000000000000000$</text>
-<text layer="epsilon" matrix="1 0 0 1 -32 0" transformations="translations" pos="32 128" stroke="black" type="minipage" width="208" height="13.1357" depth="2.0646" valign="top">Ihr seht das Problem?</text>
+<text layer="epsilon" matrix="1 0 0 1 -32 96" transformations="translations" pos="32 128" stroke="black" type="minipage" width="208" height="13.1357" depth="2.0646" valign="top">Ihr seht das Problem?</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
 </page>
 <page title="Wahrheitstabellen">
@@ -4241,12 +4256,12 @@ h
 <text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Seien A und B Aussagenvariablen</text>
 <text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Weiter sei $val_I(A) = w$ und $val_I(B) = f$</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Was ist $val_I((A \wedge B)  \rightarrow (A \vee B)) $?</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Was ist $val_I((A \wedge B)  \Rightarrow (A \vee B)) $?</text>
 <text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 256" stroke="black" type="minipage" width="496" height="73.1512" depth="62.2044" valign="top">
 \begin{center}
 \begin{tabular}{|c c | c c c|} 
  \hline
- A &amp; B &amp; $A\wedge B$&amp; $A\vee B$ &amp; $(A \wedge B)  \rightarrow (A \vee B) $ \\
+ A &amp; B &amp; $A\wedge B$&amp; $A\vee B$ &amp; $(A \wedge B)  \Rightarrow (A \vee B) $ \\
  \hline
  f &amp; f &amp; f &amp; f &amp; f \\ 
 
@@ -4334,17 +4349,26 @@ gilt:</text>
 <text matrix="1 0 0 1 69 -2" transformations="translations" pos="64 272" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$val_I(A) = val_I(B)$</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="288" height="13.3289" depth="2.2644" valign="top">Man schreibt auch $A \equiv B$</text>
 <text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
-<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$((\neg A \rightarrow B) \wedge (\neg (A\leftrightarrow B) \vee A)) \equiv (A\wedge B)$</text>
-<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top" style="item">$A\rightarrow B \equiv \neg A \vee B\quad$    \textbf{Wichtig}</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$((\neg A \Rightarrow B) \wedge (\neg (A\Leftrightarrow B) \vee A)) \equiv (A\wedge B)$</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top" style="item">$A\Rightarrow B \equiv \neg A \vee B\quad$    \textbf{Wichtig}</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
 </page>
 <page title="Anmerkungen zur Schreibweise">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="28.2939" depth="17.2716" valign="top" style="item">$=$ bedeutet zwei Formeln sind syntaktisch gleich. \\ $\equiv$ bedeutet diese haben für die gleiche Variablenbelegung den gleichen Wahrheitswert</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="784" height="28.4071" depth="17.3826" valign="top" style="item">$\leftrightarrow$ dürft ihr in AL Formeln benutzen, \\ $\Leftrightarrow$ nur wenn ihr auf &apos;&apos;Metaebene&apos;&apos; (also in Texten etc.) über Formeln redet.</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="624" height="13.229" depth="2.1534" valign="top" style="item">Gilt auch für $\rightarrow$ und $\Rightarrow$</text>
+<group layer="alpha">
+<path stroke="black" fill="KITred15">
+184 248 m
+656 248 l
+8 0 0 -8 656 240 664 240 a
+664 159.894 l
+192 159.894 l
+8 0 0 -8 192 167.894 184 167.894 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 192 -144" transformations="translations" pos="0 384" stroke="black" type="minipage" width="464" height="41.5584" depth="30.5472" valign="top">$=$ bedeutet zwei Formeln sind syntaktisch gleich. \\ $\equiv$ bedeutet diese haben für die gleiche Variablenbelegung den gleichen Wahrheitswert</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
 <page title="Aufgabe">
@@ -4373,13 +4397,13 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Zeigt mit einer Wahrheitstabelle das folgende Formeln äquivalent sind:</text>
-<text matrix="1 0 0 1 0 208" transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$((\neg A \rightarrow B) \wedge (\neg (A\leftrightarrow B) \vee A))$</text>
+<text matrix="1 0 0 1 0 208" transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$((\neg A \Rightarrow B) \wedge (\neg (A\Leftrightarrow B) \vee A))$</text>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$(A\vee B)$</text>
 <text layer="beta" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 256" stroke="black" type="minipage" width="656" height="73.1512" depth="62.2044" valign="top">
 \begin{center}
 \begin{tabular}{|c c | c c c c c c c c | c |} 
  \hline
- $A$&amp; $B$&amp;$((\neg A$ &amp; $\rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
  \hline
  f &amp; f &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
 
@@ -4398,7 +4422,7 @@ h
 \begin{center}
 \begin{tabular}{|c c | c c c c c c c c | c |} 
  \hline
- $A$&amp; $B$&amp;$((\neg A$ &amp; $\rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
  \hline
  f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
 
@@ -4417,7 +4441,7 @@ h
 \begin{center}
 \begin{tabular}{|c c | c c c c c c c c | c |} 
  \hline
- $A$&amp; $B$&amp;$((\neg A$ &amp; $\rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
  \hline
  f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
 
@@ -4436,7 +4460,7 @@ h
 \begin{center}
 \begin{tabular}{|c c | c c c c c c c c | c |} 
  \hline
- $A$&amp; $B$&amp;$((\neg A$ &amp; $\rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
  \hline
  f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
 
@@ -4455,7 +4479,7 @@ h
 \begin{center}
 \begin{tabular}{|c c | c c c c c c c c | c |} 
  \hline
- $A$&amp; $B$&amp;$((\neg A$ &amp; $\rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
  \hline
  f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
 
@@ -4476,18 +4500,20 @@ h
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Aussagen Variablen zuordnen</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="14.9184" depth="3.8628" valign="top" style="subitem">p: Es ist bewölkt.</text>
-<text matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top" style="subitem">q: Es regnet.</text>
-<text matrix="1 0 0 1 -16 -64" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="13.229" depth="2.1534" valign="top" style="subitem">r : Die Sonne scheint.</text>
-<text matrix="1 0 0 1 -16 -96" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="subitem">s: Es ist kalt.</text>
-<text matrix="1 0 0 1 -16 -128" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="subitem">t: Der Wind bläst.</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top">Aussagen Variablen zuordnen</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="14.9184" depth="3.8628" valign="top" style="item">p: Es ist bewölkt.</text>
+<text matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top" style="item">q: Es regnet.</text>
+<text matrix="1 0 0 1 -16 -64" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="13.229" depth="2.1534" valign="top" style="item">r : Die Sonne scheint.</text>
+<text matrix="1 0 0 1 -16 -96" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">s: Es ist kalt.</text>
+<text matrix="1 0 0 1 -16 -128" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">t: Der Wind bläst.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
 </page>
 <page title="Formalisierungen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Danach können dann aus Sätzen Formeln abgeleitet werden</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="14.2901" depth="3.219" valign="top" style="item">Es ist nicht der Fall, dass es bewölkt ist.
 </text>
@@ -4496,7 +4522,7 @@ h
 </text>
 <text transformations="translations" pos="0 256" stroke="black" type="minipage" width="704" height="12.9115" depth="1.8204" valign="top" style="item">Es ist wolkenlos.</text>
 <text transformations="translations" pos="16 224" stroke="black" type="minipage" width="64" height="12.5985" depth="1.5318" valign="top">$\Rightarrow \neg p$</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="400" height="13.229" depth="2.1534" valign="top" style="item">Die Sonne scheint und es ist kalt.</text>
+<text layer="beta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="400" height="13.229" depth="2.1534" valign="top" style="item">Die Sonne scheint und es ist kalt.</text>
 <text transformations="translations" pos="0 160" stroke="black" type="minipage" width="448" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint, aber es ist kalt.
 </text>
 <text transformations="translations" pos="0 128" stroke="black" type="minipage" width="560" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint, obwohl es kalt ist.
@@ -4510,7 +4536,9 @@ Trotz Sonnenscheins ist es kalt.</text>
 <page title="Formalisierungen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="352" height="14.2901" depth="3.219" valign="top" style="item">Der Wind bläst, oder es ist kalt.
 </text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="14.5144" depth="3.4632" valign="top" style="item">Der Wind bläst, und/oder es ist kalt.
@@ -4520,8 +4548,8 @@ Trotz Sonnenscheins ist es kalt.</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="subitem">Der Wind bläst.
 </text>
 <text transformations="translations" pos="0 256" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="subitem">Es ist kalt.</text>
-<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="80" height="11.8615" depth="0.777" valign="top">$\Rightarrow t \vee s$</text>
-<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es bewölkt ist, dann regnet es.
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="80" height="11.8615" depth="0.777" valign="top">$t \vee s$</text>
+<text layer="beta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es bewölkt ist, dann regnet es.
 </text>
 <text transformations="translations" pos="0 160" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es bewölkt ist, so regnet es.
 </text>
@@ -4530,14 +4558,18 @@ Trotz Sonnenscheins ist es kalt.</text>
 <text transformations="translations" pos="0 96" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Es regnet, wenn es bewölkt ist.
 </text>
 <text transformations="translations" pos="0 64" stroke="black" type="minipage" width="544" height="15.2758" depth="4.218" valign="top" style="item">Es regnet, falls es bewölkt ist.</text>
-<text matrix="1 0 0 1 0 -192" transformations="translations" pos="16 224" stroke="black" type="minipage" width="144" height="12.5985" depth="1.5318" valign="top">$\Rightarrow p\rightarrow q$</text>
+<text matrix="1 0 0 1 0 -192" transformations="translations" pos="16 224" stroke="black" type="minipage" width="144" height="12.5985" depth="1.5318" valign="top">$p\Rightarrow q$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
 </page>
 <page title="Formalisierungen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha">
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<group layer="gamma">
 <path stroke="gray1" fill="gray3">
 520 64 m
 8 0 0 8 512 64 512 72 a
@@ -4548,20 +4580,26 @@ Trotz Sonnenscheins ist es kalt.</text>
 h
 </path>
 </group>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Nur wenn es bewölkt ist, dann regnet es.
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Nur wenn es bewölkt ist, dann regnet es.
 </text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="15.0516" depth="3.9738" valign="top" style="item">Nur wenn es bewölkt ist, regnet es.
 </text>
 <text transformations="translations" pos="0 320" stroke="black" type="minipage" width="592" height="15.0516" depth="3.9738" valign="top" style="item">Es regnet nur, wenn es bewölkt ist.</text>
-<text matrix="1 0 0 1 0 64" transformations="translations" pos="16 224" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">$\Rightarrow (\neg p \rightarrow \neg q) \Rightarrow q\rightarrow p$</text>
-<text transformations="translations" pos="0 240" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Es ist kalt genau dann, wenn der Wind bläst.
+<text matrix="1 0 0 1 0 64" transformations="translations" pos="16 224" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">$(\neg p \Rightarrow \neg q)$ oder $q\Rightarrow p$</text>
+<text layer="beta" transformations="translations" pos="0 240" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Es ist kalt genau dann, wenn der Wind bläst.
 </text>
 <text transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="14.2901" depth="3.219" valign="top" style="item">Es ist dann und nur dann kalt, wenn der Wind bläst.
 </text>
 <text transformations="translations" pos="0 176" stroke="black" type="minipage" width="624" height="26.1538" depth="15.1182" valign="top" style="item">Wenn es kalt ist, dann bläst der Wind, und wenn der Wind
 bläst, dann ist es kalt.</text>
-<text matrix="1 0 0 1 0 -112" transformations="translations" pos="16 224" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$\Rightarrow (s \leftrightarrow t) \Rightarrow (s\rightarrow t)  \wedge  (t \rightarrow s)$</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top">Das ganze geht natürlich auch in die andere Richtung</text>
+<text matrix="1 0 0 1 0 -112" transformations="translations" pos="16 224" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$(s \Leftrightarrow t)$ oder $(s\Rightarrow t)  \wedge  (t \Rightarrow s)$</text>
+<text layer="gamma" matrix="1 0 0 1 16 0" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top">Das ganze geht natürlich auch in die andere Richtung</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
+</page>
+<page title="Weise Worte">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="848" height="28.4071" depth="17.3826" valign="top">Geht mit $\impl, \vee \wedge \neg$ in Beweisen sparsam um.\\
+ Die meisten Beweise lesen sich deutlich einfacher, wenn man in Natürlicher sprache bleibt</text>
 </page>
 </ipe>
