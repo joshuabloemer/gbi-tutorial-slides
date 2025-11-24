@@ -1,8 +1,5 @@
 
-title = "04 Induktion und Aussagenlogik" # the file name of the output pdf
-description = "04 Induktion und Aussagenlogik" # 
-content = [
-    "induktion",
-    "aussagenlogik"
-]
-xkcd = 704
+title = "04 Woerter, Formale Sprachen"       # the file name of the output pdf
+description = "Woerter und Formale Sprachen" # 
+content = ["woerter", "formalesprachen"]
+xkcd = 754
