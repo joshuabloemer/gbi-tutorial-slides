@@ -1,397 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20251202105300" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20251202132000" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}
-</preamble>
-<bitmap id="1" width="612" height="612" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="DCTDecode" length="20692" encoding="base64">
-/9j/4AAQSkZJRgABAQEBLAEsAAD/4QBVRXhpZgAASUkqAAgAAAADAA4BAgALAAAAMgAAABoB
-BQABAAAAPQAAABsBBQABAAAARQAAAAAAAABkb21pbm9lcyAzRCwBAAABAAAALAEAAAEAAAD/
-4QUzaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIg
-aWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFk
-b2JlOm5zOm1ldGEvIj4KCTxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcv
-MTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CgkJPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJv
-dXQ9IiIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8x
-LjAvIiB4bWxuczpJcHRjNHhtcENvcmU9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBD
-b3JlLzEuMC94bWxucy8iICAgeG1sbnM6R2V0dHlJbWFnZXNHSUZUPSJodHRwOi8veG1wLmdl
-dHR5aW1hZ2VzLmNvbS9naWZ0LzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMv
-ZWxlbWVudHMvMS4xLyIgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94
-bXAvMS4wLyIgIHhtbG5zOmlwdGNFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBF
-eHQvMjAwOC0wMi0yOS8iIHhtbG5zOnhtcFJpZ2h0cz0iaHR0cDovL25zLmFkb2JlLmNvbS94
-YXAvMS4wL3JpZ2h0cy8iIHBob3Rvc2hvcDpDcmVkaXQ9IkdldHR5IEltYWdlcy9pU3RvY2tw
-aG90byIgR2V0dHlJbWFnZXNHSUZUOkFzc2V0SUQ9IjEwNjQ2Nzc0ODYiIHhtcFJpZ2h0czpX
-ZWJTdGF0ZW1lbnQ9Imh0dHBzOi8vd3d3LmlzdG9ja3Bob3RvLmNvbS9sZWdhbC9saWNlbnNl
-LWFncmVlbWVudD91dG1fbWVkaXVtPW9yZ2FuaWMmYW1wO3V0bV9zb3VyY2U9Z29vZ2xlJmFt
-cDt1dG1fY2FtcGFpZ249aXB0Y3VybCIgPgo8ZGM6Y3JlYXRvcj48cmRmOlNlcT48cmRmOmxp
-Pk9saXZpZXIgVmVycmllc3Q8L3JkZjpsaT48L3JkZjpTZXE+PC9kYzpjcmVhdG9yPjxkYzpk
-ZXNjcmlwdGlvbj48cmRmOkFsdD48cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPmRvbWlu
-b2VzIDNEPC9yZGY6bGk+PC9yZGY6QWx0PjwvZGM6ZGVzY3JpcHRpb24+CjxwbHVzOkxpY2Vu
-c29yPjxyZGY6U2VxPjxyZGY6bGkgcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPjxwbHVzOkxp
-Y2Vuc29yVVJMPmh0dHBzOi8vd3d3LmlzdG9ja3Bob3RvLmNvbS9waG90by9saWNlbnNlLWdt
-MTA2NDY3NzQ4Ni0/dXRtX21lZGl1bT1vcmdhbmljJmFtcDt1dG1fc291cmNlPWdvb2dsZSZh
-bXA7dXRtX2NhbXBhaWduPWlwdGN1cmw8L3BsdXM6TGljZW5zb3JVUkw+PC9yZGY6bGk+PC9y
-ZGY6U2VxPjwvcGx1czpMaWNlbnNvcj4KCQk8L3JkZjpEZXNjcmlwdGlvbj4KCTwvcmRmOlJE
-Rj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InciPz4K/+0AXlBob3Rvc2hvcCAzLjAA
-OEJJTQQEAAAAAABCHAJQABBPbGl2aWVyIFZlcnJpZXN0HAJ4AAtkb21pbm9lcyAzRBwCbgAY
-R2V0dHkgSW1hZ2VzL2lTdG9ja3Bob3Rv/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYR
-GCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAc
-OygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7
-/8IAEQgCZAJkAwERAAIRAQMRAf/EABsAAQEAAwEBAQAAAAAAAAAAAAABAgMEBQYH/8QAFgEB
-AQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAH7MAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAKAAAAAAAAAA
-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
-VKlf/wAO/wD/2Q==
-</bitmap>
+\input{/opt/gbi-slides/tut-config}</preamble>
 <ipestyle name="kit-basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -4118,100 +3731,7 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page>
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<image layer="alpha" matrix="0.780356 0 0 0.780356 320 -9.57816" rect="0 0 612 612" bitmap="1"/>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="288" height="13.229" depth="2.1534" valign="top" style="item">Wieso fällt der 3. Stein um?</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="368" height="13.229" depth="2.1534" valign="top" style="item">Wird der 7. Stein auch umfallen?</text>
-<text layer="beta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="352" height="15.2758" depth="4.218" valign="top">Behauptung: Der 7. Stein wird umfallen</text>
-<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="464" height="12.9115" depth="1.8204" valign="top">Beweis:</text>
-<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="13.229" depth="2.1534" valign="top" style="item">Der erste Stein fällt um</text>
-<text layer="delta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top" style="item">Ein Stein fällt um, wenn der Stein davor umgefallen ist</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 4}</text>
-</page>
-<page title="Vollständige Induktion">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<group layer="delta">
-<path stroke="black" fill="KITred15">
-616 248 m
-896 248 l
-8 0 0 -8 896 240 904 240 a
-904 216.8 l
-624 216.8 l
-8 0 0 -8 624 224.8 616 224.8 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Wir haben: Eine Aussage $\mathpzc A$ die für alle n gelten soll</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top" style="item">Wir wollen: Beweisen das diese Aussage gilt</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="624" height="28.5403" depth="17.4936" valign="top" style="item">Diese Aussage $\mathpzc A$, die für jedes n gelten soll können wir auch als n Aussagen $\mathpzc A_0, \mathpzc A_1, \dots $auffassen, die jeweils für ein festes n gelten</text>
-<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="608" height="41.5584" depth="30.5472" valign="top" style="item">Wenn wir jetzt Zeigen können, dass eine Aussage $\mathpzc A_n$ gilt, wenn die vorherige Aussage $\mathpzc A_{n-1}$ (Das nennt man Indutkionsschritt) gilt, sind wir eigentlich schon fertig </text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
-<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="640 240" stroke="black" type="minipage" width="272" height="13.1357" depth="2.0646" valign="top">Hä? Wieso funktioniert das?</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -208" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.3735" depth="4.2846" valign="top" style="item">Wie bei Domino haben wir eine Kette von Abhängigkeiten: $\dots \rightarrow \mathpzc A_{n-1} \rightarrow \mathpzc  A_n \rightarrow \mathpzc A_{n+1} \rightarrow \dots $</text>
-<text transformations="translations" pos="0 144" stroke="black" type="minipage" width="768" height="15.0516" depth="3.9738" valign="top" style="subitem">Das diese \textbf{Kette} gilt zeigen wir mit dem Induktionschritt</text>
-<text transformations="translations" pos="0 112" stroke="black" type="minipage" width="688" height="28.2939" depth="17.2716" valign="top" style="subitem">Um die \textbf{Aussagen} zu zeigen müssen wir noch die erste Aussage in der Kette $\mathpzc A_0$ zeigen (Das nennt man Induktionsanfang)</text>
-</page>
-<page title="Vollständige Induktion">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="beta">
-<path stroke="black" fill="KITred15">
-8 168 m
-704 168 l
-8 0 0 -8 704 160 712 160 a
-712 19.8735 l
-16 19.8735 l
-8 0 0 -8 16 27.8735 8 27.8735 a
-h
-</path>
-</group>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-704 376 l
-8 0 0 -8 704 368 712 368 a
-712 180.36 l
-16 180.36 l
-8 0 0 -8 16 188.36 8 188.36 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="15.2203" depth="4.1514" valign="top">\bfseries Vollständige Induktion</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top">\textbf{Induktionsanfang (I.A.)}: Zeige, dass $\mathpzc A_n$ n = 1 (bzw. n = 0) gilt.</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="688" height="15.5422" depth="4.4622" valign="top">\textbf{Induktionsschritt (I.S.)}: Zeige, dass, wenn $\mathpzc A_{n-1}$ gilt, auch $\mathpzc A_{n}$ gilt</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="688" height="15.4334" depth="4.3512" valign="top" style="item">Sei $n \in \mathbb N$ \textbf{fest aber beliebig}</text>
-<text transformations="translations" pos="16 240" stroke="black" type="minipage" width="480" height="15.5422" depth="4.4622" valign="top" style="item">\textbf{Induktionsvoraussetzung (I.V.)}: $\mathpzc A_{n-1}$ sei wahr.</text>
-<text transformations="translations" pos="16 208" stroke="black" type="minipage" width="688" height="15.2758" depth="4.218" valign="top" style="item">Zeige durch Umformungen und mit der I.V., dass dann auch $\mathpzc A_{n}$ wahr ist</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
-<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="688" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
-<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Wenn ihr Umformungen macht, startet \textbf{immer} mit $\mathpzc A_n$
-(Also der Aussage die ihr Zeigen wollt)</text>
-<text matrix="1 0 0 1 0 10" transformations="translations" pos="16 64" stroke="black" type="minipage" width="576" height="15.5977" depth="4.5288" valign="top">Ihr wollt die Aussage $ \mathpzc A_n$ zeigen und dürft dafür $\mathpzc A_{n-1}$ benutzen</text>
-<text transformations="translations" pos="16 48" stroke="black" type="minipage" width="608" height="15.5977" depth="4.5288" valign="top">Aus $\mathpzc A_{n-1}$ ein Beispiel für $\mathpzc A_{n}$ zu konstruieren zeigt nicht  $\mathpzc A_n $ allgemein </text>
-</page>
-<page title="Beispiel">
+<page title="Reguläre Ausdrücke">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
@@ -4220,457 +3740,102 @@ h
 <layer name="epsilon"/>
 <layer name="zeta"/>
 <layer name="eta"/>
-<layer name="theta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page gamma delta epsilon" active="epsilon"/>
+<view layers="alpha pagenumbers_page gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha pagenumbers_page gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="beta"/>
+<group layer="beta" matrix="1 0 0 1 -64 0">
+<path stroke="black" fill="KITblue15">
+72 120 m
+544 120 l
+8 0 0 -8 544 112 552 112 a
+552 23.342 l
+80 23.342 l
+8 0 0 -8 80 31.342 72 31.342 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Sei A ein Alphabet, das keines der fünf zeichem $Z =\{\cup, (,),*,\emptyset \}$ enthält.</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="28.7335" depth="17.6934" valign="top">Ein \emph{regulärer Ausdruck} über A ist eine Zeichenfolge über $A\cup Z$, die die folgende Definition erfüllt:</text>
+<text layer="gamma" transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="16.0972" depth="5.0172" valign="top" style="item">$\emptyset$ ist ein regulärer Ausdruck</text>
+<text layer="delta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="592" height="15.469" depth="4.4178" valign="top" style="item">für jedes $x \in A$ ist x ein regulärer Ausdruck</text>
+<text layer="epsilon" transformations="translations" pos="0 224" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">Sind $R_1$ und $R_2$ reguläre Ausdrücke dann sind auch $(R_1 \cup R_2)$ und $(R_1 R_2)$ reguläre Ausdrücke</text>
+<text layer="zeta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">Wenn R ein regulärer Ausdruck ist dann auch $(R^*)$</text>
+<text layer="eta" transformations="translations" pos="0 160" stroke="black" type="minipage" width="832" height="15.2758" depth="4.218" valign="top" style="item">Vergesst in GBI bitte die Schreibweise aus Programmieren für RegEx</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 30}</text>
+<text layer="beta" matrix="1 0 0 1 0 48" transformations="translations" pos="16 32" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$a^*(ab)^*$\\ (bisher hätten wir das als $\set{a}^* \cdot \set{ab}^*$ geschrieben)</text>
+<text matrix="1 0 0 1 -64 0" transformations="translations" pos="80 112" stroke="black" type="minipage" width="464" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+</page>
+<page title="Auswertung von regulären Ausdrücken">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="alpha" matrix="1 0 0 1 16 -16">
+<path stroke="black" fill="KITred15">
+-8 392 m
+480 392 l
+8 0 0 -8 480 384 488 384 a
+488 329.966 l
+0 329.966 l
+8 0 0 -8 0 337.966 -8 337.966 a
+h
+</path>
+</group>
+<text layer="gamma" matrix="1 0 0 1 0 128" transformations="translations" pos="0 96" stroke="black" type="minipage" width="288" height="69.6037" depth="58.6746" valign="top">$L(\emptyset) = \{\}\\
+L(x)  = \{x\} (x \in A)\\
+L(R_1R_2) = L(R_1) \cdot L(R_2)\\
+L(R_1 \cup R_2) = L(R_1) \cup L(R_2)\\
+L(R^*) = L(R)^*$</text>
+<text layer="beta" matrix="1 0 0 1 0 176" transformations="translations" pos="0 128" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">Die Sprache die von einem regulären Ausdruck beschrieben wird ist L(R)</text>
+<text matrix="1 0 0 1 0 -80" transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top">Auswertung ähnlich wie die $val_I$ Funktion aus der Aussagenlogik</text>
+<text layer="alpha" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="480" height="28.5403" depth="17.4936" valign="top">Reguläre Ausdrücke sind keine Sprachen\\
+(Aber ein Wort der Sprache der regulären Ausdrücke)</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta" active="theta"/>
-<group layer="theta">
-<path stroke="black" fill="KITgreen15">
-8 344 m
-656 344 l
-8 0 0 -8 656 336 664 336 a
-664 4.6083 l
-16 4.6083 l
-8 0 0 -8 16 12.6083 8 12.6083 a
-h
-</path>
-</group>
-<path layer="eta" matrix="1.5232 0 0 1 -181.628 -76.4598" stroke="black" fill="KITred70">
-160 112 m
-160 80 l
-240 80 l
-240 112 l
-h
-</path>
-<path matrix="0.242245 0 0 1 453.008 -0.00036324" stroke="black" fill="KITred70">
-160 112 m
-160 80 l
-240 80 l
-240 112 l
-h
-</path>
-<path matrix="1.51243 0 0 1 15.5097 -0.00018162" stroke="black" fill="KITred70">
-160 112 m
-160 80 l
-240 80 l
-240 112 l
-h
-</path>
-<path layer="zeta" matrix="2.16026 0 0 1 -171.358 -45.5678" stroke="black" fill="KITcyanblue70">
-160 112 m
-160 80 l
-240 80 l
-240 112 l
-h
-</path>
-<path matrix="1 0 0 1 -3.44541 0" stroke="black" fill="KITcyanblue70">
-160 112 m
-160 80 l
-240 80 l
-240 112 l
-h
-</path>
-<path matrix="0.869383 0 0 1 262.497 0" stroke="black" fill="KITcyanblue70">
-160 112 m
-160 80 l
-240 80 l
-240 112 l
-h
-</path>
-<group layer="alpha">
-<path stroke="black" fill="KITblue15">
-8 392 m
-656 392 l
-8 0 0 -8 656 384 664 384 a
-664 353.411 l
-16 353.411 l
-8 0 0 -8 16 361.411 8 361.411 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="48 336" stroke="black" type="minipage" width="320" height="13.078" depth="2.0202" valign="top">\bfseries Beweis</text>
-<text matrix="1 0 0 1 -32 16" transformations="translations" pos="48 368" stroke="black" type="minipage" width="640" height="16.8964" depth="5.8164" valign="top">\textbf{Behauptung:} Für alle $n \in \mathbb N_0$ ist $n^2 +n$ eine gerade Zahl</text>
-<text layer="beta" matrix="1 0 0 1 -48 32" transformations="translations" pos="64 272" stroke="black" type="minipage" width="640" height="16.8964" depth="5.8164" valign="top">I.A.; Es sei $n = 0$. Es gilt $0^2 + 0 = 0 $ ist eine gerade Zahl  $\Rightarrow \mathcal A_0$ ist wahr</text>
-<text layer="gamma" matrix="1 0 0 1 -32 0" transformations="translations" pos="48 272" stroke="black" type="minipage" width="640" height="13.946" depth="2.8638" valign="top">I.S.: $n-1 \rightsquigarrow n$</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="48 240" stroke="black" type="minipage" width="640" height="15.6355" depth="4.551" valign="top" style="item">Sei $n \in \mathbb N_+$ fest aber beliebig</text>
-<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="48 208" stroke="black" type="minipage" width="640" height="17.3893" depth="6.327" valign="top" style="item">I.V.: Es gelte $(n-1)^2+(n-1)$ ist eine gerade Zahl</text>
-<text layer="epsilon" matrix="1 0 0 1 -16 32" transformations="translations" pos="48 176" stroke="black" type="minipage" width="352" height="68.4204" depth="57.4758" valign="top">\begin{align*}
-(n)^2 + (n) &amp;= n \cdot n + n - 1 + 1\\
-&amp;= ((n - 1) + 1) ((n - 1) + 1) + (n - 1) + 1\\
-&amp;= (n - 1)^2 + 2(n - 1) + 1 + (n-1) + 1
- \end{align*}</text>
-<text layer="zeta" matrix="1 0 0 1 16 0" transformations="translations" pos="16 64" stroke="black" type="minipage" width="496" height="17.3893" depth="6.327" valign="top" style="item">Nach I.V. ist $(n-1)^2+(n-1)$ eine gerade Zahl</text>
-<text layer="eta" matrix="1 0 0 1 16 0" transformations="translations" pos="16 32" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top" style="item">$2(n - 1) + 2$ ist eine gerade Zahl</text>
-<text layer="theta" matrix="1 0 0 1 0 -16" transformations="translations" pos="432 48" stroke="black" type="minipage" width="192" height="14.8807" depth="3.7962" valign="top">$\Rightarrow \mathcal A_{n}$ ist wahr</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
-<view layers="alpha pagenumbers_page beta" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon zeta eta theta" active="theta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon zeta eta theta iota" active="iota"/>
-<group layer="alpha">
-<path stroke="black" fill="KITblue15">
-8 392 m
-752 392 l
-8 0 0 -8 752 384 760 384 a
-760 353.287 l
-16 353.287 l
-8 0 0 -8 16 361.287 8 361.287 a
-h
-</path>
-</group>
-<group layer="iota">
-<path stroke="black" fill="KITgreen15">
-8 344 m
-752 344 l
-8 0 0 -8 752 336 760 336 a
-760 -26.7163 l
-16 -26.7163 l
-8 0 0 -8 16 -18.7163 8 -18.7163 a
-h
-</path>
-</group>
-<group layer="beta">
+<group layer="alpha" matrix="1 0 0 1 16 -16">
 <path stroke="gray1" fill="gray3">
-472 320 m
-8 0 0 8 464 320 464 328 a
-8 328 l
-8 300.761 l
-8 0 0 8 16 300.761 16 292.761 a
-472 292.761 l
+808 384 m
+8 0 0 8 800 384 800 392 a
+-8 392 l
+-8 201.882 l
+8 0 0 8 0 201.882 0 193.882 a
+808 193.882 l
 h
 </path>
 </group>
-<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="16.8964" depth="5.8164" valign="top">\textbf{Behauptung:} Für alle $n \in \mathbb N_0$ ist $n^3+2n$ durch 3 teilbar</text>
-<text layer="beta" transformations="translations" pos="16 320" stroke="black" type="minipage" width="448" height="15.0516" depth="3.9738" valign="top">Zeigt die Behauptung mit vollständiger Induktion</text>
-<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 320" stroke="black" type="minipage" width="512" height="13.078" depth="2.0202" valign="top">\bfseries Beweis</text>
-<text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 288" stroke="black" type="minipage" width="608" height="16.8964" depth="5.8164" valign="top">I.A.: Es sei $n = 0$. Es gilt $0^3+2\cdot 0 = 0$</text>
-<text layer="epsilon" matrix="1 0 0 1 0 16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="608" height="13.946" depth="2.8638" valign="top">I.S.: $n-1 \rightsquigarrow n$</text>
-<text matrix="1 0 0 1 16 16" transformations="translations" pos="16 224" stroke="black" type="minipage" width="576" height="15.6355" depth="4.551" valign="top" style="item">Sei $n\in \mathbb N_+$  fest aber beliebig</text>
-<text layer="zeta" matrix="1 0 0 1 16 16" transformations="translations" pos="16 192" stroke="black" type="minipage" width="576" height="17.3893" depth="6.327" valign="top" style="item">I.V.: Es gelte $(n-1)^3 +2\cdot (n-1)$ ist durch 3 teilbar</text>
-<text layer="eta" matrix="1 0 0 1 -16 32" transformations="translations" pos="48 176" stroke="black" type="minipage" width="720" height="104.482" depth="93.6174" valign="top">\begin{align*}
-(n)^3 + 2\cdot (n) &amp;= (n \cdot n \cdot n) + 2 (( n - 1) + 1)\\
-&amp;= ((n - 1) + 1)^3 + 2 (n - 1) + 2\\
-&amp;=(n - 1)^3 + 3 (n - 1)^2 1 + 3 (n - 1) 1^2 + 1^3 + 2 (n - 1) + 2\\
-&amp;= (n - 1)^3 + 2(n - 1) + 3 (n - 1)^2 + (n - 1) + 1 + 2 (n - 1) + 2\\
- \end{align*}</text>
-<text layer="theta" matrix="1 0 0 1 16 -27" transformations="translations" pos="16 64" stroke="black" type="minipage" width="512" height="17.3893" depth="6.327" valign="top" style="item">Nach I.V. ist $(n - 1)^3 + 2 \cdot (n - 1)$ durch 3 teilbar</text>
-<text matrix="1 0 0 1 16 -27" transformations="translations" pos="16 32" stroke="black" type="minipage" width="400" height="17.3893" depth="6.327" valign="top" style="item">$3(n - 1)^2 + 3(n-1) +3 $ ist durch 3 teilbar</text>
-<text layer="iota" matrix="1 0 0 1 32 -48" transformations="translations" pos="432 48" stroke="black" type="minipage" width="192" height="14.4411" depth="3.3744" valign="top">$\Rightarrow \mathpzc A_{n}$ ist wahr</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
-</page>
-<page title="Negativbeispiel Vorwärtsinduktion">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<group layer="alpha">
-<path stroke="black" fill="KITred15">
-8 376 m
-880 376 l
-8 0 0 -8 880 368 888 368 a
-888 20.7504 l
-16 20.7504 l
-8 0 0 -8 16 28.7504 8 28.7504 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="800" height="13.078" depth="2.0202" valign="top">\bfseries So bitte nicht machen</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="608" height="26.4002" depth="15.3402" valign="top">Beh: Jeder kreisfreie, zusammenhängende Graph mit n Knoten und n-1 Kanten hat min. ein Blatt</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">I.A.: n = 1 Der Graph mit einem Knoten und keinen Kanten ist zusammenhängend, kreisfrei und der Knoten ist ein Blatt</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 240" stroke="black" type="minipage" width="672" height="13.946" depth="2.8638" valign="top">I.S.: $n \rightsquigarrow n+1$</text>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="16 208" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">I.V.: Es gelte die Behauptung für ein festes aber beliebiges n</text>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="16 176" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">Sei G ein kreisfreier, zusammenhängender Graph mit n Knoten und n-1 Kanten</text>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">Der n+1te Knoten und eine neue Kante müssen als neues Blatt eingefügt werden</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 112" stroke="black" type="minipage" width="832" height="12.9115" depth="1.8204" valign="top">Nach I.V. hat dieser ein Blatt</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 48" stroke="black" type="minipage" width="864" height="15.1648" depth="4.0848" valign="top">\impl Der Graph G&apos; mit n+1 Knoten und n Kanten hat ein Blatt</text>
-</page>
-<page title="Negativbeispiel Vorwärtsinduktion">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<group layer="alpha">
-<path stroke="black" fill="KITred15">
-8 376 m
-880 376 l
-8 0 0 -8 880 368 888 368 a
-888 20.7504 l
-16 20.7504 l
-8 0 0 -8 16 28.7504 8 28.7504 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="800" height="13.078" depth="2.0202" valign="top">\bfseries So bitte nicht machen</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="768" height="15.1648" depth="4.0848" valign="top">Was ist hier passiert?</text>
-<text layer="beta" transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top" style="item">Wir haben nur gezeigt, dass Graphen, die auf diese Weise konstruiert werden ein Blatt haben</text>
-<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="864" height="15.0516" depth="3.9738" valign="top" style="item">Wir haben ignoriert, dass man auch noch Kanten verschieben könnte</text>
-<text layer="delta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="848" height="26.4002" depth="15.3402" valign="top" style="item">Wir müssten jetzt auch noch zeigen, dass \textbf{alle} kreisfreien, zusammenhängenden Graphen mit n Knoten und n-1 Kanten auf diese Weise konstruiert werden können</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -6" transformations="translations" pos="16 192" stroke="black" type="minipage" width="848" height="15.0516" depth="3.9738" valign="top" style="item">\dots und wir haben die Induktionsvorrausetzung nicht benutzt</text>
-</page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
-<layer name="kappa"/>
-<layer name="lambda"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota" active="epsilon"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon eta theta iota" active="zeta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon theta iota" active="eta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon iota" active="theta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="iota"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon lambda" active="lambda"/>
-<group layer="lambda">
-<path stroke="black" fill="KITgreen15">
-8 296 m
-592 296 l
-8 0 0 -8 592 288 600 288 a
-600 89.6104 l
-16 89.6104 l
-8 0 0 -8 16 97.6104 8 97.6104 a
-h
-</path>
-</group>
-<group layer="kappa">
-<path stroke="black" fill="KITgreen15">
-8 296 m
-592 296 l
-8 0 0 -8 592 288 600 288 a
-600 89.6104 l
-16 89.6104 l
-8 0 0 -8 16 97.6104 8 97.6104 a
-h
-</path>
-</group>
-<group layer="alpha">
-<path stroke="black" fill="KITblue15">
-8 376 m
-592 376 l
-8 0 0 -8 592 368 600 368 a
-600 304.155 l
-16 304.155 l
-8 0 0 -8 16 312.155 8 312.155 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="576" height="13.229" depth="2.1534" valign="top">Sei w ein Wort</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="432" height="17.6912" depth="6.6156" valign="top">\textbf{Behauptung:} Für alle $k\in \mathbb N_0$ gilt $\vert w^k \vert = k\cdot \vert w \vert$</text>
-<text layer="beta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 304" stroke="black" type="minipage" width="640" height="17.6912" depth="6.6156" valign="top">I.A.: Es sei $k = 0 $. Es gilt $\vert w ^k \vert = \vert w^0\vert = \vert \epsilon \vert = 0 = 0 \cdot \vert w\vert = k \cdot \vert w \vert $</text>
-<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="576" height="14.1392" depth="3.0636" valign="top">I.S.: $ k-1 \rightsquigarrow k$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 224" stroke="black" type="minipage" width="576" height="15.671" depth="4.6176" valign="top" style="item">Sei $k \in \mathbb N_+$ beliebig</text>
-<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="576" height="17.6912" depth="6.6156" valign="top" style="item">I.V.: Es gelte $\vert w^{k-1}\vert = (k-1)\cdot \vert w\vert$</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 144" stroke="black" type="minipage" width="576" height="20.7725" depth="9.7236" valign="top" style="item">$\vert w^{k} \vert =  \vert w^{k-1} \cdot w \vert  = \vert w^{k-1} \vert + \vert w \vert \stackrel{\text{I.V.}}{=}  (k-1) \cdot \vert w\vert + \vert w\vert  = k \cdot \vert w \vert$</text>
-<text layer="alpha" transformations="translations" pos="16 288" stroke="black" type="minipage" width="576" height="13.078" depth="2.0202" valign="top">\bfseries Beweis</text>
-<path layer="iota" matrix="1 0 0 1 61 0" fill="white">
-600 89.6104 m
-600 129.801 l
-452.294 129.801 l
-452.294 89.6104 l
-h
-</path>
-<path layer="theta" matrix="1.2131 0 0 1 -33.6668 0" stroke="1" fill="white">
-452.294 89.6104 m
-452.294 132.258 l
-312.838 132.258 l
-312.838 89.6104 l
-h
-</path>
-<path layer="eta" matrix="1.14388 0 0 1 -18.7474 0" fill="white">
-312.838 89.6104 m
-312.838 131.644 l
-199.798 131.644 l
-199.798 89.6104 l
-h
-</path>
-<path layer="zeta" matrix="1 0 0 1 7 0" stroke="1" fill="white">
-199.798 89.6104 m
-199.798 129.801 l
-105.803 129.801 l
-105.803 89.6104 l
-h
-</path>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 16 0">
-<path stroke="gray1" fill="gray3">
-456 96 m
-8 0 0 8 448 96 448 104 a
--8 104 l
--8 49.2202 l
-8 0 0 8 0 49.2202 0 41.2202 a
-456 41.2202 l
-h
-</path>
-</group>
-<group matrix="1 0 0 1 16 0">
-<path stroke="black" fill="KITblue15">
--8 184 m
-512 184 l
-8 0 0 -8 512 176 520 176 a
-520 120.701 l
-0 120.701 l
-8 0 0 -8 0 128.701 -8 128.701 a
-h
-</path>
-</group>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">Sei nun $A = \{a,b\}$ ein Alphabet und</text>
-<text matrix="1 0 0 1 0 5" transformations="translations" pos="32 320" stroke="black" type="minipage" width="208" height="44.198" depth="33.2112" valign="top">$$
-x \rightarrow \left\{ \begin{array}{ll}
-xx &amp;\vert x=a \\
-x &amp;\vert sonst
-\end{array}\right.
-$$</text>
-<text matrix="1 0 0 1 -48 32" transformations="translations" pos="64 304" stroke="black" type="minipage" width="112" height="13.2268" depth="2.1312" valign="top">$f: A \rightarrow A^*$</text>
-<text matrix="1 0 0 1 96 0" transformations="translations" pos="272 336" stroke="black" type="minipage" width="160" height="15.3757" depth="4.2846" valign="top">$g: A^* \rightarrow A^*$</text>
-<text matrix="1 0 0 1 112 0" transformations="translations" pos="272 304" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">$g(\epsilon) = \epsilon$</text>
-<text matrix="1 0 0 1 112 0" transformations="translations" pos="272 272" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$g(xw) = f(x) \cdot g(w) \quad \quad x \in A, w\in A^*$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 240" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">Außerdem sei $\vert w \vert_a$ die Anzahl der a&apos;s in w</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 176" stroke="black" type="minipage" width="512" height="29.2241" depth="18.204" valign="top">Behauptung: Für alle $n\in \mathbb N_0$ gilt: für alle $w\in A^*$ der Länge $\vert w \vert = n$ gilt: $\vert g(w) \vert = 2\vert w \vert_a+ \vert w \vert_b$</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 96" stroke="black" type="minipage" width="448" height="28.8067" depth="17.76" valign="top">Zeigt die Behauptung mit vollständiger Induktion über die Wortlänge $\vert w \vert = n$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
-</page>
-<page title="Lösung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">I.A.:  $n = 0 \Rightarrow \vert w \vert = 0 \Rightarrow w = \epsilon \Rightarrow \vert g(w)\vert =\vert g(\epsilon)\vert = \vert \epsilon\vert = 0 = 2\vert\epsilon\vert_a + \vert\epsilon\vert_b = 2\cdot 0 + 0$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="416" height="13.946" depth="2.8638" valign="top">I.S.: $n-1 \rightsquigarrow n$</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="512" height="15.6355" depth="4.551" valign="top" style="item">Es sei $n \in \mathbb N_+$ beliebig</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="768" height="16.5901" depth="5.5278" valign="top" style="item">I.V.: Für \textbf{alle} Wörter der Länge $\vert w\vert = n-1$ gilt $\vert g(w) \vert = 2\vert w \vert_a+ \vert w \vert_b$</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="816" height="43.1146" depth="32.1234" valign="top" style="item">Es sei $w&apos;  \in A^*$ mit $\vert w&apos;\vert = n$ \\
-Wir betrachten das erste Zeichen $x$ von $w&apos;$ ($w&apos; = x \cdot w )$\\
-$\vert g(xw)\vert = \vert f(x) \vert  + \vert g(w)\vert$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-</page>
-<page title="Lösung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="288" height="12.9115" depth="1.8204" valign="top">Fall 1: $x= a$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="16.6056" depth="5.55" valign="top" style="item">$\vert w&apos; \vert_a = \vert xw \vert_a = \vert w \vert_a+1,\quad \vert w&apos; \vert _b = \vert xw \vert_b = \vert w \vert_b$</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="864" height="120.941" depth="110.156" valign="top">\begin{align*}
-\vert g(w&apos;)\vert  = \vert g(xw)\vert &amp;= \vert f(x) \vert + \vert g(w)\vert \\
-&amp;\stackrel{\text{I.V.}}{=} \vert aa\vert + 2 \vert w \vert_a+ \vert w \vert_b\\
-&amp;= 2 + 2 \vert w \vert_a+ \vert w \vert_b\\
-&amp;= 2 (1+\vert w \vert_a) + \vert w \vert_b\\
-&amp;= 2 \vert xw \vert_a+ \vert xw \vert_b \quad \quad \text{wegen }\vert xw \vert_a= \vert w \vert_a+1, \vert xw \vert_b= \vert w \vert_b\\
-&amp;= 2 \vert w&apos; \vert_a + \vert w&apos; \vert_b 
-\end{align*}</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
-</page>
-<page title="Lösung">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="288" height="13.3289" depth="2.2644" valign="top">Fall 2: $x= b$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="736" height="16.6056" depth="5.55" valign="top" style="item">$\vert w&apos; \vert_a= \vert xw \vert_a= \vert w \vert_a, \quad \vert w&apos; \vert_b= \vert xw \vert_a= \vert w \vert_a+1 $</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="416" height="104.393" depth="93.5286" valign="top">\begin{align*}
-\vert g(w&apos;)\vert  = \vert g(xw)\vert &amp;= \vert f(x) \vert + \vert g(w)\vert \\
-&amp;\stackrel{\text{I.V.}}{=} \vert b\vert + 2 \vert w \vert_a+ \vert w \vert_b\\
-&amp;= 2 \vert w \vert_a + \vert w \vert_b +1 \\
-&amp;= 2 \vert xw \vert_a + \vert xw \vert_b\\
-&amp;= 2 \vert w&apos; \vert_a+ \vert w&apos; \vert_b
-\end{align*}</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
-</page>
-<page title="Starke Induktion">
-<layer name="alpha"/>
-<layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<group layer="beta" matrix="1 0 0 1 0 -16">
-<path stroke="gray1" fill="gray3">
-808 64 m
-8 0 0 8 800 64 800 72 a
-8 72 l
-8 44.9746 l
-8 0 0 8 16 44.9746 16 36.9746 a
-808 36.9746 l
-h
-</path>
-</group>
-<group matrix="1 0 0 1 0 -32">
-<path stroke="black" fill="KITblue15">
-8 312 m
-864 312 l
-8 0 0 -8 864 304 872 304 a
-872 103.288 l
-16 103.288 l
-8 0 0 -8 16 111.288 8 111.288 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.3735" depth="4.2846" valign="top" style="item">Bisher haben wir \textbf{nur} $\mathpzc A_{n-1}$ benutzt um $\mathpzc A_{n}$ zu beweisen</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="720" height="15.5977" depth="4.5288" valign="top" style="item">Manchmal ist es einfacher auch die Aussagen $\mathpzc A_0$ bis $\mathpzc A_{n-1}$ zu benutzen</text>
-<text layer="beta" matrix="1 0 0 1 16 -32" transformations="translations" pos="0 304" stroke="black" type="minipage" width="368" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 272" stroke="black" type="minipage" width="848" height="15.469" depth="4.4178" valign="top">Jede Zahl $\in N_0$ kann als Summe paarweise verschiedener Zweierpotenzen dargestellt werden</text>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="0 240" stroke="black" type="minipage" width="800" height="15.2758" depth="4.218" valign="top">$\mathpzc A_n: n$ kann als Summe paarweise verschiedener Zweierpotenzen dargestellt werden</text>
-<text matrix="1 0 0 1 144 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="544" height="53.8439" depth="42.8682" valign="top">Wir suchen also eine Menge Z von Zweierpotenzen, sodass $$n = \sum_{z\in Z} \limits z$$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 64" stroke="black" type="minipage" width="784" height="15.0516" depth="3.9738" valign="top">Jede starke Induktion kann auch in eine Vollständige Induktion umgeschrieben werden</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="12.9115" depth="1.8204" valign="top" style="item">Das nennt man manchmal auch starke Induktion</text>
-</page>
-<page title="Starke Induktion">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="384" height="13.0048" depth="1.9092" valign="top">\textbf{I.A.:} n = 0</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="512" height="16.5901" depth="5.5278" valign="top">Die leere Summe hat den Wert 0 ($Z = \{\}$)</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="448" height="15.4334" depth="4.3512" valign="top">\textbf{I.S.:}  $n-1 \rightsquigarrow  n$ Sei $n \in \mathbb N_0$ fest aber beliebig.</text>
-<text layer="gamma" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Wähle $i = \max \{j \in \mathbb N_0  \vert 2^j \leq n\} $. Dann lässt sich n schreiben als $n = 2^i  + m$ mit $m \in \mathbb N_0 , m &lt; n$</text>
-<text layer="delta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="17.0185" depth="5.9496" valign="top">Außerdem $m \leq 2^i$ da sonst $n &gt; 2^i + 2^i = 2^{i+1}$ Widerspruch zu $i = \max \dots$</text>
-<text layer="epsilon" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Falls $m = 0$ ist Z einfach $\{2^i\}$ und wir sind fertig.</text>
-<text layer="zeta" matrix="1 0 0 1 16 -56" transformations="translations" pos="0 192" stroke="black" type="minipage" width="880" height="30.9912" depth="19.98" valign="top">Falls nicht, können wir die $\underset{m \text{ evtl } \neq n-1}{\underbrace{\text{I.V. auf } m \text { anwenden}}}$. D.h. es gibt eine Menge $Z&apos;$, sodass $\sum_{z\in Z&apos;} \limits z = m $</text>
-<text layer="eta" matrix="1 0 0 1 16 -54" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="17.6423" depth="6.5712" valign="top">Da $2^i \not \in Z&apos;$ ($m &lt; 2^i$) finden wir $Z = Z&apos; \cup \{2^i\}$</text>
-<text layer="beta" transformations="translations" pos="16 288" stroke="black" type="minipage" width="688" height="28.7335" depth="17.6934" valign="top">\textbf{I.V.:} Für alle $k \in \mathbb N_0$  mit $k &lt; n$ gilt: $k$ kann als Summe paarweiser verschiedener Zweierpotenzen dargestellt werden</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Gebt einen regulären Ausdruck $R_i$ über dem Alphabet $\set{a,b}$ an, für den gilt:</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_1)$ enthält genau die Wörter, in denen das Teilwort baa vorkommt,</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_2)$ enthält genau die Wörter, in denen das Teilwort baa nicht
+vorkommt,</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_3)$ enthält genau die Wörter, in denen das Teilwort baa genau
+zweimal vorkommt,</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_4)$ enthält genau die Wörter, in denen mindestens drei bs
+vorkommen,</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_5) = \{\epsilon\}$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="608" height="16.5901" depth="5.5278" valign="top" style="item">$R_1 = (a\cup b)^* baa (a\cup b)^*$ </text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 144" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$R_2 = a^*(b\cup ba)^*$</text>
+<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 112" stroke="black" type="minipage" width="784" height="14.8807" depth="3.7962" valign="top" style="item">$R_3 = R_2 baa R_2 baa R_2$</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$R_4 = (a\cup b)^* b(a\cup b)^* b(a\cup b)^* b(a\cup b)^* $</text>
+<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 48" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$R_5 = \emptyset^*$ denn $L(\emptyset^*) = L(\emptyset)^* = \{\}^* = \{\epsilon\}$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 31}</text>
 </page>
 </ipe>

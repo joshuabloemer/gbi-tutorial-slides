@@ -1,9 +1,5 @@
 
-title = "05 Aussagenlogik und Beweisbarkeit" # the file name of the output pdf
-description = "05 Aussagenlogik und Beweisbarkeit" # 
-content = [
-    "aussagenlogik",
-    "beweisbarkeit",
-
-]
+title = "05 Reguläre Ausdrücke, Induktion"        # the file name of the output pdf
+description = " Reguläre Ausdrücke und Induktion" # 
+content = ["regex", "induktion"]
 xkcd = 1033
