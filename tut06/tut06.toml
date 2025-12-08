@@ -1,5 +1,5 @@
 
-title = "06 Formale Sprachen und Codierungen"                  # the file name of the output pdf
-description = "06 Formale Sprachen und Codierungen"            # 
-content = [ "beweisbarkeit", "formalesprachen", "codierungen", "homomorphismen"]
-xkcd = 153
+title = "06 Induktion"    # the file name of the output pdf
+description = "induktion" # 
+content = ["induktion"]
+xkcd = 1516
