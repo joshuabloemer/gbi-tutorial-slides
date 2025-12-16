@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250106190218" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20251215182946" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3787,7 +3787,7 @@ Konnektiven und Quantoren</text>
 <text layer="beta" matrix="1 0 0 1 16 112" transformations="translations" pos="0 160" stroke="black" type="minipage" width="704" height="15.0605" depth="3.996" valign="top">\emph{Funktionssymbolen}</text>
 <text matrix="1 0 0 1 16 112" transformations="translations" pos="0 128" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$f_i (i\in \mathbb N) \quad \z{f$(\cdot)$,g$(\cdot)$,h$(\cdot)$}$</text>
 <text matrix="1 0 0 1 16 112" transformations="translations" pos="0 96" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">liefern Werte für übergebene Eingaben (wie gewohnt)</text>
-<text matrix="1 0 0 1 16 112" transformations="translations" pos="0 64" stroke="black" type="minipage" width="592" height="29.3395" depth="18.315" valign="top" style="item">Jedes $f_i$ hat Stelligkeit (auch: Arität) $ar(f_i ) \in \mathbb N_+$.\\ Sie gibt an, wie viele Argumente $f_i$
+<text matrix="1 0 0 1 16 112" transformations="translations" pos="0 64" stroke="black" type="minipage" width="592" height="29.3395" depth="18.315" valign="top" style="item">Jedes $f_i$ hat Stelligkeit (auch: Arität) $ar(f_i ) \in \mathbb N_0$.\\ Sie gibt an, wie viele Argumente $f_i$
 entgegennimmt</text>
 <text layer="alpha" matrix="1 0 0 1 16 16" transformations="translations" pos="0 0" stroke="black" type="minipage" width="736" height="5.53002" depth="0" valign="top"></text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
@@ -3814,7 +3814,7 @@ h
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 352" stroke="black" type="minipage" width="640" height="15.0605" depth="3.996" valign="top">\emph{Relationssymbolen}</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="16.6189" depth="5.5722" valign="top" style="item">$\doteq $ sowie weitere: $R_i  (i  \in \mathbb N)$ \quad \z{R$(\cdot)$},\z{S$(\cdot)$}</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="0 288" stroke="black" type="minipage" width="704" height="15.0516" depth="3.9738" valign="top" style="item">Die Argumente von Relationssymbolen sind immer Terme</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 256" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top" style="item">Relationen haben, wie Funktionen eine Stelligkeit $ar(R_i) \in \mathbb N_+$</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 256" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top" style="item">Relationen haben, wie Funktionen, eine Stelligkeit $ar(R_i) \in \mathbb N_+$</text>
 <text layer="beta" matrix="1 0 0 1 32 0" transformations="translations" pos="0 208" stroke="black" type="minipage" width="640" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="16 176" stroke="black" type="minipage" width="512" height="16.6189" depth="5.5722" valign="top">$x \doteq c \quad \quad  g(x) \doteq g(y) \quad \quad R(g(c)) \quad \quad  S(x,f(x,y))$</text>
 <text matrix="1 0 0 1 16 0" transformations="translations" pos="16 144" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Hier: $ar(g) = 1, ar(f) = 2, ar(R) = 1, ar(S) = 2$</text>
@@ -3860,7 +3860,7 @@ h
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="15.0516" depth="3.9738" valign="top">Zusammengesetzt aus:</text>
 <text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="736" height="12.9115" depth="1.8204" valign="top" style="item">Atomaren Formeln</text>
-<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Aussagenlogischen Konnektiven ($\neg, \vee, \wedge, \rightarrow$ (,plus Klammern))</text>
+<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Aussagenlogischen Konnektiven ($\neg, \vee, \wedge, \rightarrow$) (plus Klammern)</text>
 <text layer="delta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="688" height="15.358" depth="4.2846" valign="top" style="item">Quantoren ($\forall \quad \exists$)</text>
 <text layer="epsilon" transformations="translations" pos="0 240" stroke="black" type="minipage" width="704" height="15.469" depth="4.4178" valign="top">Verwendung: ($\forall x_i \dots \text{Formel} \dots$)</text>
 <text layer="eta" matrix="1 0 0 1 400 -32" transformations="translations" pos="0 192" stroke="black" type="minipage" width="416" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung:</text>
@@ -4032,7 +4032,7 @@ h
 <text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\forall x (\neg Liebt(x,x) \rightarrow Liebt(John,x))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
 <text layer="alpha" matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$Var_{PL} = \{x\}, Fun_{PL} = \{Knuth, John\}, \\Rel_{PL} = \{Flugf\ddot{a} hig, Kann\_es, Vogel, Liebt\}$</text>
-<text matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 304" stroke="black" type="minipage" width="464" height="43.0969" depth="32.1012" valign="top">$ar(Vogel) = ar(Kann_es) = ar(Flugf\ddot{a} hig) = 1,\\ ar(Liebt) = 2,\\ ar(Knuth) = ar(John) = 0$</text>
+<text matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 304" stroke="black" type="minipage" width="496" height="43.0969" depth="32.1012" valign="top">$ar(Vogel) = ar(Kann\_es) = ar(Flugf\ddot{a} hig) = 1,\\ ar(Liebt) = 2,\\ ar(Knuth) = ar(John) = 0$</text>
 <text matrix="1 0 0 1 -64 -128" transformations="translations" pos="448 352" stroke="black" type="minipage" width="464" height="15.0516" depth="3.9738" valign="top">D = Die Menge aller Lebewesen</text>
 </page>
 </ipe>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250107142549" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<info created="D:20220409132243" modified="D:20251215183306" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -10304,13 +10304,13 @@ d &amp;\vert v = x
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item"> Quantoren &apos;&apos;überschreiben&apos;&apos; Variablen in ihrem Wirkungsbereich</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="subitem">Bei $\forall x (R(x,y))$ ist egal, was $\beta (x)$ ist. Es gelte ja für alle x in D</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 304" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Quantoren beziehen sich immer auf D. Sowas wie $\forall x \in \mathbb N_0$ gibt es in der Prädikatenlogik nicht</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="subitem">Entweder muss $D = \mathbb N_0$ gewählt werden, oder wenn das nicht geht:</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">muss durch Relationen eine Einschränkung simuliert werden</text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \forall x (R(x) \rightarrow \dots) \quad $ R sei hier die \enquote{ist eine natürliche Zahl} Relation</text>
-<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \exists x (R(x) \wedge \dots) \quad $ R ist hier die \enquote{ist eine natürliche Zahl} Relation</text>
+<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top"> Quantoren &apos;&apos;überschreiben&apos;&apos; Variablen in ihrem Wirkungsbereich</text>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">Bei $\forall x (R(x,y))$ ist egal, was $\beta (x)$ ist. Es gelte ja für alle x in D</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 304" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top">Quantoren beziehen sich immer auf D. Sowas wie $\forall x \in \mathbb N_0$ gibt es in der Prädikatenlogik nicht</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Entweder muss $D = \mathbb N_0$ gewählt werden, oder wenn das nicht geht:</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">muss durch Relationen eine Einschränkung simuliert werden</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subitem">$D = \mathbb R, \quad  \forall x (R(x) \rightarrow \dots) \quad $ R sei hier die \enquote{ist eine natürliche Zahl} Relation</text>
+<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subitem">$D = \mathbb R, \quad  \exists x (R(x) \wedge \dots) \quad $ </text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
 <page title="Beispiel">
