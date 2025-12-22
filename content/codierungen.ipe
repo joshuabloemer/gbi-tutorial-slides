@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20241203233413" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20251222201946" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3771,7 +3771,7 @@ h
 </path>
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="240" height="12.9115" depth="1.8204" valign="top">Korrekte Anworten wären:</text>
-<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Eintausend-Einhundert-Elf oder 1$111_{10}$ (Dezimal)</text>
+<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Eintausend-Einhundert-Elf oder $1111_{10}$ (Dezimal)</text>
 <text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Fünfzehn oder $15_{10}$ oder $1111_2$ (Binär/Dual)
 </text>
 <text layer="delta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Vierzig oder $40_{10}$ oder $1111_3$ (Ternär)
