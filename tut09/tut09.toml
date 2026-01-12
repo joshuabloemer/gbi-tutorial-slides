@@ -1,4 +1,4 @@
-title = "09 Praedikatenlogik,Graphen"   # the file name of the output pdf
-description = "Praedikatenlogik Semantik und Graphen" # 
-content = ["plsemantik", "graphen"]
+title = "09 Homomorphismen, Huffman Bäume, Grammatiken"                  # the file name of the output pdf
+description = "Homomorphismen, Huffman Bäume und Grammatiken"  # 
+content = ["homomorphismen", "huffman", "grammatiken"]
 xkcd = 1738
