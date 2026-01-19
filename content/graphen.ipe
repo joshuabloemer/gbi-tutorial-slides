@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20251006211712" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20260119225032" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -3748,18 +3748,7 @@ Man kann zu jede relation einen gerichteten graphen bauen</notes>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="alpha"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<group layer="delta" matrix="1 0 0 1 0 12">
-<path stroke="black" fill="KITred15">
-8 24 m
-720 24 l
-8 0 0 -8 720 16 728 16 a
-728 -11.0254 l
-16 -11.0254 l
-8 0 0 -8 16 -3.0254 8 -3.0254 a
-h
-</path>
-</group>
-<group matrix="1 0 0 1 0 8">
+<group layer="delta" matrix="1 0 0 1 0 8">
 <path stroke="black" fill="KITblue15">
 8 104 m
 432 104 l
@@ -3792,7 +3781,6 @@ $V=\{a,b,c\}, V = \{1,2,3\}$ etc.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 3}</text>
 <text layer="delta" matrix="1 0 0 1 0 8" transformations="translations" pos="16 96" stroke="black" type="minipage" width="416" height="31.342" depth="20.2908" valign="top">$\binom{V}{2} = \{\{u,v\} \vert u,v \in V, u \neq v\}$ \\
  (Dadurch werden Schlingen ausgeschlossen)</text>
-<text matrix="1 0 0 1 0 12" transformations="translations" pos="16 16" stroke="black" type="minipage" width="704" height="15.0516" depth="3.9738" valign="top">Ja das sind Knoten und nicht Ecken, egal was euch Kühnlein in  LA erzählt hat</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>

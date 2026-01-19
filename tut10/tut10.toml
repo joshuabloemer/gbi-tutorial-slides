@@ -1,0 +1,4 @@
+title = "10 Grammatiken, Graphen"       # the file name of the output pdf
+description = "Grammatiken und Graphen" # 
+content = ["grammatiken", "graphen"]
+xkcd = 173
