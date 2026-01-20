@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.29">
-<info created="D:20220409132243" modified="D:20260119225032" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<ipe version="70218" creator="Ipe 7.2.28">
+<info created="D:20220409132243" modified="D:20260120134730" title="GBI" author="Joshua Blömer" subject="Content Template"/>
 <preamble>\input{/opt/gbi-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
 \input{/opt/gbi-slides/tut-config}</preamble>
@@ -4046,7 +4046,7 @@ h
 <view layers="alpha beta gamma delta zeta eta" active="eta"/>
 <view layers="alpha beta gamma delta zeta eta theta" active="theta"/>
 <view layers="alpha beta gamma delta zeta eta theta iota" active="iota"/>
-<group layer="epsilon" matrix="1 0 0 1 112 0">
+<group layer="epsilon" matrix="1 0 0 1 144 0">
 <path stroke="gray1" fill="gray3">
 536 320 m
 8 0 0 8 528 320 528 328 a
@@ -4093,12 +4093,12 @@ h
 <text matrix="1 0 0 1 16 -17" transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="15.469" depth="4.4178" valign="top">Gebt eine formale Definition des vollständigen Graphen mit \emph{n} Knoten an (\emph{$K_n$})</text>
 <text matrix="1 0 0 1 16 -273" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="15.358" depth="4.2846" valign="top">Gebt eine formale Definition des Kreises mit \emph{n} Knoten an (\emph{$C_n$})</text>
 <text matrix="1 0 0 1 16 -161" transformations="translations" pos="0 384" stroke="black" type="minipage" width="576" height="15.358" depth="4.2846" valign="top">Gebt eine formale Definition des Pfades mit \emph{n} Knoten an (\emph{$P_n$})</text>
-<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="144 336" stroke="black" type="minipage" width="96" height="16.5901" depth="5.5278" valign="top">$V = \set{[n]}$</text>
+<text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="144 336" stroke="black" type="minipage" width="96" height="16.5901" depth="5.5278" valign="top">$V = [n]$</text>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="144 304" stroke="black" type="minipage" width="96" height="19.7069" depth="8.658" valign="top">$E = \binom{V}{2}$</text>
-<text layer="gamma" matrix="1 0 0 1 16 -152" transformations="translations" pos="144 336" stroke="black" type="minipage" width="96" height="16.5901" depth="5.5278" valign="top">$V = \set{[n]}$</text>
-<text layer="delta" matrix="1 0 0 1 16 -266" transformations="translations" pos="144 336" stroke="black" type="minipage" width="160" height="16.5901" depth="5.5278" valign="top">$V = \set{[n]}$</text>
+<text layer="gamma" matrix="1 0 0 1 16 -152" transformations="translations" pos="144 336" stroke="black" type="minipage" width="96" height="16.5901" depth="5.5278" valign="top">$V = [n]$</text>
+<text layer="delta" matrix="1 0 0 1 16 -266" transformations="translations" pos="144 336" stroke="black" type="minipage" width="160" height="16.5901" depth="5.5278" valign="top">$V = [n]$</text>
 <text layer="gamma" matrix="1 0 0 1 16 -24" transformations="translations" pos="144 176" stroke="black" type="minipage" width="320" height="16.5901" depth="5.5278" valign="top">$E = \set{\set{i,i+1} \given i \in [n-1]}$</text>
-<text layer="delta" matrix="1 0 0 1 16 -42" transformations="translations" pos="144 80" stroke="black" type="minipage" width="320" height="16.5901" depth="5.5278" valign="top">$E = \set{\set{i,(i+1) \mod n}\given i \in [n]}$</text>
+<text layer="delta" matrix="1 0 0 1 16 -42" transformations="translations" pos="144 80" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">$E = \set{\set{i,(i+1)}\given i \in [n-1]}\cup \set{\set{n,1}}$</text>
 <group layer="alpha">
 <use matrix="1 0 0 1 16 -45" name="mark/disk(sx)" pos="32 80" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 16 -45" name="mark/disk(sx)" pos="64 48" size="normal" stroke="black"/>
@@ -4170,8 +4170,8 @@ h
 64 256 c
 </path>
 </group>
-<text layer="epsilon" matrix="1 0 0 1 112 0" transformations="translations" pos="416 320" stroke="black" type="minipage" width="112" height="16.5901" depth="5.5278" valign="top">Was ist $\vert E\vert$?</text>
-<group matrix="1 0 0 1 112 -144">
+<text layer="epsilon" matrix="1 0 0 1 144 0" transformations="translations" pos="416 320" stroke="black" type="minipage" width="112" height="16.5901" depth="5.5278" valign="top">Was ist $\vert E\vert$?</text>
+<group matrix="1 0 0 1 144 -144">
 <path stroke="gray1" fill="gray3">
 536 320 m
 8 0 0 8 528 320 528 328 a
@@ -4182,8 +4182,8 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 112 -144" transformations="translations" pos="416 320" stroke="black" type="minipage" width="112" height="16.5901" depth="5.5278" valign="top">Was ist $\vert E\vert$?</text>
-<group matrix="1 0 0 1 112 -256">
+<text matrix="1 0 0 1 144 -144" transformations="translations" pos="416 320" stroke="black" type="minipage" width="112" height="16.5901" depth="5.5278" valign="top">Was ist $\vert E\vert$?</text>
+<group matrix="1 0 0 1 144 -256">
 <path stroke="gray1" fill="gray3">
 536 320 m
 8 0 0 8 528 320 528 328 a
@@ -4194,10 +4194,10 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 112 -256" transformations="translations" pos="416 320" stroke="black" type="minipage" width="112" height="16.5901" depth="5.5278" valign="top">Was ist $\vert E\vert$?</text>
-<text layer="iota" matrix="1 0 0 1 184 -35.1235" transformations="translations" pos="336 320" stroke="black" type="minipage" width="208" height="20.5905" depth="9.546" valign="top">$\vert E\vert = \frac{n\cdot(n-1)}{2}$</text>
-<text layer="eta" matrix="1 0 0 1 184 -168" transformations="translations" pos="336 320" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$\vert E\vert =  n -1$</text>
-<text layer="theta" matrix="1 0 0 1 184 -282" transformations="translations" pos="336 320" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$\vert E\vert = n $</text>
+<text matrix="1 0 0 1 144 -256" transformations="translations" pos="416 320" stroke="black" type="minipage" width="112" height="16.5901" depth="5.5278" valign="top">Was ist $\vert E\vert$?</text>
+<text layer="iota" matrix="1 0 0 1 232 -35.1235" transformations="translations" pos="336 320" stroke="black" type="minipage" width="208" height="20.5905" depth="9.546" valign="top">$\vert E\vert = \frac{n\cdot(n-1)}{2}$</text>
+<text layer="eta" matrix="1 0 0 1 232 -168" transformations="translations" pos="336 320" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$\vert E\vert =  n -1$</text>
+<text layer="theta" matrix="1 0 0 1 232 -282" transformations="translations" pos="336 320" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">$\vert E\vert = n $</text>
 </page>
 <page title="Schreibweisen/Abkürzungen">
 <layer name="alpha"/>
